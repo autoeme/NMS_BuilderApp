@@ -1,0 +1,6 @@
+newmtl tilingtexture_mat1
+Kd 0.8 0.8 0.8
+newmtl vertexcolourtrans_mat1
+Kd 0.8 0.8 0.8
+newmtl scanline_mat6
+Kd 0.8 0.8 0.8

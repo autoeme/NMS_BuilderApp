@@ -1,0 +1,12 @@
+newmtl curvecoralmat
+Kd 0.8 0.8 0.8
+newmtl floatglowmat
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl glowplantmat
+Kd 0.8 0.8 0.8

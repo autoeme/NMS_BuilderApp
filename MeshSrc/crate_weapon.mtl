@@ -1,0 +1,8 @@
+newmtl tradertiled_mat22
+Kd 0.8 0.8 0.8
+newmtl trim_mat
+Kd 0.8 0.8 0.8
+newmtl greenglow_mat4
+Kd 0.8 0.8 0.8
+newmtl glow_mat1
+Kd 0.8 0.8 0.8

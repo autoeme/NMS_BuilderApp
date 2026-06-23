@@ -1,0 +1,10 @@
+newmtl terminal
+Kd 0.8 0.8 0.8
+newmtl terminalmount1
+Kd 0.8 0.8 0.8
+newmtl blac_mat
+Kd 0.8 0.8 0.8
+newmtl phong15
+Kd 0.8 0.8 0.8
+newmtl eyegrad_mat
+Kd 0.8 0.8 0.8

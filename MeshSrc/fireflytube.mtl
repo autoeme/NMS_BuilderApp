@@ -1,0 +1,16 @@
+newmtl crate1
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat6
+Kd 0.8 0.8 0.8
+newmtl hqtrimmetal_mat8
+Kd 0.8 0.8 0.8
+newmtl crate_decal
+Kd 0.8 0.8 0.8
+newmtl npcprops_mat1
+Kd 0.8 0.8 0.8
+newmtl glassrefractionmat
+Kd 0.8 0.8 0.8
+newmtl fireflymat
+Kd 0.8 0.8 0.8
+newmtl glowmat
+Kd 0.8 0.8 0.8

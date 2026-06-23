@@ -1,0 +1,28 @@
+newmtl interiorfreighterbase_mat
+Kd 0.8 0.8 0.8
+newmtl scientificdiscolour_mat3
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertile_mat
+Kd 0.8 0.8 0.8
+newmtl traillight_mat
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl hqtrimmetal_mat8
+Kd 0.8 0.8 0.8
+newmtl lights_test2
+Kd 0.8 0.8 0.8
+newmtl smalllightred_mat
+Kd 0.8 0.8 0.8
+newmtl buggytrim_mat
+Kd 0.8 0.8 0.8
+newmtl buggytire_mat
+Kd 0.8 0.8 0.8
+newmtl buggydecalmetal_mat
+Kd 0.8 0.8 0.8
+newmtl floor_mat
+Kd 0.8 0.8 0.8
+newmtl glowmat
+Kd 0.8 0.8 0.8

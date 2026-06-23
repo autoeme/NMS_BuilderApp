@@ -1,0 +1,36 @@
+# Unreal Engine generated / build folders
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+.vsconfig
+
+# Backups / auto-generated
+Backup/
+_pre_restore_*/
+*.bak
+*.bak_*
+*.bak2_*
+UpgradeLog.htm
+
+# Visual Studio / Rider project files
+*.sln
+*.slnx
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+.idea/
+
+# Compiled / OS files
+*.pdb
+*.exe
+*.dll
+*.obj
+Thumbs.db
+Desktop.ini
+
+# Keep source asset folders? (tracked by default)

@@ -1,0 +1,42 @@
+newmtl panningstreak_mat3
+Kd 0.8 0.8 0.8
+newmtl greenglowfade_mat3
+Kd 0.8 0.8 0.8
+newmtl panningstreak_mat
+Kd 0.8 0.8 0.8
+newmtl effectlines_mat
+Kd 0.8 0.8 0.8
+newmtl orbglow_mat
+Kd 0.8 0.8 0.8
+newmtl scrollingeffectgreen_mat
+Kd 0.8 0.8 0.8
+newmtl greenglowfade_mat
+Kd 0.8 0.8 0.8
+newmtl trimsheetmetal_mat
+Kd 0.8 0.8 0.8
+newmtl dark_mat
+Kd 0.8 0.8 0.8
+newmtl goldmetal_mat
+Kd 0.8 0.8 0.8
+newmtl floor1_mat1
+Kd 0.8 0.8 0.8
+newmtl greenlight_mat
+Kd 0.8 0.8 0.8
+newmtl pipe1_mat
+Kd 0.8 0.8 0.8
+newmtl phong167
+Kd 0.8 0.8 0.8
+newmtl floor1_mat
+Kd 0.8 0.8 0.8
+newmtl redlightglow_mat
+Kd 0.8 0.8 0.8
+newmtl bridgescreenmodscroll_mat
+Kd 0.8 0.8 0.8
+newmtl bridgescreenmod_mat
+Kd 0.8 0.8 0.8
+newmtl paddedpipe_mat
+Kd 0.8 0.8 0.8
+newmtl continents_mat1
+Kd 0.8 0.8 0.8
+newmtl orbglow_mat3
+Kd 0.8 0.8 0.8

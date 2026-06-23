@@ -1,0 +1,14 @@
+newmtl interiortiling_mat1
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl interiortiling_mat6
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat10
+Kd 0.8 0.8 0.8
+newmtl glass_mat1
+Kd 0.8 0.8 0.8
+newmtl unlit_mat1
+Kd 0.8 0.8 0.8
+newmtl pulse_mat1
+Kd 0.8 0.8 0.8

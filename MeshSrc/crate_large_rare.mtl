@@ -1,0 +1,8 @@
+newmtl screensolid_mat
+Kd 0.8 0.8 0.8
+newmtl cratelarge_mat
+Kd 0.8 0.8 0.8
+newmtl phong4
+Kd 0.8 0.8 0.8
+newmtl glow_mat
+Kd 0.8 0.8 0.8

@@ -1,0 +1,18 @@
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat
+Kd 0.8 0.8 0.8
+newmtl interiortiling_mat
+Kd 0.8 0.8 0.8
+newmtl glassrefractionmat
+Kd 0.8 0.8 0.8
+newmtl waterproxymat
+Kd 0.8 0.8 0.8
+newmtl waterproxyinternalmat
+Kd 0.8 0.8 0.8
+newmtl logo3decal
+Kd 0.8 0.8 0.8
+newmtl lightglowmat2
+Kd 0.8 0.8 0.8
+newmtl corridorlight_mat3
+Kd 0.8 0.8 0.8

@@ -1,0 +1,8 @@
+newmtl warintmetaldetail_mat4
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat2
+Kd 0.8 0.8 0.8
+newmtl basic_wall4_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat
+Kd 0.8 0.8 0.8

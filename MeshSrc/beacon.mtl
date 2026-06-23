@@ -1,0 +1,20 @@
+newmtl rectangledecal
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl techbits_mat
+Kd 0.8 0.8 0.8
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl redlight_mat
+Kd 0.8 0.8 0.8
+newmtl corridorlight_mat
+Kd 0.8 0.8 0.8
+newmtl lights_mat
+Kd 0.8 0.8 0.8
+newmtl scanline_mat2
+Kd 0.8 0.8 0.8
+newmtl scannerglare_mat1
+Kd 0.8 0.8 0.8
+newmtl logo3decal
+Kd 0.8 0.8 0.8

@@ -1,0 +1,4 @@
+newmtl interiorfreighterbase_mat4
+Kd 0.8 0.8 0.8
+newmtl cuberoom_wall_tilingtexture_mat2
+Kd 0.8 0.8 0.8

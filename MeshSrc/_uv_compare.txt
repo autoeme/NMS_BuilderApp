@@ -1,0 +1,32 @@
+UV/GEOMETRY СРАВНЕНИЕ: старый меш vs плагин-меш
+=======================================================
+
+ДЕТАЛЬ S_WALL:
+  СТАРЫЙ  (stone_basic_wall): {'verts': 1328, 'tris': 1900, 'uv_channels': -1, 'materials': 1, 'size': (569, 101, 333)}
+  ПЛАГИН  (S_WALL): {'verts': 607, 'tris': 256, 'uv_channels': -1, 'materials': 1, 'size': (569, 68, 333)}
+  -> верш=False uv=True слоты=True размер=False : РАЗНЫЕ (текстура поедет)
+
+ДЕТАЛЬ T_WALL:
+  СТАРЫЙ  (timber_basic_wall): {'verts': 1500, 'tris': 1454, 'uv_channels': -1, 'materials': 1, 'size': (546, 15, 334)}
+  ПЛАГИН  (T_WALL): {'verts': 192, 'tris': 88, 'uv_channels': -1, 'materials': 1, 'size': (542, 12, 335)}
+  -> верш=False uv=True слоты=True размер=True : РАЗНЫЕ (текстура поедет)
+
+ДЕТАЛЬ W_WALL:
+  СТАРЫЙ  (wood_basic_wall): {'verts': 17639, 'tris': 10052, 'uv_channels': -1, 'materials': 1, 'size': (566, 57, 334)}
+  ПЛАГИН  (W_WALL): {'verts': 1277, 'tris': 680, 'uv_channels': -1, 'materials': 1, 'size': (567, 39, 333)}
+  -> верш=False uv=True слоты=True размер=False : РАЗНЫЕ (текстура поедет)
+
+ДЕТАЛЬ S_DOORB0:
+  СТАРЫЙ  (builders_basic_wallb_door0): {'verts': 9574, 'tris': 6664, 'uv_channels': -1, 'materials': 2, 'size': (606, 115, 340)}
+  ПЛАГИН  (S_DOORB0): {'verts': 140, 'tris': 84, 'uv_channels': -1, 'materials': 1, 'size': (569, 43, 333)}
+  -> верш=False uv=True слоты=False размер=False : РАЗНЫЕ (текстура поедет)
+
+ДЕТАЛЬ ABAND_BARREL:
+  СТАРЫЙ  (barrel): {'verts': 22065, 'tris': 10856, 'uv_channels': -1, 'materials': 7, 'size': (105, 101, 173)}
+  ПЛАГИН  (ABAND_BARREL): {'verts': 720, 'tris': 364, 'uv_channels': -1, 'materials': 1, 'size': (100, 95, 177)}
+  -> верш=False uv=True слоты=False размер=False : РАЗНЫЕ (текстура поедет)
+
+ДЕТАЛЬ S_FLOOR:
+  СТАРЫЙ  (stone_basic_floor): {'verts': 566, 'tris': 568, 'uv_channels': -1, 'materials': 1, 'size': (543, 543, 33)}
+  ПЛАГИН  (S_FLOOR): {'verts': 96, 'tris': 44, 'uv_channels': -1, 'materials': 1, 'size': (524, 524, 33)}
+  -> верш=False uv=True слоты=True размер=False : РАЗНЫЕ (текстура поедет)

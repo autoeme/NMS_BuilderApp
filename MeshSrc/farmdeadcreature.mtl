@@ -1,0 +1,8 @@
+newmtl cav_plantbase_mat
+Kd 0.8 0.8 0.8
+newmtl cav_plantleaf_mat
+Kd 0.8 0.8 0.8
+newmtl glowplantbulb_mat
+Kd 0.8 0.8 0.8
+newmtl cav_plantunlit_mat
+Kd 0.8 0.8 0.8

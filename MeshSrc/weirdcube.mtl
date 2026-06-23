@@ -1,0 +1,10 @@
+newmtl cellframe
+Kd 0.8 0.8 0.8
+newmtl cellmat
+Kd 0.8 0.8 0.8
+newmtl cellscolourisable2
+Kd 0.8 0.8 0.8
+newmtl cellsbroken
+Kd 0.8 0.8 0.8
+newmtl cellscolourisable1
+Kd 0.8 0.8 0.8

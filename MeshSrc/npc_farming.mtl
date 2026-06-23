@@ -1,0 +1,12 @@
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl glass_mat
+Kd 0.8 0.8 0.8
+newmtl smallplant05mat
+Kd 0.8 0.8 0.8
+newmtl lights_mat
+Kd 0.8 0.8 0.8
+newmtl mediumbranchplant_mat
+Kd 0.8 0.8 0.8
+newmtl mediumleafb_mat
+Kd 0.8 0.8 0.8

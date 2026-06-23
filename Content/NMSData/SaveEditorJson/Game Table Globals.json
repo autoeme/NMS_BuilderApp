@@ -1,0 +1,56 @@
+[
+	{
+		"PetBiomeAffinities": {
+			"Lush": "Lush",
+			"Toxic": "Toxic",
+			"Scorched": "Fire",
+			"Radioactive": "Radioactive",
+			"Frozen": "Cold",
+			"Barren": "Barren",
+			"Dead": "Barren",
+			"Weird": "Weird",
+			"Red": "Weird",
+			"Green": "Weird",
+			"Blue": "Weird",
+			"Test": "Lush",
+			"Swamp": "Toxic",
+			"Lava": "Fire",
+			"Waterworld": "Weird",
+			"GasGiant": "Weird",
+			"All": "Lush"
+		},
+		"PetAffinityLoc": {
+			"Normal": "UI_PB_AFFINITY_NONE",
+			"Lush": "UI_PB_AFFINITY_LUSH",
+			"Cold": "UI_PB_AFFINITY_COLD",
+			"Fire": "UI_PB_AFFINITY_HOT",
+			"Toxic": "UI_PB_AFFINITY_TOXIC",
+			"Barren": "UI_PB_AFFINITY_DUST",
+			"Radioactive": "UI_PB_AFFINITY_RADIO",
+			"Weird": "UI_PB_AFFINITY_WEIRD",
+			"Mech": "UI_PB_AFFINITY_MECH"
+		},
+		"PetAffinityLocStub": {
+			"Normal": "NONE",
+			"Lush": "LUSH",
+			"Cold": "COLD",
+			"Fire": "HOT",
+			"Toxic": "TOX",
+			"Barren": "DUST",
+			"Radioactive": "RAD",
+			"Weird": "ODD",
+			"Mech": "MECH"
+		},
+		"PetTargetLoc": {
+			"Self": "UI_PB_MOVE_TARGET_SELF",
+			"TeamBenchMember": "",
+			"RandomTeamBenchMember": "",
+			"SplitAcrossTeamBench": "UI_PB_MOVE_TARGET_TEAM",
+			"SplitAcrossAllTeam": "UI_PB_MOVE_TARGET_TEAM",
+			"ActiveEnemy": "UI_PB_MOVE_TARGET_ENEMY",
+			"RandomEnemyBenchMember": "",
+			"SplitAcrossEnemyBench": "UI_PB_MOVE_TARGET_ENEMY_TEAM",
+			"SplitAcrossAllEnemies": "UI_PB_MOVE_TARGET_ENEMY_TEAM"
+		}
+	}
+]

@@ -1,0 +1,20 @@
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl sandmat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl boneformstatic
+Kd 0.8 0.8 0.8
+newmtl boneformstaticmetal
+Kd 0.8 0.8 0.8
+newmtl boneformplantcolourisable
+Kd 0.8 0.8 0.8
+newmtl boneglowcolourisable
+Kd 0.8 0.8 0.8
+newmtl boneform6_mat
+Kd 0.8 0.8 0.8
+newmtl boneform6metal_mat
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8

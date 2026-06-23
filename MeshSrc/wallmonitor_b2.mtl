@@ -1,0 +1,16 @@
+newmtl interiorprops_mat2
+Kd 0.8 0.8 0.8
+newmtl lights1_mat2
+Kd 0.8 0.8 0.8
+newmtl screentransparent_mat2
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat2
+Kd 0.8 0.8 0.8
+newmtl uidull_mat2
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat2
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat1
+Kd 0.8 0.8 0.8
+newmtl scanline_mat2
+Kd 0.8 0.8 0.8

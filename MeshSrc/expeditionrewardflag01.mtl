@@ -1,0 +1,14 @@
+newmtl goldtrimmat
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat
+Kd 0.8 0.8 0.8
+newmtl flagstandmat
+Kd 0.8 0.8 0.8
+newmtl glowmat
+Kd 0.8 0.8 0.8
+newmtl flagfabricmat1
+Kd 0.8 0.8 0.8
+newmtl flagfabrictrimmat
+Kd 0.8 0.8 0.8
+newmtl flagdecalmat
+Kd 0.8 0.8 0.8

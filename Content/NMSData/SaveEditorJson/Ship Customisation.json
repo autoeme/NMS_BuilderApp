@@ -1,0 +1,2212 @@
+[
+	{
+		"ConfigKey": "Fighter",
+		"BaseResource": "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+		"Slots": [
+			{
+				"SlotID": "FIGHTER_COCKPIT",
+				"Label": "FUSELAGE",
+				"Items": [
+					{
+						"ItemID": "FIGHT_COCKAA",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKAA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKAB",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKAB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKAC",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKAC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKAD",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKAD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKAE",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKAE"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKB",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKD",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKE",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKE"
+						]
+					},
+					{
+						"ItemID": "FIGHT_COCKF",
+						"DescriptorGroupIDs": [
+							"FIGHT_COCKF"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "FIGHTER_ENGINES",
+				"Label": "THRUSTER",
+				"Items": [
+					{
+						"ItemID": "FIGHT_ENGIB",
+						"DescriptorGroupIDs": [
+							"FIGHT_ENGIB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_ENGIC",
+						"DescriptorGroupIDs": [
+							"FIGHT_ENGIC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_ENGID",
+						"DescriptorGroupIDs": [
+							"FIGHT_ENGID"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "FIGHTER_WINGS",
+				"Label": "WINGS",
+				"Items": [
+					{
+						"ItemID": "FIGHT_WINGA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGA_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGA_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGB",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGB_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGB_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBA_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBA_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBB",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBB_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBB_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBC",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBC_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBC_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBD",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGBD_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGBD_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGD",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEA_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEA_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEB",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEB_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEB_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEC",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEC_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEC_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGED",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGED"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGED_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGED_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEE",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEE"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEE_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEE_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEF",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEF"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGEF_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGEF_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFC",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFC_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFC_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFD",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFD_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFD_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFE",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFE"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGFE_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGFE_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGG",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGG"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGG_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGG_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGH",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGH"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGH_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGH_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHA_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHA_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHB",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHB_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHB_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHC",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHC"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHC_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHC_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHD",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHD"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGHD_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGHD_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGI_FI",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGI_FI"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGJFULL",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGJFULL"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGJMID",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGJMID"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGJLOW",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGJLOW"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGKA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGKA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGKAA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGKAA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGKBA",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGKBA"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGKBB",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGKBB"
+						]
+					},
+					{
+						"ItemID": "FIGHT_WINGKBC",
+						"DescriptorGroupIDs": [
+							"FIGHT_WINGKBC"
+						]
+					}
+				]
+			}
+		],
+		"TextureGroups": [
+			{
+				"GroupID": "SHIP_FIGHT",
+				"Options": [
+					"PANELS",
+					"COATING",
+					"STEALTH",
+					"METALBOLT",
+					"SEVENTEEN"
+				]
+			}
+		],
+		"PaletteIDs": [
+			"SHIP",
+			"SHIP_METALLIC"
+		]
+	},
+	{
+		"ConfigKey": "Dropship",
+		"BaseResource": "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+		"Slots": [
+			{
+				"SlotID": "DROPSHIP_COCKPI",
+				"Label": "COCKPIT",
+				"Items": [
+					{
+						"ItemID": "DROPS_COCKA",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKA"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKB",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKB"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKC",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKC"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKD",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKD"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKE",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKE"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKF",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKF"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKG",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKG"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKH",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKH"
+						]
+					},
+					{
+						"ItemID": "DROPS_COCKS13",
+						"DescriptorGroupIDs": [
+							"DROPS_COCKS13"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "DROPSHIP_ENGINE",
+				"Label": "THRUSTER",
+				"Items": [
+					{
+						"ItemID": "DROPS_ENGIA",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIA"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIAA",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIAB",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIB",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIB"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIBA",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIBA"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIBB",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIBB"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIC",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIC"
+						]
+					},
+					{
+						"ItemID": "DROPS_ENGIS13",
+						"DescriptorGroupIDs": [
+							"DROPS_ENGIS13"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "DROPSHIP_WINGS",
+				"Label": "WINGS",
+				"Items": [
+					{
+						"ItemID": "DROPS_WINGEMP",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGEMP"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAAI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAAI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGABI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGABI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGAC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGAC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGACI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGACI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBAI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBAI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBBI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBBI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGBCI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGBCI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCAI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCAI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCBI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCBI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCC",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCC"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCCI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCCI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDD",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDD"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDE",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDE"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDF",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDF"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDG",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDG"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGCDI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGCDI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDA",
+							"DROPS_WINGDA_"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDAX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDAX"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDAA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDAA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDAB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDAB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDAH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDAH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDAI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDAI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDB",
+							"DROPS_WINGDB_"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBA",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBA"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBB",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBB"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBH",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBH"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBI",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBI"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBX",
+							"DROPS_WINGDBX_"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBAX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBAX"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBBX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBBX"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBHX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBHX"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGDBIX",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGDBIX"
+						]
+					},
+					{
+						"ItemID": "DROPS_WINGS13",
+						"DescriptorGroupIDs": [
+							"DROPS_WINGS13"
+						]
+					},
+					{
+						"ItemID": "DROPS_WING1",
+						"DescriptorGroupIDs": [
+							"DROPS_WING1"
+						]
+					},
+					{
+						"ItemID": "DROPS_WING2",
+						"DescriptorGroupIDs": [
+							"DROPS_WING2"
+						]
+					}
+				]
+			}
+		],
+		"TextureGroups": [
+			{
+				"GroupID": "SHIP_FIGHT",
+				"Options": [
+					"PANELS",
+					"COATING",
+					"STEALTH",
+					"METALBOLT",
+					"SEVENTEEN"
+				]
+			}
+		],
+		"PaletteIDs": [
+			"SHIP",
+			"SHIP_METALLIC"
+		]
+	},
+	{
+		"ConfigKey": "Scientific",
+		"BaseResource": "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+		"Slots": [
+			{
+				"SlotID": "SCIENTIFIC_COCK",
+				"Label": "HULL",
+				"Items": [
+					{
+						"ItemID": "SCIEN_COCKAA",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKAA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKAAA",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKAAA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKABA",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKABA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKACA",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKACA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKAB",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKAB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKAAB",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKAAB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKABB",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKABB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKACB",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKACB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKDA",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKDA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_COCKDB",
+						"DescriptorGroupIDs": [
+							"SCIEN_COCKDB"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SCI_L_WING",
+				"Label": "LEFT WING",
+				"Items": [
+					{
+						"ItemID": "SCIEN_WINGEMP",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_NONE"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_A",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGT_A"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_C",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGT_C"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_F",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGT_F"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_G",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGT_G"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_I",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGT_I"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGBA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBB",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGBB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBC",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGBC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBD",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGBD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGC",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGDA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDB",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGDB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDC",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGDC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDD",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGDD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGE",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGE"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGF",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGF"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGFA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGFA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGG",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGG"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGGA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGGA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGHA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHB",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGHB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHC",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGHC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHD",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGHD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGI",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGI"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKA",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGKA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKB",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGKB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKC",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGKC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKD",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGKD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGL",
+						"DescriptorGroupIDs": [
+							"SCIEN_L_WINGL"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SCI_R_WING",
+				"Label": "RIGHT WING",
+				"Items": [
+					{
+						"ItemID": "SCIEN_WINGEMP",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_NONE"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_A",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGT_A"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_C",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGT_C"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_F",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGT_F"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_G",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGT_G"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGT_I",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGT_I"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGBA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBB",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGBB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBC",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGBC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGBD",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGBD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGC",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGDA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDB",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGDB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDC",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGDC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGDD",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGDD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGE",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGE"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGF",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGF"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGFA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGFA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGG",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGG"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGGA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGGA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGHA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHB",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGHB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHC",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGHC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGHD",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGHD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGI",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGI"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKA",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGKA"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKB",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGKB"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKC",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGKC"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGKD",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGKD"
+						]
+					},
+					{
+						"ItemID": "SCIEN_WINGL",
+						"DescriptorGroupIDs": [
+							"SCIEN_R_WINGL"
+						]
+					}
+				]
+			}
+		],
+		"TextureGroups": [
+			{
+				"GroupID": "SHIP_SCI",
+				"Options": [
+					"DEFAULT",
+					"SHINY"
+				]
+			}
+		],
+		"PaletteIDs": [
+			"SHIP"
+		]
+	},
+	{
+		"ConfigKey": "Shuttle",
+		"BaseResource": "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+		"Slots": [
+			{
+				"SlotID": "SHUTTLE_COCKPIT",
+				"Label": "COCKPIT",
+				"Items": [
+					{
+						"ItemID": "SHUTT_COCKA",
+						"DescriptorGroupIDs": [
+							"SHUTT_COCKA"
+						]
+					},
+					{
+						"ItemID": "SHUTT_COCKB",
+						"DescriptorGroupIDs": [
+							"SHUTT_COCKB"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SHUTTLE_HULL",
+				"Label": "HULL",
+				"Items": [
+					{
+						"ItemID": "SHUTT_CYLIN0A",
+						"DescriptorGroupIDs": [
+							"SHUTT_CYLIN0A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_CYLIN0B",
+						"DescriptorGroupIDs": [
+							"SHUTT_CYLIN0B"
+						]
+					},
+					{
+						"ItemID": "SHUTT_CYLIN1A",
+						"DescriptorGroupIDs": [
+							"SHUTT_CYLIN1A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_CYLIN1B",
+						"DescriptorGroupIDs": [
+							"SHUTT_CYLIN1B"
+						]
+					},
+					{
+						"ItemID": "SHUTT_CYLIN2A",
+						"DescriptorGroupIDs": [
+							"SHUTT_CYLIN2A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_2CYLIN1A",
+						"DescriptorGroupIDs": [
+							"SHUTT_2CYLIN1A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_2CYLIN1B",
+						"DescriptorGroupIDs": [
+							"SHUTT_2CYLIN1B"
+						]
+					},
+					{
+						"ItemID": "SHUTT_2CYLIN2A",
+						"DescriptorGroupIDs": [
+							"SHUTT_2CYLIN2A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_BOX0A",
+						"DescriptorGroupIDs": [
+							"SHUTT_BOX0A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_BOX1A",
+						"DescriptorGroupIDs": [
+							"SHUTT_BOX1A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_BOX2A",
+						"DescriptorGroupIDs": [
+							"SHUTT_BOX2A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_BOX3A",
+						"DescriptorGroupIDs": [
+							"SHUTT_BOX3A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_2BOX0A",
+						"DescriptorGroupIDs": [
+							"SHUTT_2BOX0A"
+						]
+					},
+					{
+						"ItemID": "SHUTT_2BOX1A",
+						"DescriptorGroupIDs": [
+							"SHUTT_2BOX1A"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SHUTTLE_WING",
+				"Label": "WINGS",
+				"Items": [
+					{
+						"ItemID": "SHUTT_WINGA",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGA"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGD",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGD"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGG",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGG"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGH",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGH"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGI",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGI"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGJ",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGJ"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGK",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGK"
+						]
+					},
+					{
+						"ItemID": "SHUTT_WINGL",
+						"DescriptorGroupIDs": [
+							"SHUTT_WINGL"
+						]
+					}
+				]
+			}
+		],
+		"TextureGroups": [],
+		"PaletteIDs": [
+			"SHIP"
+		]
+	},
+	{
+		"ConfigKey": "Sail",
+		"BaseResource": "MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+		"Slots": [
+			{
+				"SlotID": "SAIL_BODY",
+				"Label": "FUSELAGE",
+				"Items": [
+					{
+						"ItemID": "SAIL_BODYA",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYA"
+						]
+					},
+					{
+						"ItemID": "SAIL_BODYB",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYB"
+						]
+					},
+					{
+						"ItemID": "SAIL_BODYC",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYC"
+						]
+					},
+					{
+						"ItemID": "SAIL_BODYD",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYD"
+						]
+					},
+					{
+						"ItemID": "SAIL_BODYE",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYE"
+						]
+					},
+					{
+						"ItemID": "SAIL_BODYF",
+						"DescriptorGroupIDs": [
+							"SAIL_BODYF"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SAIL_SAIL",
+				"Label": "SAIL",
+				"Items": [
+					{
+						"ItemID": "SAIL_SAILA",
+						"DescriptorGroupIDs": [
+							"SAIL_SAILA"
+						]
+					},
+					{
+						"ItemID": "SAIL_SAILB",
+						"DescriptorGroupIDs": [
+							"SAIL_SAILB"
+						]
+					},
+					{
+						"ItemID": "SAIL_SAILC",
+						"DescriptorGroupIDs": [
+							"SAIL_SAILC"
+						]
+					}
+				]
+			},
+			{
+				"SlotID": "SAIL_WINGS",
+				"Label": "WINGS",
+				"Items": [
+					{
+						"ItemID": "SAIL_WINGAA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGAA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGAB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGAB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGAC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGAC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGAD",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGAD"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGAE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGAE"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGBA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGBA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGBB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGBB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGBC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGBC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGBD",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGBD"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGBE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGBE"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGCA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGCA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGCB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGCB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGCC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGCC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGCD",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGCD"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGCE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGCE"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGDA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGDA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGDB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGDB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGDC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGDC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGDD",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGDD"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGDE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGDE"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGEA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGEA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGEB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGEB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGEC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGEC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGED",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGED"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGEE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGEE"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGFA",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGFA"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGFB",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGFB"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGFC",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGFC"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGFD",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGFD"
+						]
+					},
+					{
+						"ItemID": "SAIL_WINGFE",
+						"DescriptorGroupIDs": [
+							"SAIL_WINGFE"
+						]
+					}
+				]
+			}
+		],
+		"TextureGroups": [
+			{
+				"GroupID": "SHIP_SAIL",
+				"Options": [
+					"COATING",
+					"PANELS",
+					"STEALTH",
+					"METALBOLT"
+				]
+			}
+		],
+		"PaletteIDs": [
+			"SHIP",
+			"SHIP_METALLIC"
+		],
+		"ExtraColourChannels": [
+			{
+				"PaletteName": "SailShip_Sails",
+				"ColourAlt": "Primary",
+				"DisplayPaletteId": "SailShip_Sails",
+				"LabelKey": "starship.customisation_sail_colour"
+			}
+		]
+	}
+]

@@ -1,0 +1,16 @@
+newmtl enginejet_mat
+Kd 0.8 0.8 0.8
+newmtl warintmetaldetail_mat
+Kd 0.8 0.8 0.8
+newmtl uv_scroll
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8
+newmtl terminal_mat1
+Kd 0.8 0.8 0.8
+newmtl glow_mat2
+Kd 0.8 0.8 0.8

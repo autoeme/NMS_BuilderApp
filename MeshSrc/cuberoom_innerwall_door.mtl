@@ -1,0 +1,10 @@
+newmtl interiortiling_mat5
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl lights1_mat1
+Kd 0.8 0.8 0.8
+newmtl unlit_mat2
+Kd 0.8 0.8 0.8

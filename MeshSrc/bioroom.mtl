@@ -1,0 +1,36 @@
+newmtl tradertiled_mat10
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl blinn11
+Kd 0.8 0.8 0.8
+newmtl corridor_join_tilingtexture_mat1
+Kd 0.8 0.8 0.8
+newmtl ceilinglight_lights1_mat
+Kd 0.8 0.8 0.8
+newmtl powerfield_mat
+Kd 0.8 0.8 0.8
+newmtl phong81
+Kd 0.8 0.8 0.8
+newmtl powerfieldoffline_mat
+Kd 0.8 0.8 0.8
+newmtl phong82
+Kd 0.8 0.8 0.8
+newmtl scanline_mat
+Kd 0.8 0.8 0.8
+newmtl screenbase_mat
+Kd 0.8 0.8 0.8
+newmtl uidull_mat2
+Kd 0.8 0.8 0.8
+newmtl uibright_mat2
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat1
+Kd 0.8 0.8 0.8
+newmtl gradientpan_mat
+Kd 0.8 0.8 0.8
+newmtl uibrightspin_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat
+Kd 0.8 0.8 0.8

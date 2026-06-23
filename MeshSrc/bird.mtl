@@ -1,0 +1,10 @@
+newmtl interiortrimopaquemat1
+Kd 0.8 0.8 0.8
+newmtl interiortrimmat2
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8
+newmtl pomsheet_mat2
+Kd 0.8 0.8 0.8
+newmtl interiortrimopaquemat3
+Kd 0.8 0.8 0.8

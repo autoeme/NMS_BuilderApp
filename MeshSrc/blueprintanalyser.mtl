@@ -1,0 +1,34 @@
+newmtl techbits_mat
+Kd 0.8 0.8 0.8
+newmtl mainroom_tilingtexture_mat6
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl interiorwallmat1
+Kd 0.8 0.8 0.8
+newmtl flat_mat2
+Kd 0.8 0.8 0.8
+newmtl panningglowalt_mat
+Kd 0.8 0.8 0.8
+newmtl glowgradient_skinnedmat
+Kd 0.8 0.8 0.8
+newmtl screentransparent_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat
+Kd 0.8 0.8 0.8
+newmtl screenbits_mat
+Kd 0.8 0.8 0.8
+newmtl uidull_mat
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat
+Kd 0.8 0.8 0.8
+newmtl flashingbp_mat
+Kd 0.8 0.8 0.8
+newmtl rectangledecal1
+Kd 0.8 0.8 0.8
+newmtl logo3decal1
+Kd 0.8 0.8 0.8
+newmtl scanline_mat2
+Kd 0.8 0.8 0.8
+newmtl lightglowmat3
+Kd 0.8 0.8 0.8

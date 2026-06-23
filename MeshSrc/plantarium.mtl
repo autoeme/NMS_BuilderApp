@@ -1,0 +1,14 @@
+newmtl interiortrimmat
+Kd 0.8 0.8 0.8
+newmtl pomsheet_mat
+Kd 0.8 0.8 0.8
+newmtl plantroomsoil_mat
+Kd 0.8 0.8 0.8
+newmtl glowprimary_mat
+Kd 0.8 0.8 0.8
+newmtl hangingfoliageamat
+Kd 0.8 0.8 0.8
+newmtl ssrsheet_mat
+Kd 0.8 0.8 0.8
+newmtl plantroomflower_mat
+Kd 0.8 0.8 0.8

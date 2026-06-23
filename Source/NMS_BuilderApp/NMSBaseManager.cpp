@@ -1,0 +1,286 @@
+#include "NMSBaseManager.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
+#include "Serialization/JsonReader.h"
+#include "Serialization/JsonSerializer.h"
+#include "Dom/JsonObject.h"
+#include "Dom/JsonValue.h"
+
+// NMS хранит метры; Unreal работает в сантиметрах.
+static constexpr float NMS_TO_UE_SCALE = 100.0f;
+
+// ===========================================================================
+//  Математика Up/At — ТОЧНЫЙ порт из Blender-плагина (part.py):
+//    serialise()  и  create_matrix_from_vectors().
+//
+//  Ключевые факты (проверены в игре через плагин):
+//   * Масштаб детали несёт ДЛИНА вектора Up. At — нормализуется.
+//   * NMS работает в Y-up; редактор — в Z-up. Между ними поворот 90° по X.
+//   * Матрица собирается как столбцы [Right | Up | At | Pos], где
+//       Right = (At × Up), нормализован, ИНВЕРТИРОВАН (*-1),
+//       длины Right и At подогнаны под длину Up (перенос масштаба).
+//
+//  Плагин был Z-up (Blender). Unreal тоже Z-up — поэтому компенсация
+//  один в один: импорт = Rx(+90) * M,  экспорт = Rx(-90) * world.
+//  Метры NMS -> сантиметры UE применяем только к позиции.
+// ===========================================================================
+
+// Импорт: Up/At (Y-up, метры) -> мировой FTransform редактора (Z-up, см).
+FTransform UNMSBaseManager::BuildTransformFromUpAt(
+    const FVector& NmsPos, const FVector& InUp, const FVector& InAt)
+{
+    // === ВЫВЕРЕНО против реальной базы (794 детали в плагине), ошибка ~6e-6 ===
+    // Эталон part.py: world = Rx(+90) @ [Right|Up|At|Pos] (mathutils, M@v).
+    // UE row-major (v*M) => нужна ТРАНСПОНИРОВАННАЯ матрица. Поворот Rx(+90)
+    // при транспонировании сводится к перестановке компонент: (X, -Z, Y).
+    //
+    // Right = (At x Up), нормализован, инвертирован, длина = |Up|.
+    // At    = нормализован, длина = |Up|.  Up = как есть (несёт масштаб).
+    FVector UpVec = InUp;
+    FVector AtVec = InAt;
+    FVector RightVec = FVector::CrossProduct(AtVec, UpVec);
+    RightVec = RightVec.GetSafeNormal() * -1.0f;
+
+    const float UpLen = UpVec.Size();
+    if (UpLen > KINDA_SMALL_NUMBER)
+    {
+        RightVec = RightVec.GetSafeNormal() * UpLen;
+        AtVec    = AtVec.GetSafeNormal()    * UpLen;
+    }
+
+    // Позиция: метры NMS -> сантиметры UE.
+    const FVector P = NmsPos * NMS_TO_UE_SCALE;
+
+    // FMatrix(FPlane row0, row1, row2, row3) — строки. Применение v' = v * M.
+    // Каждая ось переставлена как (X, -Z, Y) — это и есть транспонированный Rx(+90).
+    FMatrix M(
+        FPlane(-RightVec.X, -RightVec.Z, RightVec.Y, 0.f),
+        FPlane( AtVec.X,     AtVec.Z,   -AtVec.Y,    0.f),
+        FPlane(-UpVec.X,    -UpVec.Z,    UpVec.Y,    0.f),
+        FPlane(-P.X,        -P.Z,        P.Y,        1.f));
+
+    FTransform Out;
+    Out.SetFromMatrix(M);
+    return Out;
+}
+
+// Экспорт: мировой FTransform редактора -> Up/At/Pos для сейва (порт serialise()).
+void UNMSBaseManager::DecomposeTransformToUpAt(
+    const FTransform& Xform, FVector& OutPos, FVector& OutUp, FVector& OutAt)
+{
+    // === Точная ОБРАТНАЯ операция к BuildTransformFromUpAt ===
+    // Выверено на 794 деталях против эталона serialise() плагина, ошибка ~3e-6.
+    // M — матрица трансформа (row-major, v*M). M.M[row][col].
+    //   row1 = ось Up (несёт масштаб), row2 = ось At, row3 = трансляция.
+    // Инверсия перестановки (X,-Z,Y): исходные NMS-компоненты = (M0, M2, -M1).
+    // === ДОСЛОВНЫЙ ПЕРЕНОС serialise() из плагина (part.py) ===
+    // z_compensate = Rotation(-90, X); world_offset = z_compensate @ world_matrix.
+    // pos = world_offset.translation; Up = столбец[1]; At = столбец[2] (норм.).
+    // В НАШЕЙ матрице оси лежат СТОЛБЦАМИ (как клали при импорте): M.M[col][*].
+    // Обратный Rx(-90): (x,y,z) -> (x, z, -y).
+    const FMatrix M = Xform.ToMatrixWithScale();
+
+    // Up = (M[1][0], M[1][2], -M[1][1]) — как есть, несёт масштаб.
+    OutUp = FVector(-M.M[2][0], M.M[2][2], -M.M[2][1]);
+
+    OutAt = FVector( M.M[1][0], -M.M[1][2], M.M[1][1]).GetSafeNormal();
+
+    // Position — обратная инверсия X.
+    OutPos = FVector(-M.M[3][0], M.M[3][2], -M.M[3][1]) / NMS_TO_UE_SCALE;
+}
+
+// (устаревшие свап-функции положения удалены — позиция считается в Build/Decompose)
+FVector UNMSBaseManager::NMSToUnrealLocation(const FVector& P)
+{
+    return FVector(P.X, P.Y, P.Z) * NMS_TO_UE_SCALE;
+}
+
+FVector UNMSBaseManager::UnrealToNMSLocation(const FVector& P)
+{
+    return FVector(P.X, P.Y, P.Z) / NMS_TO_UE_SCALE;
+}
+
+// --- helpers ---------------------------------------------------------------
+// В реальном сейве NMS (и в экспорте плагина) векторы — МАССИВЫ [x,y,z].
+// Но некоторые редакторы пишут {"x":..,"y":..,"z":..}. Поддерживаем оба.
+static FVector ReadVec3(const TSharedPtr<FJsonValue>& Val)
+{
+    if (!Val.IsValid()) return FVector::ZeroVector;
+
+    // формат-массив: [x, y, z]
+    const TArray<TSharedPtr<FJsonValue>>* Arr = nullptr;
+    if (Val->TryGetArray(Arr) && Arr && Arr->Num() >= 3)
+    {
+        return FVector(
+            (*Arr)[0]->AsNumber(),
+            (*Arr)[1]->AsNumber(),
+            (*Arr)[2]->AsNumber());
+    }
+
+    // формат-объект: {x, y, z}
+    const TSharedPtr<FJsonObject>* Obj = nullptr;
+    if (Val->TryGetObject(Obj) && Obj && Obj->IsValid())
+    {
+        return FVector(
+            (*Obj)->GetNumberField(TEXT("x")),
+            (*Obj)->GetNumberField(TEXT("y")),
+            (*Obj)->GetNumberField(TEXT("z")));
+    }
+    return FVector::ZeroVector;
+}
+
+// Пишем в формате-массив [x, y, z, 1.0] — как в игровом сейве.
+static TSharedPtr<FJsonValue> WriteVec3(const FVector& V)
+{
+    // Плагин Blender ждёт РОВНО 3 числа (Vector 3D). 4-й элемент ломал
+    // mathutils.Vector -> ValueError "Vector must be 2D or 3D".
+    TArray<TSharedPtr<FJsonValue>> Arr;
+    Arr.Add(MakeShared<FJsonValueNumber>(V.X));
+    Arr.Add(MakeShared<FJsonValueNumber>(V.Y));
+    Arr.Add(MakeShared<FJsonValueNumber>(V.Z));
+    return MakeShared<FJsonValueArray>(Arr);
+}
+
+// --- Import ----------------------------------------------------------------
+bool UNMSBaseManager::ImportNMSSave(const FString& FilePath)
+{
+    FString Raw;
+    if (!FFileHelper::LoadFileToString(Raw, *FilePath))
+    {
+        UE_LOG(LogTemp, Error, TEXT("NMS: cannot read %s"), *FilePath);
+        return false;
+    }
+    return ImportFromString(Raw);
+}
+
+bool UNMSBaseManager::ImportFromString(const FString& Raw)
+{
+    TSharedPtr<FJsonObject> Root;
+    TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Raw);
+    if (!FJsonSerializer::Deserialize(Reader, Root) || !Root.IsValid())
+    {
+        UE_LOG(LogTemp, Error, TEXT("NMS: JSON parse failed"));
+        return false;
+    }
+
+    // База: массив "Objects". Префаб (.nmsprefab из Blender-плагина): "Prefab".
+    const TArray<TSharedPtr<FJsonValue>>* Objects = nullptr;
+    if (!Root->TryGetArrayField(TEXT("Objects"), Objects) &&
+        !Root->TryGetArrayField(TEXT("Prefab"), Objects))
+    {
+        UE_LOG(LogTemp, Error, TEXT("NMS: ни Objects, ни Prefab не найдены"));
+        return false;
+    }
+
+    // метаданные базы (Base Properties)
+    ImportedRoot = Root;
+    BaseName.Empty();
+    GalacticAddress.Empty();
+    Root->TryGetStringField(TEXT("Name"), BaseName);
+    if (!Root->TryGetStringField(TEXT("GalacticAddress"), GalacticAddress))
+    {
+        double GA = 0.0; // в сейвах адрес бывает числом
+        if (Root->TryGetNumberField(TEXT("GalacticAddress"), GA))
+            GalacticAddress = FString::Printf(TEXT("%.0f"), GA);
+    }
+
+    PlacedObjects.Reset();
+    for (const TSharedPtr<FJsonValue>& Val : *Objects)
+    {
+        const TSharedPtr<FJsonObject> O = Val->AsObject();
+        if (!O.IsValid()) continue;
+
+        FNMSPlacedObject P;
+        P.ObjectID = O->GetStringField(TEXT("ObjectID"));
+
+        const FVector Pos = ReadVec3(O->TryGetField(TEXT("Position")));
+        const FVector Up = ReadVec3(O->TryGetField(TEXT("Up")));
+        const FVector At = ReadVec3(O->TryGetField(TEXT("At")));
+        P.Transform = BuildTransformFromUpAt(Pos, Up, At);
+
+        { double UD_ = 0.0; if (O->TryGetNumberField(TEXT("UserData"), UD_)) P.UserData = (int64)UD_; }
+        double Ts = 0.0;
+        if (O->TryGetNumberField(TEXT("Timestamp"), Ts)) P.Timestamp = (float)Ts;
+
+        PlacedObjects.Add(P);
+    }
+
+    UE_LOG(LogTemp, Log, TEXT("NMS: imported %d objects"), PlacedObjects.Num());
+    return true;
+}
+
+// --- Import из .blend (напрямую, без Blender) -------------------------------
+#include "NMSBlendReader.h"
+
+bool UNMSBaseManager::ImportFromBlend(const FString& FilePath)
+{
+    TArray<FNMSBlendPart> Parts;
+    FString Err;
+    if (!NMSBlend::ReadParts(FilePath, Parts, Err))
+    {
+        UE_LOG(LogTemp, Error, TEXT("NMS blend: %s — %s"), *FilePath, *Err);
+        return false;
+    }
+
+    ImportedRoot.Reset();
+    BaseName = FPaths::GetBaseFilename(FilePath);
+    GalacticAddress.Empty();
+    PlacedObjects.Reset();
+    PlacedObjects.Reserve(Parts.Num());
+    for (const FNMSBlendPart& B : Parts)
+    {
+        FNMSPlacedObject P;
+        P.ObjectID  = B.ObjectID;
+        P.Transform = BuildTransformFromUpAt(B.Position, B.Up, B.At);
+        P.UserData  = B.UserData;
+        P.Timestamp = (float)B.Timestamp;
+        PlacedObjects.Add(P);
+    }
+    UE_LOG(LogTemp, Log, TEXT("NMS blend: %s -> %d деталей"), *FilePath, PlacedObjects.Num());
+    return PlacedObjects.Num() > 0;
+}
+
+// --- Export ----------------------------------------------------------------
+FString UNMSBaseManager::ExportToString() const
+{
+    TArray<TSharedPtr<FJsonValue>> ObjArray;
+    for (const FNMSPlacedObject& P : PlacedObjects)
+    {
+        FVector Pos, Up, At;
+        DecomposeTransformToUpAt(P.Transform, Pos, Up, At);
+
+        TSharedPtr<FJsonObject> O = MakeShared<FJsonObject>();
+        O->SetStringField(TEXT("ObjectID"), P.ObjectID);
+        O->SetField(TEXT("Position"), WriteVec3(Pos));
+        O->SetField(TEXT("Up"), WriteVec3(Up));
+        O->SetField(TEXT("At"), WriteVec3(At));
+        O->SetNumberField(TEXT("UserData"), P.UserData);
+        O->SetNumberField(TEXT("Timestamp"), P.Timestamp);
+
+        ObjArray.Add(MakeShared<FJsonValueObject>(O));
+    }
+
+    // Если база была импортирована — сохраняем ВСЕ поля игры из исходника,
+    // подменяя только Objects и Name (как делает Blender-плагин).
+    TSharedPtr<FJsonObject> Root =
+        ImportedRoot.IsValid() ? ImportedRoot : MakeShared<FJsonObject>();
+    if (!BaseName.IsEmpty()) Root->SetStringField(TEXT("Name"), BaseName);
+    Root->SetArrayField(TEXT("Objects"), ObjArray);
+
+    FString Out;
+    TSharedRef<TJsonWriter<>> Writer = TJsonWriterFactory<>::Create(&Out);
+    FJsonSerializer::Serialize(Root.ToSharedRef(), Writer);
+    return Out;
+}
+
+bool UNMSBaseManager::ExportNMSSave(const FString& FilePath)
+{
+    const FString Out = ExportToString();
+    if (!FFileHelper::SaveStringToFile(Out, *FilePath))
+    {
+        UE_LOG(LogTemp, Error, TEXT("NMS: cannot write %s"), *FilePath);
+        return false;
+    }
+    return true;
+}
+  

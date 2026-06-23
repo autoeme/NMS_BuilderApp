@@ -1,0 +1,18 @@
+newmtl colmasknpcprops_mat
+Kd 0.8 0.8 0.8
+newmtl gunbase_mat
+Kd 0.8 0.8 0.8
+newmtl multitooltrim_mat
+Kd 0.8 0.8 0.8
+newmtl multitooldecal_mat
+Kd 0.8 0.8 0.8
+newmtl multitoolled_mat
+Kd 0.8 0.8 0.8
+newmtl gunscreen_mat
+Kd 0.8 0.8 0.8
+newmtl light2_mat
+Kd 0.8 0.8 0.8
+newmtl gunscreen3_mat
+Kd 0.8 0.8 0.8
+newmtl lights_mat
+Kd 0.8 0.8 0.8

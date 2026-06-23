@@ -1,0 +1,14 @@
+newmtl lightuvscrollmat1
+Kd 0.8 0.8 0.8
+newmtl lightuvscrollmat
+Kd 0.8 0.8 0.8
+newmtl tilingmat
+Kd 0.8 0.8 0.8
+newmtl blackmat1
+Kd 0.8 0.8 0.8
+newmtl greenmat
+Kd 0.8 0.8 0.8
+newmtl glowauracam_mat
+Kd 0.8 0.8 0.8
+newmtl scrolling_mat
+Kd 0.8 0.8 0.8

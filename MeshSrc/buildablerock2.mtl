@@ -1,0 +1,4 @@
+newmtl buildablemedrockmat
+Kd 0.8 0.8 0.8
+newmtl buildablemetalcubemat
+Kd 0.8 0.8 0.8

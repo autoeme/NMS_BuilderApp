@@ -1,0 +1,12 @@
+newmtl concrete_mat1
+Kd 0.8 0.8 0.8
+newmtl warintmetaldetail_mat
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat4
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8

@@ -1,0 +1,9451 @@
+{
+ "BASE_FLAG": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILD_REFINER1": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "COOKER": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BP_ANALYSER": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "AM_SUITTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "AM_WEAPONTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "AM_SHIPTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "AM_EXOCRAFTTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "S9_SUITTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "S9_WEAPONTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "S9_EXOCRAFTTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "S9_SHIPTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "S9_BUILDERTREE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDSIGNAL": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDBEACON": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDSAVE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "MESSAGE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDHARVESTER": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDGASHARVEST": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "BUILDSEAHARVEST": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "WATERBUBBLE": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "U_PIPELINE": {
+  "sec": "ЭНЕРГИЯ И ПРОМЫШЛЕННОСТЬ",
+  "idx": 0,
+  "sg": "POWERINDUSTRY"
+ },
+ "SPHERESHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "CUBESHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "CYLINDERSHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "PIPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BASE_BUBPIPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "PIPESHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "CURVEPIPESHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "PYRAMIDSHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "WEDGESMALLSHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "WEDGESHAPE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "TECHPANEL": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BUILDPAVINGTALL": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BUILDPAVING_BIG": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BUILDPAVING": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "CARBONPLANTER": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTERMEGA": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTER": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "NPCBUILDERTERM": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "NPCVEHICLETERM": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "NPCWEAPONTERM": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "NPCFARMTERM": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "NPCSCIENCETERM": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "BASECAPSULE": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "TELEPORTER_F": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "BUILDTERMINAL": {
+  "sec": "ТЕРМИНАЛЫ СПЕЦИАЛИСТОВ",
+  "idx": 0,
+  "sg": "TECHTEMINALS"
+ },
+ "DOOR2": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "CORRIDOR": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "GLASSCORRIDOR": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORC": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CUBEFLOOR": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEFOUND4": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEFOUND": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CORRIDORX": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORT": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORL": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "VIEWSPHERE": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDOR_WATER": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORV_WATER": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORX_WATER": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORT_WATER": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "CORRIDORL_WATER": {
+  "sec": "КОРИДОРЫ",
+  "idx": 0,
+  "sg": "ROOMSCORRIDORS"
+ },
+ "BUILDDOOR": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "CUBESTAIRS": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEROOF": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEWALL": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEINNERDOOR": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "BUILDLANDINGPAD": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "S_LANDINGZONE": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "SET_LZ": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "SET_LZ_SHIPBUIL": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "TELEPORTER": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "U_MINIPORTAL": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "U_MINIPORTAL_CV": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "U_PORTALLINE": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "DRESSING_TABLE": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "BUILD_REFINER3": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "BUILD_REFINER2": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "O2_HARVESTER": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "BUILDLABLAMP": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLSCREEN": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "WALLSCREENB2": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "WALLSCREENB": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BOXEDSCREEN": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BUILDFLATPANEL": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "WALLFAN": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "ROBOTICARM": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "WEAPONRACK": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "ROOFMONITOR": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "SERVERSTACK": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "WALLFLAG1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "WALLFLAG2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "WALLFLAG3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_FLAG5": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_FLAG6": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_WALLHANGING1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_WALLHANGING1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_WALLHANGING2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_WALLHANGING2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_WALLHANGING3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_WALLHANGING3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "FLAG1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "FLAG2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "FLAG3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "FLAG4": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "EXPD_FLAG_06A": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "EXPD_FLAG_06B": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "EXPD_FLAG_06C": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "EXPD_FLAG_06D": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "EXPD_FLAG_06E": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_R1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_G1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_B1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_R2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_G2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_B2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_R3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_G3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "SWARM_FLAG_B3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BUILDSIDEPANEL": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BUILDLOCKER": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDHCABINET": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BUILDLCRATE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE1": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE2": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE3": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE3OPEN": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE4": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CRATE4OPEN": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDAMCRATE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_MILKCRATE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "CRATELCYLINDER": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "CRATELRARE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "OCTACABINET": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "SHELFPANEL": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "STORAGEPANEL": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "DRAWS": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BLDWALLUNIT": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "S_SHELVINGUNIT0": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "PLANTPOT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTPOT1": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTPOT2": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTPOT3": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PLANTPOT4": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "CEILINGLIGHT": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "BUILDLIGHT3": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "BUILDLIGHT2": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "BUILDLIGHT": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_STREETLAMP0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "B_STREETLAMP0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "SMALLLIGHT": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "BLD_FLYJAR": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTBLUE": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTPINK": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTYELLOW": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTGREEN": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTRED": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "WALLLIGHTWHITE": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "CREATURE_FARM": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "CREATURE_FEED": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "BASE_LAVA3": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BASE_NEXUS1": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_NEXUS2": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_NEXUS3": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_EXPD_BASE01": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_SKULL": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_PLANET_HOLO": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_BUI_HAND": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUI_HEAD": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUI_TENT": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_COVSILOS": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_COVCRATE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_CRANE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BASE_ROBOTOY": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_TOYCUBE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "EXPD_CUBE_06": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_MINI_BIOFRI": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_MAPTUBE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_FIREPIT": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_DATASIGN": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_TOYSPHERE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_TOYCORE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_AQUARIUM": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BASE_TERRARIUM": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "S_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_Q": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_Q1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_Q_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_Q_H1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLDIAGONAL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_WINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALL_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLB_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLM_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WALLT_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOOR1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORB1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORM1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORT1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_FLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_FLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_TRIFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_TRIFLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_GFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_RAMP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_RAMP_H": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_RAMP_Q_TOP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "S_FLOORS"
+ },
+ "S_ROOF0": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF1": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF2": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF3": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF4": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF5": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_M": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_M_WIN": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_C": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_IC": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_CHEV_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_CHEV_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_CHEV_WALL_H_C": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_CHEV_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_CHEV_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_CHEV_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ROOF_M_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_E_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_M_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_ROOF_E_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "S_ROOFS"
+ },
+ "S_DOOR_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORB0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORM0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORT0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORWINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORWINB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORWINM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_DOORWINT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_GDOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_GDOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_GDOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_GDOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCH": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCH_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_ARCHT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "F_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_Q": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_Q1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_Q_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_Q_H1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLDIAGONAL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_WINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALL_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLB_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLM_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_WALLT_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOOR1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORB1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORM1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORT1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_FLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_FLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_TRIFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_TRIFLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_GFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_RAMP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_RAMP_H": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_RAMP_Q_TOP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "F_FLOORS"
+ },
+ "F_ROOF0": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF1": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF2": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF3": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF4": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF5": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF6": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF7": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF8": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_M": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_M_WIN": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_C": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_IC": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_CHEV_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_CHEV_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_CHEV_WALL_H_C": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_CHEV_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_CHEV_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_CHEV_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ROOF_M_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_E_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_M_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_ROOF_E_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "F_ROOFS"
+ },
+ "F_DOOR_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORB0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORM0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORT0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORWINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORWINB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORWINM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_DOORWINT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_GDOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_GDOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_GDOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_GDOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCH": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCH_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "F_ARCHT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "F_WALLS"
+ },
+ "T_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_Q": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_Q1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_Q_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_Q_H1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLDIAGONAL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_WINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALL_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLB_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLM_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_WALLT_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOOR1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORB1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORM1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORT1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_FLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_FLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_TRIFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_TRIFLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_GFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_RAMP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_RAMP_H": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_RAMP_Q_TOP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "T_FLOORS"
+ },
+ "T_ROOF0": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF1": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF2": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF3": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF4": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF5": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF6": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF7": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_M": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_M_WIN": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_C": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_IC": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_CHEV_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_CHEV_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_CHEV_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_CHEV_WALL_H_C": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_CHEV_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_CHEV_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ROOF_M_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_E_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_M_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_ROOF_E_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "T_ROOFS"
+ },
+ "T_DOOR_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORB0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORM0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORT0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORWINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORWINB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORWINM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_DOORWINT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_GDOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_GDOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_GDOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_GDOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCH": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCH_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "T_ARCHT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "T_WALLS"
+ },
+ "B_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_Q": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_Q1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_Q_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_Q_H1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLDIAGONAL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_DIAGONA": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_WINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALL_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLB_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLM_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_WALLT_WIN3": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOOR1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORB1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORM1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORT1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_FLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_FLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_TRIFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_TRIFLOOR_Q": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_GFLOOR": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_RAMP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_RAMP_H": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_RAMP_Q_TOP": {
+  "sec": "ПОЛ И СТУПЕНЬКИ",
+  "idx": 0,
+  "sg": "B_FLOORS"
+ },
+ "B_ROOF0": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF1": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF2": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF3": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF4": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF5": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF6": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF7": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF8": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_M": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_M_WIN": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_C": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_IC": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_CHEV_WALL": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_CHEV_DOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_CHEV_WALL_H_C": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_CHEV_WIN0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_CHEV_WIN1": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_CHEV_WIN2": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ROOF_M_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_E_Q": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_M_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_ROOF_E_CAP": {
+  "sec": "КРЫША",
+  "idx": 0,
+  "sg": "B_ROOFS"
+ },
+ "B_DOOR_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORB0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORM0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORT0_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORWINDOW": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORWINB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORWINM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_DOORWINT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_GDOOR": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_GDOORB0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_GDOORM0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_GDOORT0": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCH": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHB": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHM": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHT": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCH_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHB_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHM_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "B_ARCHT_H": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "B_WALLS"
+ },
+ "S_CANOPY_WALL0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_CANOPY_WALL1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_CANOPY_WALL2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_CANOPY_WALL0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_CANOPY_WALL1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_CANOPY_WALL2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_POSTER0": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER1": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER2": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER3": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER4": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER5": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER6": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER7": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER8": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER9": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER10": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER11": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER12": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER13": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER14": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER15": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER16": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER17": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER18": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER19": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER20": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER21": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER22": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER23": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER24": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER25": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER26": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER27": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER28": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER29": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER30": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_POSTER31": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER05A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER05B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER05C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER06A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER06B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER06C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER07A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER07B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER07C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER08A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER08B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER08C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER09A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER09B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER09C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER10A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER10B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER10C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER11A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER11B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER11C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER12A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER12B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER12C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER13A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER13B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER13C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER14A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER14B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER14C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER15A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER15B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER15C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER16A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER16B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER16C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER17A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER17B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER17C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER18A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER18B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER18C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER19A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER19B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER19C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER20A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER20B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER20C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER21A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER21B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER21C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER22A": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER22B": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "EXPD_POSTER22C": {
+  "sec": "ПЛАКАТЫ",
+  "idx": 0,
+  "sg": "WALLPOSTERS"
+ },
+ "S_FENCE0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_FENCE1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_FENCE2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_FENCE3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_SAIL0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_SAIL0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_SAIL1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_SAIL1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_SAIL2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_SAIL2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_SAIL3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_SAIL3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_GAZEBO0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "FLOORMAT1": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_RUG0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_RUG1": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_FABROLL0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_FABROLLPILE0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_WALL_SUPPORTS": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "B_WALL_SUPPORTS": {
+  "sec": "СТЕНЫ, ДВЕРИ И ОКНА",
+  "idx": 0,
+  "sg": "S_WALLS"
+ },
+ "S_WATERVALVE0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_BARREL1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_MACHINE0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_WATERTOWER": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_WATERTOWER": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_ANTENNA0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_ANTENNA1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_ANTENNA2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_ANTENNA3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_ANTENNA0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_ANTENNA1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_ANTENNA2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_ANTENNA3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_POT0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_CANISTER0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_WALLLIGHT0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_HANGLAMP0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_HANGLAMP1": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_HANGLAMP2": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_HANGLAMP3": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_CURTAIN0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_GLOWGLOBE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "S_DRAPE0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_LIGHTSTRIP0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_BARTAPS0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TABLEPOT0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TABLELAMP0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_CUP0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TRAY0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_PAN0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BURNER0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_CLASS_S": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_CLASS_A": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_CLASS_B": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_CONSTRUCT": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_MAYORTERM": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_GROUNDDECAL": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_SFXCONST_S0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_MONUMENT": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_MONUMENT_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_B_MONU": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_B_MONU_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_T_MONU": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_T_MONU_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_F_MONU": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_F_MONU_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_FISHPOND": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "B_ROBOTARM": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TOWER": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TOWER_C": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TOWER_B": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TOWER_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_TOWER_B_FA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "B_TOWER": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "B_TOWER_C": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "B_TOWER_B": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_INT_SHIPSAL": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_INT_SUMMARY": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_WEAPONBOX": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "SET_STAFFBUILD": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_SIGN_BAR0": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_SIGN_BAR1": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_SIGN_BAR2": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_SIGN_BAR3": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S_STEPLADDER": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_SCAFFOLD_M": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_SCAFFOLD_L": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_BUCKET_S": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_BUCKET_M": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_PALLET": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_PALLET_BRICK": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "B_PALLET_BRICK": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_BRICKSWRAPPED": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_CEMENTBAG": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_BARRIER": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_RSJSTACK": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_CEMENTMIXER": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_SHOVEL": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_LARGETRYE0": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "B_LARGETRYE0": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_FURNACE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_WHEELBARROW": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_COMPOSTBIN": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_EXCBUCKET": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_PLANTER_M": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_TROUGH0": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_MILKBOTTLE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_SPARKPLUG": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "S_CANISTER1": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "S_CARRIAGE": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_CARRIAGEWHEEL": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_CARRIAGEWHEEL": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_SCISSORLIFT": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "B_SCISSORLIFT": {
+  "sec": "ДЕТАЛИ ДЛЯ СТРОИТЕЛЬСТВА",
+  "idx": 0,
+  "sg": "DECOCONSTRUCT"
+ },
+ "S_PUMP": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "S_GENERATOR": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "CUBEROOM": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBESOLID": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEGLASS": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEROOMCURVED": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CURVEDCUBEROOF": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "CUBEFRAME": {
+  "sec": "КУБИЧЕСКИЕ КОМНАТЫ",
+  "idx": 0,
+  "sg": "ROOMSCUBE"
+ },
+ "MAINROOM": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "MAINROOMCUBE": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "BIOROOM": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "BUILDRAMP": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "MAINROOMFRAME": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "FOUNDATION": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "CUBEWINDOWOVAL": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "CUBEWINDOW": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "CUBEWINDOWSMALL": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "BUILDWINDOW": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "PANEL_GLASS": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "MAINROOM_WATER": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "MAINROOMCUBE_W": {
+  "sec": "КОМНАТЫ И ФУНДАМЕНТЫ",
+  "idx": 0,
+  "sg": "ROOMSMAIN"
+ },
+ "BYTEBEAT": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "U_BYTEBEATLINE": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "BYTEBEATSWITCH": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "NOISEBOX": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "LIGHTBOX": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "L_FLOOR_Q": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "SPAWNER_BALL": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "U_EXTRACTOR_S": {
+  "sec": "ЭНЕРГИЯ И ПРОМЫШЛЕННОСТЬ",
+  "idx": 0,
+  "sg": "POWERINDUSTRY"
+ },
+ "U_GASEXTRACTOR": {
+  "sec": "ЭНЕРГИЯ И ПРОМЫШЛЕННОСТЬ",
+  "idx": 0,
+  "sg": "POWERINDUSTRY"
+ },
+ "U_SILO_S": {
+  "sec": "ЭНЕРГИЯ И ПРОМЫШЛЕННОСТЬ",
+  "idx": 0,
+  "sg": "POWERINDUSTRY"
+ },
+ "HEALTHSTATION": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "SHIELDSTATION": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "MESSAGEMODULE": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "POWERLINE_HIDER": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "BUILDANTIMATTER": {
+  "sec": "ОБЩАЯ БЫТОВАЯ СИСТЕМА",
+  "idx": 0,
+  "sg": "TECHTECH"
+ },
+ "S_CHAIR0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDCHAIR": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDCHAIR2": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDCHAIR3": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDCHAIR4": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDSOFA2L": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDSOFA2": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDSOFA": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BARSTOOL0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BARTABLE0": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BAR": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BAR_H": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "S_BAR_C": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "GAMETABLE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDTABLE": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDTABLE2": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDTABLE3": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDSIMPLEDESK": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDLIGHTTABLE": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "LARGEDESK": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "MONITORDESK": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BUILDWORKTOP": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "CURVEDDESK": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "BUILDBED": {
+  "sec": "ПРЕДМЕТЫ ИНТЕРЬЕРА",
+  "idx": 0,
+  "sg": "FURNINTERIOR"
+ },
+ "HEATER": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "S16_HEATER": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "FOORLIGHT": {
+  "sec": "ОСВЕЩЕНИЕ",
+  "idx": 0,
+  "sg": "DECOLIGHTS"
+ },
+ "CUBEROOM_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CUBEROOMB_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CUBEROOMC_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CORRIDOR_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CORRIDORL_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CORRIDORT_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CORRIDORX_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "CORSTAIRS_SPACE": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "RADIOPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "TOXICPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "SNOWPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "SACVENOMPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "SCORCHEDPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "POOPPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "GRAVPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "CREATUREPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "BARRENPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "LUSHPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "PEARLPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "NIPPLANT": {
+  "sec": "ФЕРМЕРСКОЕ ХОЗЯЙСТВО",
+  "idx": 0,
+  "sg": "TECHFARMING"
+ },
+ "BUILDLADDER": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "WALLFLOORLADDER": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "BUILDDOOR_WATER": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "MOONPOOL": {
+  "sec": "ДВЕРИ И ЛЕСТНИЦЫ",
+  "idx": 0,
+  "sg": "ROOMSDOORS"
+ },
+ "NPCFRIGTERM": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "GARAGE_FREIGHT": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER0": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER1": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER2": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER3": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER4": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER5": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER6": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER7": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER8": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "S_CONTAINER9": {
+  "sec": "ПРЕЖНИЕ МОДУЛИ ГРУЗОВОГО СУДНА",
+  "idx": 0,
+  "sg": "FREIGHTERLEGACY"
+ },
+ "BLD_HOLOGEK": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "U_PARAGON": {
+  "sec": "ПЕРЕНОСНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "PLANETPORTABLE"
+ },
+ "HOLO_DISCO_0": {
+  "sec": "ВНУТРЕННЕЕ УКРАШЕНИЕ",
+  "idx": 0,
+  "sg": "FURNDECOR"
+ },
+ "BLD_SHIPBREAK1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_SHIPBREAK2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_SHIPBREAK3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_SHIPBREAK4": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_SHIPBREAK5": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUGHEAD1": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUGHEAD2": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUGHEAD3": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUGHEAD4": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_BUGHEAD5": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_01": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_02": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_03": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_04": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_05": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_06": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_07": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_08": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_09": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_10": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_11": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "BLD_RUINS_12": {
+  "sec": "СТРУКТУРНЫЕ УКРАШЕНИЯ",
+  "idx": 0,
+  "sg": "DECOEXTERIOR"
+ },
+ "B_COK_A": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_COK_D": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_COK_B": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB_A": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB_B": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB_C": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB1_A": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB1_B": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_HAB1_C": {
+  "sec": "ЖИЛЫЕ МОДУЛИ",
+  "idx": 0,
+  "sg": "BIGGS_HAB"
+ },
+ "B_LAN_B": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_WNG_A": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_A_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_B": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_WNG_B_R": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_WNG_C": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_C_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_D": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_D_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_E": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_E_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_F": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_F_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_G": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_G_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_H": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_H_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_I": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_I_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_J": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_J_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_K": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_K_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_L": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_L_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_M": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_M_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_N": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_N_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_O_0": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_O_0_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_O_1": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_O_1_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_O_2": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_O_2_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_P": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_P_R": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_P_T": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_P_B": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_WNG_Q": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_Q_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_R_R": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_R_T": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_WNG_R_B": {
+  "sec": "КРЫЛЬЯ",
+  "idx": 0,
+  "sg": "BIGGS_WINGS"
+ },
+ "B_GEN_0": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_GEN_1": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_GEN_2": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_GEN_3": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_GEN_4": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_GEN_5": {
+  "sec": "РЕАКТОРЫ",
+  "idx": 0,
+  "sg": "BIGGS_GENERATOR"
+ },
+ "B_CON_L_0": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_R_0": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_L_1": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_R_1": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_L_2": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_R_2": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_L_3": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_R_3": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_6": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_4": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_5": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_7": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_8": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_9": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_10": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_11": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_12": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_13": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_14": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON_15": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON2_0": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON2_1": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON2_2": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_CON2_3": {
+  "sec": "СОЕДИНИТЕЛИ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_CONNECTOR"
+ },
+ "B_STR_R_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_R_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_S_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_J_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_O_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_H_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Q_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_M_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_I_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_P_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_A_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_C_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_D_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_G_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_B_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_F_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_K_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_L_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_E_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_N_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_T_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_U_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_V_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_W_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_X_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Y_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NETB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NETB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NETB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NETB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NWTB": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NWTB1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NWTB2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_Z_NWTB3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_N": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_E": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_S": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_W": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AA_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NE": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NE1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NE2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NE3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NW": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NW1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NW2": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_STR_AB_Y_NW3": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_A": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_H": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_B": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_D": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_E": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_F": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_G": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_I": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_DECO_C": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_J": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_K": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_L": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_M": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_N_0": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_N_1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_O": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_P": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_Q_0": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_Q_1": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_R": {
+  "sec": "ВНЕШНЯЯ ОБШИВКА",
+  "idx": 0,
+  "sg": "BIGGS_STRUCT"
+ },
+ "B_DECO_S": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_DECO_T": {
+  "sec": "НАВЕСНОЕ ОБОРУДОВАНИЕ КОРПУСА",
+  "idx": 0,
+  "sg": "BIGGS_DECO"
+ },
+ "B_TUR_A": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TUR_B": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TUR_C": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TUR_D": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TUR_E": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TUR_F": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_LND_A": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_LND_B": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_LND_C": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_SHL_A": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_SHL_B": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_SHL_C": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_SHL_D": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_SHL_E": {
+  "sec": "ОРУЖЕЙНЫЕ ПЛАТФОРМЫ",
+  "idx": 0,
+  "sg": "BIGGS_GUNS"
+ },
+ "B_TRU_A": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_B": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_C": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_D": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_E": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_F": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_G": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_TRU_H": {
+  "sec": "УСКОРИТЕЛИ",
+  "idx": 0,
+  "sg": "BIGGS_ENGINES"
+ },
+ "B_ALK_A": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_Z_A": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_B": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_Z_B": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_C": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_Z_C": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_D": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_ALK_Z_D": {
+  "sec": "ПЕРИФЕРИЙНЫЕ УСТРОЙСТВА",
+  "idx": 0,
+  "sg": "BIGGS_EXTRA"
+ },
+ "B_WALL_TOIL0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_KITC0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_BUNK0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_MED0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_TECH0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_TECH1": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_WALL_PLAN0": {
+  "sec": "БЫТОВЫЕ ОТСЕКИ",
+  "idx": 0,
+  "sg": "BIGGS_INT_DEC"
+ },
+ "B_DOOR0": {
+  "sec": "ВНУТРЕННЯЯ КОНФИГУРАЦИЯ",
+  "idx": 0,
+  "sg": "BIGGS_INT_STR"
+ },
+ "B_STAIRS0": {
+  "sec": "ВНУТРЕННЯЯ КОНФИГУРАЦИЯ",
+  "idx": 0,
+  "sg": "BIGGS_INT_STR"
+ },
+ "B_WALL_WIND0": {
+  "sec": "ВНУТРЕННЯЯ КОНФИГУРАЦИЯ",
+  "idx": 0,
+  "sg": "BIGGS_INT_STR"
+ },
+ "B_WALL_WIND1": {
+  "sec": "ВНУТРЕННЯЯ КОНФИГУРАЦИЯ",
+  "idx": 0,
+  "sg": "BIGGS_INT_STR"
+ },
+ "B_WALL_WIND2": {
+  "sec": "ВНУТРЕННЯЯ КОНФИГУРАЦИЯ",
+  "idx": 0,
+  "sg": "BIGGS_INT_STR"
+ },
+ "C_ARCH": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_ARCH_H": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_DOOR": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_DOORWINDOW": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_DOOR_H": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_FLOOR": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_FLOOR_Q": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_GDOOR": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_GFLOOR": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_RAMP": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_RAMP_H": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_ROOF": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_ROOF_C": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_ROOF_IC": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_ROOF_M": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_TRIFLOOR": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_TRIFLOOR_Q": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALL": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALLDIAGONAL": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALL_H": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALL_Q": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALL_Q_H": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "C_WALL_WINDOW": {
+  "sec": "ПРЕЖНИЕ БЕТОННЫЕ",
+  "sg": "BASICCONCRETE"
+ },
+ "M_ARCH": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_ARCH_H": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_DOOR": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_DOORWINDOW": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_DOOR_H": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_FLOOR": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_FLOOR_Q": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_GDOOR": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_GFLOOR": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_RAMP": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_RAMP_H": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_ROOF": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_ROOF_C": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_ROOF_IC": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_ROOF_M": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_TRIFLOOR": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_TRIFLOOR_Q": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALL": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALLDIAGONAL": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALL_H": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALL_Q": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALL_Q_H": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "M_WALL_WINDOW": {
+  "sec": "ПРЕЖНИЕ МЕТАЛЛИЧЕСКИЕ",
+  "sg": "BASICMETAL"
+ },
+ "W_ARCH": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_ARCH_H": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_DOOR": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_DOORWINDOW": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_DOOR_H": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_FLOOR": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_FLOOR_Q": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_GDOOR": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_GFLOOR": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_RAMP": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_RAMP_H": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_ROOF": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_ROOF_C": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_ROOF_IC": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_ROOF_M": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_TRIFLOOR": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_TRIFLOOR_Q": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALL": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALLDIAGONAL": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALL_H": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALL_Q": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALL_Q_H": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "W_WALL_WINDOW": {
+  "sec": "ПРЕЖНИЕ ДЕРЕВЯННЫЕ",
+  "sg": "BASICWOOD"
+ },
+ "AIRLCKCONNECTOR": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "BRIDGECONNECTOR": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "CORNERPOST": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "CORRIDOR_S": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "CORRIDOR_WINDOW": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "CUBEWALL_SPACE": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "ROOMFLOOR": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "WALL": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "WALLCURVED": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "WALLDOOR": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "WALLTALL": {
+  "sec": "ПРЕЖНИЕ ПРОЧИЕ"
+ },
+ "SPEC_FIREWORK10": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "HOLOFILES": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_ROOM_STORE6": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "U_BIOGENERATOR": {
+  "sec": "ИСТОЧНИКИ ЭНЕРГИИ",
+  "sg": "POWERPOWER"
+ },
+ "U_GENERATOR_S": {
+  "sec": "ИСТОЧНИКИ ЭНЕРГИИ",
+  "sg": "POWERPOWER"
+ },
+ "SPEC_FIREWORK11": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "STATUE_WALK_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "FRE_ROOM_STORE7": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "FRE_EXT_W_STA": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "FRE_ROOM_NPCWEA": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "STATUE_WALK_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "EXPD_FIREWORK04": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_MEDGEOMETR": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "FRE_CORR_GLA_ST": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_FLORAL04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_HOTPLANT03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_NPCFAR": {
+  "sec": "ФРЕЙТЕР: БИОКУПОЛА",
+  "sg": "FRE_BIO_SUB"
+ },
+ "BILLBOARD": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "SPEC_FIREWORK12": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_CAVE5": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_NPCVEH": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "SLIME_MED": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SERVERBOX1": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_LAVA2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_CONTOURPOD": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "BASE_DUST09": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "EXPD_FIREWORK01": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "ABAND_CASE": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_ROOM_PLANT0": {
+  "sec": "ФРЕЙТЕР: БИОКУПОЛА",
+  "sg": "FRE_BIO_SUB"
+ },
+ "SPEC_FIREWORK09": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "SHIPARMS": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_CAVE1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SPEC_FIREWORK05": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "FRE_ROOM_NPCBUI": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "FOOTLOCKER": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_HOUDINI3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_PEACOCK01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BLD_CRYS_DRONE": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_SHIP_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "STATUE_SHIP_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_ROCK03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SUBZPLANT7": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_STORE4": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_SUBZPLANT2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SPEC_FIREWORK04": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "U_SOLAR_S": {
+  "sec": "ИСТОЧНИКИ ЭНЕРГИИ",
+  "sg": "POWERPOWER"
+ },
+ "ABAND_CRATE_XL": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "EXPD_FIREWORK03": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_SUBZPLANT8": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_BUBBLECLUS": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "BASE_DUST12": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_CAVE3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "LIGHT_VERT": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_SPRIGBUSH": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BLD_CRYS_SENT1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_WPLANT4": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_VEHICL": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "FRE_ROOM_STORE3": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "SERVERBOX2": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_ROOM_TECH": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "FRE_ROOM_STORE0": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_FLOWER2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "PLANTER_S": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_INFEST3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_RADPLANT04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "HOLO_SMALL3": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "EXPD_FIREWORK02": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_HOTPLANT06": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "PLANTTUBE": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_SHARD": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "FRE_CORR_GLA_T": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "STATUE_ATLAS_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "U_TRANSISTOR2": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "FRE_ROOM_STORE2": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "SPEC_FIREWORK06": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_GRASS2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUST04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_SHIP_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "FRE_CORR_G_STA": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "STATUE_BLOB_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_HOTPLANT04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUST06": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_TOXPLANT04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "HOLO_MED2": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_SWAMP2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_JUNGLE03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SHELLWHITE": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "BASE_HOTPLANT08": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_GRASS6": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "LOCKER2": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_FACE_DOOR_A": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_FLOWER1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_HOTPLANT05": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_DRESS": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "HOLO_TRA": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "POWERBOX": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "STATUE_GEK_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "STATUE_ATLAS_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_CAVE2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_TREE01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "U_POWERLINE": {
+  "sec": "ИСТОЧНИКИ ЭНЕРГИИ",
+  "sg": "POWERPOWER"
+ },
+ "HOLO_SMALL2": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_BONEGARDEN": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "FRE_CORR_A_STR": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_SUBZPLANT1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUSTPLANT2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_ASTRO_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "SPEC_FIREWORK02": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "ABAND_CRATE_M": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_STARJOINT": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "SPEC_FIREWORK01": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "STATUE_GEK_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "ABAND_SHELF": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_ROOM_NPCSCI": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "BASE_TREE03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_ASTRO_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_FLORAL02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUSTPLANT1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUST03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SPEC_FIREWORK07": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_BARNACLE": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_CORR_A_GLAS": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_MEDPLANT03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_EXT_WALKWAY": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_ROCK01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUSTPLANT3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SPEC_FIREWORK03": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "STANDINGSIGN": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_WEIRDCUBE": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "STATUE_DIP_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "STATUE_BLOB_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_WPLANT5": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "HOLO_MED1": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_DUST10": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_IND1": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_DUST08": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_TOXPLANT02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "MAPTABLE": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_GRASS3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "ABAND_CRATE_L": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_DUST01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BUILDCANRACK": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_ROOM_IND": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "PLANTBOX": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_JUNGLE02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_JUNGLE01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "LIGHTFRAME": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_FACE_WINDOW": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_FOXGLOVE01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_MEDPLANT02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUST02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "HOLO_WAR": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "U_SWITCHBUTTON": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "BASE_DUST07": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SUBZPLANT3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SWAMP1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_CAVE4": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_WALK_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "STATUE_ATLAS_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_DUST13": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_EXT_PLATFOR": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "STATUE_SHIP_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_COLDPLANT2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_SHOP": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "BASE_HOTPLANT07": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "SPOOKY_PLANT": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_PEACOCK02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_BLOB_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BLD_CRYS_SENT0": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_FLORAL03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_DIP_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_BEAMSTONE": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "FRE_ROOM_PLANT1": {
+  "sec": "ФРЕЙТЕР: БИОКУПОЛА",
+  "sg": "FRE_BIO_SUB"
+ },
+ "STATUE_ATLAS_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "STATUE_BLOB_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_HYDROPOD": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "BASE_WPLANT3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_STORE8": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "SPEC_FIREWORK08": {
+  "sec": "ФЕЙЕРВЕРКИ",
+  "sg": "PLANETFIREWORKS"
+ },
+ "BASE_PEACOCK03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "U_SWITCHPRESS": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "BASE_TOYJELLY": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_ROOM_TELEPO": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "STATUE_WALK_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "FRE_CORR_A": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "CRATEFRAME": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_ROOM_LADDER": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "FRE_ROOM_FLEET": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "BASE_HOUDINI1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_TOXPLANT03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_CORR_A_L": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_SUBZPLANT9": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_DIP_S": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_MEDPLANT01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_TREE02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_ASTRO_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_ROCK02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_STORE5": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "STATIONCRATE": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "ABAND_BARREL": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_SUBZPLANT5": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_INFEST2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "ARCHIVE": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "STATUE_DIP_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "CONT_S": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "HOLO_SMALL1": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "BASE_RADPLANT01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SUBZPLANT4": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_ROCLOC": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "FRE_ROOM_STORE1": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "FRE_ROOM_STORE9": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_TOXPLANT01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_COLDPLANT3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_WPLANT8": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_CORR_A_T": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_FLORAL01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_DUST05": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_ASTRO_I": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_WPLANT2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_JUNGLE04": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_GRASS5": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_FLYINGFERN": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_HOUDINI2": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_FLOWER3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_CORR_STA": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "MEDTUBE": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_ROOM_EXTR": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_HOTPLANT01": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "U_SWITCHPROX": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "BASE_HOTPLANT02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_CORR_GLA_L": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "BASE_DUST11": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_INFEST1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "FRE_ROOM_BIO": {
+  "sec": "ФРЕЙТЕР: БИОКУПОЛА",
+  "sg": "FRE_BIO_SUB"
+ },
+ "FRE_ROOM_SCAN": {
+  "sec": "ФРЕЙТЕР: ТЕХНОЛОГИИ",
+  "sg": "FRE_TECH_SUB"
+ },
+ "BASE_GRASS4": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_WPLANT6": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "U_SWITCHWALL": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "BASE_WPLANT7": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_WPLANT1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_ENGINEORB": {
+  "sec": "ГЛИТЧ-ОБЪЕКТЫ",
+  "sg": "DECOGLITCHES"
+ },
+ "PALLET": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "BASE_RADPLANT02": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "U_TRANSISTOR1": {
+  "sec": "ВЫКЛЮЧАТЕЛИ И ДАТЧИКИ",
+  "sg": "POWERSWITCHES"
+ },
+ "HOLO_EXP": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_ROOM_REFINE": {
+  "sec": "ФРЕЙТЕР: ПРОМЫШЛЕННОСТЬ",
+  "sg": "FRE_IND_SUB"
+ },
+ "BASE_RADPLANT03": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "LIGHT_TALL": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "FRE_ROOM_COOK": {
+  "sec": "ФРЕЙТЕР: БИОКУПОЛА",
+  "sg": "FRE_BIO_SUB"
+ },
+ "ABAND_BENCH": {
+  "sec": "ОБЛОМКИ И ХЛАМ",
+  "sg": "FURNDERELICTS"
+ },
+ "FRE_FACE_WALL": {
+  "sec": "ФРЕЙТЕР: ОСНОВНЫЕ",
+  "sg": "FRE_CORE"
+ },
+ "STATUE_GEK_G": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_LAVA1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SUBZPLANT6": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "STATUE_GEK_B": {
+  "sec": "СТАТУИ",
+  "sg": "DECOSTATUES"
+ },
+ "BASE_GRASS1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "LIGHT_PLINTH": {
+  "sec": "СТАНЦИОННАЯ МЕБЕЛЬ",
+  "sg": "FURNSTATION"
+ },
+ "U_BATTERY_S": {
+  "sec": "ИСТОЧНИКИ ЭНЕРГИИ",
+  "sg": "POWERPOWER"
+ },
+ "BASE_GRASS7": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_SWAMP3": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "BASE_COLDPLANT1": {
+  "sec": "ЭКЗОТИЧЕСКАЯ ФЛОРА",
+  "sg": "DECOFOLIAGE"
+ },
+ "CONTAINER2": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "BUILDDECALSIMP1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER5": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "EXPD_DECAL19": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "RACE_START": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "EXPD_DECAL10": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL21": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER1": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "B_WALL_CARG1": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "DECAL_WORM_P3": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALSIMP3": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER6": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "EXPD_DECAL13": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "B_WALL_CARG5": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "B_WALL_CARG9": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "EXPD_DECAL20": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL03": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_STARTSHIP": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL18": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_SKULL_DISP": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_WORM_P5": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_LIMBS_DISP": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_BIOME3": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_QIT": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "SPEC_DECAL05": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_TOSTARS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_EXTINCT": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_PIRATESYS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "B_WALL_CARG2": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "DECAL_GALCORE": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_SKULL": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "BUILDDECALNUM2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_CREBEETLE": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL09": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM0": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_UFT": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM3": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BIRD_DIS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "FOS_LIMBS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_SKULL": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER0": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "GARAGE_SUB": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "BUILDDECAL2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNMS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BI": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "B_WALL_CARG3": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "CONTAINER4": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "SPEC_DECAL01": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "B_WALL_CARG6": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "DECAL_BLUESYS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECAL": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "SPEC_DECAL02": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "GARAGE_MECH": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "GARAGE_M": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "FOS_BODY": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_HAZARD": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "B_WALL_CARG8": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "DECAL_NMSCORD": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_FPLANET2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_NEXUSM": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_TAIL": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "FOS_TAIL_MNT": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_AMINO": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_WORM_DIS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "SPEC_DECAL08": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL07": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_UWTREAS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_NMS_FR": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_AGT": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "SPEC_DECAL04": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BODY_DISP": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "BUILDDECALVIS1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM4": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALVIS2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "SPEC_DECAL06": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_GRUN_DIS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "EXPD_DECAL16": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "GARAGE_L": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "DECAL_CAFE": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "B_WALL_CARG0": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "DECAL_BONESOUP": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALVIS3": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL06": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_AF": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM6": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_HORROR": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL15": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_CREPAWS": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "RACE_BOOSTER": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "DECAL_PEEP": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BIRD": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "BUILDDECALSIMP2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_CPLANET1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_TAIL_DISP": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "B_WALL_CARG4": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "RACE_RAMP": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "SPEC_DECAL03": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER9": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "EXPD_DECAL05": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_UN42": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER8": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "EXPD_DECAL01": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALSIMP4": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_BONEJUDGE": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL08": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER7": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "BUILDDECALVIS5": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM7": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM5": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_WORM_P4": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_WORM": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "EXPD_DECAL11": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "GARAGE_S": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "FOS_SKULL_MNT": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "SPEC_DECAL07": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_CREFLY": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_WORM_P2": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_GRUN": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "B_WALL_CARG7": {
+  "sec": "КОРВЕТ: ХРАНЕНИЕ",
+  "sg": "BIGGS_IN_STOR"
+ },
+ "EXPD_DECAL12": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "GARAGE_B": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "FOS_QUAD": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_SHIP1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "CONTAINER3": {
+  "sec": "ХРАНИЛИЩА",
+  "sg": "TECHSTORAGE"
+ },
+ "EXPD_DECAL04": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALNUM8": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_LIMBS_MNT": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_SCAN": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL17": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "GARAGE_FLOAT": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "DECAL_JELLY": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_SPOOKATL": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL22": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "SUMMON_GARAGE": {
+  "sec": "ЭКЗОКАРЫ",
+  "sg": "PLANETEXOCRAFT"
+ },
+ "EXPD_DECAL02": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "BUILDDECALVIS4": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "EXPD_DECAL14": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_QUAD_DIS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "BUILDDECALNUM9": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "DECAL_RUINMECH": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BI_DIS": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ },
+ "DECAL_WORM_P1": {
+  "sec": "НАСТЕННЫЕ ДЕКАЛИ",
+  "sg": "WALLDECALS"
+ },
+ "FOS_BODY_MNT": {
+  "sec": "ОКАМЕНЕЛОСТИ-ДЕКОР",
+  "sg": "DECOFOSSILS"
+ }
+}

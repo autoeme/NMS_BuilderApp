@@ -1,0 +1,24 @@
+newmtl interiorfreighterbase_mat
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat1
+Kd 0.8 0.8 0.8
+newmtl traillight_mat1
+Kd 0.8 0.8 0.8
+newmtl sandmat
+Kd 0.8 0.8 0.8
+newmtl hqmedrock_3
+Kd 0.8 0.8 0.8
+newmtl crystal_mat
+Kd 0.8 0.8 0.8
+newmtl wavykelp
+Kd 0.8 0.8 0.8
+newmtl seabushmat1
+Kd 0.8 0.8 0.8
+newmtl aquariumdashfishmat1
+Kd 0.8 0.8 0.8
+newmtl watermat
+Kd 0.8 0.8 0.8
+newmtl glowgradient_skinnedmat
+Kd 0.8 0.8 0.8

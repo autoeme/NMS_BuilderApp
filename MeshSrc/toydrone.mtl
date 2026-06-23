@@ -1,0 +1,16 @@
+newmtl npcprops_mat1
+Kd 0.8 0.8 0.8
+newmtl phong108
+Kd 0.8 0.8 0.8
+newmtl dronetrailinvestmat
+Kd 0.8 0.8 0.8
+newmtl phong107
+Kd 0.8 0.8 0.8
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl scanplane_mat
+Kd 0.8 0.8 0.8

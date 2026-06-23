@@ -1,0 +1,6 @@
+newmtl lightboxoff_matt
+Kd 0.8 0.8 0.8
+newmtl lightboxon_mat
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8

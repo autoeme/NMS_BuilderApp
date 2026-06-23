@@ -1,0 +1,6 @@
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat
+Kd 0.8 0.8 0.8

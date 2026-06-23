@@ -1,0 +1,8 @@
+newmtl interiorfreighterbase_mat3
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertile_mat2
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat1
+Kd 0.8 0.8 0.8

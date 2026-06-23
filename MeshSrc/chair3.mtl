@@ -1,0 +1,4 @@
+newmtl basebuildingprops_mat_skinned
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8

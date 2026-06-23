@@ -1,0 +1,10 @@
+newmtl transparent_mat1
+Kd 0.8 0.8 0.8
+newmtl basic_wall1_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl blinn11
+Kd 0.8 0.8 0.8
+newmtl lights_test2
+Kd 0.8 0.8 0.8
+newmtl green1
+Kd 0.8 0.8 0.8

@@ -1,0 +1,674 @@
+[
+	{
+		"Id": "BASIC",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "ATTACK_AFF",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 3.5
+					},
+					{
+						"Template": "ATTACK_NORM",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.5
+					},
+					{
+						"Template": "ATTACK_COLD",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_HOT",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_DUST",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_LUSH",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_WEIRD",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_RAD",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "ATTACK_TOX",
+						"CooldownMin": 0,
+						"CooldownMax": 0,
+						"Weighting": 0.1
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "BARRAGE_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 1.2
+					},
+					{
+						"Template": "ATTACK_DOT_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ATTACK_DOT_NORM",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.2
+					},
+					{
+						"Template": "ATTACK_WILD",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "AFF_WILD",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.66
+					},
+					{
+						"Template": "MULTI_AFF",
+						"CooldownMin": 3,
+						"CooldownMax": 5,
+						"Weighting": 0.75
+					},
+					{
+						"Template": "RAMP_AFF",
+						"CooldownMin": 0,
+						"CooldownMax": 1,
+						"Weighting": 0.7
+					},
+					{
+						"Template": "AFF_SPEED_THEM",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.3
+					},
+					{
+						"Template": "AFF_SPEED_ME",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.3
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "DOT_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "DELAY_AFF",
+						"CooldownMin": 3,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ENRAGE_CRIT",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ENRAGE_DAMAGE",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ENRAGE_HOT",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ATTACK_SELFDOT",
+						"CooldownMin": 3,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "ATTACK_BOTH",
+						"CooldownMin": 3,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "DOT_BOMB",
+						"CooldownMin": 3,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "HOSTILE_DISPEL",
+						"CooldownMin": 2,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "CHARGEUP_AFF",
+						"CooldownMin": 3,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "CHARGEUP_BUFF",
+						"CooldownMin": 2,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "DELAY_HEAL",
+						"CooldownMin": 1,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "SELF_HEAL",
+						"CooldownMin": 1,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "SELF_HOT",
+						"CooldownMin": 1,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "SELF_DISPEL",
+						"CooldownMin": 1,
+						"CooldownMax": 2,
+						"Weighting": 0.66
+					},
+					{
+						"Template": "SELF_ABSORB",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					},
+					{
+						"Template": "SELF_REFLECT",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					},
+					{
+						"Template": "SELF_SHIELD",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					},
+					{
+						"Template": "FULL_ABSORB",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					},
+					{
+						"Template": "FULL_SHIELD",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					},
+					{
+						"Template": "FULL_REFLECT",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.33
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "SPEED_UP",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "DONT_TOUCH",
+						"CooldownMin": 3,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "BURROW",
+						"CooldownMin": 2,
+						"CooldownMax": 3,
+						"Weighting": 0.5
+					},
+					{
+						"Template": "STUN",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 0.5
+					},
+					{
+						"Template": "CHANGE_AFFINITY",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "BUFF_ACCURACY",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.15
+					},
+					{
+						"Template": "BUFF_SPEED",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.15
+					},
+					{
+						"Template": "BUFF_CRIT",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "BUFF_DAMAGE",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "BUFF_DODGE",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.1
+					},
+					{
+						"Template": "DEBUFF_ACCURACY",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "DEBUFF_DEF",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "DEBUFF_DAM_ACC",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "DEBUFF_DAMAGE",
+						"CooldownMin": 2,
+						"CooldownMax": 5,
+						"Weighting": 0.25
+					},
+					{
+						"Template": "SELF_RESET_CD",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					},
+					{
+						"Template": "SACRIFICE_DAM",
+						"CooldownMin": 4,
+						"CooldownMax": 4,
+						"Weighting": 0.5
+					},
+					{
+						"Template": "SACRIFICE_DEF",
+						"CooldownMin": 4,
+						"CooldownMax": 4,
+						"Weighting": 0.5
+					},
+					{
+						"Template": "REVIVE",
+						"CooldownMin": 6,
+						"CooldownMax": 6,
+						"Weighting": 0.2
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": "DOT_BOMBER",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "ATTACK_DOT_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "DEBUFF_ACCURACY",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "DEBUFF_DAMAGE",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "SELF_HEAL",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "DONT_TOUCH",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": "OFF_HEALER",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "ATTACK_BOTH",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "ATTACK_SELFDOT",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "HOSTILE_DISPEL",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "SACRIFICE_DEF",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "FULL_ABSORB",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": "FAST_RAMPER",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "ATTACK_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "SELF_RESET_CD",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "BUFF_DODGE",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "STUN",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "RAMP_AFF",
+						"CooldownMin": 4,
+						"CooldownMax": 4,
+						"Weighting": 1.0
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": "QUICK_STRIKER",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "AFF_SPEED_ME",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "BUFF_SPEED",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "SELF_SHIELD",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "BARRAGE_AFF",
+						"CooldownMin": 3,
+						"CooldownMax": 3,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "SPEED_UP",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					}
+				]
+			}
+		]
+	},
+	{
+		"Id": "TANKISH",
+		"Slots": [
+			{
+				"Slot": 1,
+				"Options": [
+					{
+						"Template": "ATTACK_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 2,
+				"Options": [
+					{
+						"Template": "MULTI_AFF",
+						"CooldownMin": 1,
+						"CooldownMax": 1,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 3,
+				"Options": [
+					{
+						"Template": "SELF_DISPEL",
+						"CooldownMin": 2,
+						"CooldownMax": 2,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 4,
+				"Options": [
+					{
+						"Template": "CHANGE_AFFINITY",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					}
+				]
+			},
+			{
+				"Slot": 5,
+				"Options": [
+					{
+						"Template": "SELF_SHIELD",
+						"CooldownMin": 5,
+						"CooldownMax": 5,
+						"Weighting": 1.0
+					}
+				]
+			}
+		]
+	}
+]

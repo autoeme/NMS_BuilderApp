@@ -1,0 +1,10 @@
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat5
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat4
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat3
+Kd 0.8 0.8 0.8

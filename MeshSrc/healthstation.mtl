@@ -1,0 +1,10 @@
+newmtl commontiled_mat
+Kd 0.8 0.8 0.8
+newmtl phong39
+Kd 0.8 0.8 0.8
+newmtl screenbase_mat
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat
+Kd 0.8 0.8 0.8

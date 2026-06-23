@@ -1,0 +1,8 @@
+newmtl builderstrimmat
+Kd 0.8 0.8 0.8
+newmtl purpleglowfade_mat
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8
+newmtl purpleglowscroll_mat
+Kd 0.8 0.8 0.8

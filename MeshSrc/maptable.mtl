@@ -1,0 +1,4 @@
+newmtl holostatic_mat4
+Kd 0.8 0.8 0.8
+newmtl interiortrimmat
+Kd 0.8 0.8 0.8

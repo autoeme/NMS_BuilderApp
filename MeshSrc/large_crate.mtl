@@ -1,0 +1,28 @@
+newmtl hqtrimmetal_mat9
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl crate_tiling
+Kd 0.8 0.8 0.8
+newmtl crate
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8
+newmtl lights2
+Kd 0.8 0.8 0.8
+newmtl redglow_mat1
+Kd 0.8 0.8 0.8
+newmtl rubber1
+Kd 0.8 0.8 0.8
+newmtl rubber
+Kd 0.8 0.8 0.8
+newmtl shinymetal_mat21
+Kd 0.8 0.8 0.8
+newmtl buttons_mat9
+Kd 0.8 0.8 0.8
+newmtl darkmetal_mat39
+Kd 0.8 0.8 0.8
+newmtl decal_mat2
+Kd 0.8 0.8 0.8
+newmtl crate_decal1
+Kd 0.8 0.8 0.8

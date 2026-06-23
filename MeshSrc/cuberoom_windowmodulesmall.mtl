@@ -1,0 +1,4 @@
+newmtl waterproxymat
+Kd 0.8 0.8 0.8
+newmtl waterproxyinternalmat
+Kd 0.8 0.8 0.8

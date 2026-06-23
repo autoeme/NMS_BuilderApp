@@ -1,0 +1,458 @@
+[
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_BASICS",
+		"Name": "Getting Started",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_BASICS",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVALBASICS"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_5",
+		"Name": "Navigation Basics",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_5",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVAL5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_2",
+		"Name": "Hazard Protection",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_2",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVAL2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_1",
+		"Name": "Life Support",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_1",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVAL1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_4",
+		"Name": "The Multi-Tool",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_4",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVAL4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_3",
+		"Name": "Finding Basic Resources",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_3",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "SURVIVAL3"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SLOTS",
+		"Name": "Inventory Management",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SLOTS",
+		"Category": "Survival Basics",
+		"Category_LocStr": "UI_GUIDE_HEADING_SURVIVAL",
+		"IconKey": "TRADE6"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_1",
+		"Name": "Exploring on Foot",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_1",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TERRAIN",
+		"Name": "The Terrain Manipulator",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TERRAIN",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_5",
+		"Name": "Flying the Starship",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_5",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SPACE_STATION",
+		"Name": "Space Stations",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SPACE_STATION",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION8"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_6",
+		"Name": "Vehicles",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_6",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION6"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_7",
+		"Name": "Exocraft Races",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_7",
+		"Category": "Getting Around",
+		"Category_LocStr": "UI_GUIDE_HEADING_NAV",
+		"IconKey": "EXPLORATION9"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_4",
+		"Name": "The Analysis Visor",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_4",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "EXPLORATION4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_UPLOAD",
+		"Name": "Renaming and Uploading Discoveries",
+		"Name_LocStr": "UI_GUIDE_TOPIC_UPLOAD",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "DISCOVERY2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SIGNALS",
+		"Name": "Finding Buildings",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SIGNALS",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "EXPLORATION2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_EXPLORATION_3",
+		"Name": "Smaller Points of Interest",
+		"Name_LocStr": "UI_GUIDE_TOPIC_EXPLORATION_3",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "EXPLORATION3"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_WEATHER",
+		"Name": "Extreme Weather",
+		"Name_LocStr": "UI_GUIDE_TOPIC_WEATHER",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "SURVIVAL7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_FEEDING",
+		"Name": "Feeding and Taming Creatures",
+		"Name_LocStr": "UI_GUIDE_TOPIC_FEEDING",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "CREATURESWIKI"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_PORTALS",
+		"Name": "Portals",
+		"Name_LocStr": "UI_GUIDE_TOPIC_PORTALS",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "DISCOVERY3"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_ABAND",
+		"Name": "Derelict Freighters",
+		"Name_LocStr": "UI_GUIDE_TOPIC_ABAND",
+		"Category": "Making Discoveries",
+		"Category_LocStr": "UI_GUIDE_HEADING_DISCO_ALT",
+		"IconKey": "DISCOVERY4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_PINNING",
+		"Name": "Pinning Recipes",
+		"Name_LocStr": "UI_GUIDE_TOPIC_PINNING",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "TRADE5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_REFINER",
+		"Name": "Refining Substances",
+		"Name_LocStr": "UI_GUIDE_TOPIC_REFINER",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "SURVIVAL4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TECHNOLOGY",
+		"Name": "Upgrading your Equipment",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TECHNOLOGY",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "TRADE7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_NANITES",
+		"Name": "Earning Nanites",
+		"Name_LocStr": "UI_GUIDE_TOPIC_NANITES",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "UPGRADE1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_RECIPES",
+		"Name": "Recipes and Blueprints",
+		"Name_LocStr": "UI_GUIDE_TOPIC_RECIPES",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "TRADE6"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_GUNS",
+		"Name": "Buying New Multi-Tools",
+		"Name_LocStr": "UI_GUIDE_TOPIC_GUNS",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "UPGRADE2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SHIPS",
+		"Name": "Buying New Ships",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SHIPS",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "EXPLORATION5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SALVAGE",
+		"Name": "Salvaging Ships & Multi-Tools",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SALVAGE",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "EXPLORATION7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_BIGGS",
+		"Name": "Corvette-Class Starships",
+		"Name_LocStr": "UI_GUIDE_TOPIC_BIGGS",
+		"Category": "Upgrades & Crafting",
+		"Category_LocStr": "UI_GUIDE_HEADING_UPGRADES",
+		"IconKey": "CORVETTE"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVIVAL_6",
+		"Name": "Base Construction",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVIVAL_6",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "SURVIVAL6"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_NEW_BASE_PARTS",
+		"Name": "Learning New Base Parts",
+		"Name_LocStr": "UI_GUIDE_TOPIC_NEW_BASE_PARTS",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "BASE1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_DISMANTLE",
+		"Name": "Portable Technology",
+		"Name_LocStr": "UI_GUIDE_TOPIC_DISMANTLE",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "BASE2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_POWER",
+		"Name": "Powering the Base",
+		"Name_LocStr": "UI_GUIDE_TOPIC_POWER",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "BASE3"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SILOS",
+		"Name": "Industrial Parts",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SILOS",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "BASE4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SURVEY",
+		"Name": "Industrial Surveying",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SURVEY",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "EXPLORATION2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_BONES",
+		"Name": "Assembling Fossil Displays",
+		"Name_LocStr": "UI_GUIDE_TOPIC_BONES",
+		"Category": "Construction",
+		"Category_LocStr": "UI_GUIDE_HEADING_BASES",
+		"IconKey": "FOSSIL"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_1",
+		"Name": "Making Money",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_1",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_2",
+		"Name": "Farming",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_2",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_6",
+		"Name": "Crafting",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_6",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE6"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_3",
+		"Name": "Advanced Trading",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_3",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE8"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_4",
+		"Name": "Freighters",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_4",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_FLEETS",
+		"Name": "Freighter Fleets",
+		"Name_LocStr": "UI_GUIDE_TOPIC_FLEETS",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE9"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_FLEETSA",
+		"Name": "Fleet Expeditions",
+		"Name_LocStr": "UI_GUIDE_TOPIC_FLEETSA",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "TRADE10"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SCRAP",
+		"Name": "Scrap Salvaging & Industrial Waste",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SCRAP",
+		"Category": "Making Money",
+		"Category_LocStr": "UI_GUIDE_HEADING_TRADE_ALT",
+		"IconKey": "EXPLORATION2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_7",
+		"Name": "Factions & Standing",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_7",
+		"Category": "Alien Lifeforms",
+		"Category_LocStr": "UI_GUIDE_HEADING_STANDING",
+		"IconKey": "TRADE7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_TRADE_5",
+		"Name": "The Mission Board",
+		"Name_LocStr": "UI_GUIDE_TOPIC_TRADE_5",
+		"Category": "Alien Lifeforms",
+		"Category_LocStr": "UI_GUIDE_HEADING_STANDING",
+		"IconKey": "TRADE5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_WORDS",
+		"Name": "Learning Words",
+		"Name_LocStr": "UI_GUIDE_TOPIC_WORDS",
+		"Category": "Alien Lifeforms",
+		"Category_LocStr": "UI_GUIDE_HEADING_STANDING",
+		"IconKey": "SURVIVAL5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_GUILDS",
+		"Name": "Guilds",
+		"Name_LocStr": "UI_GUIDE_TOPIC_GUILDS",
+		"Category": "Alien Lifeforms",
+		"Category_LocStr": "UI_GUIDE_HEADING_STANDING",
+		"IconKey": "TRADE11"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_SETTLEMENTS",
+		"Name": "Planetary Settlements",
+		"Name_LocStr": "UI_GUIDE_TOPIC_SETTLEMENTS",
+		"Category": "Alien Lifeforms",
+		"Category_LocStr": "UI_GUIDE_HEADING_STANDING",
+		"IconKey": "SETTLEMENTS"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_COMBAT_1",
+		"Name": "Sentinels",
+		"Name_LocStr": "UI_GUIDE_TOPIC_COMBAT_1",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT1"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_AMMO",
+		"Name": "Ammunition",
+		"Name_LocStr": "UI_GUIDE_TOPIC_AMMO",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT7"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_COMBAT_2",
+		"Name": "Weapon Management",
+		"Name_LocStr": "UI_GUIDE_TOPIC_COMBAT_2",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT2"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_COMBAT_3",
+		"Name": "Defensive Systems",
+		"Name_LocStr": "UI_GUIDE_TOPIC_COMBAT_3",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT3"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_COMBAT_4",
+		"Name": "Ground Combat",
+		"Name_LocStr": "UI_GUIDE_TOPIC_COMBAT_4",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT4"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_COMBAT_5",
+		"Name": "Space Combat",
+		"Name_LocStr": "UI_GUIDE_TOPIC_COMBAT_5",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT5"
+	},
+	{
+		"Id": "^UI_GUIDE_TOPIC_PIRATES",
+		"Name": "Outlaw Systems",
+		"Name_LocStr": "UI_GUIDE_TOPIC_PIRATES",
+		"Category": "Combat",
+		"Category_LocStr": "UI_GUIDE_HEADING_COMBAT",
+		"IconKey": "COMBAT6"
+	}
+]

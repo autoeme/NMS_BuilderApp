@@ -1,0 +1,16 @@
+newmtl largerock_mat
+Kd 0.8 0.8 0.8
+newmtl buildablespireleafmat
+Kd 0.8 0.8 0.8
+newmtl buildablelargespiremat
+Kd 0.8 0.8 0.8
+newmtl lava_mat
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl sandmat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl sunglowmat
+Kd 0.8 0.8 0.8

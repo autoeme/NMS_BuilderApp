@@ -1,0 +1,87 @@
+[
+ {
+  "code": "english",
+  "prop": "English",
+  "native": "English"
+ },
+ {
+  "code": "usenglish",
+  "prop": "USEnglish",
+  "native": "English (US)"
+ },
+ {
+  "code": "russian",
+  "prop": "Russian",
+  "native": "Русский"
+ },
+ {
+  "code": "german",
+  "prop": "German",
+  "native": "Deutsch"
+ },
+ {
+  "code": "french",
+  "prop": "French",
+  "native": "Français"
+ },
+ {
+  "code": "italian",
+  "prop": "Italian",
+  "native": "Italiano"
+ },
+ {
+  "code": "spanish",
+  "prop": "Spanish",
+  "native": "Español"
+ },
+ {
+  "code": "latinamericanspanish",
+  "prop": "LatinAmericanSpanish",
+  "native": "Español (LA)"
+ },
+ {
+  "code": "portuguese",
+  "prop": "Portuguese",
+  "native": "Português"
+ },
+ {
+  "code": "brazilianportuguese",
+  "prop": "BrazilianPortuguese",
+  "native": "Português (BR)"
+ },
+ {
+  "code": "dutch",
+  "prop": "Dutch",
+  "native": "Nederlands"
+ },
+ {
+  "code": "polish",
+  "prop": "Polish",
+  "native": "Polski"
+ },
+ {
+  "code": "japanese",
+  "prop": "Japanese",
+  "native": "日本語"
+ },
+ {
+  "code": "korean",
+  "prop": "Korean",
+  "native": "한국어"
+ },
+ {
+  "code": "simplifiedchinese",
+  "prop": "SimplifiedChinese",
+  "native": "简体中文"
+ },
+ {
+  "code": "traditionalchinese",
+  "prop": "TraditionalChinese",
+  "native": "繁體中文"
+ },
+ {
+  "code": "tencentchinese",
+  "prop": "TencentChinese",
+  "native": "简体中文 (腾讯)"
+ }
+]

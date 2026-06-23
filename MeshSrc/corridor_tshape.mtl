@@ -1,0 +1,8 @@
+newmtl interiortiling_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl corridorlight_mat
+Kd 0.8 0.8 0.8
+newmtl corridor_join_tilingtexture_mat2
+Kd 0.8 0.8 0.8

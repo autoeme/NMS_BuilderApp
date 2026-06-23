@@ -1,0 +1,4 @@
+newmtl holoscroll_mat
+Kd 0.8 0.8 0.8
+newmtl holostatic_mat
+Kd 0.8 0.8 0.8

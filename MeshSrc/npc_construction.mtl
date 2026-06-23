@@ -1,0 +1,24 @@
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl interiorprops_mat
+Kd 0.8 0.8 0.8
+newmtl screentransparent_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat
+Kd 0.8 0.8 0.8
+newmtl uidull_mat
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat
+Kd 0.8 0.8 0.8
+newmtl scanline_mat
+Kd 0.8 0.8 0.8
+newmtl screenbits_mat
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat
+Kd 0.8 0.8 0.8
+newmtl spinningbprint_mat
+Kd 0.8 0.8 0.8
+newmtl flashingbp_mat
+Kd 0.8 0.8 0.8

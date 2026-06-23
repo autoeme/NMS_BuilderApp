@@ -1,0 +1,14 @@
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat
+Kd 0.8 0.8 0.8
+newmtl uidull_mat
+Kd 0.8 0.8 0.8
+newmtl uibrightspin_mat
+Kd 0.8 0.8 0.8
+newmtl scanline_mat
+Kd 0.8 0.8 0.8

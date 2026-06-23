@@ -1,0 +1,8 @@
+newmtl crystalcolouriseablemat
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat1
+Kd 0.8 0.8 0.8
+newmtl lights1_mat1
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8

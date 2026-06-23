@@ -1,0 +1,196 @@
+#pragma once
+
+#include "CoreMinimal.h"
+#include "UnrealClient.h"
+#include "InputCoreTypes.h"
+#include "PreviewScene.h"
+
+class AActor;
+class FSceneView;
+class FViewport;
+class FCanvas;
+
+// Режим манипуляции выбранной деталью мышью (как тулбар в приложении).
+enum class ENMSTransformMode : uint8 { Move, Rotate, Scale };
+enum class ENMSCurveType : uint8 { Catmull, Polyline, Circle, Bezier, Rect };
+
+/**
+ * Вьюпорт-клиент встроенного 3D окна редактора баз.
+ * Своя сцена (FPreviewScene) + рендер через FSceneView + FreeCam-камера.
+ * Управление: ПКМ зажата -> мышь вращает, WASD/QE двигают (как в UE/Blender).
+ */
+class FNMSViewportClient : public FViewportClient
+{
+public:
+    FNMSViewportClient();
+    virtual ~FNMSViewportClient();
+
+    // --- FViewportClient ---
+    virtual void Draw(FViewport* Viewport, FCanvas* Canvas) override;
+    virtual UWorld* GetWorld() const override;
+
+    // ввод
+    virtual bool InputKey(const FInputKeyEventArgs& EventArgs) override;
+    virtual bool InputAxis(const FInputKeyEventArgs& EventArgs) override;
+
+    FPreviewScene* GetPreviewScene() { return PreviewScene.Get(); }
+
+    FVector  CameraLocation = FVector(-600.f, 0.f, 400.f);
+    FRotator CameraRotation = FRotator(-25.f, 0.f, 0.f);
+    float    CameraFOV = 80.f;
+
+    // --- грид-сетка режима постройки (стиль NMS) ---
+    bool   bShowGrid      = true;     // тоггл по клавише G
+    float  GridCellSize   = 100.f;    // размер ячейки, юниты (100 ≈ 1 м, базовый строит. юнит)
+    int32  GridHalfCount  = 400;      // линий в каждую сторону (было 40) — площадь ×10
+    int32  GridMajorEvery = 10;       // каждая N-я линия — основная (толще/ярче)
+    float  GridFadeStart  = 2500.f;   // ярко только вблизи (~25 м)
+    float  GridFadeEnd    = 14000.f;  // плавно гаснет к ~140 м
+    // Режим яркости сетки: 0 = выкл, 1 = обычная (как в игре), 2 = максимально чёткая.
+    // Управляется ползунком в UI (GridMode).
+    int32  GridMode       = 1;
+    FLinearColor GridMinorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.22f); // белёсые тонкие линии (как в игре)
+    FLinearColor GridMajorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.50f); // белые основные
+
+    // Назначить выбранную деталь извне (из UI при клике по детали).
+    void SetSelectedActor(AActor* InActor);
+    // Текущая выбранная деталь (для покраски из UI).
+    AActor* GetSelectedActor() const;
+    const TArray<TWeakObjectPtr<AActor>>& GetSelectedActorsList() const { return SelectedActors; }
+
+    // Режим размещения «как в игре»: зелёная голограмма следует за курсором, ЛКМ ставит.
+    void StartPlacing(AActor* GhostActor);
+    // Отменить текущую установку (убрать незавершённый призрак).
+    void CancelPlacing();
+    // Завершить предыдущее: снять выделение со всех деталей.
+    void ClearSelection();
+    // Режим прокладки кабеля/трубы: клик А, клик Б -> кабель между ними.
+    bool bWiringMode = false;
+    FString CableMeshPath;            // меш текущего вида линии (powerline/pipe/...)
+    void StartWiring(const FString& MeshPath); // войти в режим проводки с мешем
+    void SpawnCable(const FVector& A, const FVector& B);
+    // Зеркалирование выделения по оси (0=X, 1=Y).
+    void MirrorSelection(int32 Axis);
+    // Колбэки в UI: правка сцены (для Undo), запросы Undo/Redo (Ctrl+Z/Y).
+    TFunction<void()> OnEdited;
+    // Непрерывная установка: после постановки сразу новый призрак (Esc — выход).
+    bool bContinuousPlace = true;   // непрерывная установка; выход по Esc
+    TFunction<void()> OnPlaceContinue;
+    TFunction<void()> OnUndo;
+    TFunction<void()> OnRedo;
+    // Родной цвет материала детали (задаёт UI перед StartPlacing) — применяется при постановке.
+    FLinearColor PendingPartColor = FLinearColor(0.78f, 0.78f, 0.74f);
+    FLinearColor PendingPartColor2 = FLinearColor::White; // вторичный (металл/канты)
+    // Игровые текстуры детали (пути к ассетам); пустые = плоский цвет, как раньше.
+    FString PendingBaseTex;
+    FString PendingPaintMask;
+    FString PendingNormalTex; // карта рельефа
+    FString PendingMasksTex;  // карта масок (AO/шероховатость/металл)
+    FString PendingOccTex;    // карта затенения швов (occlusion из игры)
+    // Режим «без света»: детали ставятся с безсветовым материалом (ровный вид).
+    static bool bUnlitParts;
+
+    // Солнце следует за камерой (выкл — даёт тёмный низ; используем равномерный свет).
+    bool bSunFollowsCamera = false;
+    TWeakObjectPtr<class UDirectionalLightComponent> SunComp;
+
+    // Сменить фон сцены: PNG с диска -> текстура -> материал неба (M_SkyBG).
+    void SetBackgroundImage(const FString& PngPath);
+    virtual void MouseMove(FViewport* Viewport, int32 X, int32 Y) override;
+
+    // Точка на плоскости Z=0 прямо перед камерой (куда смотрит вид) — место постановки.
+    FVector GetGroundFocusPoint() const;
+
+    // --- навигация камеры: зум / орбита / пан ---
+    FVector FocusPoint = FVector::ZeroVector; // точка, вокруг которой орбита
+    float   ZoomStep   = 250.f;               // шаг доли на «щелчок» колеса
+    float   PanSpeed   = 2.0f;                 // скорость пана (юнит / пиксель)
+
+    // --- выбранная деталь и шаги трансформации ---
+    float RotStepDeg = 15.f;   // шаг поворота, градусы ([ ] , . ; ')
+    float ScaleStep  = 0.10f;  // шаг масштаба (= / -)
+
+    // --- манипуляция мышью (как в приложении) ---
+    ENMSTransformMode TransformMode = ENMSTransformMode::Move; // 1=двигать 2=крутить 3=масштаб
+    float MoveSnap = 50.f;
+    bool bCurveMode = false;            // режим рисования кривой
+    ENMSCurveType CurveType = ENMSCurveType::Catmull; // тип кривой
+    float CurveOverlap = 0.5f;          // нахлёст 0..0.9 (плотность)
+    float CurvePartLen = 100.f;         // длина детали (для предпросмотра раскладки)
+    float CurveTilt = 0.f;              // наклон деталей (pitch, градусы)
+    float CurveRoll = 0.f;              // крен деталей (roll, градусы)
+    float CurveRadius = 0.f;            // радиус круга (0 = по клику)
+    TFunction<void()> OnCurveApply;     // колбэк постройки (UI выставляет)
+    TFunction<void()> OnCurveChanged;   // колбэк: точки/режим изменились (для меш-предпросмотра)
+    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)     // привязка перемещения, юниты
+    float RotDragSpeed = 1.0f; // скорость поворота при перетаскивании
+
+private:
+    TUniquePtr<FPreviewScene> PreviewScene;
+    FLinearColor SkyColor = FLinearColor(0.32f, 0.55f, 0.82f, 1.f);
+    TWeakObjectPtr<class UStaticMeshComponent> SkySphereComp; // купол неба (для смены фона)
+
+    // состояние управления
+    bool bRMBDown = false;                 // ПКМ зажата -> режим полёта
+    bool bMMBDown = false;                 // СКМ зажата -> орбита/пан
+    bool bAltDown = false;
+    bool bCtrlDown = false;
+    FVector WireA = FVector::ZeroVector; bool bHaveWireA = false;                 // Alt -> пан вместо орбиты
+    bool bDragging = false;                // ЛКМ зажата на детали -> манипуляция
+    bool bPlacingGhost = false;            // идёт размещение голограммы
+    FVector DragOffset = FVector::ZeroVector; // смещение точки захвата от центра детали
+    bool bFwd=false, bBack=false, bLeft=false, bRight=false, bUp=false, bDown=false;
+    float CameraSpeed = 1200.f;            // см/с (FreeCam)
+    float MouseSensitivity = 0.2f;
+    double LastDrawTime = 0.0;
+
+    // выбранная деталь (актёр-превью с меткой "NMS_")
+    TWeakObjectPtr<AActor> SelectedActor;
+
+    // кэш для депроекции курсора (заполняется в Draw из активного вида)
+    FMatrix  CachedInvView = FMatrix::Identity;
+    FMatrix  CachedInvProj = FMatrix::Identity;
+    FMatrix  CachedViewProj = FMatrix::Identity; // мир->экран (для гизмо)
+    FIntRect CachedViewRect = FIntRect(0,0,1,1);
+    bool     bViewCached = false;
+
+    // --- 3D-гизмо перемещения (цветные оси X/Y/Z) ---
+    int32   GizmoAxis = -1;                 // активная ось при тяге: 0=X 1=Y 2=Z, -1 нет
+    FVector GizmoBaseLoc = FVector::ZeroVector;
+    float   GizmoStartT = 0.f;
+    float   GizmoPrevAngle = 0.f;           // угол курсора вокруг центра (кольца вращения)
+    FVector GizmoAxisWorld = FVector::ZAxisVector; // мировая ось вращения, зафиксированная при захвате
+    void  DrawGizmo();
+	void  DrawCompass(class FCanvas* Canvas, const FIntPoint& Size);
+	void  DrawMarquee(class FCanvas* Canvas, const FIntPoint& Size); // рамка выделения
+	void  SelectMarquee(class FViewport* Viewport);                 // выбрать детали в рамке
+	void  ApplyHighlight();                                         // подсветка выделенных (золотой материал)
+	TMap<TWeakObjectPtr<class UStaticMeshComponent>, TArray<class UMaterialInterface*>> HiSaved; // оригиналы материалов
+	TArray<TWeakObjectPtr<AActor>> SelectedActors;                  // мульти-выбор
+	bool bMarquee = false; FVector2D MarqStart = FVector2D::ZeroVector, MarqCur = FVector2D::ZeroVector;
+	void  DrawCurvePreview();           // превью кривой (узлы + Catmull-сплайн) // оси X/Y/Z в углу (как nav-гизмо Blender)                                  // рисует оси у выбранной детали
+    int32 PickGizmoAxis(FViewport* Viewport) const;     // какая ось под курсором (или -1)
+    bool  DeprojectMouseRay(FViewport* Viewport, FVector& O, FVector& D) const;
+    bool  WorldToPixel(const FVector& P, FVector2D& Out) const; // мир->экран через CachedViewProj
+
+    void UpdateCamera(float DeltaSeconds);
+
+    // Рисует грид-сетку как 3D-линии в сцене (с глубиной — детали её перекрывают).
+    void DrawGrid();
+    // Рамка вокруг выбранной детали (overlay).
+    void DrawSelection(FCanvas* Canvas, const FSceneView* View);
+
+    // навигация
+    void DollyZoom(float Dir);                 // колесо: +1 приблизить, -1 отдалить
+    void OrbitCamera(float DX, float DY);      // СКМ-драг: орбита вокруг FocusPoint
+    void PanCamera(float DX, float DY);        // Alt+СКМ-драг: пан
+
+    // выбор/манипуляция деталей
+    UWorld* GetRenderWorld() const;            // мир, который реально рендерится (editor)
+    bool PickPartUnderCursor(FViewport* Viewport); // клик -> line trace -> SelectedActor
+    bool DeprojectMouseToGround(FViewport* Viewport, FVector& OutGround) const; // курсор -> точка на Z=0
+    void TransformSelected(const FRotator& DRot, const FVector& DMove, float ScaleMul);
+    void GatherSelection(TArray<AActor*>& Out) const;
+    void MoveSelectionTo(AActor* Lead, const FVector& NewLoc);
+    void RotateSelection(const FQuat& Q, const FVector& Pivot);
+};

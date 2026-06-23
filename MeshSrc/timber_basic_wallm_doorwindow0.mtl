@@ -1,0 +1,4 @@
+newmtl woodtrimmat
+Kd 0.8 0.8 0.8
+newmtl glassrefractionmat
+Kd 0.8 0.8 0.8

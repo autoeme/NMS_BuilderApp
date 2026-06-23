@@ -1,0 +1,12 @@
+newmtl fungus_tilinga_mat
+Kd 0.8 0.8 0.8
+newmtl fungus_tilingb_mat
+Kd 0.8 0.8 0.8
+newmtl fungus_mushroom_mat
+Kd 0.8 0.8 0.8
+newmtl plantleaf_mat
+Kd 0.8 0.8 0.8
+newmtl plantbase_mat
+Kd 0.8 0.8 0.8
+newmtl plantunlit_mat
+Kd 0.8 0.8 0.8

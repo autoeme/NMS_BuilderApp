@@ -1,0 +1,12 @@
+newmtl basic_wall11_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl shadow_basic_wall8_tilingtexture_matsg1
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat
+Kd 0.8 0.8 0.8
+newmtl basic_wall_basic_wall1_warintmetaldetail_mat
+Kd 0.8 0.8 0.8
+newmtl basic_wall_basic_wall1_boltshadow_mat
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8

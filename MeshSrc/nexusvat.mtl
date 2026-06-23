@@ -1,0 +1,12 @@
+newmtl trimsheetmetal_mat
+Kd 0.8 0.8 0.8
+newmtl landingarea_mat
+Kd 0.8 0.8 0.8
+newmtl goldmetal_mat
+Kd 0.8 0.8 0.8
+newmtl orangeglowfade_mat
+Kd 0.8 0.8 0.8
+newmtl bubblepipesmat
+Kd 0.8 0.8 0.8
+newmtl decal_mat
+Kd 0.8 0.8 0.8

@@ -1,0 +1,4 @@
+newmtl interiorprops_mat4
+Kd 0.8 0.8 0.8
+newmtl phong45
+Kd 0.8 0.8 0.8

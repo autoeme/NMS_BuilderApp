@@ -1,0 +1,6 @@
+newmtl interiorfreighterbase_mat3
+Kd 0.8 0.8 0.8
+newmtl traillight_mat7
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8

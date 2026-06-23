@@ -1,0 +1,12 @@
+newmtl terminal_mat
+Kd 0.8 0.8 0.8
+newmtl glow_mat1
+Kd 0.8 0.8 0.8
+newmtl afterburndrone1
+Kd 0.8 0.8 0.8
+newmtl eyegrad_mat
+Kd 0.8 0.8 0.8
+newmtl terminal2
+Kd 0.8 0.8 0.8
+newmtl blac_mat
+Kd 0.8 0.8 0.8

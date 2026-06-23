@@ -1,0 +1,1006 @@
+[
+	{
+		"Id": "ATTACK_NORM",
+		"DebugDescription": "Basic non-typed attack",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_AFF",
+		"DebugDescription": "Uses Pet Affinity to deal direct damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_HOT",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_COLD",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_LUSH",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_DUST",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_TOX",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_RAD",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_WEIRD",
+		"DebugDescription": "Deals direct damage of specific affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": true,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACK",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_WILD",
+		"DebugDescription": "Inaccurate swing",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "WILD",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "AFF_WILD",
+		"DebugDescription": "Inaccurate swing",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "WILD",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DamageNoProjectile"
+			}
+		]
+	},
+	{
+		"Id": "BARRAGE_AFF",
+		"DebugDescription": "Shoot 3 affinity attack projectiles",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BARRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			},
+			{
+				"Strength": "Light",
+				"Effect": "Projectile"
+			},
+			{
+				"Strength": "Medium",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "RAMP_AFF",
+		"DebugDescription": "Affinity attack that gets stronger the move you use it",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "MULTI",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "AFF_SPEED_ME",
+		"DebugDescription": "Affinity attack that gets stronger the more speed you have",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BARRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "AFF_SPEED_THEM",
+		"DebugDescription": "Affinity attack that gets stronger the more speed you have",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BARRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "MULTI_AFF",
+		"DebugDescription": "Multi-round affinity attack",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": true,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "MULTI",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			},
+			{
+				"Strength": "Medium",
+				"Effect": "Projectile"
+			},
+			{
+				"Strength": "Heavy",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "CHARGEUP_AFF",
+		"DebugDescription": "wait and then attack",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": true,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "CHARGEUP",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			},
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "CHARGEUP_BUFF",
+		"DebugDescription": "wait and then attack",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": true,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "CHARGEUP",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			},
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			},
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "DOT_AFF",
+		"DebugDescription": "Apply an affinity dot",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DoTDamage"
+			}
+		]
+	},
+	{
+		"Id": "DELAY_AFF",
+		"DebugDescription": "Uses Pet Affinity to deal after after x turns",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BOMB",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "DOT_BOMB",
+		"DebugDescription": "Apply a dot that explodes later",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DOTBOMB",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DoTDamage"
+			}
+		]
+	},
+	{
+		"Id": "DONT_TOUCH",
+		"DebugDescription": "Apply a debuff that explodes if dispelled",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DONT_TOUCH",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_DOT_NORM",
+		"DebugDescription": "Do an attack, apply a DoT",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACKDOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_DOT_AFF",
+		"DebugDescription": "Do an attack, apply an affinity dot",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACKDOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "SELF_HEAL",
+		"DebugDescription": "Simple heal on self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "HEAL",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Heal"
+			}
+		]
+	},
+	{
+		"Id": "SELF_HOT",
+		"DebugDescription": "Simple HoT on self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "HOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Heal"
+			}
+		]
+	},
+	{
+		"Id": "DELAY_HEAL",
+		"DebugDescription": "Heal self after X turns",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Heal",
+		"NameStub": "DELAY_HEAL",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "SELF_SHIELD",
+		"DebugDescription": "Simple shield on self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SHIELD",
+		"LocIDToDescribeStat": "UI_PB_STAT_SHIELD",
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "SELF_REFLECT",
+		"DebugDescription": "Reflect damage shield on self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "REFLECT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "SELF_ABSORB",
+		"DebugDescription": "Absorb damage shield on self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ABSORB",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "FULL_REFLECT",
+		"DebugDescription": "Damage-limited shield that fully reflects incoming damage",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "REFLECT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "FULL_SHIELD",
+		"DebugDescription": "Damage-limited shield that fully blocks incoming damage",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SHIELD",
+		"LocIDToDescribeStat": "UI_PB_STAT_SHIELD",
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "FULL_ABSORB",
+		"DebugDescription": "Damage-limited shield that fully absorbs incoming damage",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ABSORB",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Shield"
+			}
+		]
+	},
+	{
+		"Id": "SELF_DISPEL",
+		"DebugDescription": "Remove debuffs from self",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Heal",
+		"NameStub": "DISPEL",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "SELF_RESET_CD",
+		"DebugDescription": "Reset cooldowns",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Cooldown",
+		"NameStub": "RESET_CD",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "HOSTILE_DISPEL",
+		"DebugDescription": "Remove buffs from enemy",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "PURGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "HOSTILE_DISPL_N",
+		"DebugDescription": "Remove debuffs from enemy",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "PURGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "DEBUFF_DAMAGE",
+		"DebugDescription": "reduce enemy damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DEBUFF_DAM",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "DEBUFF_DEF",
+		"DebugDescription": "reduce enemy damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Power",
+		"NameStub": "DEBUFF_DAMHIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "DEBUFF_ACCURACY",
+		"DebugDescription": "reduce enemy hit chance",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DEBUFF_HIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "DEBUFF_DAM_ACC",
+		"DebugDescription": "reduce enemy accuracy + damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DEBUFF_DAMHIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "BUFF_DAMAGE",
+		"DebugDescription": "Buff damage dealt",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BUFF_DAM",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "BUFF_ACCURACY",
+		"DebugDescription": "Buff accuracy",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BUFF_HIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "BUFF_CRIT",
+		"DebugDescription": "Buff crit chance",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BUFF_CRIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "BUFF_SPEED",
+		"DebugDescription": "Buff agility",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BUFF_DODGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "BUFF_DODGE",
+		"DebugDescription": "Buff dodge chance",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BUFF_DODGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_SELFDOT",
+		"DebugDescription": "big impact attack, but dot self",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SELFDOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ATTACK_BOTH",
+		"DebugDescription": "attack you and the enemy",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ATTACKBOTH",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ENRAGE_CRIT",
+		"DebugDescription": "big hit but buff their crit",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ENRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ENRAGE_DAMAGE",
+		"DebugDescription": "big hit but buff their damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ENRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "ENRAGE_HOT",
+		"DebugDescription": "big hit but leave a HoT",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "ENRAGE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Projectile"
+			}
+		]
+	},
+	{
+		"Id": "BURROW",
+		"DebugDescription": "100% chance to dodge",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "BURROW",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "SPEED_UP",
+		"DebugDescription": "super speed boost next round",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SPEEDUP",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Buff"
+			}
+		]
+	},
+	{
+		"Id": "CHANGE_AFFINITY",
+		"DebugDescription": "Change the enemy pet affinity",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "AFFINITY",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "STUN",
+		"DebugDescription": "Stuns an enemy creature",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Cooldown",
+		"NameStub": "STUN",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Stun"
+			}
+		]
+	},
+	{
+		"Id": "SACRIFICE_DAM",
+		"DebugDescription": "blow yourself up but buff your team",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SACRIFICE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DamageNoProjectile"
+			}
+		]
+	},
+	{
+		"Id": "SACRIFICE_DEF",
+		"DebugDescription": "blow yourself up but protect your team",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "SACRIFICE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DamageNoProjectile"
+			}
+		]
+	},
+	{
+		"Id": "REVIVE",
+		"DebugDescription": "Revive someone on the bench - STUB REPLACEMENT",
+		"Target": "Self",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Heal",
+		"NameStub": "SACRIFICE",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DamageNoProjectile"
+			}
+		]
+	},
+	{
+		"Id": "BM_DOT_AFF",
+		"DebugDescription": "Apply an affinity dot",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DOT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "DoTDamage"
+			}
+		]
+	},
+	{
+		"Id": "BM_DEBUFF_ACC",
+		"DebugDescription": "reduce enemy hit chance",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DEBUFF_HIT",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	},
+	{
+		"Id": "BM_DEBUFF_DAM",
+		"DebugDescription": "reduce enemy damage",
+		"Target": "ActiveEnemy",
+		"MultiTurnMove": false,
+		"BasicMove": false,
+		"IconStyle": "Attack",
+		"NameStub": "DEBUFF_DAM",
+		"LocIDToDescribeStat": null,
+		"Phases": [
+			{
+				"Strength": "VeryLight",
+				"Effect": "Debuff"
+			}
+		]
+	}
+]

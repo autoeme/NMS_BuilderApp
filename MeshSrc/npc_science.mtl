@@ -1,0 +1,28 @@
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl glasstubes_mat
+Kd 0.8 0.8 0.8
+newmtl liquidscroll_math
+Kd 0.8 0.8 0.8
+newmtl lights_mat
+Kd 0.8 0.8 0.8
+newmtl scanline_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorprops_mat1
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl screentransparent_mat1
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat1
+Kd 0.8 0.8 0.8
+newmtl uidull_mat1
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat1
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat1
+Kd 0.8 0.8 0.8
+newmtl glass_mat
+Kd 0.8 0.8 0.8
+newmtl lights_mat1
+Kd 0.8 0.8 0.8

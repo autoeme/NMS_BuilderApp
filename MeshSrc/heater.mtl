@@ -1,0 +1,14 @@
+newmtl hqtrimmetal_mat8
+Kd 0.8 0.8 0.8
+newmtl crate
+Kd 0.8 0.8 0.8
+newmtl crate_decal
+Kd 0.8 0.8 0.8
+newmtl decal_mat
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat4
+Kd 0.8 0.8 0.8
+newmtl glow_mat
+Kd 0.8 0.8 0.8
+newmtl glow_mat1
+Kd 0.8 0.8 0.8

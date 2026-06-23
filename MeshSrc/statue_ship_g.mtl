@@ -1,0 +1,8 @@
+newmtl phong1
+Kd 0.8 0.8 0.8
+newmtl glass_mat
+Kd 0.8 0.8 0.8
+newmtl beam_aintscrool
+Kd 0.8 0.8 0.8
+newmtl black
+Kd 0.8 0.8 0.8

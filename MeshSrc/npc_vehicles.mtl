@@ -1,0 +1,34 @@
+newmtl lights_mat3
+Kd 0.8 0.8 0.8
+newmtl interiorprops_mat2
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl screentransparent_mat1
+Kd 0.8 0.8 0.8
+newmtl uidull_mat1
+Kd 0.8 0.8 0.8
+newmtl uibrightspin_mat
+Kd 0.8 0.8 0.8
+newmtl uimiscparts_mat1
+Kd 0.8 0.8 0.8
+newmtl graphpanning_mat1
+Kd 0.8 0.8 0.8
+newmtl spinningbuggy_mat
+Kd 0.8 0.8 0.8
+newmtl scanline_mat1
+Kd 0.8 0.8 0.8
+newmtl npcprops_mat
+Kd 0.8 0.8 0.8
+newmtl phong56
+Kd 0.8 0.8 0.8
+newmtl greenlight_mat
+Kd 0.8 0.8 0.8
+newmtl buggytrim_mat
+Kd 0.8 0.8 0.8
+newmtl buggytire_mat
+Kd 0.8 0.8 0.8
+newmtl buggydecalmetal_mat
+Kd 0.8 0.8 0.8
+newmtl smalllightred_mat
+Kd 0.8 0.8 0.8

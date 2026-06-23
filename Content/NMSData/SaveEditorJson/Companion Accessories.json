@@ -1,0 +1,226 @@
+[
+	{
+		"Id": "PET_ACC_NULL",
+		"Name": "None",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_EMPTY",
+		"Descriptor": null,
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_0",
+		"Name": "Cargo Drum",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_1",
+		"Descriptor": "_ACC_CARGOCYLINDER",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_1",
+		"Name": "Mini-Packs",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_2",
+		"Descriptor": "_ACC_CONTAINERS",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_2",
+		"Name": "Armour",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_3",
+		"Descriptor": "_ACC_SHIELDARMOUR",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_3",
+		"Name": "Solar Battery",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_4",
+		"Descriptor": "_ACC_SOLARBATTERY",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_4",
+		"Name": "Canteen",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_5",
+		"Descriptor": "_ACC_TANK",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_5",
+		"Name": "Square Plating",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_6",
+		"Descriptor": "_ACC_WINGPANEL",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_6",
+		"Name": "Movement Tracker",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_7",
+		"Descriptor": "_ACC_TRAVELPACK",
+		"LinkedProduct": "SPEC_PETCUST2"
+	},
+	{
+		"Id": "PET_ACC_7",
+		"Name": "Atmosphere Sampler",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_8",
+		"Descriptor": "_ACC_SPACEPACK",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_8",
+		"Name": "Cargo Pack",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_9",
+		"Descriptor": "_ACC_CARGOLONG",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_9",
+		"Name": "Satellite",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_10",
+		"Descriptor": "_ACC_ANTENNAE",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_10",
+		"Name": "Vitals Monitor",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_11",
+		"Descriptor": "_ACC_COMPUTER",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_11",
+		"Name": "Phial",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_12",
+		"Descriptor": "_ACC_TOOLBELT",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_12",
+		"Name": "Bio Canisters",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_13",
+		"Descriptor": "_ACC_LCANISTERS",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_13",
+		"Name": "Energy Coil",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_14",
+		"Descriptor": "_ACC_LENERGYCOIL",
+		"LinkedProduct": "SPEC_PETCUST3"
+	},
+	{
+		"Id": "PET_ACC_14",
+		"Name": "Square Laser",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_15",
+		"Descriptor": "_ACC_LFRIGATETURRET",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_15",
+		"Name": "Torch",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_16",
+		"Descriptor": "_ACC_LHEADLIGHTS",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_16",
+		"Name": "Tapered Plating",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_17",
+		"Descriptor": "_ACC_LARMOURPLATE",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_17",
+		"Name": "Rounded Laser",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_18",
+		"Descriptor": "_ACC_LTURRET",
+		"LinkedProduct": "SPEC_PETCUST1"
+	},
+	{
+		"Id": "PET_ACC_18",
+		"Name": "Support System",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_19",
+		"Descriptor": "_ACC_LSUPPORTSYSTEM",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_19",
+		"Name": "Bio Canisters",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_13",
+		"Descriptor": "_ACC_RCANISTERS",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_20",
+		"Name": "Energy Coil",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_14",
+		"Descriptor": "_ACC_RENERGYCOIL",
+		"LinkedProduct": "SPEC_PETCUST3"
+	},
+	{
+		"Id": "PET_ACC_21",
+		"Name": "Square Laser",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_15",
+		"Descriptor": "_ACC_RFRIGATETURRET",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_22",
+		"Name": "Torch",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_16",
+		"Descriptor": "_ACC_RHEADLIGHTS",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_23",
+		"Name": "Tapered Plating",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_17",
+		"Descriptor": "_ACC_RARMOURPLATE",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_24",
+		"Name": "Rounded Laser",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_18",
+		"Descriptor": "_ACC_RTURRET",
+		"LinkedProduct": "SPEC_PETCUST1"
+	},
+	{
+		"Id": "PET_ACC_25",
+		"Name": "Support System",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_19",
+		"Descriptor": "_ACC_RSUPPORTSYSTEM",
+		"LinkedProduct": null
+	},
+	{
+		"Id": "PET_ACC_26",
+		"Name": "Exotic Armour",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_20",
+		"Descriptor": "_ACC_LROYALARMOUR",
+		"LinkedProduct": "EXPD_PETCUST05"
+	},
+	{
+		"Id": "PET_ACC_27",
+		"Name": "Exotic Armour",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_20",
+		"Descriptor": "_ACC_RROYALARMOUR",
+		"LinkedProduct": "EXPD_PETCUST05"
+	},
+	{
+		"Id": "PET_ACC_28",
+		"Name": "Mechanical Paw",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_21",
+		"Descriptor": "_ACC_RobotHandR",
+		"LinkedProduct": "EXPD_PETCUST11"
+	},
+	{
+		"Id": "PET_ACC_29",
+		"Name": "Mechanical Paw",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_21",
+		"Descriptor": "_ACC_RobotHandL",
+		"LinkedProduct": "EXPD_PETCUST11"
+	},
+	{
+		"Id": "PET_ACC_30",
+		"Name": "Mechanical Paw",
+		"Name_LocStr": "UI_TIP_PET_ACCESSORY_21",
+		"Descriptor": "_ACC_RobotHands",
+		"LinkedProduct": "EXPD_PETCUST11"
+	}
+]

@@ -1,0 +1,10 @@
+newmtl corridor_join_tilingtexture_mat1
+Kd 0.8 0.8 0.8
+newmtl unlit_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl blinn11
+Kd 0.8 0.8 0.8

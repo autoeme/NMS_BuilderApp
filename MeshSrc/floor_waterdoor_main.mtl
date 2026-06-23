@@ -1,0 +1,16 @@
+newmtl panel_doorconnect_tilingtexture_mat4
+Kd 0.8 0.8 0.8
+newmtl glowstrip_mat2
+Kd 0.8 0.8 0.8
+newmtl mainroom_tilingtexture_mat5
+Kd 0.8 0.8 0.8
+newmtl tkderef5_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl roomfoundation1_mainroom_tilingtexture_mat2
+Kd 0.8 0.8 0.8
+newmtl interiortiling_mat4
+Kd 0.8 0.8 0.8
+newmtl hologramdisplacement_mat3
+Kd 0.8 0.8 0.8
+newmtl hologramdisplacement_mat2
+Kd 0.8 0.8 0.8

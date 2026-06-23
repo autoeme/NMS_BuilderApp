@@ -1,0 +1,8 @@
+newmtl interiortrimmat
+Kd 0.8 0.8 0.8
+newmtl pomsheet_mat
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8
+newmtl glowprimary_mat
+Kd 0.8 0.8 0.8

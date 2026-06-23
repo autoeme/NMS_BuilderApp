@@ -1,0 +1,10 @@
+newmtl crate1
+Kd 0.8 0.8 0.8
+newmtl buttonanim_mat
+Kd 0.8 0.8 0.8
+newmtl hqtrimmetal_mat8
+Kd 0.8 0.8 0.8
+newmtl crate
+Kd 0.8 0.8 0.8
+newmtl crate9_crate_decal
+Kd 0.8 0.8 0.8

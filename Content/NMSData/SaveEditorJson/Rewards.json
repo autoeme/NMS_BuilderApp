@@ -1,0 +1,6062 @@
+[
+	{
+		"Id": "^VAULT_ARMOUR",
+		"Name": "Heirloom Breastplate",
+		"Name_LocStr": "UI_EXPED_VAULT_ARMOUR_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_ARMOUR_SUB",
+		"Category": "season",
+		"ProductId": "VAULT_ARMOUR",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^VAULT_TORSO",
+		"Name": "Heirloom Suit",
+		"Name_LocStr": "UI_EXPED_VAULT_TORSO_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_TORSO_SUB",
+		"Category": "season",
+		"ProductId": "VAULT_TORSO",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^VAULT_GLOVES",
+		"Name": "Heirloom Gloves",
+		"Name_LocStr": "UI_EXPED_VAULT_GLOVES_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GLOVE_SUB",
+		"Category": "season",
+		"ProductId": "VAULT_GLOVES",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^VAULT_LEGS",
+		"Name": "Heirloom Leggings",
+		"Name_LocStr": "UI_EXPED_VAULT_LEGS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_LEGS_SUB",
+		"Category": "season",
+		"ProductId": "VAULT_LEGS",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^VAULT_BOOTS",
+		"Name": "Heirloom Boots",
+		"Name_LocStr": "UI_EXPED_VAULT_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BOOTS_SUB",
+		"Category": "season",
+		"ProductId": "VAULT_BOOTS",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE21",
+		"Name": "Title: 'mag-field Expert'",
+		"Name_LocStr": "UI_EXPD_TITLE_21_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE21",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_DECAL21",
+		"Name": "Remnant Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_21_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL21",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER21",
+		"Name": "Remnant Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_21_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER21",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": -1
+	},
+	{
+		"Id": "^TRUCK_WHEELS08",
+		"Name": "Mechanical Legs",
+		"Name_LocStr": "UI_TRUCK_WHEELS08_NAME",
+		"Subtitle_LocStr": "UI_VEHICLE_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "TRUCK_WHEELS08",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 4
+	},
+	{
+		"Id": "^TRUCK_CAB03",
+		"Name": "Asymmetrical Cabin",
+		"Name_LocStr": "UI_TRUCK_CAB03_NAME",
+		"Subtitle_LocStr": "UI_VEHICLE_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "TRUCK_CAB03",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 3
+	},
+	{
+		"Id": "^TRUCK_PAINT03",
+		"Name": "Camouflage Finish",
+		"Name_LocStr": "UI_TRUCK_PAINT03_NAME",
+		"Subtitle_LocStr": "UI_VEHICLE_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "TRUCK_PAINT03",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 2
+	},
+	{
+		"Id": "^SPEC_EMOTE16",
+		"Name": "TOOT TOOT!",
+		"Name_LocStr": "EMOTE_HONK_HORN_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "season",
+		"ProductId": "SPEC_EMOTE16",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER21C",
+		"Name": "Colossus Exocraft Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER21C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER21C",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER21B",
+		"Name": "Gravitino Coil Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER21B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER21B",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER21A",
+		"Name": "Magnetism Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER21A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER21A",
+		"MustBeUnlocked": false,
+		"SeasonId": 21,
+		"StageId": 1
+	},
+	{
+		"Id": "^B_WNG_P",
+		"Name": "B_WNG_P",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_WNG_P",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": -1
+	},
+	{
+		"Id": "^B_WNG_R",
+		"Name": "B_WNG_R",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_WNG_R",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": -1
+	},
+	{
+		"Id": "^B_STR_AA_N",
+		"Name": "B_STR_AA_N",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_STR_AA_N",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE20",
+		"Name": "Title: 'the Celestial'",
+		"Name_LocStr": "UI_EXPD_TITLE_20_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE20",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL20",
+		"Name": "Breach Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_20_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL20",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER20",
+		"Name": "Breach Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_20_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER20",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 5
+	},
+	{
+		"Id": "^B_WNG_Q",
+		"Name": "B_WNG_Q",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_WNG_Q",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 4
+	},
+	{
+		"Id": "^B_DECO_S",
+		"Name": "B_DECO_S",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_DECO_S",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 4
+	},
+	{
+		"Id": "^B_DECO_T",
+		"Name": "B_DECO_T",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_DECO_T",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 4
+	},
+	{
+		"Id": "^B_SHL_E",
+		"Name": "B_SHL_E",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_SHL_E",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 3
+	},
+	{
+		"Id": "^B_DECO_R",
+		"Name": "B_DECO_R",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_DECO_R",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 3
+	},
+	{
+		"Id": "^B_DECO_Q_0",
+		"Name": "B_DECO_Q_0",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_DECO_Q_0",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 3
+	},
+	{
+		"Id": "^SHIP_ATLAS",
+		"Name": "Aeron Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_ATLAS_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "SHIP_ATLAS",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER20C",
+		"Name": "Event Horizon Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER20C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER20C",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER20B",
+		"Name": "Eternal Serpents Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER20B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER20B",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER20A",
+		"Name": "Siren of the Stars Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER20A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER20A",
+		"MustBeUnlocked": false,
+		"SeasonId": 20,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_19",
+		"Name": "Mecha-mouse Egg",
+		"Name_LocStr": "UI_EXPD_EGG_19_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_19_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_19",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE19",
+		"Name": "Title: 'Shipwright'",
+		"Name_LocStr": "UI_EXPD_TITLE_19_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE19",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER19",
+		"Name": "Corvette Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_19_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER19",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL19",
+		"Name": "Corvette Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_19_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL19",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 5
+	},
+	{
+		"Id": "^B_TUR_B",
+		"Name": "B_TUR_B",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "season",
+		"ProductId": "B_TUR_B",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 4
+	},
+	{
+		"Id": "^SHIP_PLASMA",
+		"Name": "Plasma Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_PLASMA_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "SHIP_PLASMA",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 3
+	},
+	{
+		"Id": "^JETS_RUIN",
+		"Name": "Vigilant Trail",
+		"Name_LocStr": "UI_JETTRAIL_RUIN_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_RUIN",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER19C",
+		"Name": "Big Rig Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER19C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER19C",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER19B",
+		"Name": "\"built to Last\" Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER19B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER19B",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER19A",
+		"Name": "Corvette Blueprint Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER19A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER19A",
+		"MustBeUnlocked": false,
+		"SeasonId": 19,
+		"StageId": 1
+	},
+	{
+		"Id": "^STONE_HAT",
+		"Name": "Living Stone Helmet",
+		"Name_LocStr": "UI_EXPED_STONE_HAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "STONE_HAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^STONE_TORSO",
+		"Name": "Living Stone Chestpiece",
+		"Name_LocStr": "UI_EXPED_STONE_TORSO_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_TORSO_SUB",
+		"Category": "season",
+		"ProductId": "STONE_TORSO",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^STONE_ARMOUR",
+		"Name": "Living Stone Armour",
+		"Name_LocStr": "UI_EXPED_STONE_ARMOUR_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_ARMOUR_SUB",
+		"Category": "season",
+		"ProductId": "STONE_ARMOUR",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^STONE_GLOVES",
+		"Name": "Living Stone Gloves",
+		"Name_LocStr": "UI_EXPED_STONE_GLOVES_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GLOVE_SUB",
+		"Category": "season",
+		"ProductId": "STONE_GLOVES",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^STONE_LEGS",
+		"Name": "Living Stone Legplates",
+		"Name_LocStr": "UI_EXPED_STONE_LEGS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_LEGS_SUB",
+		"Category": "season",
+		"ProductId": "STONE_LEGS",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^STONE_BOOTS",
+		"Name": "Living Stone Boots",
+		"Name_LocStr": "UI_EXPED_STONE_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BOOTS_SUB",
+		"Category": "season",
+		"ProductId": "STONE_BOOTS",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE18",
+		"Name": "Title: 'Excavator'",
+		"Name_LocStr": "UI_EXPD_TITLE_18_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE18",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL18",
+		"Name": "Relics Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_18_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL18",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER18",
+		"Name": "Relics Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_18_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER18",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_STONE_PACK",
+		"Name": "Living Stone Hardpack",
+		"Name_LocStr": "UI_EXPED_STONE_PACK_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PACK_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_STONE_PACK",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_STAFF_18",
+		"Name": "Basilisk Crown",
+		"Name_LocStr": "UI_EXPED_STAFF_18_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STAFF_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_STAFF_18",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_EGG_18",
+		"Name": "Fossilised Egg",
+		"Name_LocStr": "UI_EXPD_EGG_18_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_18_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_18",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER18C",
+		"Name": "Spirals Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER18C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER18C",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER18B",
+		"Name": "Taxonomy Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER18B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER18B",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER18A",
+		"Name": "Fluid Dynamics Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER18A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER18A",
+		"MustBeUnlocked": false,
+		"SeasonId": 18,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_SHIP17",
+		"Name": "The Wraith",
+		"Name_LocStr": "UI_EXPD_SHIP_17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE17",
+		"Name": "Title: 'surveyor of Worlds'",
+		"Name_LocStr": "UI_EXPD_TITLE_17_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL17",
+		"Name": "Titan Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_17_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER17",
+		"Name": "Titan Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_17_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_STAFF_17",
+		"Name": "Pillar of Titan",
+		"Name_LocStr": "UI_EXPED_STAFF_17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STAFF_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_STAFF_17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_CAPE17",
+		"Name": "Surveyor's Cape",
+		"Name_LocStr": "UI_CAPE_S17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_CAPE17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_SHIPMAT17",
+		"Name": "Titan Stripes",
+		"Name_LocStr": "UI_EXPD_SHIPMAT_17_NAME",
+		"Subtitle_LocStr": "UI_SPEC_SHIPMAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIPMAT17",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER17A",
+		"Name": "Gas Giant Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER17A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER17A",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER17B",
+		"Name": "Depth Warning Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER17B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER17B",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER17C",
+		"Name": "Cartographer's Chart",
+		"Name_LocStr": "BLD_EXPD_POSTER17C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER17C",
+		"MustBeUnlocked": false,
+		"SeasonId": 17,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_SHIP16",
+		"Name": "Boundary Herald",
+		"Name_LocStr": "UI_EXPD_SHIP_16_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP16",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_EGG_16",
+		"Name": "Glowing Egg",
+		"Name_LocStr": "UI_EXPD_EGG_16_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_16_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_16",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_S16_HAT",
+		"Name": "Boundary Horror Mandibles",
+		"Name_LocStr": "UI_EXPED_SQUID_HAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S16_HAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 3
+	},
+	{
+		"Id": "^S16_HEATER",
+		"Name": "Anomaly Seal",
+		"Name_LocStr": "BLD_S16_HEATER_NAME",
+		"Subtitle_LocStr": "BLD_S16_HEATER_SUB",
+		"Category": "season",
+		"ProductId": "S16_HEATER",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 2
+	},
+	{
+		"Id": "^JETS_SQUID",
+		"Name": "Ink-stained Trail",
+		"Name_LocStr": "UI_JETTRAIL_SQUID_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_SQUID",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER16A",
+		"Name": "Boundary Anomaly Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER16A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER16A",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER16B",
+		"Name": "Portal Breach Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER16B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER16B",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER16C",
+		"Name": "Glyph Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER16C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER16C",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_TITLE16",
+		"Name": "Title: 'the Haunted'",
+		"Name_LocStr": "UI_EXPD_TITLE_16_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE16",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER16",
+		"Name": "Cursed Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_16_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER16",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL16",
+		"Name": "Cursed Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_16_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL16",
+		"MustBeUnlocked": false,
+		"SeasonId": 16,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_FISH_PACK",
+		"Name": "Aquarius Flight Pack",
+		"Name_LocStr": "UI_EXPED_FISH_PACK_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PACK_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FISH_PACK",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_S15_LASER",
+		"Name": "Lost Angler's Rig",
+		"Name_LocStr": "UI_S15_FISHLASER_NAME",
+		"Subtitle_LocStr": "UI_S15_FISHLASER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S15_LASER",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_S15_ARMOUR",
+		"Name": "Deep-sea Armour",
+		"Name_LocStr": "UI_EXPED_FISH_ARMOUR_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_ARMOUR_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S15_ARMOUR",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_S15_HAT",
+		"Name": "Deep-sea Helmet",
+		"Name_LocStr": "UI_EXPED_FISH_HAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S15_HAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_S15_LEGS",
+		"Name": "Deep-sea Leggings",
+		"Name_LocStr": "UI_EXPED_FISH_LEGS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_LEGS_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S15_LEGS",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_S15_BOOTS",
+		"Name": "Deep-sea Flippers",
+		"Name_LocStr": "UI_EXPED_FISH_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BOOTS_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_S15_BOOTS",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER15A",
+		"Name": "Gone Fishin' Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER15A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER15A",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER15B",
+		"Name": "Sea Chart Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER15B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER15B",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER15C",
+		"Name": "Bounty of the Sea Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER15C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER15C",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_TITLE15",
+		"Name": "Title: 'the Fisher'",
+		"Name_LocStr": "UI_EXPD_TITLE_15_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE15",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER15",
+		"Name": "Aquarius Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_15_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER15",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 5
+	},
+	{
+		"Id": "^BOBBLE_OCTO",
+		"Name": "TENTACLED FIGURINE",
+		"Name_LocStr": "UI_S15_FISH_BOBBLE",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "season",
+		"ProductId": "BOBBLE_OCTO",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL15",
+		"Name": "Aquarius Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_15_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL15",
+		"MustBeUnlocked": false,
+		"SeasonId": 15,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_EGG_14",
+		"Name": "Grub Cocoon",
+		"Name_LocStr": "UI_EXPD_EGG_14_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_14_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_14",
+		"MustBeUnlocked": true,
+		"SeasonId": 14,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPED_BUG_PACK",
+		"Name": "Chitin Flight Pack",
+		"Name_LocStr": "UI_EXPED_BUG_PACK_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PACK_SUB",
+		"Category": "season",
+		"ProductId": "EXPED_BUG_PACK",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPED_BUG_ARMOR",
+		"Name": "Chitin Exoskeleton",
+		"Name_LocStr": "UI_EXPED_BUG_ARMOUR_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_ARMOUR_SUB",
+		"Category": "season",
+		"ProductId": "EXPED_BUG_ARMOR",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPED_BUG_HAT",
+		"Name": "Chitin Mandibles",
+		"Name_LocStr": "UI_EXPED_BUG_HAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPED_BUG_HAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPED_BUG_GLOVE",
+		"Name": "Chitin Gauntlets",
+		"Name_LocStr": "UI_EXPED_BUG_GLOVES_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GLOVE_SUB",
+		"Category": "season",
+		"ProductId": "EXPED_BUG_GLOVE",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPED_BUG_BOOTS",
+		"Name": "Chitin Spurs",
+		"Name_LocStr": "UI_EXPED_BUG_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BOOTS_SUB",
+		"Category": "season",
+		"ProductId": "EXPED_BUG_BOOTS",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_POSTER14A",
+		"Name": "Swarmsong Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER14A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER14A",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER14B",
+		"Name": "Brood Mother Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER14B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER14B",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER14C",
+		"Name": "Bug Hunt Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER14C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER14C",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 1
+	},
+	{
+		"Id": "^BLD_BUGHEAD1",
+		"Name": "Monstrous Trophy",
+		"Name_LocStr": "BLD_EXPD_BUGHEAD1_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUGHEAD1",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_BUGHEAD2",
+		"Name": "Mounted Mandibles",
+		"Name_LocStr": "BLD_EXPD_BUGHEAD2_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUGHEAD2",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_BUGHEAD3",
+		"Name": "Broodling Trophy",
+		"Name_LocStr": "BLD_EXPD_BUGHEAD3_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUGHEAD3",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_BUGHEAD4",
+		"Name": "Vile Taxidermy",
+		"Name_LocStr": "BLD_EXPD_BUGHEAD4_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUGHEAD4",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_BUGHEAD5",
+		"Name": "Prized Exoskeleton",
+		"Name_LocStr": "BLD_EXPD_BUGHEAD5_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUGHEAD5",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_TITLE14",
+		"Name": "Title: 'Broodling'",
+		"Name_LocStr": "UI_EXPD_TITLE_14_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE14",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL14",
+		"Name": "Liquidator Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_14_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL14",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER14",
+		"Name": "Liquidator Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_14_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER14",
+		"MustBeUnlocked": false,
+		"SeasonId": 14,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE13",
+		"Name": "Title: 'Drifter'",
+		"Name_LocStr": "UI_EXPD_TITLE_13_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL13",
+		"Name": "Adrift Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_13_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BANNER13",
+		"Name": "Adrift Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_13_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_SHIP13",
+		"Name": "Iron Vulture",
+		"Name_LocStr": "UI_EXPD_SHIP_13_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_SHIP_METAL",
+		"Name": "Iron Panels",
+		"Name_LocStr": "UI_EXPD_SHIPMAT_BOLT_NAME",
+		"Subtitle_LocStr": "UI_SPEC_SHIPMAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP_METAL",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_GHOSTFRIG",
+		"Name": "Ship of the Damned",
+		"Name_LocStr": "UI_EXPD_GHOSTFRIG_NAME",
+		"Subtitle_LocStr": "UI_EXPD_GHOSTFRIG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_GHOSTFRIG",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_EGG_13",
+		"Name": "Appalling Egg",
+		"Name_LocStr": "UI_EXPD_EGG_13_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_13_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_SHIPMAT13",
+		"Name": "Stealth Paint",
+		"Name_LocStr": "UI_EXPD_SHIPMAT_CAMO_NAME",
+		"Subtitle_LocStr": "UI_SPEC_SHIPMAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIPMAT13",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 1
+	},
+	{
+		"Id": "^BLD_SHIPBREAK1",
+		"Name": "Ruined Starship",
+		"Name_LocStr": "BLD_EXPD_SHIPBREAK1_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_SHIPBREAK1",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_SHIPBREAK2",
+		"Name": "Unsalvageable Wreck",
+		"Name_LocStr": "BLD_EXPD_SHIPBREAK2_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_SHIPBREAK2",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_SHIPBREAK3",
+		"Name": "Broken Vessel",
+		"Name_LocStr": "BLD_EXPD_SHIPBREAK3_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_SHIPBREAK3",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_SHIPBREAK4",
+		"Name": "Damaged Starship",
+		"Name_LocStr": "BLD_EXPD_SHIPBREAK4_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_SHIPBREAK4",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 2
+	},
+	{
+		"Id": "^BLD_SHIPBREAK5",
+		"Name": "Starship Remnants",
+		"Name_LocStr": "BLD_EXPD_SHIPBREAK5_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_SHIPBREAK5",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER13C",
+		"Name": "Isolation Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER13C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER13C",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER13B",
+		"Name": "Alone in the Dark Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER13B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER13B",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER13A",
+		"Name": "Meditation Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER13A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER13A",
+		"MustBeUnlocked": false,
+		"SeasonId": 13,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_BANNER12",
+		"Name": "Omega Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_12_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER12",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE12",
+		"Name": "Title: 'Starborn'",
+		"Name_LocStr": "UI_EXPD_TITLE_12_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE12",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL12",
+		"Name": "Omega Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_12_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL12",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_SHIP12",
+		"Name": "Starborn Runner",
+		"Name_LocStr": "UI_EXPD_SHIP_12_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP12",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_ATLASPACK",
+		"Name": "Atlas Flightpack",
+		"Name_LocStr": "UI_EXPD_ATLASPACK_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_ATLASPACK",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_ATLASSTAFF",
+		"Name": "Atlas Sceptre",
+		"Name_LocStr": "UI_EXPD_ATLASSTAFF_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STAFF_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_ATLASSTAFF",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_ATLASHELM",
+		"Name": "Atlas Headshield",
+		"Name_LocStr": "UI_EXPD_ATLASHELM_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_ATLASHELM",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER12C",
+		"Name": "Starborn Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER12C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER12C",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER12B",
+		"Name": "Interface Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER12B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER12B",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER12A",
+		"Name": "Remembrance Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER12A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER12A",
+		"MustBeUnlocked": false,
+		"SeasonId": 12,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_11",
+		"Name": "Construct 'Egg'",
+		"Name_LocStr": "UI_EXPD_EGG_11_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_11_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_11",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER11",
+		"Name": "Voyagers Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_11_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER11",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE11",
+		"Name": "Title: 'the Intrepid'",
+		"Name_LocStr": "UI_EXPD_TITLE_11_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE11",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL11",
+		"Name": "Voyagers Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_11_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL11",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 5
+	},
+	{
+		"Id": "^BLD_BUI_HEAD",
+		"Name": "Construct 'Skull'",
+		"Name_LocStr": "BLD_BUI_HEAD_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUI_HEAD",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_BUI_HAND",
+		"Name": "Construct Digits",
+		"Name_LocStr": "BLD_BUI_HAND_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUI_HAND",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_BUI_TENT",
+		"Name": "Ragged Tent",
+		"Name_LocStr": "BLD_BUI_TENT_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_BUI_TENT",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_PETCUST11",
+		"Name": "Mechanical Paw",
+		"Name_LocStr": "UI_EXPD_PET_CUSTOM_11_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_PETCUST11",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_POSTER11C",
+		"Name": "Open Horizons Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER11C",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER11B",
+		"Name": "Anomalous Wonder Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER11B",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER11A",
+		"Name": "Navigators Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER11A",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 2
+	},
+	{
+		"Id": "^JETS_ELECTRIC",
+		"Name": "Electric Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_ELECTRIC_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_ELECTRIC",
+		"MustBeUnlocked": false,
+		"SeasonId": 11,
+		"StageId": 1
+	},
+	{
+		"Id": "^S10_PART1A",
+		"Name": "Construct Head: Atlantid",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_HEAD_A_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HEAD_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART1A",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^S10_PART1B",
+		"Name": "Construct Head: Crimson",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_HEAD_B_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HEAD_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART1B",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^S10_PART2",
+		"Name": "Construct Hands",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_GLOVES_NAME",
+		"Subtitle_LocStr": "UI_BUILDER_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART2",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^S10_PART3",
+		"Name": "Construct Chest",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_TORSO_NAME",
+		"Subtitle_LocStr": "UI_BUILDER_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART3",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^S10_PART4",
+		"Name": "Construct Feet",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_BUILDER_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART4",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^S10_PART5",
+		"Name": "Construct Legs",
+		"Name_LocStr": "UI_SPEC_CONSTRUCT_LEGS_NAME",
+		"Subtitle_LocStr": "UI_BUILDER_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "S10_PART5",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER10",
+		"Name": "Singularity Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_10_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER10",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL10",
+		"Name": "Singularity Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_10_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL10",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE10",
+		"Name": "Title: 'the Construct'",
+		"Name_LocStr": "UI_EXPD_TITLE_10_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE10",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 5
+	},
+	{
+		"Id": "^SPEC_ROCKETHAT",
+		"Name": "Wayfarer's Helm",
+		"Name_LocStr": "UI_SPEC_ROCKETHAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "SPEC_ROCKETHAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_CRYS_DRONE",
+		"Name": "Crystallised Drone",
+		"Name_LocStr": "BLD_CRYS_DRONE_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "BLD_CRYS_DRONE",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 3
+	},
+	{
+		"Id": "^JETS_CORRUPT",
+		"Name": "Discordant Trail",
+		"Name_LocStr": "UI_CORRUPT_TRAIL_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_CORRUPT",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 2
+	},
+	{
+		"Id": "^FREI_TRAIL_RED",
+		"Name": "Crimson Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_RED_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "season",
+		"ProductId": "FREI_TRAIL_RED",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER10C",
+		"Name": "Construct Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER10C",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER10B",
+		"Name": "Atlantid Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER10B",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER10A",
+		"Name": "Atlas Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER10A",
+		"MustBeUnlocked": false,
+		"SeasonId": 10,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_SHIP09",
+		"Name": "Utopia Speeder",
+		"Name_LocStr": "UI_EXPD_SHIP_09_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP09",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER09",
+		"Name": "Utopia Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_09_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER09",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL09",
+		"Name": "Utopia Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_09_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL09",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE09",
+		"Name": "Title: 'utopia Dignitary'",
+		"Name_LocStr": "UI_EXPD_TITLE_09_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE09",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_EGG_09",
+		"Name": "Robo-warden Egg",
+		"Name_LocStr": "UI_EXPD_EGG_09_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_09_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_09",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 4
+	},
+	{
+		"Id": "^SPEC_BUCKETHELM",
+		"Name": "Fearsome Visor",
+		"Name_LocStr": "UI_SPEC_BUCKETHELM_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "SPEC_BUCKETHELM",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 3
+	},
+	{
+		"Id": "^BLD_HOLOGEK",
+		"Name": "Holographic Friend",
+		"Name_LocStr": "BLD_HOLOGEK_NAME",
+		"Subtitle_LocStr": "BLD_HOLOGEK_SUB",
+		"Category": "season",
+		"ProductId": "BLD_HOLOGEK",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER09C",
+		"Name": "Planetary Base Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER09C",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER09B",
+		"Name": "Night Squad Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER09B",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER09A",
+		"Name": "Factions Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER09A",
+		"MustBeUnlocked": false,
+		"SeasonId": 9,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_08",
+		"Name": "Helios Egg",
+		"Name_LocStr": "UI_EXPD_EGG_08_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_08_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_08",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER08",
+		"Name": "Polestar Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_08_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER08",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL08",
+		"Name": "Polestar Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_08_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL08",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE08",
+		"Name": "Title: 'the Seeker'",
+		"Name_LocStr": "UI_EXPD_TITLE_08_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE08",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_CAPE08",
+		"Name": "Fleet Commander's Cape",
+		"Name_LocStr": "UI_FLEETCAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_CAPE08",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_DATASIGN",
+		"Name": "Data Display Unit",
+		"Name_LocStr": "BLD_DATASIGN_NAME",
+		"Subtitle_LocStr": "BLD_DATASIGN_SUB",
+		"Category": "season",
+		"ProductId": "BLD_DATASIGN",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 3
+	},
+	{
+		"Id": "^BLD_FIREPIT",
+		"Name": "Flaming Barrel",
+		"Name_LocStr": "BLD_FIREPIT_NAME",
+		"Subtitle_LocStr": "BLD_FIREPIT_SUB",
+		"Category": "season",
+		"ProductId": "BLD_FIREPIT",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 3
+	},
+	{
+		"Id": "^BLD_MAPTUBE",
+		"Name": "Navigation Archive",
+		"Name_LocStr": "BLD_MAPTUBE_NAME",
+		"Subtitle_LocStr": "BLD_MAPTUBE_SUB",
+		"Category": "season",
+		"ProductId": "BLD_MAPTUBE",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 3
+	},
+	{
+		"Id": "^FREI_TRAIL_GRAV",
+		"Name": "High-gravity Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_01_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "season",
+		"ProductId": "FREI_TRAIL_GRAV",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER08C",
+		"Name": "Heavy Shipping Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER08C",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER08B",
+		"Name": "Polestar Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER08B",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER08A",
+		"Name": "Pilgrim Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER08A",
+		"MustBeUnlocked": false,
+		"SeasonId": 8,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_BIOFRIG",
+		"Name": "Organic Frigate",
+		"Name_LocStr": "UI_EXPD_BIOFRIG_NAME",
+		"Subtitle_LocStr": "UI_EXPD_BIOFRIG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BIOFRIG",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER07",
+		"Name": "Leviathan Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_07_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER07",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL07",
+		"Name": "Leviathan Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_07_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL07",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE07",
+		"Name": "Title: 'Looper'",
+		"Name_LocStr": "UI_EXPD_TITLE_07_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE07",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 5
+	},
+	{
+		"Id": "^BLD_MINI_BIOFRI",
+		"Name": "Organic Frigate Calf",
+		"Name_LocStr": "BLD_MINI_BIOFRIG_NAME",
+		"Subtitle_LocStr": "BLD_MINI_BIOFRIG_SUB",
+		"Category": "season",
+		"ProductId": "BLD_MINI_BIOFRI",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_CAPE07",
+		"Name": "Whalestalker Cloak",
+		"Name_LocStr": "UI_ROGUECAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_CAPE07",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 3
+	},
+	{
+		"Id": "^SHIP_ROGUE",
+		"Name": "Temporal Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_ROGUE_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "SHIP_ROGUE",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER07C",
+		"Name": "Timesplice Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER07C",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER07B",
+		"Name": "The Loop Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER07B",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_POSTER07A",
+		"Name": "Leviathan Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER07A",
+		"MustBeUnlocked": false,
+		"SeasonId": 7,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_CAPE06",
+		"Name": "Outlaw Cape",
+		"Name_LocStr": "UI_PIRATECAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_CAPE06",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER06",
+		"Name": "Blighted Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_06_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER06",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL06",
+		"Name": "Blighted Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_06_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL06",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE06",
+		"Name": "Title: 'hunter of the Blight'",
+		"Name_LocStr": "UI_EXPD_TITLE_06_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE06",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_CUBE_06",
+		"Name": "Wayward Cube",
+		"Name_LocStr": "UI_EXPD_CUBE_06_NAME",
+		"Subtitle_LocStr": "UI_EXPD_CUBE_06_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_CUBE_06",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_ODD_EGG",
+		"Name": "Void Egg",
+		"Name_LocStr": "UI_ODD_EGG_NAME",
+		"Subtitle_LocStr": "UI_ODD_EGG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_ODD_EGG",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_FLAG_06E",
+		"Name": "Viridian Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06E_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FLAG_06E",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_FLAG_06D",
+		"Name": "Orbital Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06D_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FLAG_06D",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_FLAG_06C",
+		"Name": "Heraldry Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06C_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FLAG_06C",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_FLAG_06B",
+		"Name": "Unity Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06B_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FLAG_06B",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_FLAG_06A",
+		"Name": "Piracy Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06A_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FLAG_06A",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_POSTER06C",
+		"Name": "Resbur Xiii Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER06C",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER06B",
+		"Name": "Outlaw Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER06B",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER06A",
+		"Name": "Dread Captain Fahng Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER06A",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 2
+	},
+	{
+		"Id": "^SHIP_PIRATE",
+		"Name": "Sputtering Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_PIRATE_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "SHIP_PIRATE",
+		"MustBeUnlocked": false,
+		"SeasonId": 6,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_05",
+		"Name": "Quad Egg",
+		"Name_LocStr": "UI_EXPD_EGG_05_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_05_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER05",
+		"Name": "Exobiology Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_05_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL05",
+		"Name": "Exobiology Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_05_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE05",
+		"Name": "Title: 'Exobiologist'",
+		"Name_LocStr": "UI_EXPD_TITLE_05_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BACKPACK05",
+		"Name": "Exotic Wingpack",
+		"Name_LocStr": "UI_EXPD_BACKPACK_05_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BACKPACK05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_PETCUST05",
+		"Name": "Exotic Armour",
+		"Name_LocStr": "UI_EXPD_PET_CUSTOM_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_PETCUST05",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 3
+	},
+	{
+		"Id": "^EXPD_POSTER05C",
+		"Name": "Territories Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER05C",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER05B",
+		"Name": "Abyssal Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER05B",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_POSTER05A",
+		"Name": "Solstice Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_POSTER05A",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 2
+	},
+	{
+		"Id": "^JETS_SENT",
+		"Name": "Reality Glitch Trail",
+		"Name_LocStr": "UI_SENTTRAIL_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_SENT",
+		"MustBeUnlocked": false,
+		"SeasonId": 5,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_04",
+		"Name": "Sandworm Egg",
+		"Name_LocStr": "UI_EXPD_EGG_04_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_04_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_04",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER04",
+		"Name": "Emergence Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_04_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER04",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL04",
+		"Name": "Emergence Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_04_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL04",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE04",
+		"Name": "Title: 'worm Lord'",
+		"Name_LocStr": "UI_EXPD_TITLE_04_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE04",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_WORMHAT",
+		"Name": "Feasting Casque",
+		"Name_LocStr": "UI_WORMHAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_WORMHAT",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_SKULL",
+		"Name": "Titanic Trophy",
+		"Name_LocStr": "BLD_WORMSKULL_NAME",
+		"Subtitle_LocStr": "BLD_WORMSKULL_SUB",
+		"Category": "season",
+		"ProductId": "BLD_SKULL",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 3
+	},
+	{
+		"Id": "^JETS_WORM",
+		"Name": "Ghastly Trail",
+		"Name_LocStr": "UI_WORMTRAIL_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_WORM",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_FIREPACK04",
+		"Name": "Flesh Launcher Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FIREPACK04",
+		"MustBeUnlocked": false,
+		"SeasonId": 4,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_EGG_03",
+		"Name": "Whispering Companion Egg",
+		"Name_LocStr": "UI_EXPD_EGG_03_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_03_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_EGG_03",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER03",
+		"Name": "Cartographers Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_03_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER03",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL03",
+		"Name": "Cartographers Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_03_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL03",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE03",
+		"Name": "Title: 'Globemaster'",
+		"Name_LocStr": "UI_EXPD_TITLE_03_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE03",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 5
+	},
+	{
+		"Id": "^BASE_CAVE1",
+		"Name": "Saucer Fungus",
+		"Name_LocStr": "BLD_CAVEPLANT_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "season",
+		"ProductId": "BASE_CAVE1",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 4
+	},
+	{
+		"Id": "^BASE_CAVE2",
+		"Name": "Cave Creeper",
+		"Name_LocStr": "BLD_CAVEPLANT_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "season",
+		"ProductId": "BASE_CAVE2",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 4
+	},
+	{
+		"Id": "^BASE_CAVE3",
+		"Name": "Troglotulip",
+		"Name_LocStr": "BLD_CAVEPLANT_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "season",
+		"ProductId": "BASE_CAVE3",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 4
+	},
+	{
+		"Id": "^BASE_CAVE4",
+		"Name": "Veined Flat Caps",
+		"Name_LocStr": "BLD_CAVEPLANT_4_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "season",
+		"ProductId": "BASE_CAVE4",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 4
+	},
+	{
+		"Id": "^BASE_CAVE5",
+		"Name": "Fingery Deposit",
+		"Name_LocStr": "BLD_CAVEPLANT_5_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "season",
+		"ProductId": "BASE_CAVE5",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 4
+	},
+	{
+		"Id": "^BLD_FLYJAR",
+		"Name": "Bio-lantern",
+		"Name_LocStr": "BLD_FLYJAR_NAME",
+		"Subtitle_LocStr": "BLD_FLYJAR_SUB",
+		"Category": "season",
+		"ProductId": "BLD_FLYJAR",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 3
+	},
+	{
+		"Id": "^BLD_PLANET_HOLO",
+		"Name": "Holographic Chart Projector",
+		"Name_LocStr": "BLD_PLANET_HOLO_NAME",
+		"Subtitle_LocStr": "BLD_PLANET_HOLO_SUB",
+		"Category": "season",
+		"ProductId": "BLD_PLANET_HOLO",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 2
+	},
+	{
+		"Id": "^JETS_BUBBLE",
+		"Name": "Jetpack Bubble Trail",
+		"Name_LocStr": "UI_JETTRAIL_BUBBLE_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "season",
+		"ProductId": "JETS_BUBBLE",
+		"MustBeUnlocked": false,
+		"SeasonId": 3,
+		"StageId": 1
+	},
+	{
+		"Id": "^EXPD_SPEC02",
+		"Name": "Ssv Normandy Sr1",
+		"Name_LocStr": "UI_EXPD_SPEC_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SPEC_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SPEC02",
+		"MustBeUnlocked": true,
+		"SeasonId": 2,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER02",
+		"Name": "Beachhead Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_02_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER02",
+		"MustBeUnlocked": true,
+		"SeasonId": 2,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL02",
+		"Name": "Beachhead Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_02_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL02",
+		"MustBeUnlocked": true,
+		"SeasonId": 2,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE02A",
+		"Name": "Title: 'Renegade'",
+		"Name_LocStr": "UI_EXPD_TITLE_02A_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE02A",
+		"MustBeUnlocked": true,
+		"SeasonId": 2,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_TITLE02B",
+		"Name": "Title: 'Paragon'",
+		"Name_LocStr": "UI_EXPD_TITLE_02B_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE02B",
+		"MustBeUnlocked": true,
+		"SeasonId": 2,
+		"StageId": -1
+	},
+	{
+		"Id": "^MYSTERY_TRACKER",
+		"Name": "Historiographical Dosimeter",
+		"Name_LocStr": "UI_MYSTERY_TRACKER_NAME",
+		"Subtitle_LocStr": "UI_MYSTERY_TRACKER_SUB",
+		"Category": "season",
+		"ProductId": "MYSTERY_TRACKER",
+		"MustBeUnlocked": false,
+		"SeasonId": 2,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_SHIP01",
+		"Name": "Golden Vector",
+		"Name_LocStr": "UI_EXPD_SHIP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_SHIP01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": -1
+	},
+	{
+		"Id": "^EXPD_BANNER01",
+		"Name": "Pioneers Expedition Banner",
+		"Name_LocStr": "UI_BANNER_EXPD_01_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BANNER01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_DECAL01",
+		"Name": "Pioneers Expedition Decal",
+		"Name_LocStr": "BLD_DECAL_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "season",
+		"ProductId": "EXPD_DECAL01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_TITLE01",
+		"Name": "Title: 'Pioneer'",
+		"Name_LocStr": "UI_EXPD_TITLE_01_NAME",
+		"Subtitle_LocStr": "UI_SPEC_TITLE_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_TITLE01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 5
+	},
+	{
+		"Id": "^EXPD_BACKPACK01",
+		"Name": "Streamlined Jetpack Unit",
+		"Name_LocStr": "UI_EXPD_BACKPACK_01_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_BACKPACK01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 4
+	},
+	{
+		"Id": "^EXPD_HELMET01",
+		"Name": "Golden First Spawn Battle Mask",
+		"Name_LocStr": "UI_EXPD_HELMET_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_HELMET01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 3
+	},
+	{
+		"Id": "^BLD_EXPD_BASE01",
+		"Name": "Pioneers Expedition Flag",
+		"Name_LocStr": "BLD_EXPD_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BLD_SUB",
+		"Category": "season",
+		"ProductId": "BLD_EXPD_BASE01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 2
+	},
+	{
+		"Id": "^EXPD_FIREPACK01",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "season",
+		"ProductId": "EXPD_FIREPACK01",
+		"MustBeUnlocked": false,
+		"SeasonId": 1,
+		"StageId": 1
+	},
+	{
+		"Id": "^TWITCH_376",
+		"Name": "Navigators Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER11A"
+	},
+	{
+		"Id": "^TWITCH_377",
+		"Name": "Anomalous Wonder Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER11B"
+	},
+	{
+		"Id": "^TWITCH_378",
+		"Name": "Open Horizons Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER11C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER11C"
+	},
+	{
+		"Id": "^TWITCH_379",
+		"Name": "Remembrance Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER12A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER12A"
+	},
+	{
+		"Id": "^TWITCH_380",
+		"Name": "Interface Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER12B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER12B"
+	},
+	{
+		"Id": "^TWITCH_381",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW12A"
+	},
+	{
+		"Id": "^TWITCH_382",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW12B"
+	},
+	{
+		"Id": "^TWITCH_383",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW12C"
+	},
+	{
+		"Id": "^TWITCH_384",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW12D"
+	},
+	{
+		"Id": "^TWITCH_385",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW12E"
+	},
+	{
+		"Id": "^TWITCH_386",
+		"Name": "Antler Grass",
+		"Name_LocStr": "BLD_GRASS_7_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS7"
+	},
+	{
+		"Id": "^TWITCH_387",
+		"Name": "Data Display Unit",
+		"Name_LocStr": "BLD_DATASIGN_NAME",
+		"Subtitle_LocStr": "BLD_DATASIGN_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_DATASIGN"
+	},
+	{
+		"Id": "^TWITCH_388",
+		"Name": "Living Fragment A",
+		"Name_LocStr": "BLD_CRYS_SENT0_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BLD_CRYS_SENT0"
+	},
+	{
+		"Id": "^TWITCH_389",
+		"Name": "Ragged Tent",
+		"Name_LocStr": "BLD_BUI_TENT_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BLD_BUI_TENT"
+	},
+	{
+		"Id": "^TWITCH_390",
+		"Name": "Covered Crate",
+		"Name_LocStr": "BLD_COVEREDCRATE_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BLD_COVCRATE"
+	},
+	{
+		"Id": "^TWITCH_391",
+		"Name": "Spawning Cowl",
+		"Name_LocStr": "UI_SPEC_HOOD_GEK_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HOOD_SUB",
+		"Category": "twitch",
+		"ProductId": "HOOD_GEK"
+	},
+	{
+		"Id": "^TWITCH_392",
+		"Name": "Mechanical Paw",
+		"Name_LocStr": "UI_EXPD_PET_CUSTOM_11_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_PETCUST11"
+	},
+	{
+		"Id": "^TWITCH_393",
+		"Name": "Crimson Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_RED_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "FREI_TRAIL_RED"
+	},
+	{
+		"Id": "^TWITCH_394",
+		"Name": "Outlaw Cape",
+		"Name_LocStr": "UI_PIRATECAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_CAPE06"
+	},
+	{
+		"Id": "^TWITCH_395",
+		"Name": "Pyrotechnic Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_FIREWORK_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_FIREWORK"
+	},
+	{
+		"Id": "^TWITCH_396",
+		"Name": "Art of Esenyov-xvi",
+		"Name_LocStr": "UI_TWIT_GUN_28_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN28"
+	},
+	{
+		"Id": "^TWITCH_397",
+		"Name": "Obedience of Solemnity",
+		"Name_LocStr": "UI_TWIT_GUN_29_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN29"
+	},
+	{
+		"Id": "^TWITCH_398",
+		"Name": "H. Coldvaum Egg",
+		"Name_LocStr": "UI_TWIT_PET_25_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET25"
+	},
+	{
+		"Id": "^TWITCH_399",
+		"Name": "Conceptual Vatezh Beam",
+		"Name_LocStr": "UI_TWIT_GUN_30_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN30"
+	},
+	{
+		"Id": "^TWITCH_400",
+		"Name": "Robo-warden Egg",
+		"Name_LocStr": "UI_EXPD_EGG_09_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_09_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_EGG_09"
+	},
+	{
+		"Id": "^TWITCH_401",
+		"Name": "Tahikok Roamer V",
+		"Name_LocStr": "UI_TWIT_SHIP_56_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP56"
+	},
+	{
+		"Id": "^TWITCH_402",
+		"Name": "Reckless Prophecy Hf3",
+		"Name_LocStr": "UI_TWIT_SHIP_57_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP57"
+	},
+	{
+		"Id": "^TWITCH_403",
+		"Name": "The Master of Sleep",
+		"Name_LocStr": "UI_TWIT_SHIP_58_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP58"
+	},
+	{
+		"Id": "^TWITCH_404",
+		"Name": "Oigaya's Redemption Pv4",
+		"Name_LocStr": "UI_TWIT_SHIP_59_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP59"
+	},
+	{
+		"Id": "^TWITCH_405",
+		"Name": "Dx7 Ibail",
+		"Name_LocStr": "UI_TWIT_SHIP_60_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP60"
+	},
+	{
+		"Id": "^TWITCH_346",
+		"Name": "Pawprints Decal",
+		"Name_LocStr": "BLD_DECAL_P_CREPAWS_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_CREPAWS"
+	},
+	{
+		"Id": "^TWITCH_347",
+		"Name": "Awakenings Decal",
+		"Name_LocStr": "BLD_DECAL_P_FIRSTPLANET2_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_FPLANET2"
+	},
+	{
+		"Id": "^TWITCH_348",
+		"Name": "To the Stars Decal",
+		"Name_LocStr": "BLD_DECAL_P_TOTHESTARS_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_TOSTARS"
+	},
+	{
+		"Id": "^TWITCH_349",
+		"Name": "Ribbon Grass",
+		"Name_LocStr": "BLD_GRASS_5_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS5"
+	},
+	{
+		"Id": "^TWITCH_350",
+		"Name": "Cloven Paw Grass",
+		"Name_LocStr": "BLD_GRASS_6_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS6"
+	},
+	{
+		"Id": "^TWITCH_351",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW11A"
+	},
+	{
+		"Id": "^TWITCH_352",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW11B"
+	},
+	{
+		"Id": "^TWITCH_353",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW11C"
+	},
+	{
+		"Id": "^TWITCH_354",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW11D"
+	},
+	{
+		"Id": "^TWITCH_355",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW11E"
+	},
+	{
+		"Id": "^TWITCH_356",
+		"Name": "Covered Silos",
+		"Name_LocStr": "BLD_COVEREDSILOS_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BLD_COVSILOS"
+	},
+	{
+		"Id": "^TWITCH_357",
+		"Name": "Looping Grass",
+		"Name_LocStr": "BLD_GRASS_4_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS4"
+	},
+	{
+		"Id": "^TWITCH_358",
+		"Name": "Aquatic Colony",
+		"Name_LocStr": "BLD_WATERPLANT_6_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_WPLANT6"
+	},
+	{
+		"Id": "^TWITCH_359",
+		"Name": "Ice Atlas Statue",
+		"Name_LocStr": "BLD_ATLAS_ICE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "STATUE_ATLAS_I"
+	},
+	{
+		"Id": "^TWITCH_360",
+		"Name": "Classic Chair",
+		"Name_LocStr": "BLD_BUILDCHAIR4_NAME",
+		"Subtitle_LocStr": "BLD_CHAIR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BUILDCHAIR4"
+	},
+	{
+		"Id": "^TWITCH_361",
+		"Name": "HOLOGRAM: MULTI-TOOL",
+		"Name_LocStr": "EMOTE_HOLO_WEAPON_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE14"
+	},
+	{
+		"Id": "^TWITCH_362",
+		"Name": "HOLOGRAM: SYSTEM",
+		"Name_LocStr": "EMOTE_HOLO_SYSTEM_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE15"
+	},
+	{
+		"Id": "^TWITCH_363",
+		"Name": "Festive Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_CONFETTI_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_CONFETTI"
+	},
+	{
+		"Id": "^TWITCH_364",
+		"Name": "Whalestalker Cloak",
+		"Name_LocStr": "UI_ROGUECAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_CAPE07"
+	},
+	{
+		"Id": "^TWITCH_365",
+		"Name": "Holographic Friend",
+		"Name_LocStr": "BLD_HOLOGEK_NAME",
+		"Subtitle_LocStr": "BLD_HOLOGEK_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_HOLOGEK"
+	},
+	{
+		"Id": "^TWITCH_366",
+		"Name": "Kalimskyv's Raycast Analyser",
+		"Name_LocStr": "UI_TWIT_GUN_25_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN25"
+	},
+	{
+		"Id": "^TWITCH_367",
+		"Name": "Negative Ion Puncher",
+		"Name_LocStr": "UI_TWIT_GUN_26_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN26"
+	},
+	{
+		"Id": "^TWITCH_368",
+		"Name": "G. Lyconatae Egg",
+		"Name_LocStr": "UI_TWIT_PET_23_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET23"
+	},
+	{
+		"Id": "^TWITCH_369",
+		"Name": "Gleaming Light Injector",
+		"Name_LocStr": "UI_TWIT_GUN_27_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN27"
+	},
+	{
+		"Id": "^TWITCH_370",
+		"Name": "A. Chilinjosa Egg",
+		"Name_LocStr": "UI_TWIT_PET_24_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET24"
+	},
+	{
+		"Id": "^TWITCH_371",
+		"Name": "Sword of the Ribetsus",
+		"Name_LocStr": "UI_TWIT_SHIP_51_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP51"
+	},
+	{
+		"Id": "^TWITCH_372",
+		"Name": "Bukaidor Prospector Xii",
+		"Name_LocStr": "UI_TWIT_SHIP_52_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP52"
+	},
+	{
+		"Id": "^TWITCH_373",
+		"Name": "Magnificent Omen T09",
+		"Name_LocStr": "UI_TWIT_SHIP_53_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP53"
+	},
+	{
+		"Id": "^TWITCH_374",
+		"Name": "Oomoribe's Halcyon War-spear",
+		"Name_LocStr": "UI_TWIT_SHIP_54_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP54"
+	},
+	{
+		"Id": "^TWITCH_375",
+		"Name": "Speedy Noichir V",
+		"Name_LocStr": "UI_TWIT_SHIP_55_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP55"
+	},
+	{
+		"Id": "^TWITCH_316",
+		"Name": "Atlas Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER10A"
+	},
+	{
+		"Id": "^TWITCH_317",
+		"Name": "Atlantid Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER10B"
+	},
+	{
+		"Id": "^TWITCH_318",
+		"Name": "Construct Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER10C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER10C"
+	},
+	{
+		"Id": "^TWITCH_319",
+		"Name": "Outlaw System Decal",
+		"Name_LocStr": "BLD_DECAL_P_PIRATESYSTEM_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_PIRATESYS"
+	},
+	{
+		"Id": "^TWITCH_320",
+		"Name": "Blue System Decal",
+		"Name_LocStr": "BLD_DECAL_P_BLUESYSTEM_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_BLUESYS"
+	},
+	{
+		"Id": "^TWITCH_321",
+		"Name": "Ribbon Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_08_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW10A"
+	},
+	{
+		"Id": "^TWITCH_322",
+		"Name": "Ribbon Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_08_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW10B"
+	},
+	{
+		"Id": "^TWITCH_323",
+		"Name": "Ribbon Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_08_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW10C"
+	},
+	{
+		"Id": "^TWITCH_324",
+		"Name": "Ribbon Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_08_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW10D"
+	},
+	{
+		"Id": "^TWITCH_325",
+		"Name": "Ribbon Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_08_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW10E"
+	},
+	{
+		"Id": "^TWITCH_326",
+		"Name": "Coleopterology Decal",
+		"Name_LocStr": "BLD_DECAL_P_CREBEETLE_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_CREBEETLE"
+	},
+	{
+		"Id": "^TWITCH_327",
+		"Name": "Fluttering Decal",
+		"Name_LocStr": "BLD_DECAL_P_CREFLYING_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_CREFLY"
+	},
+	{
+		"Id": "^TWITCH_328",
+		"Name": "Flatblade Grass",
+		"Name_LocStr": "BLD_GRASS_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS3"
+	},
+	{
+		"Id": "^TWITCH_329",
+		"Name": "Strip Coral",
+		"Name_LocStr": "BLD_WATERPLANT_5_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_WPLANT5"
+	},
+	{
+		"Id": "^TWITCH_330",
+		"Name": "\"the Black Hole in the Wall\" Sign",
+		"Name_LocStr": "BLD_S_SIGN_BAR3_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SIGN_BAR3"
+	},
+	{
+		"Id": "^TWITCH_331",
+		"Name": "HOLOGRAM: BLOB",
+		"Name_LocStr": "EMOTE_HOLO_BLOB_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE11"
+	},
+	{
+		"Id": "^TWITCH_332",
+		"Name": "HOLOGRAM: FRIGATE",
+		"Name_LocStr": "EMOTE_HOLO_FRIGATE_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE12"
+	},
+	{
+		"Id": "^TWITCH_333",
+		"Name": "Scorching Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_FIRE_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_FIRE"
+	},
+	{
+		"Id": "^TWITCH_334",
+		"Name": "Geometric Cape",
+		"Name_LocStr": "UI_SEEDCAPE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "twitch",
+		"ProductId": "CAPE_SEED"
+	},
+	{
+		"Id": "^TWITCH_335",
+		"Name": "HOLOGRAM: STARSHIP",
+		"Name_LocStr": "EMOTE_HOLO_SHIP_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE13"
+	},
+	{
+		"Id": "^TWITCH_336",
+		"Name": "E. Leoloxostii Egg",
+		"Name_LocStr": "UI_TWIT_PET_21_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET21"
+	},
+	{
+		"Id": "^TWITCH_337",
+		"Name": "R. Somnadadum Egg",
+		"Name_LocStr": "UI_TWIT_PET_22_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET22"
+	},
+	{
+		"Id": "^TWITCH_338",
+		"Name": "Legacy of Thought",
+		"Name_LocStr": "UI_TWIT_GUN_22_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN22"
+	},
+	{
+		"Id": "^TWITCH_339",
+		"Name": "Art of Storms",
+		"Name_LocStr": "UI_TWIT_GUN_23_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN23"
+	},
+	{
+		"Id": "^TWITCH_340",
+		"Name": "Improvised Volodov Clarifier",
+		"Name_LocStr": "UI_TWIT_GUN_24_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN24"
+	},
+	{
+		"Id": "^TWITCH_341",
+		"Name": "Otenba's Airborne Gambit",
+		"Name_LocStr": "UI_TWIT_SHIP_46_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP46"
+	},
+	{
+		"Id": "^TWITCH_342",
+		"Name": "Buyamak Liberator Xiii",
+		"Name_LocStr": "UI_TWIT_SHIP_47_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP47"
+	},
+	{
+		"Id": "^TWITCH_343",
+		"Name": "Taganon of Gravity",
+		"Name_LocStr": "UI_TWIT_SHIP_48_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP48"
+	},
+	{
+		"Id": "^TWITCH_344",
+		"Name": "Toontu Sj3",
+		"Name_LocStr": "UI_TWIT_SHIP_49_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP49"
+	},
+	{
+		"Id": "^TWITCH_345",
+		"Name": "The Forge of the Gek",
+		"Name_LocStr": "UI_TWIT_SHIP_50_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP50"
+	},
+	{
+		"Id": "^TWITCH_286",
+		"Name": "Factions Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER09A"
+	},
+	{
+		"Id": "^TWITCH_287",
+		"Name": "Night Squad Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER09B"
+	},
+	{
+		"Id": "^TWITCH_288",
+		"Name": "Planetary Base Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER9C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER09C"
+	},
+	{
+		"Id": "^TWITCH_289",
+		"Name": "Universal Heartbeat Decal",
+		"Name_LocStr": "BLD_DECAL_P_SPOOKY_ATLAS_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_SPOOKATL"
+	},
+	{
+		"Id": "^TWITCH_290",
+		"Name": "Blue Flight Decal",
+		"Name_LocStr": "BLD_DECAL_P_SHIP1_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_SHIP1"
+	},
+	{
+		"Id": "^TWITCH_291",
+		"Name": "Slithering Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_07_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW09A"
+	},
+	{
+		"Id": "^TWITCH_292",
+		"Name": "Slithering Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_07_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW09B"
+	},
+	{
+		"Id": "^TWITCH_293",
+		"Name": "Slithering Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_07_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW09C"
+	},
+	{
+		"Id": "^TWITCH_294",
+		"Name": "Slithering Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_07_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW09D"
+	},
+	{
+		"Id": "^TWITCH_295",
+		"Name": "Slithering Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_07_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW09E"
+	},
+	{
+		"Id": "^TWITCH_296",
+		"Name": "Worm Hunt I Decal",
+		"Name_LocStr": "BLD_DECAL_P_WORM_P1_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_WORM_P1"
+	},
+	{
+		"Id": "^TWITCH_297",
+		"Name": "Worm Hunt Ii Decal",
+		"Name_LocStr": "BLD_DECAL_P_WORM_P2_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_WORM_P2"
+	},
+	{
+		"Id": "^TWITCH_298",
+		"Name": "Worm Hunt Iii Decal",
+		"Name_LocStr": "BLD_DECAL_P_WORM_P3_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_WORM_P3"
+	},
+	{
+		"Id": "^TWITCH_299",
+		"Name": "Worm Hunt Iv Decal",
+		"Name_LocStr": "BLD_DECAL_P_WORM_P4_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_WORM_P4"
+	},
+	{
+		"Id": "^TWITCH_300",
+		"Name": "Worm Hunt V Decal",
+		"Name_LocStr": "BLD_DECAL_P_WORM_P5_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_WORM_P5"
+	},
+	{
+		"Id": "^TWITCH_301",
+		"Name": "Short Spikegrass",
+		"Name_LocStr": "BLD_GRASS_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS2"
+	},
+	{
+		"Id": "^TWITCH_302",
+		"Name": "Illuminated Pot",
+		"Name_LocStr": "BLD_PLANTPOT4_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "PLANTPOT4"
+	},
+	{
+		"Id": "^TWITCH_303",
+		"Name": "Titan Worm Cape",
+		"Name_LocStr": "UI_CAPE_WORM_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_CAPE_SUB",
+		"Category": "twitch",
+		"ProductId": "CAPE_WORM"
+	},
+	{
+		"Id": "^TWITCH_304",
+		"Name": "Antimatter Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_PUR_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "FREI_TRAIL_PUR"
+	},
+	{
+		"Id": "^TWITCH_305",
+		"Name": "\"ship and Pilot\" Sign",
+		"Name_LocStr": "BLD_S_SIGN_BAR2_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SIGN_BAR2"
+	},
+	{
+		"Id": "^TWITCH_306",
+		"Name": "Pillar of the Dance",
+		"Name_LocStr": "UI_TWIT_GUN_19_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN19"
+	},
+	{
+		"Id": "^TWITCH_307",
+		"Name": "Harbinger of the Stars",
+		"Name_LocStr": "UI_TWIT_GUN_20_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN20"
+	},
+	{
+		"Id": "^TWITCH_308",
+		"Name": "V. Slashuzaneus Egg",
+		"Name_LocStr": "UI_TWIT_PET_20_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET20"
+	},
+	{
+		"Id": "^TWITCH_309",
+		"Name": "Darny's Oxide Entangler",
+		"Name_LocStr": "UI_TWIT_GUN_21_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN21"
+	},
+	{
+		"Id": "^TWITCH_310",
+		"Name": "Quad Egg",
+		"Name_LocStr": "UI_EXPD_EGG_05_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_05_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_EGG_05"
+	},
+	{
+		"Id": "^TWITCH_311",
+		"Name": "Nidaitai's Pride Hm3",
+		"Name_LocStr": "UI_TWIT_SHIP_41_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP41"
+	},
+	{
+		"Id": "^TWITCH_312",
+		"Name": "The Departure of Fire",
+		"Name_LocStr": "UI_TWIT_SHIP_42_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP42"
+	},
+	{
+		"Id": "^TWITCH_313",
+		"Name": "Oroza's Abyssal Coup",
+		"Name_LocStr": "UI_TWIT_SHIP_43_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP43"
+	},
+	{
+		"Id": "^TWITCH_314",
+		"Name": "Iobana Lw1",
+		"Name_LocStr": "UI_TWIT_SHIP_44_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP44"
+	},
+	{
+		"Id": "^TWITCH_315",
+		"Name": "Limitless Master Ph1",
+		"Name_LocStr": "UI_TWIT_SHIP_45_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP45"
+	},
+	{
+		"Id": "^TWITCH_256",
+		"Name": "Bytebeat Poster",
+		"Name_LocStr": "BLD_S_POSTER25_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER25"
+	},
+	{
+		"Id": "^TWITCH_257",
+		"Name": "Voyage Poster",
+		"Name_LocStr": "BLD_S_POSTER26_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER26"
+	},
+	{
+		"Id": "^TWITCH_258",
+		"Name": "Atlas Seed Poster",
+		"Name_LocStr": "BLD_S_POSTER27_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER27"
+	},
+	{
+		"Id": "^TWITCH_259",
+		"Name": "Utopia Poster",
+		"Name_LocStr": "BLD_S_POSTER28_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER28"
+	},
+	{
+		"Id": "^TWITCH_260",
+		"Name": "Space Anomaly Decal",
+		"Name_LocStr": "BLD_DECAL_P_NEXUSMISSION_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_NEXUSM"
+	},
+	{
+		"Id": "^TWITCH_261",
+		"Name": "Titan Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_06_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW08A"
+	},
+	{
+		"Id": "^TWITCH_262",
+		"Name": "Titan Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_06_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW08B"
+	},
+	{
+		"Id": "^TWITCH_263",
+		"Name": "Titan Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_06_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW08C"
+	},
+	{
+		"Id": "^TWITCH_264",
+		"Name": "Titan Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_06_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW08D"
+	},
+	{
+		"Id": "^TWITCH_265",
+		"Name": "Titan Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_06_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW08E"
+	},
+	{
+		"Id": "^TWITCH_266",
+		"Name": "Blue Stargaze Decal",
+		"Name_LocStr": "BLD_DECAL_P_BIOME3_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_BIOME3"
+	},
+	{
+		"Id": "^TWITCH_267",
+		"Name": "Red Strider Decal",
+		"Name_LocStr": "BLD_DECAL_P_CREPLANET1_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_CPLANET1"
+	},
+	{
+		"Id": "^TWITCH_268",
+		"Name": "Landed Ship Decal",
+		"Name_LocStr": "BLD_DECAL_P_STARTSHIP_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_STARTSHIP"
+	},
+	{
+		"Id": "^TWITCH_269",
+		"Name": "Purple Galactic Core Decal",
+		"Name_LocStr": "BLD_DECAL_P_GALCORE_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_GALCORE"
+	},
+	{
+		"Id": "^TWITCH_270",
+		"Name": "Lost Bathysphere Decal",
+		"Name_LocStr": "BLD_DECAL_P_UWTREASURE_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_UWTREAS"
+	},
+	{
+		"Id": "^TWITCH_271",
+		"Name": "Urchin Flowers",
+		"Name_LocStr": "BLD_FLOWER_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_FLOWER2"
+	},
+	{
+		"Id": "^TWITCH_272",
+		"Name": "Eternal Eye Flowers",
+		"Name_LocStr": "BLD_FLOWER_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_FLOWER3"
+	},
+	{
+		"Id": "^TWITCH_273",
+		"Name": "\"euclid Moonrise\" Sign",
+		"Name_LocStr": "BLD_S_SIGN_BAR1_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SIGN_BAR1"
+	},
+	{
+		"Id": "^TWITCH_274",
+		"Name": "High-gravity Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_01_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "FREI_TRAIL_GRAV"
+	},
+	{
+		"Id": "^TWITCH_275",
+		"Name": "Armoured Anemone",
+		"Name_LocStr": "BLD_WATERPLANT_4_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_WPLANT4"
+	},
+	{
+		"Id": "^TWITCH_276",
+		"Name": "Inertial Focuser Nl4-0/9",
+		"Name_LocStr": "UI_TWIT_GUN_16_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN16"
+	},
+	{
+		"Id": "^TWITCH_277",
+		"Name": "Defiance of the Horizon Y-74b-o",
+		"Name_LocStr": "UI_TWIT_GUN_17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN17"
+	},
+	{
+		"Id": "^TWITCH_278",
+		"Name": "I. Protoubnea Egg",
+		"Name_LocStr": "UI_TWIT_PET_18_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET18"
+	},
+	{
+		"Id": "^TWITCH_279",
+		"Name": "Kiss of Clarity",
+		"Name_LocStr": "UI_TWIT_GUN_18_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN18"
+	},
+	{
+		"Id": "^TWITCH_280",
+		"Name": "F. Graspaeeum Egg",
+		"Name_LocStr": "UI_TWIT_PET_19_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET19"
+	},
+	{
+		"Id": "^TWITCH_281",
+		"Name": "Gravity Nemesis Re5",
+		"Name_LocStr": "UI_TWIT_SHIP_38_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP38"
+	},
+	{
+		"Id": "^TWITCH_282",
+		"Name": "Ultimate Falcon Ud7",
+		"Name_LocStr": "UI_TWIT_SHIP_36_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP36"
+	},
+	{
+		"Id": "^TWITCH_283",
+		"Name": "Iiyaw Ju4",
+		"Name_LocStr": "UI_TWIT_SHIP_39_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP39"
+	},
+	{
+		"Id": "^TWITCH_284",
+		"Name": "Iasayasu's Halcyon Surveyor",
+		"Name_LocStr": "UI_TWIT_SHIP_40_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP40"
+	},
+	{
+		"Id": "^TWITCH_285",
+		"Name": "Nabaeto of the Void",
+		"Name_LocStr": "UI_TWIT_SHIP_37_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP37"
+	},
+	{
+		"Id": "^TWITCH_226",
+		"Name": "Cosmic Flight Poster",
+		"Name_LocStr": "BLD_S_POSTER20_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER20"
+	},
+	{
+		"Id": "^TWITCH_227",
+		"Name": "Orbital Poster",
+		"Name_LocStr": "BLD_S_POSTER21_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER21"
+	},
+	{
+		"Id": "^TWITCH_228",
+		"Name": "Ship Catalogue Poster",
+		"Name_LocStr": "BLD_S_POSTER22_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER22"
+	},
+	{
+		"Id": "^TWITCH_229",
+		"Name": "Departure Poster",
+		"Name_LocStr": "BLD_S_POSTER23_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER23"
+	},
+	{
+		"Id": "^TWITCH_230",
+		"Name": "Diplomacy Poster",
+		"Name_LocStr": "BLD_S_POSTER24_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER24"
+	},
+	{
+		"Id": "^TWITCH_231",
+		"Name": "Celebratory Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_05_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW07A"
+	},
+	{
+		"Id": "^TWITCH_232",
+		"Name": "Celebratory Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_05_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW07B"
+	},
+	{
+		"Id": "^TWITCH_233",
+		"Name": "Celebratory Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_05_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW07C"
+	},
+	{
+		"Id": "^TWITCH_234",
+		"Name": "Celebratory Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_05_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW07D"
+	},
+	{
+		"Id": "^TWITCH_235",
+		"Name": "Celebratory Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_05_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW07E"
+	},
+	{
+		"Id": "^TWITCH_236",
+		"Name": "Holographic Chart Projector",
+		"Name_LocStr": "BLD_PLANET_HOLO_NAME",
+		"Subtitle_LocStr": "BLD_PLANET_HOLO_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_PLANET_HOLO"
+	},
+	{
+		"Id": "^TWITCH_237",
+		"Name": "Wayward Cube",
+		"Name_LocStr": "UI_EXPD_CUBE_06_NAME",
+		"Subtitle_LocStr": "UI_EXPD_CUBE_06_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_CUBE_06"
+	},
+	{
+		"Id": "^TWITCH_238",
+		"Name": "Navigation Archive",
+		"Name_LocStr": "BLD_MAPTUBE_NAME",
+		"Subtitle_LocStr": "BLD_MAPTUBE_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_MAPTUBE"
+	},
+	{
+		"Id": "^TWITCH_239",
+		"Name": "Flaming Barrel",
+		"Name_LocStr": "BLD_FIREPIT_NAME",
+		"Subtitle_LocStr": "BLD_FIREPIT_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_FIREPIT"
+	},
+	{
+		"Id": "^TWITCH_240",
+		"Name": "Organic Frigate Calf",
+		"Name_LocStr": "BLD_MINI_BIOFRIG_NAME",
+		"Subtitle_LocStr": "BLD_MINI_BIOFRIG_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_MINI_BIOFRI"
+	},
+	{
+		"Id": "^TWITCH_241",
+		"Name": "Tall Spikegrass",
+		"Name_LocStr": "BLD_GRASS_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_GRASS1"
+	},
+	{
+		"Id": "^TWITCH_242",
+		"Name": "Reality Glitch Trail",
+		"Name_LocStr": "UI_SENTTRAIL_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_SENT"
+	},
+	{
+		"Id": "^TWITCH_243",
+		"Name": "Nighttongue Flowers",
+		"Name_LocStr": "BLD_FLOWER_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_FLOWER1"
+	},
+	{
+		"Id": "^TWITCH_244",
+		"Name": "Golden Freighter Trail",
+		"Name_LocStr": "UI_FREI_TRAIL_YEL_NAME",
+		"Subtitle_LocStr": "UI_FREI_TRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "FREI_TRAIL_YEL"
+	},
+	{
+		"Id": "^TWITCH_245",
+		"Name": "Exotic Wingpack",
+		"Name_LocStr": "UI_EXPD_BACKPACK_05_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_BACKPACK05"
+	},
+	{
+		"Id": "^TWITCH_246",
+		"Name": "Obedience of the Dance",
+		"Name_LocStr": "UI_TWIT_GUN_13_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN13"
+	},
+	{
+		"Id": "^TWITCH_247",
+		"Name": "Loop of Lachinos-xvi",
+		"Name_LocStr": "UI_TWIT_GUN_14_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN14"
+	},
+	{
+		"Id": "^TWITCH_248",
+		"Name": "X. Larvadoagera Egg",
+		"Name_LocStr": "UI_TWIT_PET_17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET17"
+	},
+	{
+		"Id": "^TWITCH_249",
+		"Name": "Destroyer of the Horizon 45p/98t",
+		"Name_LocStr": "UI_TWIT_GUN_15_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN15"
+	},
+	{
+		"Id": "^TWITCH_250",
+		"Name": "Helios Egg",
+		"Name_LocStr": "UI_EXPD_EGG_08_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_08_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_EGG_08"
+	},
+	{
+		"Id": "^TWITCH_251",
+		"Name": "Razawag of the Abyss",
+		"Name_LocStr": "UI_TWIT_SHIP_31_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP31"
+	},
+	{
+		"Id": "^TWITCH_252",
+		"Name": "Okoroza Peacemaker X",
+		"Name_LocStr": "UI_TWIT_SHIP_32_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP32"
+	},
+	{
+		"Id": "^TWITCH_253",
+		"Name": "Stellar Nojuku Xv",
+		"Name_LocStr": "UI_TWIT_SHIP_33_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP33"
+	},
+	{
+		"Id": "^TWITCH_254",
+		"Name": "Iyosh's Colourless Flight",
+		"Name_LocStr": "UI_TWIT_SHIP_34_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP34"
+	},
+	{
+		"Id": "^TWITCH_255",
+		"Name": "Visionary Eagle Ql9",
+		"Name_LocStr": "UI_TWIT_SHIP_35_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP35"
+	},
+	{
+		"Id": "^TWITCH_191",
+		"Name": "Remixed Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW06A"
+	},
+	{
+		"Id": "^TWITCH_192",
+		"Name": "Remixed Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW06B"
+	},
+	{
+		"Id": "^TWITCH_193",
+		"Name": "Remixed Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW06C"
+	},
+	{
+		"Id": "^TWITCH_194",
+		"Name": "Remixed Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW06D"
+	},
+	{
+		"Id": "^TWITCH_195",
+		"Name": "Remixed Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_04_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW06E"
+	},
+	{
+		"Id": "^TWITCH_196",
+		"Name": "The Loop Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER07B"
+	},
+	{
+		"Id": "^TWITCH_197",
+		"Name": "Timesplice Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER07C"
+	},
+	{
+		"Id": "^TWITCH_198",
+		"Name": "Pilgrim Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER08A"
+	},
+	{
+		"Id": "^TWITCH_199",
+		"Name": "Polestar Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER08B"
+	},
+	{
+		"Id": "^TWITCH_200",
+		"Name": "Heavy Shipping Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER8C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER08C"
+	},
+	{
+		"Id": "^TWITCH_201",
+		"Name": "Antimatter Observation Orb",
+		"Name_LocStr": "BLD_NEXUSPROP_1_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_NEXUS_PROP_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_NEXUS1"
+	},
+	{
+		"Id": "^TWITCH_202",
+		"Name": "Synthesis Core",
+		"Name_LocStr": "BLD_NEXUSPROP_2_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_NEXUS_PROP_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_NEXUS2"
+	},
+	{
+		"Id": "^TWITCH_203",
+		"Name": "Bubble Vat",
+		"Name_LocStr": "BLD_NEXUSPROP_3_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_NEXUS_PROP_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_NEXUS3"
+	},
+	{
+		"Id": "^TWITCH_204",
+		"Name": "Bio-lantern",
+		"Name_LocStr": "BLD_FLYJAR_NAME",
+		"Subtitle_LocStr": "BLD_FLYJAR_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_FLYJAR"
+	},
+	{
+		"Id": "^TWITCH_205",
+		"Name": "Titanic Trophy",
+		"Name_LocStr": "BLD_WORMSKULL_NAME",
+		"Subtitle_LocStr": "BLD_WORMSKULL_SUB",
+		"Category": "twitch",
+		"ProductId": "BLD_SKULL"
+	},
+	{
+		"Id": "^TWITCH_206",
+		"Name": "Piracy Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06A_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_FLAG_06A"
+	},
+	{
+		"Id": "^TWITCH_207",
+		"Name": "Unity Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06B_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_FLAG_06B"
+	},
+	{
+		"Id": "^TWITCH_208",
+		"Name": "Heraldry Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06C_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_FLAG_06C"
+	},
+	{
+		"Id": "^TWITCH_209",
+		"Name": "Orbital Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06D_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_FLAG_06D"
+	},
+	{
+		"Id": "^TWITCH_210",
+		"Name": "Viridian Flag",
+		"Name_LocStr": "UI_EXPD_FLAG_06E_NAME",
+		"Subtitle_LocStr": "BLD_EXPD_FLAG_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_FLAG_06E"
+	},
+	{
+		"Id": "^TWITCH_211",
+		"Name": "Energy Coil",
+		"Name_LocStr": "UI_SPEC_PET_CUSTOM_03_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_PETCUST3"
+	},
+	{
+		"Id": "^TWITCH_212",
+		"Name": "Temporal Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_ROGUE_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_ROGUE"
+	},
+	{
+		"Id": "^TWITCH_213",
+		"Name": "Exotic Armour",
+		"Name_LocStr": "UI_EXPD_PET_CUSTOM_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_PETCUST05"
+	},
+	{
+		"Id": "^TWITCH_214",
+		"Name": "Sputtering Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_PIRATE_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_PIRATE"
+	},
+	{
+		"Id": "^TWITCH_215",
+		"Name": "Feasting Casque",
+		"Name_LocStr": "UI_WORMHAT_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_WORMHAT"
+	},
+	{
+		"Id": "^TWITCH_216",
+		"Name": "E. Pantheibea Egg",
+		"Name_LocStr": "UI_TWIT_PET_15_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET15"
+	},
+	{
+		"Id": "^TWITCH_217",
+		"Name": "Hand-made Light Capacitor",
+		"Name_LocStr": "UI_TWIT_GUN_11_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN11"
+	},
+	{
+		"Id": "^TWITCH_218",
+		"Name": "I. Bearicatea Egg",
+		"Name_LocStr": "UI_TWIT_PET_16_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET16"
+	},
+	{
+		"Id": "^TWITCH_219",
+		"Name": "Touch of Silence 8-t",
+		"Name_LocStr": "UI_TWIT_GUN_12_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN12"
+	},
+	{
+		"Id": "^TWITCH_220",
+		"Name": "Sandworm Egg",
+		"Name_LocStr": "UI_EXPD_EGG_04_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_04_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_EGG_04"
+	},
+	{
+		"Id": "^TWITCH_221",
+		"Name": "Ikawaji's Defeat",
+		"Name_LocStr": "UI_TWIT_SHIP_26_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP26"
+	},
+	{
+		"Id": "^TWITCH_222",
+		"Name": "The Ashes of Devastation",
+		"Name_LocStr": "UI_TWIT_SHIP_27_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP27"
+	},
+	{
+		"Id": "^TWITCH_223",
+		"Name": "Morozawa's Ultimate Hand",
+		"Name_LocStr": "UI_TWIT_SHIP_28_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP28"
+	},
+	{
+		"Id": "^TWITCH_224",
+		"Name": "Tv2 Aebashi",
+		"Name_LocStr": "UI_TWIT_SHIP_29_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP29"
+	},
+	{
+		"Id": "^TWITCH_225",
+		"Name": "Tahama's Limitless Regret",
+		"Name_LocStr": "UI_TWIT_SHIP_30_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP30"
+	},
+	{
+		"Id": "^TWITCH_190",
+		"Name": "Final Ashes Pl4",
+		"Name_LocStr": "UI_TWIT_SHIP_25_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP25"
+	},
+	{
+		"Id": "^TWITCH_189",
+		"Name": "Habika Bf3",
+		"Name_LocStr": "UI_TWIT_SHIP_24_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP24"
+	},
+	{
+		"Id": "^TWITCH_188",
+		"Name": "The Son of the Sun",
+		"Name_LocStr": "UI_TWIT_SHIP_23_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP23"
+	},
+	{
+		"Id": "^TWITCH_187",
+		"Name": "Inzakita's Folly Py9",
+		"Name_LocStr": "UI_TWIT_SHIP_22_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP22"
+	},
+	{
+		"Id": "^TWITCH_186",
+		"Name": "Hiwamiha of Destiny",
+		"Name_LocStr": "UI_TWIT_SHIP_21_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP21"
+	},
+	{
+		"Id": "^TWITCH_185",
+		"Name": "Whispering Companion Egg",
+		"Name_LocStr": "UI_EXPD_EGG_03_NAME",
+		"Subtitle_LocStr": "UI_EXPD_EGG_03_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_EGG_03"
+	},
+	{
+		"Id": "^TWITCH_184",
+		"Name": "O. Crabubireus Egg",
+		"Name_LocStr": "UI_TWIT_PET_14_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET14"
+	},
+	{
+		"Id": "^TWITCH_183",
+		"Name": "Z. Speltwireum Egg",
+		"Name_LocStr": "UI_TWIT_PET_13_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET13"
+	},
+	{
+		"Id": "^TWITCH_182",
+		"Name": "Whispers of the Abyss 4-f33-qp4",
+		"Name_LocStr": "UI_TWIT_GUN_10_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN10"
+	},
+	{
+		"Id": "^TWITCH_181",
+		"Name": "Yauza's Quantum Tuner",
+		"Name_LocStr": "UI_TWIT_GUN_09_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN09"
+	},
+	{
+		"Id": "^TWITCH_180",
+		"Name": "Armoured Chestpiece",
+		"Name_LocStr": "SPEC_VYKEEN_TORSO_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_TORSO_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_VYK_TORSO"
+	},
+	{
+		"Id": "^TWITCH_179",
+		"Name": "Armoured Leggings",
+		"Name_LocStr": "SPEC_VYKEEN_LEGS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_LEGS_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_VYK_LEGS"
+	},
+	{
+		"Id": "^TWITCH_178",
+		"Name": "Armoured Exogloves",
+		"Name_LocStr": "SPEC_VYKEEN_GLOVES_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GLOVE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_VYK_GLOVES"
+	},
+	{
+		"Id": "^TWITCH_177",
+		"Name": "Armoured Shoulderpads",
+		"Name_LocStr": "SPEC_VYKEEN_ARMOUR_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_ARMOUR_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_VYK_ARMOUR"
+	},
+	{
+		"Id": "^TWITCH_176",
+		"Name": "Armoured Boots",
+		"Name_LocStr": "SPEC_VYKEEN_BOOTS_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_BOOTS_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_VYK_BOOTS"
+	},
+	{
+		"Id": "^TWITCH_175",
+		"Name": "Specialist Polo Banner",
+		"Name_LocStr": "UI_BANNER_POLO_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "twitch",
+		"ProductId": "BANNER_POLO"
+	},
+	{
+		"Id": "^TWITCH_174",
+		"Name": "Tentacled Banner",
+		"Name_LocStr": "UI_BANNER_SLIMY_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "twitch",
+		"ProductId": "BANNER_SLIMY"
+	},
+	{
+		"Id": "^TWITCH_173",
+		"Name": "Priest Entity Nada Banner",
+		"Name_LocStr": "UI_BANNER_NADA_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "twitch",
+		"ProductId": "BANNER_NADA"
+	},
+	{
+		"Id": "^TWITCH_172",
+		"Name": "Banner of the Blob",
+		"Name_LocStr": "UI_BANNER_BLOB_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "twitch",
+		"ProductId": "BANNER_BLOB"
+	},
+	{
+		"Id": "^TWITCH_171",
+		"Name": "Fine and Tasty Banner",
+		"Name_LocStr": "UI_BANNER_CHEF_NAME",
+		"Subtitle_LocStr": "UI_BANNER_SUB",
+		"Category": "twitch",
+		"ProductId": "BANNER_CHEF"
+	},
+	{
+		"Id": "^TWITCH_170",
+		"Name": "Holographic Globe Gadget",
+		"Name_LocStr": "BLD_TOYSPHERE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOYSPHERE"
+	},
+	{
+		"Id": "^TWITCH_169",
+		"Name": "Pocket Reality Generator",
+		"Name_LocStr": "BLD_TOYCORE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOYCORE"
+	},
+	{
+		"Id": "^TWITCH_168",
+		"Name": "Ancient Conifer",
+		"Name_LocStr": "BLD_COLDPLANT_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_COLDPLANT3"
+	},
+	{
+		"Id": "^TWITCH_167",
+		"Name": "Frozen Planter",
+		"Name_LocStr": "BLD_COLDPLANT_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_COLDPLANT2"
+	},
+	{
+		"Id": "^TWITCH_166",
+		"Name": "Hardy Shrub",
+		"Name_LocStr": "BLD_COLDPLANT_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_COLDPLANT1"
+	},
+	{
+		"Id": "^TWITCH_165",
+		"Name": "Assorted Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_03_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW05E"
+	},
+	{
+		"Id": "^TWITCH_164",
+		"Name": "Assorted Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_03_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW05D"
+	},
+	{
+		"Id": "^TWITCH_163",
+		"Name": "Assorted Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_03_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW05C"
+	},
+	{
+		"Id": "^TWITCH_162",
+		"Name": "Assorted Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_03_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW05B"
+	},
+	{
+		"Id": "^TWITCH_161",
+		"Name": "Assorted Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_03_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW05A"
+	},
+	{
+		"Id": "^TWITCH_160",
+		"Name": "Leviathan Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER7A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER07A"
+	},
+	{
+		"Id": "^TWITCH_159",
+		"Name": "Resbur Xiii Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER06C"
+	},
+	{
+		"Id": "^TWITCH_158",
+		"Name": "Outlaw Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER06B"
+	},
+	{
+		"Id": "^TWITCH_157",
+		"Name": "Dread Captain Fahng Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER6A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER06A"
+	},
+	{
+		"Id": "^TWITCH_156",
+		"Name": "Solstice Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5A_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER05A"
+	},
+	{
+		"Id": "^TWITCH_155",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW04A"
+	},
+	{
+		"Id": "^TWITCH_154",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW04B"
+	},
+	{
+		"Id": "^TWITCH_153",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW04C"
+	},
+	{
+		"Id": "^TWITCH_152",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW04D"
+	},
+	{
+		"Id": "^TWITCH_151",
+		"Name": "Atlas Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_EXPD_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW04E"
+	},
+	{
+		"Id": "^TWITCH_150",
+		"Name": "Ozone Auditor Mark Xi",
+		"Name_LocStr": "UI_TWIT_GUN_08_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN08"
+	},
+	{
+		"Id": "^TWITCH_149",
+		"Name": "Isotope Tuner Mark Xvii",
+		"Name_LocStr": "UI_TWIT_GUN_07_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN07"
+	},
+	{
+		"Id": "^TWITCH_148",
+		"Name": "Memories of the Abyss Z80-10l-n",
+		"Name_LocStr": "UI_TWIT_GUN_06_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN06"
+	},
+	{
+		"Id": "^TWITCH_147",
+		"Name": "H. Oakarboe Egg",
+		"Name_LocStr": "UI_TWIT_PET_12_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET12"
+	},
+	{
+		"Id": "^TWITCH_146",
+		"Name": "H. Skipwhae Egg",
+		"Name_LocStr": "UI_TWIT_PET_11_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET11"
+	},
+	{
+		"Id": "^TWITCH_145",
+		"Name": "Ms4 Maiseha",
+		"Name_LocStr": "UI_TWIT_SHIP_20_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP20"
+	},
+	{
+		"Id": "^TWITCH_144",
+		"Name": "The Nemesis of the Korvax",
+		"Name_LocStr": "UI_TWIT_SHIP_19_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP19"
+	},
+	{
+		"Id": "^TWITCH_143",
+		"Name": "Sesakis's Gamble Hx8",
+		"Name_LocStr": "UI_TWIT_SHIP_18_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP18"
+	},
+	{
+		"Id": "^TWITCH_142",
+		"Name": "End of the Kumiok",
+		"Name_LocStr": "UI_TWIT_SHIP_17_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP17"
+	},
+	{
+		"Id": "^TWITCH_141",
+		"Name": "Moganonj's Infinite Protector",
+		"Name_LocStr": "UI_TWIT_SHIP_16_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP16"
+	},
+	{
+		"Id": "^TWITCH_140",
+		"Name": "Exosuit Backpack",
+		"Name_LocStr": "UI_BACKPACK2_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "twitch",
+		"ProductId": "NEW_BACKPACK"
+	},
+	{
+		"Id": "^TWITCH_139",
+		"Name": "Horrific Flesh-helmet",
+		"Name_LocStr": "UI_SPEC_SPOOKYHEAD_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_SPOOKYHEAD"
+	},
+	{
+		"Id": "^TWITCH_138",
+		"Name": "Iteration: Eos Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_12_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC12"
+	},
+	{
+		"Id": "^TWITCH_137",
+		"Name": "Iteration: Hesperus Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_11_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC11"
+	},
+	{
+		"Id": "^TWITCH_136",
+		"Name": "Iteration: Ares Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_10_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC10"
+	},
+	{
+		"Id": "^TWITCH_135",
+		"Name": "Horrific Decal",
+		"Name_LocStr": "BLD_DECAL_HORROR_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_HORROR"
+	},
+	{
+		"Id": "^TWITCH_134",
+		"Name": "Tentacled Decal",
+		"Name_LocStr": "BLD_DECAL_JELLY_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_JELLY"
+	},
+	{
+		"Id": "^TWITCH_133",
+		"Name": "Warning Decal",
+		"Name_LocStr": "BLD_DECAL_SKULL_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_SKULL"
+	},
+	{
+		"Id": "^TWITCH_132",
+		"Name": "Null Decal",
+		"Name_LocStr": "BLD_DECAL_NULL_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL08"
+	},
+	{
+		"Id": "^TWITCH_131",
+		"Name": "Artemis Decal",
+		"Name_LocStr": "BLD_DECAL_ARTEMIS_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL07"
+	},
+	{
+		"Id": "^TWITCH_130",
+		"Name": "Silver Walker Statue",
+		"Name_LocStr": "BLD_WALK_S_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "STATUE_WALK_S"
+	},
+	{
+		"Id": "^TWITCH_129",
+		"Name": "Wriggling Companion",
+		"Name_LocStr": "BLD_TOYJELLY_NAME",
+		"Subtitle_LocStr": "BLD_TOYJELLY_DESC",
+		"Category": "twitch",
+		"ProductId": "BASE_TOYJELLY"
+	},
+	{
+		"Id": "^TWITCH_128",
+		"Name": "Tentacle Spire",
+		"Name_LocStr": "BLD_TOXPLANT_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOXPLANT03"
+	},
+	{
+		"Id": "^TWITCH_127",
+		"Name": "Watchful Protrusion",
+		"Name_LocStr": "BLD_TOXPLANT_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOXPLANT02"
+	},
+	{
+		"Id": "^TWITCH_126",
+		"Name": "Blistering Mushroom",
+		"Name_LocStr": "BLD_TOXPLANT_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOXPLANT01"
+	},
+	{
+		"Id": "^TWITCH_125",
+		"Name": "Abyssal Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5B_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER05B"
+	},
+	{
+		"Id": "^TWITCH_124",
+		"Name": "Territories Poster",
+		"Name_LocStr": "BLD_EXPD_POSTER5C_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "EXPD_POSTER05C"
+	},
+	{
+		"Id": "^TWITCH_123",
+		"Name": "Friend-entity Poster",
+		"Name_LocStr": "BLD_S_POSTER19_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER19"
+	},
+	{
+		"Id": "^TWITCH_122",
+		"Name": "Counterfeit Pass Poster",
+		"Name_LocStr": "BLD_S_POSTER18_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER18"
+	},
+	{
+		"Id": "^TWITCH_121",
+		"Name": "Atlas Cake Poster",
+		"Name_LocStr": "BLD_S_POSTER17_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER17"
+	},
+	{
+		"Id": "^TWITCH_120",
+		"Name": "Boribets's Voyage Yz7",
+		"Name_LocStr": "UI_TWIT_SHIP_15_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP15"
+	},
+	{
+		"Id": "^TWITCH_119",
+		"Name": "Ub7 Datebaya",
+		"Name_LocStr": "UI_TWIT_SHIP_14_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP14"
+	},
+	{
+		"Id": "^TWITCH_118",
+		"Name": "Prime Voice Tu7",
+		"Name_LocStr": "UI_TWIT_SHIP_13_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP13"
+	},
+	{
+		"Id": "^TWITCH_117",
+		"Name": "Final Iuranono Ii",
+		"Name_LocStr": "UI_TWIT_SHIP_12_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP12"
+	},
+	{
+		"Id": "^TWITCH_116",
+		"Name": "Neyam's Lucent Conqueror",
+		"Name_LocStr": "UI_TWIT_SHIP_11_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP11"
+	},
+	{
+		"Id": "^TWITCH_115",
+		"Name": "D. Gentalium Egg",
+		"Name_LocStr": "UI_TWIT_PET_10_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET10"
+	},
+	{
+		"Id": "^TWITCH_114",
+		"Name": "Z. Petalpoemeum Egg",
+		"Name_LocStr": "UI_TWIT_PET_09_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET09"
+	},
+	{
+		"Id": "^TWITCH_113",
+		"Name": "J. Xenoaryii Egg",
+		"Name_LocStr": "UI_TWIT_PET_08_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET08"
+	},
+	{
+		"Id": "^TWITCH_112",
+		"Name": "W. Fregaeiosus Egg",
+		"Name_LocStr": "UI_TWIT_PET_07_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET07"
+	},
+	{
+		"Id": "^TWITCH_111",
+		"Name": "O. Tigeraeumis Egg",
+		"Name_LocStr": "UI_TWIT_PET_06_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET06"
+	},
+	{
+		"Id": "^TWITCH_110",
+		"Name": "Iteration: Perses Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_09_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC9"
+	},
+	{
+		"Id": "^TWITCH_109",
+		"Name": "Iteration: Tethys Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_08_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC8"
+	},
+	{
+		"Id": "^TWITCH_108",
+		"Name": "Iteration: Hyperion Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_07_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC7"
+	},
+	{
+		"Id": "^TWITCH_107",
+		"Name": "Streamlined Jetpack Unit",
+		"Name_LocStr": "UI_EXPD_BACKPACK_01_NAME",
+		"Subtitle_LocStr": "UI_BACKPACK2_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_BACKPACK01"
+	},
+	{
+		"Id": "^TWITCH_106",
+		"Name": "Golden First Spawn Battle Mask",
+		"Name_LocStr": "UI_EXPD_HELMET_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "EXPD_HELMET01"
+	},
+	{
+		"Id": "^TWITCH_105",
+		"Name": "Bubble Duct",
+		"Name_LocStr": "BLD_BUBBLE_PIPE_MAGIC_NAME",
+		"Subtitle_LocStr": "BLD_BUBBLE_PIPE_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_BUBPIPE"
+	},
+	{
+		"Id": "^TWITCH_104",
+		"Name": "Draped Canvas",
+		"Name_LocStr": "BLD_S_SAIL3_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SAIL3"
+	},
+	{
+		"Id": "^TWITCH_103",
+		"Name": "Asymmetrical Sails",
+		"Name_LocStr": "BLD_S_SAIL2_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SAIL2"
+	},
+	{
+		"Id": "^TWITCH_102",
+		"Name": "Offset Sails",
+		"Name_LocStr": "BLD_S_SAIL1_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SAIL1"
+	},
+	{
+		"Id": "^TWITCH_101",
+		"Name": "Full Sail",
+		"Name_LocStr": "BLD_S_SAIL0_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_SAIL0"
+	},
+	{
+		"Id": "^TWITCH_100",
+		"Name": "Fingery Deposit",
+		"Name_LocStr": "BLD_CAVEPLANT_5_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_CAVE5"
+	},
+	{
+		"Id": "^TWITCH_099",
+		"Name": "Veined Flat Caps",
+		"Name_LocStr": "BLD_CAVEPLANT_4_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_CAVE4"
+	},
+	{
+		"Id": "^TWITCH_098",
+		"Name": "Troglotulip",
+		"Name_LocStr": "BLD_CAVEPLANT_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_CAVE3"
+	},
+	{
+		"Id": "^TWITCH_097",
+		"Name": "Cave Creeper",
+		"Name_LocStr": "BLD_CAVEPLANT_2_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_CAVE2"
+	},
+	{
+		"Id": "^TWITCH_096",
+		"Name": "Saucer Fungus",
+		"Name_LocStr": "BLD_CAVEPLANT_1_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_CAVE1"
+	},
+	{
+		"Id": "^TWITCH_095",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW03E"
+	},
+	{
+		"Id": "^TWITCH_094",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW03D"
+	},
+	{
+		"Id": "^TWITCH_093",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW03C"
+	},
+	{
+		"Id": "^TWITCH_092",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW03B"
+	},
+	{
+		"Id": "^TWITCH_091",
+		"Name": "Deluxe Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_02_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW03A"
+	},
+	{
+		"Id": "^TWITCH_090",
+		"Name": "Ghastly Trail",
+		"Name_LocStr": "UI_WORMTRAIL_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_WORM"
+	},
+	{
+		"Id": "^TWITCH_089",
+		"Name": "Jetpack Bubble Trail",
+		"Name_LocStr": "UI_JETTRAIL_BUBBLE_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_BUBBLE"
+	},
+	{
+		"Id": "^TWITCH_088",
+		"Name": "Milk? Poster",
+		"Name_LocStr": "BLD_S_POSTER16_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER16"
+	},
+	{
+		"Id": "^TWITCH_087",
+		"Name": "Anomalous Home Poster",
+		"Name_LocStr": "BLD_S_POSTER14_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER14"
+	},
+	{
+		"Id": "^TWITCH_086",
+		"Name": "Black & Gold Traveller Poster",
+		"Name_LocStr": "BLD_S_POSTER12_NAME",
+		"Subtitle_LocStr": "BLD_DECOR_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "S_POSTER12"
+	},
+	{
+		"Id": "^TWITCH_085",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW02E"
+	},
+	{
+		"Id": "^TWITCH_084",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW02D"
+	},
+	{
+		"Id": "^TWITCH_083",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW02C"
+	},
+	{
+		"Id": "^TWITCH_082",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW02B"
+	},
+	{
+		"Id": "^TWITCH_081",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW02A"
+	},
+	{
+		"Id": "^TWITCH_080",
+		"Name": "Iteration: Helios Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_06_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC6"
+	},
+	{
+		"Id": "^TWITCH_079",
+		"Name": "Iteration: Selene Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_05_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC5"
+	},
+	{
+		"Id": "^TWITCH_078",
+		"Name": "Iteration: Cronus Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_04_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC4"
+	},
+	{
+		"Id": "^TWITCH_077",
+		"Name": "Iteration: Mercury Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_03_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC3"
+	},
+	{
+		"Id": "^TWITCH_076",
+		"Name": "First Spawn Battle Mask",
+		"Name_LocStr": "UI_SPEC_HELMET_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_HELMET05"
+	},
+	{
+		"Id": "^TWITCH_075",
+		"Name": "Silver Atlas Statue",
+		"Name_LocStr": "BLD_ATLAS_S_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "STATUE_ATLAS_S"
+	},
+	{
+		"Id": "^TWITCH_074",
+		"Name": "Expanding Cube Gadget",
+		"Name_LocStr": "BLD_TOYCUBE_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_TOYCUBE"
+	},
+	{
+		"Id": "^TWITCH_073",
+		"Name": "Silver Astronaut Statue",
+		"Name_LocStr": "BLD_ASTRO_S_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "STATUE_ASTRO_S"
+	},
+	{
+		"Id": "^TWITCH_072",
+		"Name": "Archaic Habitation Heater",
+		"Name_LocStr": "BLD_LAVAPLANT_3_NAME",
+		"Subtitle_LocStr": "BLD_FLORA_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_LAVA3"
+	},
+	{
+		"Id": "^TWITCH_071",
+		"Name": "Movement Tracker",
+		"Name_LocStr": "UI_SPEC_PET_CUSTOM_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_PETCUST2"
+	},
+	{
+		"Id": "^TWITCH_070",
+		"Name": "Polo Decal",
+		"Name_LocStr": "BLD_DECAL_POLO_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL05"
+	},
+	{
+		"Id": "^TWITCH_069",
+		"Name": "Nada Decal",
+		"Name_LocStr": "BLD_DECAL_NADA_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL04"
+	},
+	{
+		"Id": "^TWITCH_068",
+		"Name": "Hand of Approval Decal",
+		"Name_LocStr": "BLD_DECAL_OKHAND_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL03"
+	},
+	{
+		"Id": "^TWITCH_067",
+		"Name": "Anomaly Decal",
+		"Name_LocStr": "BLD_DECAL_ANOMALY_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL01"
+	},
+	{
+		"Id": "^TWITCH_066",
+		"Name": "Apollo Decal",
+		"Name_LocStr": "BLD_DECAL_APOLLO_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "SPEC_DECAL06"
+	},
+	{
+		"Id": "^TWITCH_065",
+		"Name": "Green Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_GREEN_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_GREEN"
+	},
+	{
+		"Id": "^TWITCH_064",
+		"Name": "Red Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_RED_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_RED"
+	},
+	{
+		"Id": "^TWITCH_063",
+		"Name": "Chromatic Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_RAINBOW_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_RAINBOW"
+	},
+	{
+		"Id": "^TWITCH_062",
+		"Name": "Stealth Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_DARK_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_DARK"
+	},
+	{
+		"Id": "^TWITCH_061",
+		"Name": "Blue Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_BLUE_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_BLUE"
+	},
+	{
+		"Id": "^TWITCH_060",
+		"Name": "Hazard Decal",
+		"Name_LocStr": "BLD_DECAL_HAZARD_NAME",
+		"Subtitle_LocStr": "BLD_DECAL_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "DECAL_HAZARD"
+	},
+	{
+		"Id": "^TWITCH_059",
+		"Name": "-null- Figurine",
+		"Name_LocStr": "UI_BOBBLE_NULL_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_NULL"
+	},
+	{
+		"Id": "^TWITCH_058",
+		"Name": "DISBELIEF",
+		"Name_LocStr": "EMOTE_KNEES_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE10"
+	},
+	{
+		"Id": "^TWITCH_057",
+		"Name": "DISTANT GAZE",
+		"Name_LocStr": "EMOTE_GAZE_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE08"
+	},
+	{
+		"Id": "^TWITCH_056",
+		"Name": "HA!",
+		"Name_LocStr": "EMOTE_HA_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE03"
+	},
+	{
+		"Id": "^TWITCH_051",
+		"Name": "P. Sheptefalae Egg",
+		"Name_LocStr": "UI_TWIT_PET_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET01"
+	},
+	{
+		"Id": "^TWITCH_052",
+		"Name": "J. Croconakeum Egg",
+		"Name_LocStr": "UI_TWIT_PET_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET02"
+	},
+	{
+		"Id": "^TWITCH_053",
+		"Name": "G. Oestridinzeus Egg",
+		"Name_LocStr": "UI_TWIT_PET_03_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET03"
+	},
+	{
+		"Id": "^TWITCH_054",
+		"Name": "V. Pentaamqum Egg",
+		"Name_LocStr": "UI_TWIT_PET_04_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET04"
+	},
+	{
+		"Id": "^TWITCH_055",
+		"Name": "Z. Falynascria Egg",
+		"Name_LocStr": "UI_TWIT_PET_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_PET05"
+	},
+	{
+		"Id": "^TWITCH_046",
+		"Name": "Vv5 Ariyaz",
+		"Name_LocStr": "UI_TWIT_SHIP_06_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP06"
+	},
+	{
+		"Id": "^TWITCH_047",
+		"Name": "Jirishi's Prospect",
+		"Name_LocStr": "UI_TWIT_SHIP_07_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP07"
+	},
+	{
+		"Id": "^TWITCH_048",
+		"Name": "Hadach's Discovery Kh3",
+		"Name_LocStr": "UI_TWIT_SHIP_08B_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP08B"
+	},
+	{
+		"Id": "^TWITCH_049",
+		"Name": "Ultimate Sleep Lo1",
+		"Name_LocStr": "UI_TWIT_SHIP_09_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP09"
+	},
+	{
+		"Id": "^TWITCH_050",
+		"Name": "Hiwamiha of Destiny",
+		"Name_LocStr": "UI_TWIT_SHIP_10_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP10"
+	},
+	{
+		"Id": "^TWITCH_038",
+		"Name": "Iteration: Gemini Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_02_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC2"
+	},
+	{
+		"Id": "^TWITCH_037",
+		"Name": "Iteration: Ariadne Visage",
+		"Name_LocStr": "UI_SPEC_EXOTICHEAD_01_NAME",
+		"Subtitle_LocStr": "UI_EXOTIC_HEAD_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EXOTIC1"
+	},
+	{
+		"Id": "^TWITCH_035",
+		"Name": "Blazing Orbit Helmet",
+		"Name_LocStr": "UI_SPEC_HELMET_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_HELMET02"
+	},
+	{
+		"Id": "^TWITCH_036",
+		"Name": "Eye of the Korvax Helmet",
+		"Name_LocStr": "UI_SPEC_HELMET_03_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_HELMET03"
+	},
+	{
+		"Id": "^TWITCH_034",
+		"Name": "Atlas Figurine",
+		"Name_LocStr": "UI_BOBBLE_ATLAS_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_ATLAS"
+	},
+	{
+		"Id": "^TWITCH_033",
+		"Name": "Nada Figurine",
+		"Name_LocStr": "UI_BOBBLE_NADA_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_NADA"
+	},
+	{
+		"Id": "^TWITCH_032",
+		"Name": "Polo Figurine",
+		"Name_LocStr": "UI_BOBBLE_POLO_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_POLO"
+	},
+	{
+		"Id": "^TWITCH_031",
+		"Name": "Artemis Figurine",
+		"Name_LocStr": "UI_BOBBLE_ARTEMIS_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_ART"
+	},
+	{
+		"Id": "^TWITCH_030",
+		"Name": "Small Aquarium",
+		"Name_LocStr": "BLD_AQUARIUM_NAME",
+		"Subtitle_LocStr": "BLD_AQUARIUM_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BASE_AQUARIUM"
+	},
+	{
+		"Id": "^TWITCH_029",
+		"Name": "Robotic Companion",
+		"Name_LocStr": "BLD_ROBOTTOY_NAME",
+		"Subtitle_LocStr": "BLD_ROBOTTOY_SUB",
+		"Category": "twitch",
+		"ProductId": "BASE_ROBOTOY"
+	},
+	{
+		"Id": "^TWITCH_028",
+		"Name": "Terrarium",
+		"Name_LocStr": "BLD_TERRARIUM_NAME",
+		"Subtitle_LocStr": "BLD_TERRARIUM_SUBTITLE",
+		"Category": "twitch",
+		"ProductId": "BASE_TERRARIUM"
+	},
+	{
+		"Id": "^TWITCH_027",
+		"Name": "Gold Astronaut Statue",
+		"Name_LocStr": "BLD_ASTRO_G_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_STATUE_SUB",
+		"Category": "twitch",
+		"ProductId": "STATUE_ASTRO_G"
+	},
+	{
+		"Id": "^TWITCH_009",
+		"Name": "Rainbow Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_RAINBOW_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_RAINBOW"
+	},
+	{
+		"Id": "^TWITCH_001",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW01A"
+	},
+	{
+		"Id": "^TWITCH_002",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW01B"
+	},
+	{
+		"Id": "^TWITCH_003",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW01C"
+	},
+	{
+		"Id": "^TWITCH_044",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW01D"
+	},
+	{
+		"Id": "^TWITCH_045",
+		"Name": "Rgb Firework Pack",
+		"Name_LocStr": "UI_FIREWORK_PACK_TWIT_01_NAME",
+		"Subtitle_LocStr": "BLD_FIREWORK_PACK_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_FIREW01E"
+	},
+	{
+		"Id": "^TWITCH_039",
+		"Name": "Multi-tool Upgrade Pack",
+		"Name_LocStr": "UI_TWIT_GUN_UP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_UP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUNUP01A"
+	},
+	{
+		"Id": "^TWITCH_040",
+		"Name": "Multi-tool Upgrade Pack",
+		"Name_LocStr": "UI_TWIT_GUN_UP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_UP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUNUP01B"
+	},
+	{
+		"Id": "^TWITCH_041",
+		"Name": "Multi-tool Upgrade Pack",
+		"Name_LocStr": "UI_TWIT_GUN_UP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_UP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUNUP01C"
+	},
+	{
+		"Id": "^TWITCH_042",
+		"Name": "Multi-tool Upgrade Pack",
+		"Name_LocStr": "UI_TWIT_GUN_UP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_UP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUNUP01D"
+	},
+	{
+		"Id": "^TWITCH_043",
+		"Name": "Multi-tool Upgrade Pack",
+		"Name_LocStr": "UI_TWIT_GUN_UP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_UP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUNUP01E"
+	},
+	{
+		"Id": "^TWITCH_014",
+		"Name": "Rounded Laser",
+		"Name_LocStr": "UI_SPEC_PET_CUSTOM_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_PET_CUSTOM_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_PETCUST1"
+	},
+	{
+		"Id": "^TWITCH_004",
+		"Name": "MIND BLOWN",
+		"Name_LocStr": "EMOTE_MINDBLOWN_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE01"
+	},
+	{
+		"Id": "^TWITCH_005",
+		"Name": "CELEBRATE!",
+		"Name_LocStr": "EMOTE_CELEBRATE_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE02"
+	},
+	{
+		"Id": "^TWITCH_007",
+		"Name": "WONDER",
+		"Name_LocStr": "EMOTE_WONDER_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE04"
+	},
+	{
+		"Id": "^TWITCH_008",
+		"Name": "NO PROBLEM",
+		"Name_LocStr": "EMOTE_DIVE_OK_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE05"
+	},
+	{
+		"Id": "^TWITCH_006",
+		"Name": "HEROIC POSE",
+		"Name_LocStr": "EMOTE_HEROIC_U",
+		"Subtitle_LocStr": "UI_SPECIAL_EMOTE_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_EMOTE09"
+	},
+	{
+		"Id": "^TWITCH_010",
+		"Name": "Golden Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_GOLD_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_GOLD"
+	},
+	{
+		"Id": "^TWITCH_012",
+		"Name": "Cadmium Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_RED_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_RED"
+	},
+	{
+		"Id": "^TWITCH_013",
+		"Name": "Emeril Starship Trail",
+		"Name_LocStr": "UI_SHIPTRAIL_GREEN_NAME",
+		"Subtitle_LocStr": "UI_SHIPTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "SHIP_GREEN"
+	},
+	{
+		"Id": "^TWITCH_011",
+		"Name": "Antimatter Jetpack Trail",
+		"Name_LocStr": "UI_JETTRAIL_DARK_NAME",
+		"Subtitle_LocStr": "UI_JETTRAIL_SUB",
+		"Category": "twitch",
+		"ProductId": "JETS_DARK"
+	},
+	{
+		"Id": "^TWITCH_015",
+		"Name": "Apollo Figurine",
+		"Name_LocStr": "UI_BOBBLE_APOLLO_NAME",
+		"Subtitle_LocStr": "UI_BOBBLE_SUB",
+		"Category": "twitch",
+		"ProductId": "BOBBLE_APOLLO"
+	},
+	{
+		"Id": "^TWITCH_016",
+		"Name": "Sparse Horizon Helmet",
+		"Name_LocStr": "UI_SPEC_HELMET_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_HAT_SUB",
+		"Category": "twitch",
+		"ProductId": "SPEC_HELMET01"
+	},
+	{
+		"Id": "^TWITCH_017",
+		"Name": "Eokai's Prime Inquirer",
+		"Name_LocStr": "UI_TWIT_SHIP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP01"
+	},
+	{
+		"Id": "^TWITCH_019",
+		"Name": "Hoshis Hp7",
+		"Name_LocStr": "UI_TWIT_SHIP_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP02"
+	},
+	{
+		"Id": "^TWITCH_020",
+		"Name": "Nemesis of the Kudama",
+		"Name_LocStr": "UI_TWIT_SHIP_03_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP03"
+	},
+	{
+		"Id": "^TWITCH_021",
+		"Name": "Ultimate Pride Jb2",
+		"Name_LocStr": "UI_TWIT_SHIP_04_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP04"
+	},
+	{
+		"Id": "^TWITCH_022",
+		"Name": "Prime Song Jz4",
+		"Name_LocStr": "UI_TWIT_SHIP_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_SHIP05"
+	},
+	{
+		"Id": "^TWITCH_018",
+		"Name": "Quantum Harmoniser Mark Iv",
+		"Name_LocStr": "UI_TWIT_GUN_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN01"
+	},
+	{
+		"Id": "^TWITCH_023",
+		"Name": "Loop Scoop Mark Iv",
+		"Name_LocStr": "UI_TWIT_GUN_02_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN02"
+	},
+	{
+		"Id": "^TWITCH_024",
+		"Name": "Arc Capacitor W/17l-15p",
+		"Name_LocStr": "UI_TWIT_GUN_03_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN03"
+	},
+	{
+		"Id": "^TWITCH_025",
+		"Name": "Hunevar's Dream Charger",
+		"Name_LocStr": "UI_TWIT_GUN_04_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN04"
+	},
+	{
+		"Id": "^TWITCH_026",
+		"Name": "Imperfect Loop Reflector",
+		"Name_LocStr": "UI_TWIT_GUN_05_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "twitch",
+		"ProductId": "TWITCH_GUN05"
+	},
+	{
+		"Id": "^TGA_SHIP1",
+		"Name": "Starborn Phoenix",
+		"Name_LocStr": "UI_SHIP_TGA_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "platform",
+		"ProductId": "TGA_SHIP01"
+	},
+	{
+		"Id": "^SW_PREORDER",
+		"Name": "Horizon Vector Nx",
+		"Name_LocStr": "UI_SWIT_SHIP_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_SHIP_SUB",
+		"Category": "platform",
+		"ProductId": "SWITCH_SHIP01"
+	},
+	{
+		"Id": "^SW_PREORDER2",
+		"Name": "Infinite Neon Mark Xxii",
+		"Name_LocStr": "UI_SWIT_GUN_01_NAME",
+		"Subtitle_LocStr": "UI_SPECIAL_GUN_SUB",
+		"Category": "platform",
+		"ProductId": "SWITCH_GUN01"
+	},
+	{
+		"Id": "^ENT_BOLTCASTER",
+		"Name": "Boltcaster Sm",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "entitlement",
+		"ProductId": "BOLT_SM"
+	},
+	{
+		"Id": "^ENT_PHOCORE",
+		"Name": "Photonix Core",
+		"Name_LocStr": null,
+		"Subtitle_LocStr": null,
+		"Category": "entitlement",
+		"ProductId": "PHOTONIX_CORE"
+	},
+	{
+		"Id": "^ENT_XO_HELMET",
+		"Name": "X.o. Suit",
+		"Name_LocStr": "UI_SPEC_XOHELMET_NAME",
+		"Subtitle_LocStr": "UI_SPEC_XOHELMET_NAME_SUB",
+		"Category": "entitlement",
+		"ProductId": "SPEC_XOHELMET"
+	}
+]

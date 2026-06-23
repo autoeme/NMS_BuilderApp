@@ -1,0 +1,4 @@
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl fanlight_mat1
+Kd 0.8 0.8 0.8

@@ -1,0 +1,4 @@
+newmtl stonetrimmat2
+Kd 0.8 0.8 0.8
+newmtl glassrefractionmat1
+Kd 0.8 0.8 0.8

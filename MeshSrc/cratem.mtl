@@ -1,0 +1,14 @@
+newmtl hqtrimmetal_mat9
+Kd 0.8 0.8 0.8
+newmtl panningmat3_mat
+Kd 0.8 0.8 0.8
+newmtl crate1
+Kd 0.8 0.8 0.8
+newmtl decal_mat2
+Kd 0.8 0.8 0.8
+newmtl crate_decal1
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat4
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8

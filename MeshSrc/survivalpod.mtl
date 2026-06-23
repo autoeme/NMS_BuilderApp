@@ -1,0 +1,22 @@
+newmtl glassrefractionmat
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat2
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat4
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat2
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat1
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat5
+Kd 0.8 0.8 0.8
+newmtl corridorlight_mat3
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8

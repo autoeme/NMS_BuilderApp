@@ -1,0 +1,16 @@
+newmtl tarpmat
+Kd 0.8 0.8 0.8
+newmtl hqtrimmetal
+Kd 0.8 0.8 0.8
+newmtl hqtrimmetalopaque_mat8
+Kd 0.8 0.8 0.8
+newmtl warriortiled_mat
+Kd 0.8 0.8 0.8
+newmtl warriorsurfdetail_mat
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat1
+Kd 0.8 0.8 0.8
+newmtl warriorsdmetallic_mat2
+Kd 0.8 0.8 0.8
+newmtl warriordiscolour_mat1
+Kd 0.8 0.8 0.8

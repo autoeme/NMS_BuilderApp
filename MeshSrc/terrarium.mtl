@@ -1,0 +1,26 @@
+newmtl glassmat
+Kd 0.8 0.8 0.8
+newmtl interiorfreighterbase_mat
+Kd 0.8 0.8 0.8
+newmtl metalmat
+Kd 0.8 0.8 0.8
+newmtl sdad
+Kd 0.8 0.8 0.8
+newmtl hqmedrock_2
+Kd 0.8 0.8 0.8
+newmtl tinyslatemat
+Kd 0.8 0.8 0.8
+newmtl mediumtilingrocka_mat
+Kd 0.8 0.8 0.8
+newmtl crystal_mat1
+Kd 0.8 0.8 0.8
+newmtl grassmat
+Kd 0.8 0.8 0.8
+newmtl farnmat
+Kd 0.8 0.8 0.8
+newmtl mudmat
+Kd 0.8 0.8 0.8
+newmtl hillmat
+Kd 0.8 0.8 0.8
+newmtl mudnotransmat
+Kd 0.8 0.8 0.8

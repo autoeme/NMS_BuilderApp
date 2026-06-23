@@ -1,0 +1,10 @@
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl corridor_straight_interiortiling_mat
+Kd 0.8 0.8 0.8
+newmtl tilingtextureinterior_mat
+Kd 0.8 0.8 0.8
+newmtl glassrefractionmat
+Kd 0.8 0.8 0.8
+newmtl corridor_join_tilingtexture_mat2
+Kd 0.8 0.8 0.8

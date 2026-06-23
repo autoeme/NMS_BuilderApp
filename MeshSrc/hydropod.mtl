@@ -1,0 +1,10 @@
+newmtl hydrosolidmat
+Kd 0.8 0.8 0.8
+newmtl darktrimmat
+Kd 0.8 0.8 0.8
+newmtl hydroglowcolourisablemat
+Kd 0.8 0.8 0.8
+newmtl hydrosecondarymat1
+Kd 0.8 0.8 0.8
+newmtl glowgradientcolourisable
+Kd 0.8 0.8 0.8

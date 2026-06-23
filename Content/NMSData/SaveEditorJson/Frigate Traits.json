@@ -1,0 +1,1782 @@
+[
+	{
+		"Id": "^FUEL_PRI",
+		"Name": "Support Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_FUEL_1",
+		"Type": "FuelCapacity",
+		"Strength": -15,
+		"Beneficial": true,
+		"Primary": "SUPPORT",
+		"Secondary": null
+	},
+	{
+		"Id": "^FUEL_SEC_1",
+		"Name": "Large Tanks",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_1",
+		"Type": "FuelCapacity",
+		"Strength": -3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_SEC_2",
+		"Name": "Oversized Fuel Scoop",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_2",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_SEC_3",
+		"Name": "Generator Grid",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_3",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_SEC_4",
+		"Name": "Antimatter Cycler",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_4",
+		"Type": "FuelCapacity",
+		"Strength": -3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_SEC_5",
+		"Name": "Advanced Power Distributor",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_5",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_SEC_6",
+		"Name": "Portable Fusion Ignitor",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_6",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "SUPPORT"
+	},
+	{
+		"Id": "^FUEL_TER_1",
+		"Name": "Oxygen Recycler",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_7",
+		"Type": "FuelCapacity",
+		"Strength": -2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_2",
+		"Name": "Tuned Engines",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_8",
+		"Type": "FuelCapacity",
+		"Strength": -4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_3",
+		"Name": "Robot Crew",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_9",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_4",
+		"Name": "Photon Sails",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_10",
+		"Type": "FuelCapacity",
+		"Strength": -2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_5",
+		"Name": "Overclocked Power Distributor",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_11",
+		"Type": "FuelCapacity",
+		"Strength": -4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_6",
+		"Name": "Solar Panels",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_12",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_TER_7",
+		"Name": "Efficient Warp Drive",
+		"Name_LocStr": "FLEET_TRAIT_SEC_FUEL_13",
+		"Type": "FuelCapacity",
+		"Strength": -4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,PIRATE"
+	},
+	{
+		"Id": "^FUEL_BAD_1",
+		"Name": "Thirsty Crew",
+		"Name_LocStr": "FLEET_TRAIT_NEG_FUEL_1",
+		"Type": "FuelBurnRate",
+		"Strength": 1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY"
+	},
+	{
+		"Id": "^FUEL_BAD_2",
+		"Name": "Inefficient Engine",
+		"Name_LocStr": "FLEET_TRAIT_NEG_FUEL_2",
+		"Type": "FuelBurnRate",
+		"Strength": 2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY"
+	},
+	{
+		"Id": "^FUEL_BAD_3",
+		"Name": "Leaky Fuel Tubes",
+		"Name_LocStr": "FLEET_TRAIT_NEG_FUEL_3",
+		"Type": "FuelBurnRate",
+		"Strength": 4,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY"
+	},
+	{
+		"Id": "^FUEL_BAD_4",
+		"Name": "Poorly-Aligned Ballast",
+		"Name_LocStr": "FLEET_TRAIT_NEG_FUEL_4",
+		"Type": "FuelBurnRate",
+		"Strength": 2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY"
+	},
+	{
+		"Id": "^FUEL_BAD_5",
+		"Name": "Oil Burner",
+		"Name_LocStr": "FLEET_TRAIT_NEG_FUEL_5",
+		"Type": "FuelBurnRate",
+		"Strength": 1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY"
+	},
+	{
+		"Id": "^COMBAT_PRI",
+		"Name": "Combat Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_COMBAT_1",
+		"Type": "Combat",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "COMBAT",
+		"Secondary": null
+	},
+	{
+		"Id": "^PIRATE_PRI",
+		"Name": "Raiding Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_PIRATE_1",
+		"Type": "Combat",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "COMBAT",
+		"Secondary": null
+	},
+	{
+		"Id": "^COMBAT_SEC_1",
+		"Name": "Massive Guns",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_1",
+		"Type": "Combat",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_SEC_2",
+		"Name": "Ablative Armour",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_2",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_SEC_3",
+		"Name": "Cloaking Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_3",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_SEC_4",
+		"Name": "Ultrasonic Weapons",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_4",
+		"Type": "Combat",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_SEC_5",
+		"Name": "Experimental Weaponry",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_5",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_SEC_6",
+		"Name": "Tremendous Cannons",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_6",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,PIRATE"
+	},
+	{
+		"Id": "^COMBAT_TER_1",
+		"Name": "Hidden Weaponry",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_7",
+		"Type": "Combat",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_TER_2",
+		"Name": "Ammo Fabricators",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_8",
+		"Type": "Combat",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_TER_3",
+		"Name": "Reinforced Hull",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_9",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_TER_4",
+		"Name": "Aggressive Probes",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_10",
+		"Type": "Combat",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_TER_5",
+		"Name": "Angry Captain",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_11",
+		"Type": "Combat",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_TER_6",
+		"Name": "Retrofitted Turrets",
+		"Name_LocStr": "FLEET_TRAIT_SEC_COMBAT_12",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_BAD_1",
+		"Name": "Cowardly Gunners",
+		"Name_LocStr": "FLEET_TRAIT_NEG_COMBAT_1",
+		"Type": "Combat",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_BAD_2",
+		"Name": "Second-Hand Rockets",
+		"Name_LocStr": "FLEET_TRAIT_NEG_COMBAT_2",
+		"Type": "Combat",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_BAD_3",
+		"Name": "Faulty Torpedoes",
+		"Name_LocStr": "FLEET_TRAIT_NEG_COMBAT_3",
+		"Type": "Combat",
+		"Strength": -4,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_BAD_4",
+		"Name": "Fragile Hull",
+		"Name_LocStr": "FLEET_TRAIT_NEG_COMBAT_4",
+		"Type": "Combat",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^COMBAT_BAD_5",
+		"Name": "Low-Energy Shields",
+		"Name_LocStr": "FLEET_TRAIT_NEG_COMBAT_5",
+		"Type": "Combat",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^MINING_PRI",
+		"Name": "Industrial Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_MINING_1",
+		"Type": "Mining",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "MINING",
+		"Secondary": null
+	},
+	{
+		"Id": "^MINING_SEC_1",
+		"Name": "Laser Drill Array",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_1",
+		"Type": "Mining",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_SEC_2",
+		"Name": "Tractor Beam",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_2",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_SEC_3",
+		"Name": "Ultrasonic Welders",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_3",
+		"Type": "Mining",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_SEC_4",
+		"Name": "Ore Processing Unit",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_4",
+		"Type": "Mining",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_SEC_5",
+		"Name": "Terraforming Beams",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_5",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_SEC_6",
+		"Name": "Asteroid Vaporizer",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_6",
+		"Type": "Mining",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "MINING"
+	},
+	{
+		"Id": "^MINING_TER_1",
+		"Name": "Mineral Extractors",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_7",
+		"Type": "Mining",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_TER_2",
+		"Name": "Extendable Drills",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_8",
+		"Type": "Mining",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_TER_3",
+		"Name": "Asteroid Scanner",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_9",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_TER_4",
+		"Name": "Harvester Drones",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_10",
+		"Type": "Mining",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_TER_5",
+		"Name": "Metal Detector",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_11",
+		"Type": "Mining",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_TER_6",
+		"Name": "Remote Mining Unit",
+		"Name_LocStr": "FLEET_TRAIT_SEC_MINING_12",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_BAD_1",
+		"Name": "Lazy Crew",
+		"Name_LocStr": "FLEET_TRAIT_NEG_MINING_1",
+		"Type": "Mining",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_BAD_2",
+		"Name": "Small Hoppers",
+		"Name_LocStr": "FLEET_TRAIT_NEG_MINING_2",
+		"Type": "Mining",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_BAD_3",
+		"Name": "Clumsy Drill Operator",
+		"Name_LocStr": "FLEET_TRAIT_NEG_MINING_3",
+		"Type": "Mining",
+		"Strength": -4,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_BAD_4",
+		"Name": "Underpowered Lasers",
+		"Name_LocStr": "FLEET_TRAIT_NEG_MINING_4",
+		"Type": "Mining",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^MINING_BAD_5",
+		"Name": "Malfunctioning Drones",
+		"Name_LocStr": "FLEET_TRAIT_NEG_MINING_5",
+		"Type": "Mining",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_PRI",
+		"Name": "Trade Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_TRADING_1",
+		"Type": "Diplomatic",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "DIPLOMACY",
+		"Secondary": null
+	},
+	{
+		"Id": "^TRADING_SEC_1",
+		"Name": "Trade Analysis Computer",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_1",
+		"Type": "Diplomatic",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_SEC_2",
+		"Name": "Automatic Investment Engine",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_2",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_SEC_3",
+		"Name": "Mind Control Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_3",
+		"Type": "Diplomatic",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_SEC_4",
+		"Name": "HypnoDrones",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_4",
+		"Type": "Diplomatic",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_SEC_5",
+		"Name": "Propaganda Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_5",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_SEC_6",
+		"Name": "Teleportation Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_6",
+		"Type": "Diplomatic",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DIPLOMACY"
+	},
+	{
+		"Id": "^TRADING_TER_1",
+		"Name": "Economy Scanner",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_7",
+		"Type": "Diplomatic",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_TER_2",
+		"Name": "Remote Market Analyser",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_8",
+		"Type": "Diplomatic",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_TER_3",
+		"Name": "Robot Butlers",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_9",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_TER_4",
+		"Name": "AutoTranslator",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_10",
+		"Type": "Diplomatic",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_TER_5",
+		"Name": "Negotiation Module",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_11",
+		"Type": "Diplomatic",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_TER_6",
+		"Name": "Well-Groomed Crew",
+		"Name_LocStr": "FLEET_TRAIT_SEC_TRADING_12",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_BAD_1",
+		"Name": "Rude Captain",
+		"Name_LocStr": "FLEET_TRAIT_NEG_TRADING_1",
+		"Type": "Diplomatic",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_BAD_2",
+		"Name": "Small Hold",
+		"Name_LocStr": "FLEET_TRAIT_NEG_TRADING_2",
+		"Type": "Diplomatic",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_BAD_3",
+		"Name": "Roach Infestation",
+		"Name_LocStr": "FLEET_TRAIT_NEG_TRADING_3",
+		"Type": "Diplomatic",
+		"Strength": -4,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_BAD_4",
+		"Name": "Thief On Board",
+		"Name_LocStr": "FLEET_TRAIT_NEG_TRADING_4",
+		"Type": "Diplomatic",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^TRADING_BAD_5",
+		"Name": "Badly Painted",
+		"Name_LocStr": "FLEET_TRAIT_NEG_TRADING_5",
+		"Type": "Diplomatic",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_PRI",
+		"Name": "Exploration Specialist",
+		"Name_LocStr": "FLEET_TRAIT_PRI_EXPLORE_1",
+		"Type": "Exploration",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "EXPLORATION",
+		"Secondary": null
+	},
+	{
+		"Id": "^EXPLORE_SEC_1",
+		"Name": "Anomaly Scanner",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_1",
+		"Type": "Exploration",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_SEC_2",
+		"Name": "Interstellar Signal Array",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_2",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_SEC_3",
+		"Name": "Cartography Drones",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_3",
+		"Type": "Exploration",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_SEC_4",
+		"Name": "Realtime Archival Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_4",
+		"Type": "Exploration",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_SEC_5",
+		"Name": "Gravitational Visualiser",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_5",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_SEC_6",
+		"Name": "Spacetime Anomaly Shielding",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_6",
+		"Type": "Exploration",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "EXPLORATION"
+	},
+	{
+		"Id": "^EXPLORE_TER_1",
+		"Name": "Planetary Data Scoop",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_7",
+		"Type": "Exploration",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_TER_2",
+		"Name": "Stowaway Botanist",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_8",
+		"Type": "Exploration",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_TER_3",
+		"Name": "Radio Telescopes",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_9",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_TER_4",
+		"Name": "Fauna Analysis Device",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_10",
+		"Type": "Exploration",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_TER_5",
+		"Name": "Holographic Displays",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_11",
+		"Type": "Exploration",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_TER_6",
+		"Name": "Long-Distance Sensors",
+		"Name_LocStr": "FLEET_TRAIT_SEC_EXPLORE_12",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_BAD_1",
+		"Name": "Wandering Compass",
+		"Name_LocStr": "FLEET_TRAIT_NEG_EXPLORE_1",
+		"Type": "Exploration",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_BAD_2",
+		"Name": "Outdated Maps",
+		"Name_LocStr": "FLEET_TRAIT_NEG_EXPLORE_2",
+		"Type": "Exploration",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_BAD_3",
+		"Name": "Uncalibrated Warp Drive",
+		"Name_LocStr": "FLEET_TRAIT_NEG_EXPLORE_3",
+		"Type": "Exploration",
+		"Strength": -4,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_BAD_4",
+		"Name": "Misaligned Sensors",
+		"Name_LocStr": "FLEET_TRAIT_NEG_EXPLORE_4",
+		"Type": "Exploration",
+		"Strength": -2,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^EXPLORE_BAD_5",
+		"Name": "Haunted Radar",
+		"Name_LocStr": "FLEET_TRAIT_NEG_EXPLORE_5",
+		"Type": "Exploration",
+		"Strength": -1,
+		"Beneficial": false,
+		"Primary": null,
+		"Secondary": "COMBAT,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_1",
+		"Name": "Local Time Dilator",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_1",
+		"Type": "Speed",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_2",
+		"Name": "Mass Driver",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_2",
+		"Type": "Speed",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_3",
+		"Name": "Expert Navigator",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_3",
+		"Type": "Speed",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_4",
+		"Name": "Alcubierre Drive",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_4",
+		"Type": "Speed",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_5",
+		"Name": "Wormhole Generator",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_5",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_6",
+		"Name": "Experimental Impulse Drive",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_6",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_7",
+		"Name": "Motivated Crew",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_7",
+		"Type": "Speed",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^SPEED_TER_8",
+		"Name": "Dynamic Ballast",
+		"Name_LocStr": "FLEET_TRAIT_SEC_SPEED_8",
+		"Type": "Speed",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT,PIRATE"
+	},
+	{
+		"Id": "^INVULN_TER_1",
+		"Name": "Self-Repairing Hull",
+		"Name_LocStr": "FLEET_TRAIT_SEC_INVULNERABLE_1",
+		"Type": "Invulnerable",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^INVULN_TER_2",
+		"Name": "Advanced Maintenance Drones",
+		"Name_LocStr": "FLEET_TRAIT_SEC_INVULNERABLE_2",
+		"Type": "Invulnerable",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^INVULN_TER_3",
+		"Name": "Holographic Components",
+		"Name_LocStr": "FLEET_TRAIT_SEC_INVULNERABLE_3",
+		"Type": "Invulnerable",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "COMBAT,EXPLORATION,MINING,DIPLOMACY,SUPPORT"
+	},
+	{
+		"Id": "^NORMANDY_1",
+		"Name": "Deep Scout Prototype",
+		"Name_LocStr": "UI_NORMANDY_TRAIT1",
+		"Type": "Combat",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "COMBAT",
+		"Secondary": null
+	},
+	{
+		"Id": "^NORMANDY_2",
+		"Name": "Tantalus Drive",
+		"Name_LocStr": "UI_NORMANDY_TRAIT2",
+		"Type": "Exploration",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "EXPLORATION",
+		"Secondary": null
+	},
+	{
+		"Id": "^NORMANDY_3",
+		"Name": "Mass Accelerator Cannon",
+		"Name_LocStr": "UI_NORMANDY_TRAIT3",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "NORMANDY"
+	},
+	{
+		"Id": "^NORMANDY_4",
+		"Name": "Internal Emission Sink",
+		"Name_LocStr": "UI_NORMANDY_TRAIT4",
+		"Type": "Stealth",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "NORMANDY"
+	},
+	{
+		"Id": "^NORMANDY_5",
+		"Name": "Long-Range FTL Capacity",
+		"Name_LocStr": "UI_NORMANDY_TRAIT5",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "NORMANDY"
+	},
+	{
+		"Id": "^GHOSTSHIP_1",
+		"Name": "Cursed to Roam",
+		"Name_LocStr": "UI_GHOSTSHIP_TRAIT1",
+		"Type": "Exploration",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "EXPLORATION",
+		"Secondary": null
+	},
+	{
+		"Id": "^GHOSTSHIP_2",
+		"Name": "Phantasmic Cannons",
+		"Name_LocStr": "UI_GHOSTSHIP_TRAIT2",
+		"Type": "Combat",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "COMBAT",
+		"Secondary": null
+	},
+	{
+		"Id": "^GHOSTSHIP_3",
+		"Name": "Powered by souls",
+		"Name_LocStr": "UI_GHOSTSHIP_TRAIT3",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "GHOSTSHIP"
+	},
+	{
+		"Id": "^GHOSTSHIP_4",
+		"Name": "Undying",
+		"Name_LocStr": "UI_GHOSTSHIP_TRAIT4",
+		"Type": "Invulnerable",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "GHOSTSHIP"
+	},
+	{
+		"Id": "^GHOSTSHIP_5",
+		"Name": "Driven by the bells",
+		"Name_LocStr": "UI_GHOSTSHIP_TRAIT5",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "GHOSTSHIP"
+	},
+	{
+		"Id": "^DEEPSPACE_1",
+		"Name": "Transcendent Vision",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT1",
+		"Type": "Exploration",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "EXPLORATION",
+		"Secondary": null
+	},
+	{
+		"Id": "^DEEPSPACE_2",
+		"Name": "Siren Song",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT2",
+		"Type": "Diplomatic",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "DIPLOMACY",
+		"Secondary": null
+	},
+	{
+		"Id": "^DEEPSPACE_3",
+		"Name": "Hungering Beak",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT3",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACE"
+	},
+	{
+		"Id": "^DEEPSPACE_4",
+		"Name": "Time Loop",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT4",
+		"Type": "Invulnerable",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACE"
+	},
+	{
+		"Id": "^DEEPSPACE_5",
+		"Name": "Nourishing Oils",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT5",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACE"
+	},
+	{
+		"Id": "^LIVING_COM_PRI",
+		"Name": "Bitter Memories",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_1",
+		"Type": "Combat",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "COMBAT",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_COM_S_1",
+		"Name": "Muscular Tentacles",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_3",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_S_2",
+		"Name": "Superluminal Strike",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_4",
+		"Type": "Combat",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_S_3",
+		"Name": "Intimidating Visage",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_5",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_S_4",
+		"Name": "Unsettling Visions",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_6",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_S_5",
+		"Name": "Flight Pattern Analysis",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_7",
+		"Type": "Combat",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_S_6",
+		"Name": "Hardened Flesh",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_8",
+		"Type": "Combat",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_T_1",
+		"Name": "Disorienting Wail",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_9",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_T_2",
+		"Name": "Blinding Miasma",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_10",
+		"Type": "Combat",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_COM_T_3",
+		"Name": "Unforgiving",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_COMBAT_2",
+		"Type": "Combat",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_PRI",
+		"Name": "Echolocation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_1",
+		"Type": "Exploration",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "EXPLORATION",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_EXP_S_1",
+		"Name": "Ancient Knowledge",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_3",
+		"Type": "Exploration",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_S_2",
+		"Name": "Retrocognition",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_4",
+		"Type": "Exploration",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_S_3",
+		"Name": "Fauna Empathy",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_5",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_S_4",
+		"Name": "Galactic Wisdom",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_6",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_S_5",
+		"Name": "Migratory Insight",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_7",
+		"Type": "Exploration",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_S_6",
+		"Name": "Star Memorisation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_8",
+		"Type": "Exploration",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_T_1",
+		"Name": "Deep Space Native",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_9",
+		"Type": "Exploration",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_T_2",
+		"Name": "Remote Pod Uplink",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_10",
+		"Type": "Combat",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_EXP_T_3",
+		"Name": "Trans-Reality Recollection",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_EXPLORE_2",
+		"Type": "Exploration",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_PRI",
+		"Name": "Seismic Song",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_1",
+		"Type": "Mining",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "MINING",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_MIN_S_1",
+		"Name": "Baleen Plates",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_3",
+		"Type": "Mining",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_S_2",
+		"Name": "Asteroid Digestion",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_4",
+		"Type": "Mining",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_S_3",
+		"Name": "Leaching Bile",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_5",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_S_4",
+		"Name": "Metallurgic Microbes",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_6",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_S_5",
+		"Name": "Stardust Expertise",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_7",
+		"Type": "Mining",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_S_6",
+		"Name": "Sonic Comminution",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_8",
+		"Type": "Mining",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_T_1",
+		"Name": "Probing Tendrils",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_9",
+		"Type": "Mining",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_T_2",
+		"Name": "Superheated Stomach",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_10",
+		"Type": "Mining",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_MIN_T_3",
+		"Name": "Nebula Painter",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_MINING_2",
+		"Type": "Mining",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_PRI",
+		"Name": "Mesmerising Voice",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_1",
+		"Type": "Diplomatic",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "DIPLOMACY",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_TRA_S_1",
+		"Name": "Counterfeit Detection",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_3",
+		"Type": "Diplomatic",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_S_2",
+		"Name": "Market Foresight",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_4",
+		"Type": "Diplomatic",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_S_3",
+		"Name": "Dream Manipulation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_5",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_S_4",
+		"Name": "Hypnotic Melody",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_6",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_S_5",
+		"Name": "Mind Weaver",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_7",
+		"Type": "Diplomatic",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_S_6",
+		"Name": "Overwhelming Presence",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_8",
+		"Type": "Diplomatic",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_T_1",
+		"Name": "Legendary Reputation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_9",
+		"Type": "Diplomatic",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_T_2",
+		"Name": "Peaceful Negotiator",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_10",
+		"Type": "Diplomatic",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_TRA_T_3",
+		"Name": "Persuasive Verse",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_TRADING_2",
+		"Type": "Diplomatic",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_PRI",
+		"Name": "Slow Metabolism",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_1",
+		"Type": "FuelCapacity",
+		"Strength": -15,
+		"Beneficial": true,
+		"Primary": "SUPPORT",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_FUEL_S_1",
+		"Name": "Reality Skimming",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_3",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_S_2",
+		"Name": "Gliding Movement",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_4",
+		"Type": "FuelCapacity",
+		"Strength": -9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_S_3",
+		"Name": "Effortless Propulsion",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_5",
+		"Type": "Combat",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_S_4",
+		"Name": "Efficient Forager",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_6",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_S_5",
+		"Name": "Stellar Wind Drifter",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_7",
+		"Type": "FuelCapacity",
+		"Strength": -3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_S_6",
+		"Name": "Blubber Reserves",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_8",
+		"Type": "FuelCapacity",
+		"Strength": -3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_T_1",
+		"Name": "Stoic Endurance",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_9",
+		"Type": "FuelCapacity",
+		"Strength": -6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_T_2",
+		"Name": "Fleet Mascot",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_10",
+		"Type": "Combat",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_FUEL_T_3",
+		"Name": "Long-Distance Nomad",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_FUEL_2",
+		"Type": "FuelCapacity",
+		"Strength": -2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_PRI",
+		"Name": "Wormhole Navigation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_1",
+		"Type": "Speed",
+		"Strength": 15,
+		"Beneficial": true,
+		"Primary": "DEEPSPACE",
+		"Secondary": null
+	},
+	{
+		"Id": "^LIVING_SPE_S_1",
+		"Name": "Homing Instincts",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_3",
+		"Type": "Speed",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_S_2",
+		"Name": "Black Hole Diver",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_4",
+		"Type": "Speed",
+		"Strength": 9,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_S_3",
+		"Name": "Cosmic Swimmer",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_5",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_S_4",
+		"Name": "Streamlined Form",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_6",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_S_5",
+		"Name": "Colossal Fins",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_7",
+		"Type": "Speed",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_S_6",
+		"Name": "Slick Flesh",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_8",
+		"Type": "Speed",
+		"Strength": 3,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_T_1",
+		"Name": "Cosmic Slipstream",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_9",
+		"Type": "Speed",
+		"Strength": 6,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_T_2",
+		"Name": "Graceful Agility",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_10",
+		"Type": "Speed",
+		"Strength": 4,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	},
+	{
+		"Id": "^LIVING_SPE_T_3",
+		"Name": "Route Optimisation",
+		"Name_LocStr": "UI_DEEP_SPACE_TRAIT_SPEED_2",
+		"Type": "Speed",
+		"Strength": 2,
+		"Beneficial": true,
+		"Primary": null,
+		"Secondary": "DEEPSPACECOMMON"
+	}
+]

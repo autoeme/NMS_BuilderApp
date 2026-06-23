@@ -1,0 +1,6 @@
+newmtl basic_wall2_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl basic_wall1_tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl blinn11
+Kd 0.8 0.8 0.8

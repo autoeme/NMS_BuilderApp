@@ -1,0 +1,8 @@
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl metaltiling_mat
+Kd 0.8 0.8 0.8
+newmtl shadowmat
+Kd 0.8 0.8 0.8
+newmtl basic_wall2_tilingtexture_mat
+Kd 0.8 0.8 0.8

@@ -1,0 +1,8 @@
+newmtl tilingtexture_mat3
+Kd 0.8 0.8 0.8
+newmtl interiortiling_mat2
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat6
+Kd 0.8 0.8 0.8
+newmtl lightglowmat2
+Kd 0.8 0.8 0.8

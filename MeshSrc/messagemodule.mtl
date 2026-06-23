@@ -1,0 +1,14 @@
+newmtl tilingtexture_mat
+Kd 0.8 0.8 0.8
+newmtl lightglowmat2
+Kd 0.8 0.8 0.8
+newmtl radiowavs_mat
+Kd 0.8 0.8 0.8
+newmtl pulsewave_mat
+Kd 0.8 0.8 0.8
+newmtl glowgradient_skinnedmat
+Kd 0.8 0.8 0.8
+newmtl radiowavsalt_mat
+Kd 0.8 0.8 0.8
+newmtl glow_mat
+Kd 0.8 0.8 0.8

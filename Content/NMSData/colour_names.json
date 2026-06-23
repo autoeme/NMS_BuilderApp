@@ -1,0 +1,502 @@
+{
+ "23": {
+  "id": "STONENATURAL1",
+  "en": "Pink & Natural",
+  "ru": "Розовый и естественный"
+ },
+ "24": {
+  "id": "STONENATURAL2",
+  "en": "Natural & Brown",
+  "ru": "Естественный и коричневый"
+ },
+ "25": {
+  "id": "STONENATURAL3",
+  "en": "Grey & Red",
+  "ru": "Серый и красный"
+ },
+ "26": {
+  "id": "STONENATURAL4",
+  "en": "Pink & Grey",
+  "ru": "Розовый и серый"
+ },
+ "27": {
+  "id": "STONEBLUE1",
+  "en": "Blue & Red",
+  "ru": "Синий и красный"
+ },
+ "28": {
+  "id": "STONEBLUE2",
+  "en": "Teal & Blue",
+  "ru": "Зеленовато-голубой и синий"
+ },
+ "29": {
+  "id": "STONEBLUE3",
+  "en": "Blue & Grey",
+  "ru": "Синий и серый"
+ },
+ "30": {
+  "id": "STONEGREEN1",
+  "en": "Blue & Green",
+  "ru": "Синий и зеленый"
+ },
+ "31": {
+  "id": "STONEGREEN2",
+  "en": "Grey & Green",
+  "ru": "Серый и зеленый"
+ },
+ "32": {
+  "id": "STONEGREEN3",
+  "en": "Green & Red",
+  "ru": "Зеленый и красный"
+ },
+ "33": {
+  "id": "STONEROYAL1",
+  "en": "Golden Royal",
+  "ru": "Королевский золотой"
+ },
+ "42": {
+  "id": "BUILDERSB1",
+  "en": "White & Black",
+  "ru": "Белый и черный"
+ },
+ "43": {
+  "id": "BUILDERSB2",
+  "en": "Tan & Silver",
+  "ru": "Темный и серебряный"
+ },
+ "44": {
+  "id": "BUILDERSB3",
+  "en": "Olive & Bronze",
+  "ru": "Оливковый и бронзовый"
+ },
+ "45": {
+  "id": "BUILDERSB4",
+  "en": "Orange & Silver",
+  "ru": "Оранжевый и серебряный"
+ },
+ "46": {
+  "id": "BUILDERSB5",
+  "en": "Black & Gold",
+  "ru": "Черный и золотой"
+ },
+ "47": {
+  "id": "BUILDERSB6",
+  "en": "Blue & Rose Gold",
+  "ru": "Синий и розово-золотой"
+ },
+ "48": {
+  "id": "BUILDERSB7",
+  "en": "Grey & Silver",
+  "ru": "Серый и серебряный"
+ },
+ "49": {
+  "id": "BUILDERSB8",
+  "en": "Green & Silver",
+  "ru": "Зеленый и серебряный"
+ },
+ "66": {
+  "id": "FIBREGLASSB1",
+  "en": "White & Orange",
+  "ru": "Белый и оранжевый"
+ },
+ "67": {
+  "id": "FIBREGLASSB2",
+  "en": "Grey & Red",
+  "ru": "Серый и красный"
+ },
+ "68": {
+  "id": "FIBREGLASSB3",
+  "en": "Orange & Teal",
+  "ru": "Оранжевый и зеленовато-голубой"
+ },
+ "69": {
+  "id": "FIBREGLASSB4",
+  "en": "Blue & Orange",
+  "ru": "Синий и оранжевый"
+ },
+ "70": {
+  "id": "FIBREGLASSB5",
+  "en": "Green & Grey",
+  "ru": "Зеленый и серый"
+ },
+ "71": {
+  "id": "FIBREGLASSB6",
+  "en": "Yellow & Purple",
+  "ru": "Желтый и пурпурный"
+ },
+ "72": {
+  "id": "FIBREGLASSB7",
+  "en": "Purple & White",
+  "ru": "Пурпурный и белый"
+ },
+ "73": {
+  "id": "FIBREGLASSB8",
+  "en": "Red & Grey",
+  "ru": "Красный и серый"
+ },
+ "74": {
+  "id": "TIMBERBASIC1",
+  "en": "Oak",
+  "ru": "Дуб"
+ },
+ "75": {
+  "id": "TIMBERBASIC2",
+  "en": "Pine",
+  "ru": "Сосна"
+ },
+ "76": {
+  "id": "TIMBERBASIC3",
+  "en": "Pine & Mahogany",
+  "ru": "Сосна и красное дерево"
+ },
+ "77": {
+  "id": "TIMBERBASIC4",
+  "en": "Mahogany",
+  "ru": "Красное дерево"
+ },
+ "78": {
+  "id": "TIMBERSTAINED1",
+  "en": "Teal & Oak",
+  "ru": "Зеленовато-голубой и дуб"
+ },
+ "79": {
+  "id": "TIMBERSTAINED2",
+  "en": "Grey Oak & Red",
+  "ru": "Серый дуб и красный"
+ },
+ "80": {
+  "id": "TIMBERSTAINED3",
+  "en": "Pine & Blue",
+  "ru": "Сосна и синий"
+ },
+ "81": {
+  "id": "TIMBERSTAINED4",
+  "en": "Pine & Purple",
+  "ru": "Сосна и пурпурный"
+ },
+ "82": {
+  "id": "TIMBERROYAL1",
+  "en": "Golden Pine & Oak",
+  "ru": "Золотая сосна и дуб"
+ },
+ "83": {
+  "id": "FREIGHTERBASE0",
+  "en": "White & Orange",
+  "ru": "Белый и оранжевый"
+ },
+ "84": {
+  "id": "FREIGHTERBASE1",
+  "en": "White & Teal",
+  "ru": "Белый и зеленовато-голубой"
+ },
+ "85": {
+  "id": "FREIGHTERBASE2",
+  "en": "White & Purple",
+  "ru": "Белый и пурпурный"
+ },
+ "86": {
+  "id": "FREIGHTERBASE3",
+  "en": "White & Red",
+  "ru": "Белый и красный"
+ },
+ "87": {
+  "id": "FREIGHTERBASE4",
+  "en": "White & Grey",
+  "ru": "Белый и серый"
+ },
+ "88": {
+  "id": "FREIGHTERBASE5",
+  "en": "Dark Grey & Red",
+  "ru": "Темно-серый и красный"
+ },
+ "89": {
+  "id": "FREIGHTERBASE6",
+  "en": "Grey-Blue & Blue",
+  "ru": "Серо-голубой и синий"
+ },
+ "90": {
+  "id": "FREIGHTERBASE7",
+  "en": "Olive & Green",
+  "ru": "Оливковый и зеленый"
+ },
+ "91": {
+  "id": "FREIGHTERBASE8",
+  "en": "Red & Dark Grey",
+  "ru": "Красный и темно-серый"
+ },
+ "92": {
+  "id": "FREIGHTERBASE9",
+  "en": "Beige & Yellow",
+  "ru": "Бежевый и желтый"
+ },
+ "93": {
+  "id": "FREIGHTERBASE10",
+  "en": "Yellow & Dark Grey",
+  "ru": "Желтый и темно-серый"
+ },
+ "94": {
+  "id": "FREIGHTERBASE11",
+  "en": "Light Grey & Red",
+  "ru": "Светло-серый и красный"
+ },
+ "95": {
+  "id": "FREIGHTERBASE12",
+  "en": "Dark Grey & Light Grey",
+  "ru": "Темно-серый и светло-серый"
+ },
+ "96": {
+  "id": "FREIGHTERBASE13",
+  "en": "Grey & Green",
+  "ru": "Серый и зеленый"
+ },
+ "97": {
+  "id": "FREIGHTERBASE14",
+  "en": "Beige & Grey",
+  "ru": "Бежевый и серый"
+ },
+ "98": {
+  "id": "FREIGHTERBASE15",
+  "en": "Teal & Pink",
+  "ru": "Зеленовато-голубой и розовый"
+ },
+ "99": {
+  "id": "BIGGS0",
+  "en": "Light Grey & Orange",
+  "ru": "Светло-серый и оранжевый"
+ },
+ "100": {
+  "id": "BIGGS1",
+  "en": "Green & Dark Olive",
+  "ru": "Зеленый и темно-оливковый"
+ },
+ "101": {
+  "id": "BIGGS2",
+  "en": "Red & Light Grey",
+  "ru": "Красный и светло-серый"
+ },
+ "102": {
+  "id": "BIGGS3",
+  "en": "Orange & Black",
+  "ru": "Оранжевый и черный"
+ },
+ "103": {
+  "id": "BIGGS4",
+  "en": "White & Black",
+  "ru": "Белый и черный"
+ },
+ "104": {
+  "id": "BIGGS5",
+  "en": "Cobalt & Orange",
+  "ru": "Кобальтовый и оранжевый"
+ },
+ "105": {
+  "id": "BIGGS6",
+  "en": "Blue & Light Grey",
+  "ru": "Синий и светло-серый"
+ },
+ "106": {
+  "id": "BIGGS7",
+  "en": "Dark Brown & Light Brown",
+  "ru": "Темно-коричневый и светло-коричневый"
+ },
+ "107": {
+  "id": "BIGGS8",
+  "en": "Cream & Green",
+  "ru": "Кремовый и зеленый"
+ },
+ "108": {
+  "id": "BIGGS9",
+  "en": "Maroon & Sky Blue",
+  "ru": "Бордовый и небесно-голубой"
+ },
+ "109": {
+  "id": "BIGGS10",
+  "en": "Purple & Yellow",
+  "ru": "Пурпурный и желтый"
+ },
+ "110": {
+  "id": "BIGGS11",
+  "en": "Grey & Dark Grey",
+  "ru": "Красный и темно-серый"
+ },
+ "111": {
+  "id": "BIGGS12",
+  "en": "Turquoise & Teal",
+  "ru": "Бирюзовый и зеленовато-голубой"
+ },
+ "112": {
+  "id": "BIGGS13",
+  "en": "Beige & Dark Orange",
+  "ru": "Бежевый и темно-оранжевый"
+ },
+ "113": {
+  "id": "BIGGS14",
+  "en": "Dark Grey & Blue",
+  "ru": "Темно-серый и синий"
+ },
+ "114": {
+  "id": "BIGGS15",
+  "en": "Grey & Purple",
+  "ru": "Серый и фиолетовый"
+ },
+ "0": {
+  "id": "LEGACY1",
+  "en": "White & Orange",
+  "ru": ""
+ },
+ "1": {
+  "id": "LEGACY2",
+  "en": "Black & Yellow",
+  "ru": ""
+ },
+ "2": {
+  "id": "LEGACY3",
+  "en": "Yellow & Blue",
+  "ru": ""
+ },
+ "3": {
+  "id": "LEGACY4",
+  "en": "Teal",
+  "ru": ""
+ },
+ "4": {
+  "id": "LEGACY5",
+  "en": "Blue & White",
+  "ru": ""
+ },
+ "5": {
+  "id": "LEGACY6",
+  "en": "Blue & Orange",
+  "ru": ""
+ },
+ "6": {
+  "id": "LEGACY7",
+  "en": "Purple & Blue",
+  "ru": ""
+ },
+ "7": {
+  "id": "LEGACY8",
+  "en": "Lilac & Purple",
+  "ru": ""
+ },
+ "8": {
+  "id": "LEGACY9",
+  "en": "Red & White",
+  "ru": ""
+ },
+ "9": {
+  "id": "LEGACY10",
+  "en": "Orange & Blue",
+  "ru": ""
+ },
+ "10": {
+  "id": "LEGACY11",
+  "en": "Yellow & White",
+  "ru": ""
+ },
+ "11": {
+  "id": "LEGACY12",
+  "en": "Green",
+  "ru": ""
+ },
+ "12": {
+  "id": "LEGACY13",
+  "en": "Blue & Red",
+  "ru": ""
+ },
+ "13": {
+  "id": "LEGACY14",
+  "en": "Purple & Yellow",
+  "ru": ""
+ },
+ "14": {
+  "id": "LEGACY15",
+  "en": "Grey & Black",
+  "ru": ""
+ },
+ "15": {
+  "id": "LEGACY16",
+  "en": "Grey & Red",
+  "ru": ""
+ },
+ "34": {
+  "id": "BUILDERS1",
+  "en": "White & Black",
+  "ru": ""
+ },
+ "35": {
+  "id": "BUILDERS2",
+  "en": "Tan & Silver",
+  "ru": ""
+ },
+ "36": {
+  "id": "BUILDERS3",
+  "en": "Olive & Bronze",
+  "ru": ""
+ },
+ "37": {
+  "id": "BUILDERS4",
+  "en": "Orange & Silver",
+  "ru": ""
+ },
+ "38": {
+  "id": "BUILDERS5",
+  "en": "Black & Gold",
+  "ru": ""
+ },
+ "39": {
+  "id": "BUILDERS6",
+  "en": "Blue & Rose Gold",
+  "ru": ""
+ },
+ "40": {
+  "id": "BUILDERS7",
+  "en": "Grey & Silver",
+  "ru": ""
+ },
+ "41": {
+  "id": "BUILDERS8",
+  "en": "Green & Silver",
+  "ru": ""
+ },
+ "50": {
+  "id": "FIBREGLASS1",
+  "en": "White & Orange",
+  "ru": ""
+ },
+ "51": {
+  "id": "FIBREGLASS2",
+  "en": "Grey & Red",
+  "ru": ""
+ },
+ "52": {
+  "id": "FIBREGLASS3",
+  "en": "Orange & Teal",
+  "ru": ""
+ },
+ "53": {
+  "id": "FIBREGLASS4",
+  "en": "Blue & Orange",
+  "ru": ""
+ },
+ "54": {
+  "id": "FIBREGLASS5",
+  "en": "Green & Grey",
+  "ru": ""
+ },
+ "55": {
+  "id": "FIBREGLASS6",
+  "en": "Yellow & Purple",
+  "ru": ""
+ },
+ "56": {
+  "id": "FIBREGLASS7",
+  "en": "Purple & White",
+  "ru": ""
+ },
+ "57": {
+  "id": "FIBREGLASS8",
+  "en": "Red & Grey",
+  "ru": ""
+ }
+}

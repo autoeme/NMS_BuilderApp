@@ -1,0 +1,106 @@
+{
+ "Legacy - Concrete": [
+  {
+   "idx": 0,
+   "name": "Concrete"
+  },
+  {
+   "idx": 1,
+   "name": "Rust"
+  },
+  {
+   "idx": 2,
+   "name": "Stone"
+  },
+  {
+   "idx": 3,
+   "name": "Wood"
+  }
+ ],
+ "Stone - Polished Stone": [
+  {
+   "idx": 0,
+   "name": "Polished"
+  },
+  {
+   "idx": 1,
+   "name": "Aged"
+  }
+ ],
+ "Fiberglass - Polished Alloy": [
+  {
+   "idx": 0,
+   "name": "Polished"
+  },
+  {
+   "idx": 1,
+   "name": "Rusted"
+  }
+ ],
+ "FIBREGLASSC": [
+  {
+   "idx": 0,
+   "name": "Polished"
+  },
+  {
+   "idx": 1,
+   "name": "Rusted"
+  }
+ ],
+ "Timber - Polished Timber": [
+  {
+   "idx": 0,
+   "name": "Polished"
+  },
+  {
+   "idx": 1,
+   "name": "Weathered"
+  }
+ ],
+ "Salvaged - Polished Salvage": [
+  {
+   "idx": 0,
+   "name": "Polished"
+  },
+  {
+   "idx": 1,
+   "name": "Rusted"
+  }
+ ],
+ "Corvette - Gloss Finish": [
+  {
+   "idx": 0,
+   "name": "Gloss"
+  },
+  {
+   "idx": 1,
+   "name": "Inverted"
+  },
+  {
+   "idx": 2,
+   "name": "Weathered"
+  },
+  {
+   "idx": 3,
+   "name": "Metallic"
+  }
+ ],
+ "Freighter": [
+  {
+   "idx": 0,
+   "name": "Default"
+  }
+ ],
+ "Flags": [
+  {
+   "idx": 0,
+   "name": "Default"
+  }
+ ],
+ "Special": [
+  {
+   "idx": 0,
+   "name": "Default"
+  }
+ ]
+}

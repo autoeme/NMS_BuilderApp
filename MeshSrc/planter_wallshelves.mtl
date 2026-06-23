@@ -1,0 +1,14 @@
+newmtl mediumflowerplant_mat
+Kd 0.8 0.8 0.8
+newmtl mediumleafb_mat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat1
+Kd 0.8 0.8 0.8
+newmtl tilingtexture_mat7
+Kd 0.8 0.8 0.8
+newmtl interiorprops_mat4
+Kd 0.8 0.8 0.8
+newmtl wire5_wire1_pasted__blinn11
+Kd 0.8 0.8 0.8
+newmtl cover24_pasted__pasted__tilingtexture_mat
+Kd 0.8 0.8 0.8

@@ -1,0 +1,1478 @@
+[
+	{
+		"Id": "^STARTING_NEG1",
+		"Name": "Worm infestation",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_1",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG2",
+		"Name": "Built on cursed ground",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_2",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG3",
+		"Name": "Highly radioactive",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_3",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG4",
+		"Name": "Pungent food cannery",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_4",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG5",
+		"Name": "Sinister AI overlord",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_5",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG6",
+		"Name": "Poisoned water",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_6",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG7",
+		"Name": "Trade network failing",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_7",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG8",
+		"Name": "Legacy nanobots",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_8",
+		"Description": "Increases Sentinel attention",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_SENT",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Sentinels",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG9",
+		"Name": "Prototype building materials",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_9",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG10",
+		"Name": "Repressive atmosphere",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_10",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG11",
+		"Name": "Localised gas outbreaks",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_11",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG12",
+		"Name": "Built on fault line",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_12",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG13",
+		"Name": "Dancing is banned",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_13",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG14",
+		"Name": "Signal blackspot",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_14",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG15",
+		"Name": "Gravitational anomalies",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_15",
+		"Description": "Occasional population loss",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_POP",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG16",
+		"Name": "Undrinkable water",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_16",
+		"Description": "Occasional population loss",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_POP",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG17",
+		"Name": "Localised cognitohazards",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_17",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG18",
+		"Name": "Choking air",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_18",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG19",
+		"Name": "Full of parasitic eggs",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_19",
+		"Description": "Occasional population loss",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_POP",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG20",
+		"Name": "Built on sand",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_20",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG21",
+		"Name": "Frequent tremors",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_21",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG22",
+		"Name": "Lazy citizens",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_22",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG23",
+		"Name": "Uncultured",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_23",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG24",
+		"Name": "Localised quicksand",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_24",
+		"Description": "Occasional population loss",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_POP",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG25",
+		"Name": "Network of thought police",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_25",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG26",
+		"Name": "Targeted by thieves",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_26",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG27",
+		"Name": "Rude citizens",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_27",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG28",
+		"Name": "Poorly decorated",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_28",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG29",
+		"Name": "Leaking pipes",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_29",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG30",
+		"Name": "Many spiders",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_30",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG31",
+		"Name": "Intermittent lighting failures",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_31",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG32",
+		"Name": "Unlucky",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_32",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG33",
+		"Name": "Haunted",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_33",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG34",
+		"Name": "No pets allowed",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_34",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_NEG35",
+		"Name": "Citizens are all clones",
+		"Name_LocStr": "UI_PERK_NEGATIVE_TITLE_35",
+		"Description": "Increases Sentinel attention",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_SENT",
+		"Beneficial": false,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Sentinels",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS1",
+		"Name": "Electromagnetic hotspot",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_1",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS2",
+		"Name": "Algae farm supplies food",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_2",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS3",
+		"Name": "Automated climate shields",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_3",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS4",
+		"Name": "Plentiful nanobots",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_4",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS5",
+		"Name": "Anomaly scanner",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_5",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS6",
+		"Name": "Interstellar signal array",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_6",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS7",
+		"Name": "Cartography drones",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_7",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS8",
+		"Name": "Spacetime anomaly shielding",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_8",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS9",
+		"Name": "Educated citizens",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_9",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS10",
+		"Name": "Propaganda broadcast array",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_10",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS11",
+		"Name": "HypnoDrones",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_11",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS12",
+		"Name": "Robot butlers",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_12",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS13",
+		"Name": "Bounty scanner",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_13",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS14",
+		"Name": "Salvage drones",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_14",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveSmall"
+			}
+		]
+	},
+	{
+		"Id": "^STARTING_POS15",
+		"Name": "Well-groomed citizens",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_16",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": true,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA1",
+		"Name": "Colourful paintwork",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_17",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA2",
+		"Name": "Public artworks",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_18",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA3",
+		"Name": "Bone recycling unit",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_19",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA4",
+		"Name": "Unionised workforce",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_20",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA5",
+		"Name": "Generous overtime",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_21",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveLarge"
+			},
+			{
+				"Type": "Production",
+				"Strength": "PositiveMedium"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA6",
+		"Name": "Factory has sleep pods",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_22",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			},
+			{
+				"Type": "Production",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^POSITIVE_EXTRA7",
+		"Name": "Mandatory brain implants",
+		"Name_LocStr": "UI_PERK_POSITIVE_TITLE_23",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			},
+			{
+				"Type": "Production",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA1",
+		"Name": "Atmosphere of suspicion",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_1",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA2",
+		"Name": "Constant static noise",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_2",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA3",
+		"Name": "Hostile spy suspected",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_3",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA4",
+		"Name": "Intermittently hexed",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_4",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA5",
+		"Name": "Foreboding atmosphere",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_5",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA6",
+		"Name": "Sense of doom",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_6",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA7",
+		"Name": "Air of decay",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_7",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA8",
+		"Name": "Targeted by scammers",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_8",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA9",
+		"Name": "Citizens in a cult",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_9",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA10",
+		"Name": "Malfunctioning electronics",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_10",
+		"Description": "Increases maintenance costs",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_COST",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA11",
+		"Name": "Infrequent doom mists",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_11",
+		"Description": "Occasional population loss",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_POP",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "NegativeLarge"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA12",
+		"Name": "General listlessness",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_12",
+		"Description": "Decreases productivity",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_PROD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^NEG_EXTRA13",
+		"Name": "General unease",
+		"Name_LocStr": "UI_PERK_NEGATIVE_EXTRA_TITLE_13",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeMedium"
+			}
+		]
+	},
+	{
+		"Id": "^BLESS_POS",
+		"Name": "Blessed by the %BLESSING%",
+		"Name_LocStr": "UI_PERK_BLESSING_POS",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^BLESS_NEG",
+		"Name": "Cursed by the %BLESSING%",
+		"Name_LocStr": "UI_PERK_BLESSING_NEG",
+		"Description": "Reduces citizen happiness",
+		"Description_LocStr": "UI_PERK_NEGATIVE_DESC_MOOD",
+		"Beneficial": false,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_FACT",
+		"Name": "%OBJECT% %FACTORY%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_1",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_FARM",
+		"Name": "%FOOD% %FARM%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_2",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_BAR",
+		"Name": "%BAR_ADJ% %BAR%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_3",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveWide"
+			},
+			{
+				"Type": "Production",
+				"Strength": "NegativeSmall"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_SHOP",
+		"Name": "%SHOP_ADJ% %SHOP%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_4",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_FACI",
+		"Name": "%PROCESS% %FACILITY%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_5",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_JOB",
+		"Name": "%JOBLEVEL%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_7",
+		"Description": "%JOB_STAT%",
+		"Description_LocStr": "UI_PERK_JOB_DESC",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_TECH",
+		"Name": "%TECH_ADJ% %TECH%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_8",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_COST",
+		"Name": "%COST_ADJ% %COST%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_9",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_POP",
+		"Name": "%POP_ADJ% %POP%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_11",
+		"Description": "Increases population",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_POP",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "MaxPopulation",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_FUN",
+		"Name": "%FUN_ADJ% %FUN_FACILITY%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_13",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_SENT",
+		"Name": "%SENT_ADJ% %SENT%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_12",
+		"Description": "Decreases Sentinel attention",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_SENT",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Sentinels",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^PROC_BUI",
+		"Name": "%GREEK%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_BUI",
+		"Description": "Decreases Sentinel attention",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_SENT",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Sentinels",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^POL_MOOD",
+		"Name": "%HAPPY_ADJ% %HAPPY_FACILITY%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_6",
+		"Description": "Improves citizen happiness",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_MOOD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^POL_COST",
+		"Name": "%COST_ADJ% %COST%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_9",
+		"Description": "Decreases maintenance costs",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_COST",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^POL_PROD",
+		"Name": "%PROD_ADJ% %PROD%",
+		"Name_LocStr": "UI_SETTLEMENT_PERK_PROC_10",
+		"Description": "Increases productivity",
+		"Description_LocStr": "UI_PERK_POSITIVE_DESC_PROD",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": true,
+		"StatChanges": [
+			{
+				"Type": "Production",
+				"Strength": "PositiveWide"
+			}
+		]
+	},
+	{
+		"Id": "^SENT_RELEASED",
+		"Name": "Creeping, Spreading Glass",
+		"Name_LocStr": "UI_SENT_MISS_PERK1",
+		"Description": "Do not drink the water",
+		"Description_LocStr": "UI_SENT_MISS_PERK1_DESC",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Sentinels",
+				"Strength": "NegativeSmall"
+			},
+			{
+				"Type": "Production",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^SENT_QUAR",
+		"Name": "Quarantined explorers",
+		"Name_LocStr": "UI_SENT_MISS_PERK2",
+		"Description": "Cognitohazard containment facility",
+		"Description_LocStr": "UI_SENT_MISS_PERK2_DESC",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Upkeep",
+				"Strength": "NegativeMedium"
+			},
+			{
+				"Type": "Sentinels",
+				"Strength": "PositiveLarge"
+			}
+		]
+	},
+	{
+		"Id": "^OLD_SCHOOL",
+		"Name": "Pioneer Spirit",
+		"Name_LocStr": "UI_PERK_OLD_SCHOOL",
+		"Description": "Prepared for anything",
+		"Description_LocStr": "UI_PERK_OLD_SCHOOL_DESC",
+		"Beneficial": true,
+		"Starter": false,
+		"Procedural": false,
+		"StatChanges": [
+			{
+				"Type": "Happiness",
+				"Strength": "PositiveMedium"
+			},
+			{
+				"Type": "Production",
+				"Strength": "PositiveMedium"
+			},
+			{
+				"Type": "Upkeep",
+				"Strength": "PositiveMedium"
+			},
+			{
+				"Type": "MaxPopulation",
+				"Strength": "PositiveMedium"
+			}
+		]
+	}
+]

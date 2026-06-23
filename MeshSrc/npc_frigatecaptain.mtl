@@ -1,0 +1,18 @@
+newmtl tkderef_interiorfreighterbase_mat1
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertile_mat
+Kd 0.8 0.8 0.8
+newmtl tkderef_traillight_mat2
+Kd 0.8 0.8 0.8
+newmtl interiorlights_mat
+Kd 0.8 0.8 0.8
+newmtl interiorfreightertrim_mat1
+Kd 0.8 0.8 0.8
+newmtl scientificdiscolour_mat
+Kd 0.8 0.8 0.8
+newmtl traillight_mat1
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8

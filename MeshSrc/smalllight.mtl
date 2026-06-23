@@ -1,0 +1,8 @@
+newmtl lightoff_matt
+Kd 0.8 0.8 0.8
+newmtl basebuildingprops_mat
+Kd 0.8 0.8 0.8
+newmtl lights1_mat
+Kd 0.8 0.8 0.8
+newmtl orangelight
+Kd 0.8 0.8 0.8

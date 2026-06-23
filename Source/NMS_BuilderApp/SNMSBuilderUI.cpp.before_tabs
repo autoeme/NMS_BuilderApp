@@ -1,0 +1,90 @@
+#include "SNMSBuilderUI.h"
+#include "Widgets/Layout/SSplitter.h"
+#include "Widgets/Layout/SBorder.h"
+#include "Widgets/Text/STextBlock.h"
+#include "Widgets/Views/SListView.h"
+#include "Widgets/Views/STableRow.h"
+
+#define LOCTEXT_NAMESPACE "NMSBuilder"
+
+void SNMSBuilderUI::Construct(const FArguments& InArgs)
+{
+    PartsTable = InArgs._PartsTable;
+    RebuildPartItems();
+
+    ChildSlot
+    [
+        SNew(SSplitter)
+        .Orientation(Orient_Horizontal)
+
+        + SSplitter::Slot()
+        .Value(0.3f)
+        [
+            SNew(SBorder)
+            .Padding(4.f)
+            [
+                SAssignNew(PartListView, SListView<TSharedPtr<FNMSPartData>>)
+                .ListItemsSource(&PartItems)
+                .OnGenerateRow(this, &SNMSBuilderUI::OnGeneratePartRow)
+                .OnSelectionChanged(this, &SNMSBuilderUI::OnPartSelected)
+                .SelectionMode(ESelectionMode::Single)
+            ]
+        ]
+
+        + SSplitter::Slot()
+        .Value(0.7f)
+        [
+            SNew(SBorder)
+            .Padding(4.f)
+            .HAlign(HAlign_Center)
+            .VAlign(VAlign_Center)
+            [
+                SNew(STextBlock)
+                .Text(LOCTEXT("ViewportPlaceholder",
+                    "3D Viewport (placeholder)"))
+            ]
+        ]
+    ];
+}
+
+void SNMSBuilderUI::RebuildPartItems()
+{
+    PartItems.Reset();
+    if (!PartsTable) return;
+
+    static const FString Ctx(TEXT("NMSBuilderUI"));
+    TArray<FNMSPartData*> Rows;
+    PartsTable->GetAllRows<FNMSPartData>(Ctx, Rows);
+    for (FNMSPartData* Row : Rows)
+    {
+        if (Row)
+        {
+            PartItems.Add(MakeShared<FNMSPartData>(*Row));
+        }
+    }
+}
+
+TSharedRef<ITableRow> SNMSBuilderUI::OnGeneratePartRow(
+    TSharedPtr<FNMSPartData> Item, const TSharedRef<STableViewBase>& Owner)
+{
+    const FString Label = Item.IsValid()
+        ? FString::Printf(TEXT("[%s] %s"), *Item->Category, *Item->DisplayName)
+        : TEXT("???");
+
+    return SNew(STableRow<TSharedPtr<FNMSPartData>>, Owner)
+    [
+        SNew(STextBlock).Text(FText::FromString(Label))
+    ];
+}
+
+void SNMSBuilderUI::OnPartSelected(
+    TSharedPtr<FNMSPartData> Item, ESelectInfo::Type)
+{
+    if (Item.IsValid())
+    {
+        UE_LOG(LogTemp, Log, TEXT("Selected part: %s (%s)"),
+            *Item->DisplayName, *Item->ObjectID);
+    }
+}
+
+#undef LOCTEXT_NAMESPACE

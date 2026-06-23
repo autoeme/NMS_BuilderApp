@@ -1,0 +1,14 @@
+newmtl mainroom_tilingtexture_mat3
+Kd 0.8 0.8 0.8
+newmtl mainroom_tilingtexture_mat4
+Kd 0.8 0.8 0.8
+newmtl resourcebar_mat
+Kd 0.8 0.8 0.8
+newmtl corridorlight_mat2
+Kd 0.8 0.8 0.8
+newmtl resourcecube_mat
+Kd 0.8 0.8 0.8
+newmtl glass_mat
+Kd 0.8 0.8 0.8
+newmtl logodecal
+Kd 0.8 0.8 0.8

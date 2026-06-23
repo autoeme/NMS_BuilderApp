@@ -1,0 +1,6 @@
+newmtl monolithtiledsm_mat
+Kd 0.8 0.8 0.8
+newmtl monolithtiled_mat
+Kd 0.8 0.8 0.8
+newmtl glowtrissm_mat
+Kd 0.8 0.8 0.8

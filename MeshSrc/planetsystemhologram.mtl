@@ -1,0 +1,24 @@
+newmtl transbackgrond_mat3
+Kd 0.8 0.8 0.8
+newmtl scanlines_mat4
+Kd 0.8 0.8 0.8
+newmtl scanlines_mat3
+Kd 0.8 0.8 0.8
+newmtl scanlines_mat1
+Kd 0.8 0.8 0.8
+newmtl hologrid_mat2
+Kd 0.8 0.8 0.8
+newmtl interiorwallmat2
+Kd 0.8 0.8 0.8
+newmtl phong45
+Kd 0.8 0.8 0.8
+newmtl phong46
+Kd 0.8 0.8 0.8
+newmtl phong47
+Kd 0.8 0.8 0.8
+newmtl transbackgrond_mat4
+Kd 0.8 0.8 0.8
+newmtl transbackgrond_mat5
+Kd 0.8 0.8 0.8
+newmtl hologrid_mat3
+Kd 0.8 0.8 0.8

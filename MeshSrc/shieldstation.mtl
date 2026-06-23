@@ -1,0 +1,14 @@
+newmtl interiorprops_mat
+Kd 0.8 0.8 0.8
+newmtl screenbase_mat1
+Kd 0.8 0.8 0.8
+newmtl commontiled_mat1
+Kd 0.8 0.8 0.8
+newmtl uibright_mat1
+Kd 0.8 0.8 0.8
+newmtl uidull_mat1
+Kd 0.8 0.8 0.8
+newmtl screenbutton_mat3
+Kd 0.8 0.8 0.8
+newmtl uidull_mat4
+Kd 0.8 0.8 0.8

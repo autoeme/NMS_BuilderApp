@@ -1,0 +1,1939 @@
+[
+	{
+		"Id": "FISH",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.6,
+		"MaxScale": 1.2,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FISHFLOCK",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.1,
+		"MaxScale": 0.4,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SWIMCOW",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.2,
+		"MaxScale": 1.4,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SWIMRODENT",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.8,
+		"MaxScale": 1.2,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "JELLYFISH",
+		"ForceType": "Fish",
+		"RealType": "Jellyfish",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "CRAB",
+		"ForceType": "Crab",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.75,
+		"MaxScale": 2.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SEASNAKE",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 2.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SHARK",
+		"ForceType": "Shark",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 2.0,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BIRD",
+		"ForceType": "Bird",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.8,
+		"MaxScale": 2.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FLYINGSNAKE",
+		"ForceType": "FlyingSnake",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 3.5,
+		"MaxScale": 4.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Barren",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FLYINGLIZARD",
+		"ForceType": "FlyingLizard",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 4.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BUTTERFLY",
+		"ForceType": "Butterfly",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.25,
+		"MaxScale": 0.4,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SMALLBIRD",
+		"ForceType": "Butterfly",
+		"RealType": "Bird",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 0.9,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BUTTERFLOCK",
+		"ForceType": "Butterfly",
+		"RealType": "Bird",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.25,
+		"MaxScale": 0.4,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "LARGEBUTTERFLY",
+		"ForceType": "Butterfly",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 2.0,
+		"MaxScale": 3.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FLYINGBEETLE",
+		"ForceType": "Butterfly",
+		"RealType": "FlyingBeetle",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 7.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ANTELOPE",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_DEER",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_SKINNY",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_FAT",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ROBOTANTELOPE",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_1",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "TRICERATOPS",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_DIPLO",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_TAPIR",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_TURTLE",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_RHINO",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_TRI",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "RODENT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.4,
+		"MaxScale": 2.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_SLOTH",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_RODENT",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_LIZARD",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "MOLE",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "SuperRare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "COW",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_ROCK",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_COW",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "CAT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 4.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_MESH_CAT",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_MESH_WOLF",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_MESH_LIZ",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_SHAPE_XRARE",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PLANTCAT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.4,
+		"MaxScale": 4.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Lush",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_SHAPE_XRARE",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BONECAT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 4.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Lush",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_CURVESPIKE",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_ROUNDA",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "STRIDER",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_HEAD_FLATHEAD",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_STRIDER",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_STRIDER2",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_FIN_NONE",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_FIN_1XRARE",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_FIN_2XRARE",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_BUG",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "STRIDERGLOW",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 4.0,
+		"MaxScale": 5.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_HEAD_01",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_02",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_03",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "TREX",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.6,
+		"MaxScale": 5.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_TREX_3XRARE",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_RAT",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_TREX",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_BIRDREX",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_HOLESXRARE",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "TWOLEGANTELOPE",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 3.6,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_HEAD_GDANE",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_BUFF",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_AEATER",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_HEAD_DEER",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SIXLEGCOW",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_6LEGCOW1",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_6LEGROCK1",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SIXLEGCAT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 4.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_SIXLEGCAT",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_SIXLEGWOLF",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_SIXLEGLIZ",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "GRUNT",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.6,
+		"MaxScale": 12.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_MESH_GRUNT",
+				"AccessoryGroups": [
+					"BACK",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_TBACC_NONE",
+				"AccessoryGroups": [
+					"FRONT",
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_TBACC_2",
+				"AccessoryGroups": [
+					"BACK",
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_TBACC_1",
+				"AccessoryGroups": [
+					"FRONT",
+					"BACK"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BLOB",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.2,
+		"MaxScale": 12.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_EYEBALLPLANT",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_BLOBBY",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_FINGERS",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_PLANT",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_SHROOM",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_EEL",
+				"AccessoryGroups": [
+					"FRONT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_OCTO",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_BLOB",
+				"AccessoryGroups": [
+					"BACK"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SPIDER",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_1XRARE",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_2",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_01",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_02",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_03",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_04",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_05",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_CRABSHELL_06",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ARTHROPOD",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WALKINGBUILDING",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FLOATSPIDER",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.4,
+		"MaxScale": 12.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BODY_1XRARE",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			},
+			{
+				"RequiredDescriptor": "_BODY_2",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PROTOROLLER",
+		"ForceType": "None",
+		"RealType": "ProtoRoller",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 5.0,
+		"Rarity": "SuperRare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PROTOFLYER",
+		"ForceType": "Butterfly",
+		"RealType": "ProtoFlyer",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 3.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PROTODIGGER",
+		"ForceType": "None",
+		"RealType": "ProtoDigger",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 5.0,
+		"Rarity": "SuperRare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PLOUGH",
+		"ForceType": "Butterfly",
+		"RealType": "Plough",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 3.0,
+		"Rarity": "SuperRare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "DRILL",
+		"ForceType": "Butterfly",
+		"RealType": "Drill",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 3.0,
+		"Rarity": "SuperRare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WEIRDROLL",
+		"ForceType": "Weird",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 5.0,
+		"MaxScale": 5.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WEIRDFLOAT",
+		"ForceType": "Weird",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 3.0,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WEIRDCRYSTAL",
+		"ForceType": "Weird",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 3.0,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WEIRDBUTTERFLY",
+		"ForceType": "Weird",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.6,
+		"MaxScale": 0.8,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FIEND",
+		"ForceType": "Fiend",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Toxic",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BUGFIEND",
+		"ForceType": "BugFiend",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Toxic",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BUGQUEEN",
+		"ForceType": "BugQueen",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SCUTTLER",
+		"ForceType": "Scuttler",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SCUTTLER_PET",
+		"ForceType": "Fiend",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Toxic",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SLUG",
+		"ForceType": "Slug",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "MINIFIEND",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FIENDFISHSMALL",
+		"ForceType": "FiendFishSmall",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 1.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FLOATER",
+		"ForceType": "Floater",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 1.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "MINIDRONE",
+		"ForceType": "MiniDrone",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 1.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FIENDFISHBIG",
+		"ForceType": "FiendFishBig",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.8,
+		"MaxScale": 8.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ROCKCREATURE",
+		"ForceType": "RockCreature",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SANDWORM",
+		"ForceType": "SandWorm",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 50.0,
+		"MaxScale": 50.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SPACE_FLOATER",
+		"ForceType": "SpaceFloater",
+		"RealType": "None",
+		"MoveArea": "Space",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 1.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "LAND_JELLYFISH",
+		"ForceType": "LandJellyfish",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Weird",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "JELLYBOSS",
+		"ForceType": "JellyBoss",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "JELLYBOSS_BROOD",
+		"ForceType": "JellyBossBrood",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ROBO_PET",
+		"ForceType": "MiniRobo",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "HOVER_PET",
+		"ForceType": "MiniRobo",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.25,
+		"MaxScale": 0.25,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "LAND_SQUID",
+		"ForceType": "LandSquid",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PURPLE_WEIRD",
+		"ForceType": "Weird",
+		"RealType": "ProtoFlyer",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 1.5,
+		"MaxScale": 6.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Weird",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "DEEPFISH",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.6,
+		"MaxScale": 1.2,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "DEEPFISHLARGE",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.5,
+		"MaxScale": 0.5,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "DEEPFISHFLOCK",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.1,
+		"MaxScale": 0.2,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "MANTA",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 1.7,
+		"MaxScale": 3.4,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "MANTAGLOW",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 1.7,
+		"MaxScale": 3.4,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SEAHORSE",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.6,
+		"MaxScale": 1.2,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SEAHORSEGLOW",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.6,
+		"MaxScale": 1.2,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SQUID",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.5,
+		"MaxScale": 4.0,
+		"Rarity": "Uncommon",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "HERMITCRAB",
+		"ForceType": "Crab",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.75,
+		"MaxScale": 2.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "PRAWN",
+		"ForceType": "Fish",
+		"RealType": "None",
+		"MoveArea": "Water",
+		"EcoSystemCreature": true,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.2,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Normal",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "BONECOW",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 0.4,
+		"MaxScale": 3.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Lush",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "_BONEANTELOPE_A",
+				"AccessoryGroups": [
+					"LEFT",
+					"RIGHT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "ROBO_RODENT",
+		"ForceType": "MiniRobo",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 1.4,
+		"MaxScale": 2.5,
+		"Rarity": "Rare",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": [
+			{
+				"RequiredDescriptor": "",
+				"AccessoryGroups": [
+					"RIGHT",
+					"LEFT"
+				]
+			}
+		],
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "WALKER_CRAB",
+		"ForceType": "None",
+		"RealType": "Crab",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "FISHBOWL_PET3",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": true,
+		"MinScale": 2.0,
+		"MaxScale": 2.0,
+		"Rarity": "Common",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "LANDSQUID_PET",
+		"ForceType": "None",
+		"RealType": "LandJellyfish",
+		"MoveArea": "Air",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Weird",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "SPIDERQUAD_PET",
+		"ForceType": "None",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": false,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.0,
+		"MaxScale": 1.0,
+		"Rarity": "Common",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "HORROR_PET",
+		"ForceType": "FlyingSnake",
+		"RealType": "None",
+		"MoveArea": "Air",
+		"EcoSystemCreature": true,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 0.5,
+		"MaxScale": 0.5,
+		"Rarity": "Rare",
+		"EggType": "DEFAULT",
+		"CanBeUsedInPetBattler": true,
+		"PetBattlerForcedAffinity": "Toxic",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	},
+	{
+		"Id": "QUAD_PET",
+		"ForceType": "Quad",
+		"RealType": "None",
+		"MoveArea": "Ground",
+		"EcoSystemCreature": false,
+		"CanBeFemale": true,
+		"OnlySpawnWhenIdIsForced": false,
+		"MinScale": 1.1,
+		"MaxScale": 1.1,
+		"Rarity": "Common",
+		"EggType": "ROBO",
+		"CanBeUsedInPetBattler": false,
+		"PetBattlerForcedAffinity": "Mech",
+		"PetAccessorySlots": null,
+		"RidingPartModifiers": null
+	}
+]

@@ -1,0 +1,8 @@
+newmtl flintrock_mat
+Kd 0.8 0.8 0.8
+newmtl beamparticles_mat
+Kd 0.8 0.8 0.8
+newmtl scrolling_mat
+Kd 0.8 0.8 0.8
+newmtl lightbeam_mat3
+Kd 0.8 0.8 0.8

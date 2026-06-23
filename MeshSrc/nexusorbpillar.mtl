@@ -1,0 +1,16 @@
+newmtl lights1_mat2
+Kd 0.8 0.8 0.8
+newmtl glow_mat
+Kd 0.8 0.8 0.8
+newmtl anomalyinterior_mat
+Kd 0.8 0.8 0.8
+newmtl anomaly_mat
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
+newmtl insidewaves_mat
+Kd 0.8 0.8 0.8
+newmtl atlasglow2w2
+Kd 0.8 0.8 0.8
+newmtl atlascore_black
+Kd 0.8 0.8 0.8

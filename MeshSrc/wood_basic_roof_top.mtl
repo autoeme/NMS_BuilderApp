@@ -1,0 +1,12 @@
+newmtl metaltiling_mat3
+Kd 0.8 0.8 0.8
+newmtl warintmetaldetail_mat2
+Kd 0.8 0.8 0.8
+newmtl boltshadow_mat2
+Kd 0.8 0.8 0.8
+newmtl wood_mat2
+Kd 0.8 0.8 0.8
+newmtl warriorlights_mat2
+Kd 0.8 0.8 0.8
+newmtl lambert1
+Kd 0.8 0.8 0.8
