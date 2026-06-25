@@ -110,7 +110,7 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildToolbar()
                 .ButtonStyle(&NMS::FlatButton(FLinearColor(0.f,0.f,0.f,0.f), NMS::ItemHover, NMS::AccentDim))
                 .ContentPadding(FMargin(14.f, 7.f)).HAlign(HAlign_Left)
                 .OnClicked_Lambda([this, Type]() {
-                    if (ViewportClient.IsValid()) { ViewportClient->CurveType = Type; ViewportClient->bCurveMode = true; ViewportClient->CurvePoints.Reset(); } UpdateCurvePreview();
+                    if (ViewportClient.IsValid()) { ViewportClient->StartCurve(Type); } UpdateCurvePreview();
                     if (FSlateApplication::IsInitialized()) FSlateApplication::Get().DismissAllMenus();
                     return FReply::Handled();
                 })
@@ -150,7 +150,7 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildToolbar()
                 [
                     SNew(SBorder).BorderImage(NMS::Box())
                     .BorderBackgroundColor(FLinearColor(0.05f,0.055f,0.06f,0.92f))
-                    .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->bCurveMode) ? EVisibility::Visible : EVisibility::Collapsed; })
+                    .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->IsCurveMode()) ? EVisibility::Visible : EVisibility::Collapsed; })
                     .Padding(FMargin(5.f))
                     [
                         SNew(SVerticalBox)
@@ -158,65 +158,65 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildToolbar()
                         [ SNew(SHorizontalBox)
                             + SHorizontalBox::Slot().AutoWidth()
                             [ SNew(SBox).WidthOverride(36.f)[ SNew(SEditableTextBox).Font(NMS::Font(8)).Justification(ETextJustify::Center)
-                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt((ViewportClient->CurveOverlap/0.92f)*100.f):0); })
-                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->CurveOverlap=FMath::Clamp((float)FCString::Atof(*Tx.ToString()),0.f,100.f)/100.f*0.92f; UpdateCurvePreview(); }) ] ]
+                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt((ViewportClient->GetCurveOverlap()/0.92f)*100.f):0); })
+                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->SetCurveOverlap(FMath::Clamp((float)FCString::Atof(*Tx.ToString()),0.f,100.f)/100.f*0.92f); UpdateCurvePreview(); }) ] ]
                             + SHorizontalBox::Slot().AutoWidth().VAlign(VAlign_Center).Padding(FMargin(2.f,0.f,0.f,0.f))
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("%"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ]
                             + SHorizontalBox::Slot().FillWidth(1.f).VAlign(VAlign_Center).Padding(FMargin(6.f,0.f,0.f,0.f))
                             [ SNew(STextBlock).Text_Lambda([this](){ return FText::FromString(FString::Printf(TEXT("%d шт"), CurvePartCount())); }).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextPrimary) ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,3.f))
                         [ SNew(SSlider)
-                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? ViewportClient->CurveOverlap/0.92f : 0.f; })
-                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->CurveOverlap = V*0.92f; UpdateCurvePreview(); }) ]
+                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? ViewportClient->GetCurveOverlap()/0.92f : 0.f; })
+                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->SetCurveOverlap(V*0.92f); UpdateCurvePreview(); }) ]
                         + SVerticalBox::Slot().AutoHeight()
                         [ SNew(SHorizontalBox)
                             + SHorizontalBox::Slot().FillWidth(1.f).VAlign(VAlign_Center)
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Накл"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ]
                             + SHorizontalBox::Slot().AutoWidth()
                             [ SNew(SBox).WidthOverride(38.f)[ SNew(SEditableTextBox).Font(NMS::Font(8)).Justification(ETextJustify::Center)
-                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->CurveTilt):0); })
-                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->CurveTilt=FMath::Clamp((float)FCString::Atof(*Tx.ToString()),-90.f,90.f); UpdateCurvePreview(); }) ] ] ]
+                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->GetCurveTilt()):0); })
+                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->SetCurveTilt(FMath::Clamp((float)FCString::Atof(*Tx.ToString()),-90.f,90.f)); UpdateCurvePreview(); }) ] ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f))
                         [ SNew(SSlider)
-                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? (ViewportClient->CurveTilt+90.f)/180.f : 0.5f; })
-                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->CurveTilt = (V-0.5f)*180.f; UpdateCurvePreview(); }) ]
+                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? (ViewportClient->GetCurveTilt()+90.f)/180.f : 0.5f; })
+                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->SetCurveTilt((V-0.5f)*180.f); UpdateCurvePreview(); }) ]
                         + SVerticalBox::Slot().AutoHeight()
                         [ SNew(SHorizontalBox)
                             + SHorizontalBox::Slot().FillWidth(1.f).VAlign(VAlign_Center)
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Крен"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ]
                             + SHorizontalBox::Slot().AutoWidth()
                             [ SNew(SBox).WidthOverride(38.f)[ SNew(SEditableTextBox).Font(NMS::Font(8)).Justification(ETextJustify::Center)
-                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->CurveRoll):0); })
-                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->CurveRoll=FMath::Clamp((float)FCString::Atof(*Tx.ToString()),-90.f,90.f); UpdateCurvePreview(); }) ] ] ]
+                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->GetCurveRoll()):0); })
+                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->SetCurveRoll(FMath::Clamp((float)FCString::Atof(*Tx.ToString()),-90.f,90.f)); UpdateCurvePreview(); }) ] ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f))
                         [ SNew(SSlider)
-                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? (ViewportClient->CurveRoll+90.f)/180.f : 0.5f; })
-                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->CurveRoll = (V-0.5f)*180.f; UpdateCurvePreview(); }) ]
+                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? (ViewportClient->GetCurveRoll()+90.f)/180.f : 0.5f; })
+                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->SetCurveRoll((V-0.5f)*180.f); UpdateCurvePreview(); }) ]
                         + SVerticalBox::Slot().AutoHeight()
                         [ SNew(SHorizontalBox)
-                            .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->CurveType==ENMSCurveType::Circle) ? EVisibility::Visible : EVisibility::Collapsed; })
+                            .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->GetCurveType()==ENMSCurveType::Circle) ? EVisibility::Visible : EVisibility::Collapsed; })
                             + SHorizontalBox::Slot().FillWidth(1.f).VAlign(VAlign_Center)
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Рад"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ]
                             + SHorizontalBox::Slot().AutoWidth()
                             [ SNew(SBox).WidthOverride(48.f)[ SNew(SEditableTextBox).Font(NMS::Font(8)).Justification(ETextJustify::Center)
-                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->CurveRadius):0); })
-                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->CurveRadius=FMath::Max(0.f,(float)FCString::Atof(*Tx.ToString())); UpdateCurvePreview(); }) ] ] ]
+                                .Text_Lambda([this](){ return FText::AsNumber(ViewportClient.IsValid()?FMath::RoundToInt(ViewportClient->GetCurveRadius()):0); })
+                                .OnTextCommitted_Lambda([this](const FText& Tx, ETextCommit::Type){ if(ViewportClient.IsValid()) ViewportClient->SetCurveRadius(FMath::Max(0.f,(float)FCString::Atof(*Tx.ToString()))); UpdateCurvePreview(); }) ] ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f))
                         [ SNew(SSlider)
-                            .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->CurveType==ENMSCurveType::Circle) ? EVisibility::Visible : EVisibility::Collapsed; })
-                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? FMath::Clamp(ViewportClient->CurveRadius/4000.f,0.f,1.f) : 0.f; })
-                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->CurveRadius = V*4000.f; UpdateCurvePreview(); }) ]
+                            .Visibility_Lambda([this](){ return (ViewportClient.IsValid() && ViewportClient->GetCurveType()==ENMSCurveType::Circle) ? EVisibility::Visible : EVisibility::Collapsed; })
+                            .Value_Lambda([this](){ return ViewportClient.IsValid() ? FMath::Clamp(ViewportClient->GetCurveRadius()/4000.f,0.f,1.f) : 0.f; })
+                            .OnValueChanged_Lambda([this](float V){ if (ViewportClient.IsValid()) ViewportClient->SetCurveRadius(V*4000.f); UpdateCurvePreview(); }) ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f,0.f,0.f))
                         [ SNew(SButton).ButtonStyle(&NMS::FlatButton(NMS::AccentDim, NMS::ItemHover, NMS::AccentDim)).HAlign(HAlign_Center).ContentPadding(FMargin(4.f,4.f))
                             .OnClicked_Lambda([this](){ BuildAlongCurve(); return FReply::Handled(); })
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Применить"))).Font(NMS::Font(8,true)).ColorAndOpacity(NMS::TextPrimary) ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f,0.f,0.f))
                         [ SNew(SButton).ButtonStyle(&NMS::FlatButton(NMS::ItemBg, NMS::ItemHover, NMS::AccentDim)).HAlign(HAlign_Center).ContentPadding(FMargin(4.f,3.f))
-                            .OnClicked_Lambda([this](){ if (ViewportClient.IsValid()) ViewportClient->CurvePoints.Reset(); UpdateCurvePreview(); return FReply::Handled(); })
+                            .OnClicked_Lambda([this](){ if (ViewportClient.IsValid()) ViewportClient->ClearCurvePoints(); UpdateCurvePreview(); return FReply::Handled(); })
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Очистить"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ] ]
                         + SVerticalBox::Slot().AutoHeight().Padding(FMargin(0.f,2.f,0.f,0.f))
                         [ SNew(SButton).ButtonStyle(&NMS::FlatButton(NMS::ItemBg, NMS::ItemHover, NMS::AccentDim)).HAlign(HAlign_Center).ContentPadding(FMargin(4.f,3.f))
-                            .OnClicked_Lambda([this](){ if (ViewportClient.IsValid()) { ViewportClient->CurvePoints.Reset(); ViewportClient->bCurveMode = false; } UpdateCurvePreview(); return FReply::Handled(); })
+                            .OnClicked_Lambda([this](){ if (ViewportClient.IsValid()) ViewportClient->ExitCurve(); UpdateCurvePreview(); return FReply::Handled(); })
                             [ SNew(STextBlock).Text(FText::FromString(TEXT("Выход"))).Font(NMS::Font(8)).ColorAndOpacity(NMS::TextSecondary) ] ]
                     ]
                 ]

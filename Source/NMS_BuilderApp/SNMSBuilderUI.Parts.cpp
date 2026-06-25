@@ -550,7 +550,7 @@ void SNMSBuilderUI::OnPartSelected(TSharedPtr<FNMSPartData> Item, ESelectInfo::T
     if (!Item.IsValid()) return;
     CurveBuildPart = Item;   // запомнить для раскладки по кривой
     LastPartItem = Item;     // для непрерывной установки
-    if (ViewportClient.IsValid()) { if (UStaticMesh* CM = LoadObject<UStaticMesh>(nullptr, *Item->ModelPath)) { const FVector S = CM->GetBoundingBox().GetSize(); ViewportClient->CurvePartLen = FMath::Max(FMath::Max(S.X, S.Y), 1.f); } }
+    if (ViewportClient.IsValid()) { if (UStaticMesh* CM = LoadObject<UStaticMesh>(nullptr, *Item->ModelPath)) { const FVector S = CM->GetBoundingBox().GetSize(); ViewportClient->SetCurvePartLen(FMath::Max(FMath::Max(S.X, S.Y), 1.f)); } }
     UE_LOG(LogTemp, Log, TEXT("Selected part: %s (%s) model=%s"),
         *Item->DisplayName, *Item->ObjectID, *Item->ModelPath);
 

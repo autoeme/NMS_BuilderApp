@@ -106,16 +106,24 @@ public:
     void  SetMoveSnap(float Snap) { MoveSnap = Snap; }
     float GetMoveSnap() const { return MoveSnap; }
 
-    bool bCurveMode = false;            // режим рисования кривой
-    ENMSCurveType CurveType = ENMSCurveType::Catmull; // тип кривой
-    float CurveOverlap = 0.5f;          // нахлёст 0..0.9 (плотность)
-    float CurvePartLen = 100.f;         // длина детали (для предпросмотра раскладки)
-    float CurveTilt = 0.f;              // наклон деталей (pitch, градусы)
-    float CurveRoll = 0.f;              // крен деталей (roll, градусы)
-    float CurveRadius = 0.f;            // радиус круга (0 = по клику)
-    TFunction<void()> OnCurveApply;     // колбэк постройки (UI выставляет)
-    TFunction<void()> OnCurveChanged;   // колбэк: точки/режим изменились (для меш-предпросмотра)
-    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)
+    // --- инструмент «кривая» (панель тулбара задаёт через команды) ---
+    void StartCurve(ENMSCurveType Type) { CurveType = Type; bCurveMode = true; CurvePoints.Reset(); }
+    void ExitCurve() { bCurveMode = false; CurvePoints.Reset(); }
+    void ClearCurvePoints() { CurvePoints.Reset(); }
+    bool IsCurveMode() const { return bCurveMode; }
+    ENMSCurveType GetCurveType() const { return CurveType; }
+    const TArray<FVector>& GetCurvePoints() const { return CurvePoints; }
+    void  SetCurveOverlap(float V) { CurveOverlap = V; }
+    float GetCurveOverlap() const { return CurveOverlap; }
+    void  SetCurveTilt(float V) { CurveTilt = V; }
+    float GetCurveTilt() const { return CurveTilt; }
+    void  SetCurveRoll(float V) { CurveRoll = V; }
+    float GetCurveRoll() const { return CurveRoll; }
+    void  SetCurveRadius(float V) { CurveRadius = V; }
+    float GetCurveRadius() const { return CurveRadius; }
+    void  SetCurvePartLen(float V) { CurvePartLen = V; }
+    TFunction<void()> OnCurveApply;     // событие: построить кривую
+    TFunction<void()> OnCurveChanged;   // событие: точки/режим изменились (меш-предпросмотр)
 
 private:
     // --- внутренние настройки/состояние (UI к ним напрямую не обращается) ---
@@ -153,6 +161,15 @@ private:
     FLinearColor PendingPartColor = FLinearColor(0.78f, 0.78f, 0.74f);
     FLinearColor PendingPartColor2 = FLinearColor::White;
     FString PendingBaseTex, PendingPaintMask, PendingNormalTex, PendingMasksTex, PendingOccTex;
+    // инструмент «кривая» (управляется командами Start/Exit/Set* выше)
+    bool bCurveMode = false;
+    ENMSCurveType CurveType = ENMSCurveType::Catmull;
+    float CurveOverlap = 0.5f;          // нахлёст 0..0.9 (плотность)
+    float CurvePartLen = 100.f;         // длина детали (предпросмотр раскладки)
+    float CurveTilt = 0.f;              // наклон (pitch, градусы)
+    float CurveRoll = 0.f;              // крен (roll, градусы)
+    float CurveRadius = 0.f;            // радиус круга (0 = по клику)
+    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)
 
     TUniquePtr<FPreviewScene> PreviewScene;
     FLinearColor SkyColor = FLinearColor(0.32f, 0.55f, 0.82f, 1.f);
