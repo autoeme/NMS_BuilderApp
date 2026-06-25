@@ -1,8 +1,34 @@
 // Часть класса SNMSBuilderUI (разнесение по TU, Часть C плана).
 // Включения общие для всех TU класса — см. SNMSBuilderUI_Internal.h.
 #include "SNMSBuilderUI_Internal.h"
+#include "HAL/PlatformProcess.h"   // FPlatformProcess::UserDir() — папка «Документы» без хардкода
 
 #define LOCTEXT_NAMESPACE "NMSBuilder"
+
+// Запоминание последней папки файловых диалогов (между сессиями) — вместо
+// жёстко прописанных путей вида C:/Users/.../Documents (правило CLAUDE.md #4).
+static FString NMS_LastDirFile()
+{
+    return FPaths::ProjectSavedDir() / TEXT("NMSUser/last_dir.txt");
+}
+static FString NMS_LoadLastDir()
+{
+    FString S;
+    if (FFileHelper::LoadFileToString(S, *NMS_LastDirFile()))
+    {
+        S = S.TrimStartAndEnd();
+        if (!S.IsEmpty() && FPaths::DirectoryExists(S)) return S;
+    }
+    // дефолт — папка «Документы» пользователя (кроссплатформенно, без C:/Users/...)
+    return FPlatformProcess::UserDir();
+}
+static void NMS_SaveLastDir(const FString& Dir)
+{
+    if (Dir.IsEmpty()) return;
+    const FString P = FPaths::ProjectSavedDir() / TEXT("NMSUser");
+    IFileManager::Get().MakeDirectory(*P, true);
+    FFileHelper::SaveStringToFile(Dir, *NMS_LastDirFile());
+}
 
 void SNMSBuilderUI::OnMenuNewBase()
 {
@@ -22,13 +48,14 @@ void SNMSBuilderUI::OnMenuOpen()
     const bool bPicked = DP->OpenFileDialog(
         nullptr,
         TEXT("Открыть базу"),
-        TEXT("C:/Users/User/Documents/bases"),
+        NMS_LoadLastDir(),
         TEXT(""),
         TEXT("Базы NMS (*.json;*.nmsbase;*.hg;*.blend)|*.json;*.nmsbase;*.hg;*.blend"),
         EFileDialogFlags::None,
         Picked);
     if (!bPicked || Picked.Num() == 0) return;
     const FString Path = Picked[0];
+    NMS_SaveLastDir(FPaths::GetPath(Path));
     const FString Ext = FPaths::GetExtension(Path).ToLower();
     UNMSBaseManager* Mgr = NewObject<UNMSBaseManager>();
     Mgr->AddToRoot();
@@ -52,13 +79,14 @@ void SNMSBuilderUI::OnMenuImportModel()
     const bool bPicked = DP->OpenFileDialog(
         nullptr,
         TEXT("Импорт 3D-модели"),
-        TEXT("C:/Users/User/Documents"),
+        NMS_LoadLastDir(),
         TEXT(""),
         TEXT("3D-модели (*.obj;*.stl)|*.obj;*.stl"),
         EFileDialogFlags::None,
         Picked);
     if (!bPicked || Picked.Num() == 0) return;
     const FString Path = Picked[0];
+    NMS_SaveLastDir(FPaths::GetPath(Path));
 
     FNMSImportedMesh Geo;
     FString Err;
@@ -327,46 +355,50 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
     }
     UE_LOG(LogTemp, Log, TEXT("NMS UI: built base '%s' (%d parts)"), *CurrentBaseName, Spawned);
     RebuildSceneTree();   // автообновление дерева сцены после загрузки
-    if (!bRestoring) { EditSnapshot = SnapshotScene(); UndoStack.Reset(); RedoStack.Reset(); }
+    if (!bRestoring) { EditSnapshot = SnapshotScene(); bHasBaseline = true; UndoStack.Reset(); RedoStack.Reset(); }
 #endif
 }
 
 // ===========================================================================
-//  Undo / Redo — снимки сцены через экспорт/импорт базы
+//  Undo / Redo — снимки сцены ДОМЕННЫМ документом (FNMSBaseDocument).
+//  Раньше сериализовали всю сцену в JSON (ExportToString) на каждую правку —
+//  дорого и завязано на формат экспорта. Теперь снимок = копия структур,
+//  трансформы хранятся точно (без decompose/recompose через Up/At).
 // ===========================================================================
-FString SNMSBuilderUI::SnapshotScene()
+FNMSBaseDocument SNMSBuilderUI::SnapshotScene()
 {
     UNMSBaseManager* Mgr = NewObject<UNMSBaseManager>(); Mgr->AddToRoot();
     CollectSceneToManager(Mgr);
-    FString S = Mgr->ExportToString();
+    FNMSBaseDocument Doc = NMSDoc::FromManager(*Mgr);
     Mgr->RemoveFromRoot();
-    return S;
+    return Doc;
 }
-void SNMSBuilderUI::RestoreScene(const FString& S)
+void SNMSBuilderUI::RestoreScene(const FNMSBaseDocument& Doc)
 {
     bRestoring = true;
     ClearSceneParts();
     UNMSBaseManager* Mgr = NewObject<UNMSBaseManager>(); Mgr->AddToRoot();
-    if (Mgr->ImportFromString(S)) SpawnFromManager(Mgr);
+    NMSDoc::ToManager(Doc, *Mgr);
+    SpawnFromManager(Mgr);
     Mgr->RemoveFromRoot();
     bRestoring = false;
 }
 void SNMSBuilderUI::CommitEdit()
 {
     if (bRestoring) return;
-    FString S = SnapshotScene();
-    if (EditSnapshot.IsEmpty()) { EditSnapshot = S; return; } // базовая точка
+    FNMSBaseDocument S = SnapshotScene();
+    if (!bHasBaseline) { EditSnapshot = MoveTemp(S); bHasBaseline = true; return; } // базовая точка
     if (S == EditSnapshot) return;                           // ничего не изменилось
     UndoStack.Add(EditSnapshot);
     if (UndoStack.Num() > 100) UndoStack.RemoveAt(0);
     RedoStack.Reset();
-    EditSnapshot = S;
+    EditSnapshot = MoveTemp(S);
 }
 void SNMSBuilderUI::DoUndo()
 {
     if (UndoStack.Num() == 0) return;
     RedoStack.Add(EditSnapshot);
-    FString S = UndoStack.Pop();
+    FNMSBaseDocument S = UndoStack.Pop();
     EditSnapshot = S;
     RestoreScene(S);
 }
@@ -374,7 +406,7 @@ void SNMSBuilderUI::DoRedo()
 {
     if (RedoStack.Num() == 0) return;
     UndoStack.Add(EditSnapshot);
-    FString S = RedoStack.Pop();
+    FNMSBaseDocument S = RedoStack.Pop();
     EditSnapshot = S;
     RestoreScene(S);
 }
@@ -424,12 +456,13 @@ void SNMSBuilderUI::OnMenuSaveBaseAs()
     const bool bPicked = DP->SaveFileDialog(
         nullptr,
         TEXT("Сохранить базу как"),
-        TEXT("C:/Users/User/Documents/bases"),
+        NMS_LoadLastDir(),
         CurrentBaseName.IsEmpty() ? TEXT("base.json") : CurrentBaseName + TEXT(".json"),
         TEXT("База NMS (*.json)|*.json"),
         EFileDialogFlags::None,
         Picked);
     if (!bPicked || Picked.Num() == 0) return;
+    NMS_SaveLastDir(FPaths::GetPath(Picked[0]));
 
     UNMSBaseManager* Mgr = NewObject<UNMSBaseManager>();
     Mgr->AddToRoot();

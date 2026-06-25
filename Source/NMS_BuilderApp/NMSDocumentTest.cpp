@@ -78,4 +78,56 @@ bool FNMSDocumentRoundtripTest::RunTest(const FString& /*Parameters*/)
     return true;
 }
 
+// Равенство документов — основа детекции изменений в Undo/Redo.
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FNMSDocumentEqualityTest,
+    "NMS.Document.Equality",
+    EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+
+bool FNMSDocumentEqualityTest::RunTest(const FString& /*Parameters*/)
+{
+    auto MakePart = [](const TCHAR* Id, const FVector& Loc, int64 UD)
+    {
+        FNMSPlacedPart P;
+        P.ObjectID = Id;
+        P.Transform = FTransform(FRotator::ZeroRotator, Loc, FVector(1.f));
+        P.UserData = UD;
+        return P;
+    };
+
+    FNMSBaseDocument A;
+    A.Name = TEXT("Base");
+    A.Parts.Add(MakePart(TEXT("^WALLA"), FVector(1, 2, 3), 10));
+    A.Parts.Add(MakePart(TEXT("^CUBEFRAME"), FVector(4, 5, 6), 20));
+
+    // полная копия -> равны
+    FNMSBaseDocument B = A;
+    TestTrue(TEXT("identical docs are equal"), A == B);
+
+    // имя/адрес не влияют на равенство сцены
+    B.Name = TEXT("Other"); B.GalacticAddress = TEXT("999");
+    TestTrue(TEXT("name/address ignored"), A == B);
+
+    // сдвиг позиции -> не равны
+    FNMSBaseDocument C = A;
+    C.Parts[0].Transform.AddToTranslation(FVector(0, 0, 1));
+    TestTrue(TEXT("moved part -> not equal"), A != C);
+
+    // другой UserData (цвет) -> не равны
+    FNMSBaseDocument D = A;
+    D.Parts[1].UserData = 21;
+    TestTrue(TEXT("changed UserData -> not equal"), A != D);
+
+    // другое число деталей -> не равны
+    FNMSBaseDocument E = A;
+    E.Parts.RemoveAt(1);
+    TestTrue(TEXT("different count -> not equal"), A != E);
+
+    // другой ObjectID -> не равны
+    FNMSBaseDocument F = A;
+    F.Parts[0].ObjectID = TEXT("^FLOORA");
+    TestTrue(TEXT("changed ObjectID -> not equal"), A != F);
+
+    return true;
+}
+
 #endif // WITH_DEV_AUTOMATION_TESTS

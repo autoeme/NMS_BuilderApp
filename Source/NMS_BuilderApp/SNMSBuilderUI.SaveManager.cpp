@@ -1,12 +1,33 @@
 // Часть класса SNMSBuilderUI (разнесение по TU, Часть C плана).
 // Включения общие для всех TU класса — см. SNMSBuilderUI_Internal.h.
 #include "SNMSBuilderUI_Internal.h"
+#include "NMSPlatformSaveLocationProvider.h"
+#include "HAL/PlatformProcess.h"   // FPlatformProcess::UserDir() — фолбэк без хардкода
 
 #define LOCTEXT_NAMESPACE "NMSBuilder"
 
+// Файл, где запоминается вручную выбранная папка сейвов (между сессиями).
+static FString SMSaveRootFile()
+{
+    return FPaths::ProjectSavedDir() / TEXT("NMSUser/save_root.txt");
+}
+
 void SNMSBuilderUI::SMRefreshAccounts()
 {
-    SMAccounts = FNMSSaveFile::GetAccounts();
+    // Корень сейвов: вручную выбранная папка (если есть) имеет приоритет,
+    // иначе — автоопределение по ОС. Так работает Linux/нестандартный путь.
+    FString Root;
+    if (!SMManualRoot.IsEmpty())
+    {
+        const FNMSManualSaveLocationProvider Manual(SMManualRoot);
+        Root = Manual.GetRootSaveFolder();
+    }
+    else
+    {
+        const FNMSPlatformSaveLocationProvider Platform;
+        Root = Platform.GetRootSaveFolder();
+    }
+    SMAccounts = FNMSSaveFile::GetAccounts(Root);
     SMSlots.Reset(); SMBases.Reset();
     SMAccountIdx = INDEX_NONE; SMSlotIdx = INDEX_NONE;
 
@@ -171,6 +192,14 @@ void SNMSBuilderUI::SMRebuildBaseList()
 
 TSharedRef<SWidget> SNMSBuilderUI::BuildSaveManagerPanel()
 {
+    // восстановить вручную выбранную папку сейвов с прошлой сессии
+    if (SMManualRoot.IsEmpty())
+    {
+        FString Saved;
+        if (FFileHelper::LoadFileToString(Saved, *SMSaveRootFile()))
+            SMManualRoot = Saved.TrimStartAndEnd();
+    }
+
     // загрузка привязок скриншотов + аккаунтов
     SMLoadScreenLinks();
     SMRefreshAccounts();
@@ -183,6 +212,44 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildSaveManagerPanel()
         + SHorizontalBox::Slot().FillWidth(1.f).VAlign(VAlign_Center)
         [ SNew(STextBlock).Text(FText::FromString(TEXT("SAVE MANAGER")))
             .ColorAndOpacity(FSlateColor(FLinearColor(1.f,0.78f,0.18f))) ]
+        // выбрать папку сейвов вручную (Linux/нестандартный путь/другой профиль)
+        + SHorizontalBox::Slot().AutoWidth().Padding(0,0,4,0)
+        [ SNew(SButton).Text(FText::FromString(TEXT("Папка…")))
+            .ToolTipText(FText::FromString(TEXT("Выбрать папку сейвов NMS вручную (…/HelloGames/NMS). Пусто = авто по ОС.")))
+            .OnClicked_Lambda([this]()
+            {
+                IDesktopPlatform* DP = FDesktopPlatformModule::Get();
+                if (DP)
+                {
+                    FString Picked;
+                    const FString Start = SMManualRoot.IsEmpty() ? FPaths::ProjectDir() : SMManualRoot;
+                    if (DP->OpenDirectoryDialog(nullptr,
+                            TEXT("Папка сейвов NMS (HelloGames/NMS)"), Start, Picked)
+                        && !Picked.IsEmpty())
+                    {
+                        SMManualRoot = Picked;
+                        // запомнить между сессиями: Saved/NMSUser/save_root.txt
+                        const FString Dir = FPaths::ProjectSavedDir() / TEXT("NMSUser");
+                        IFileManager::Get().MakeDirectory(*Dir, true);
+                        FFileHelper::SaveStringToFile(SMManualRoot, *SMSaveRootFile());
+                        SMRefreshAccounts();
+                        SMRebuildBaseList();
+                    }
+                }
+                return FReply::Handled();
+            }) ]
+        // сброс к автоопределению по ОС: чистим ручной путь + удаляем файл
+        + SHorizontalBox::Slot().AutoWidth().Padding(0,0,4,0)
+        [ SNew(SButton).Text(FText::FromString(TEXT("Авто")))
+            .ToolTipText(FText::FromString(TEXT("Вернуться к автоопределению папки сейвов по ОС (сбросить ручной путь).")))
+            .OnClicked_Lambda([this]()
+            {
+                SMManualRoot.Empty();
+                IFileManager::Get().Delete(*SMSaveRootFile(), false, false, true);
+                SMRefreshAccounts();
+                SMRebuildBaseList();
+                return FReply::Handled();
+            }) ]
         + SHorizontalBox::Slot().AutoWidth()
         [ SNew(SButton).Text(FText::FromString(TEXT("Обновить")))
             .OnClicked_Lambda([this](){ SMRefreshAccounts(); SMRebuildBaseList(); return FReply::Handled(); }) ]
@@ -311,8 +378,11 @@ void SNMSBuilderUI::SMPickScreenshot(const FString& BaseName)
         if (W.IsValid() && W->GetNativeWindow().IsValid())
             H = W->GetNativeWindow()->GetOSWindowHandle();
     }
-    // стартовая папка — скриншоты Steam NMS
+    // стартовая папка — скриншоты Steam NMS (подсказка для Windows);
+    // если такой папки нет (Mac/Linux/нестандартный Steam) — папка пользователя.
     FString StartDir = TEXT("C:/Program Files (x86)/Steam/userdata");
+    if (!FPaths::DirectoryExists(StartDir))
+        StartDir = FPlatformProcess::UserDir();
     TArray<FString> Picked;
     if (DP->OpenFileDialog(H, TEXT("Выбрать скриншот базы"), StartDir, TEXT(""),
         TEXT("Изображения (*.jpg;*.png)|*.jpg;*.png"), EFileDialogFlags::None, Picked)

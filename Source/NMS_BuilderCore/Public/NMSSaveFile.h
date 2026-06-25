@@ -47,8 +47,9 @@ public:
     bool Save(FString& OutError, const FString& OutputPath = TEXT(""));
 
     // --- статические утилиты поиска сейвов ---
-    static FString GetRootSaveFolder();                       // %AppData%/HelloGames/NMS
-    static TArray<FString> GetAccounts();                     // папки st_*
+    // Корневую папку (HelloGames/NMS) даёт INMSSaveLocationProvider — core не
+    // знает про платформенные пути. Аккаунты ищем внутри переданного Root.
+    static TArray<FString> GetAccounts(const FString& RootSaveFolder); // папки st_*
     static TArray<FString> GetHgFilesInFolder(const FString& Folder);
     // Слоты аккаунта (пары save.hg). Отсортированы по номеру.
     static TArray<FNMSSaveSlot> GetSaveSlots(const FString& Account);

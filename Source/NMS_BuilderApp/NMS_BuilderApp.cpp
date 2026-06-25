@@ -7,6 +7,7 @@
 #include "Framework/Docking/TabManager.h"
 #include "Widgets/Docking/SDockTab.h"
 #include "Textures/SlateIcon.h"
+#include "Misc/App.h"
 
 const FName FNMS_BuilderAppModule::TabId(TEXT("NMSBuilderAppWindow"));
 
@@ -17,6 +18,13 @@ void FNMS_BuilderAppModule::StartupModule()
         TabId,
         FOnSpawnTab::CreateRaw(this, &FNMS_BuilderAppModule::OnSpawnTab))
         .SetDisplayName(NSLOCTEXT("NMSBuilder", "TabTitle", "NMS Base Builder"));
+
+    // Авто-открытие вкладки — только в интерактивном редакторе. В headless
+    // (-nullrhi / commandlet / автотесты) создание Slate-окна падает
+    // ("GetRestoredDimensions is not expected to be called on this platform"),
+    // поэтому там вкладку не открываем.
+    if (!FApp::CanEverRender())
+        return;
 
     // Открытие откладываем: на момент StartupModule Slate-приложение
     // может быть ещё не готово, прямой вызов TryInvokeTab уронит.

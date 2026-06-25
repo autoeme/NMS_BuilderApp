@@ -598,12 +598,12 @@ void SNMSBuilderUI::OnPartSelected(TSharedPtr<FNMSPartData> Item, ESelectInfo::T
 
     // 3) Деталь следует за курсором (снап/сетка), ЛКМ ставит — но выглядит как
     //    обычная деталь (настоящий материал + гизмо), без зелёной голограммы.
-    ViewportClient->PendingPartColor = NMS_DefaultPartColor(Item->Category, Item->ObjectID);
-    ViewportClient->PendingPartColor2 = NMS_DefaultPartColor2(Item->Category, Item->ObjectID);
+    FNMSPendingMaterial Mat;
+    Mat.Color  = NMS_DefaultPartColor(Item->Category, Item->ObjectID);
+    Mat.Color2 = NMS_DefaultPartColor2(Item->Category, Item->ObjectID);
     NMS_PartTexture(Item->Category, Item->ObjectID,
-        ViewportClient->PendingBaseTex, ViewportClient->PendingPaintMask,
-        ViewportClient->PendingNormalTex, ViewportClient->PendingMasksTex,
-        ViewportClient->PendingOccTex);
+        Mat.BaseTex, Mat.PaintMask, Mat.NormalTex, Mat.MasksTex, Mat.OccTex);
+    ViewportClient->SetPendingMaterial(Mat);
     ViewportClient->ApplyPartMaterial(Actor);
     ViewportClient->StartPlacing(Actor);
 }

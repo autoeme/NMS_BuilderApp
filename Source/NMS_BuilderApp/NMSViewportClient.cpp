@@ -1078,6 +1078,13 @@ void FNMSViewportClient::TransformSelected(const FRotator& DRot, const FVector& 
 // ===========================================================================
 //  Управление камерой (FreeCam)
 // ===========================================================================
+void FNMSViewportClient::ResetCamera()
+{
+    CameraLocation = FVector(-600.f, 0.f, 400.f);
+    CameraRotation = FRotator(-25.f, 0.f, 0.f);
+    FocusPoint = FVector::ZeroVector;
+}
+
 void FNMSViewportClient::UpdateCamera(float Dt)
 {
     if (Dt <= 0.f) return;

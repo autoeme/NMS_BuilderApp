@@ -5,6 +5,7 @@
 #include "Widgets/SCompoundWidget.h"
 #include "Engine/DataTable.h"
 #include "NMSPartData.h"
+#include "NMSBaseDocument.h"   // снимки Undo/Redo хранят доменный документ
 
 template <typename ItemType> class STileView;
 class ITableRow;
@@ -89,13 +90,14 @@ private:
     void OnMenuExportClipboard();   // Export to Clipboard
     void SpawnFromManager(class UNMSBaseManager* Mgr);   // построить базу в сцене
     void CollectSceneToManager(class UNMSBaseManager* Mgr); // сцена -> PlacedObjects
-    // --- Undo/Redo (снимки сцены строкой) ---
-    TArray<FString> UndoStack;
-    TArray<FString> RedoStack;
-    FString EditSnapshot;
+    // --- Undo/Redo (снимки сцены доменным документом FNMSBaseDocument) ---
+    TArray<FNMSBaseDocument> UndoStack;
+    TArray<FNMSBaseDocument> RedoStack;
+    FNMSBaseDocument EditSnapshot;
+    bool bHasBaseline = false;          // EditSnapshot уже задан (пустая сцена — валидна)
     bool bRestoring = false;
-    FString SnapshotScene();
-    void RestoreScene(const FString& S);
+    FNMSBaseDocument SnapshotScene();
+    void RestoreScene(const FNMSBaseDocument& Doc);
     void CommitEdit();
     void DoUndo();
     void DoRedo();
@@ -208,6 +210,7 @@ private:
     const FSlateBrush* GetPartThumb(const FString& PartId);
 
     // =================== SAVE MANAGER (сейв игры .hg) ===================
+    FString SMManualRoot;                     // вручную выбранная папка сейвов (пусто = авто по ОС)
     TArray<FString>          SMAccounts;      // пути st_*
     TArray<FNMSSaveSlot>     SMSlots;         // слоты выбранного аккаунта
     TArray<FNMSSaveBaseInfo> SMBases;         // базы выбранного слота

@@ -3,7 +3,6 @@
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
 #include "HAL/PlatformFileManager.h"
-#include "HAL/PlatformMisc.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
 #include "Compression/lz4.h"
@@ -45,12 +44,6 @@ void FNMSSaveFile::EnsureDictionary()
     UE_LOG(LogTemp, Log, TEXT("NMS SaveFile: dict pairs: %d"), ObfToEng.Num());
 }
 
-FString FNMSSaveFile::GetRootSaveFolder()
-{
-    FString AppData = FPlatformMisc::GetEnvironmentVariable(TEXT("APPDATA"));
-    return FPaths::Combine(AppData, TEXT("HelloGames/NMS"));
-}
-
 TArray<FString> FNMSSaveFile::GetHgFilesInFolder(const FString& Folder)
 {
     TArray<FString> Out;
@@ -62,10 +55,11 @@ TArray<FString> FNMSSaveFile::GetHgFilesInFolder(const FString& Folder)
     return Out;
 }
 
-TArray<FString> FNMSSaveFile::GetAccounts()
+TArray<FString> FNMSSaveFile::GetAccounts(const FString& RootSaveFolder)
 {
     TArray<FString> Out;
-    const FString Root = GetRootSaveFolder();
+    const FString Root = RootSaveFolder;
+    if (Root.IsEmpty()) return Out;
     IFileManager& FM = IFileManager::Get();
     TArray<FString> Dirs;
     FM.FindFiles(Dirs, *FPaths::Combine(Root, TEXT("*")), false, true);

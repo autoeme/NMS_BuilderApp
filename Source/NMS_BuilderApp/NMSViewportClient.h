@@ -14,6 +14,19 @@ class FCanvas;
 enum class ENMSTransformMode : uint8 { Move, Rotate, Scale };
 enum class ENMSCurveType : uint8 { Catmull, Polyline, Circle, Bezier, Rect };
 
+// Материал детали, который UI задаёт ПЕРЕД постановкой (StartPlacing).
+// Пустые текстуры = плоский цвет. Передаётся через SetPendingMaterial().
+struct FNMSPendingMaterial
+{
+    FLinearColor Color  = FLinearColor(0.78f, 0.78f, 0.74f); // основной
+    FLinearColor Color2 = FLinearColor::White;               // вторичный (металл/канты)
+    FString BaseTex;     // диффуз
+    FString PaintMask;   // маска покраски
+    FString NormalTex;   // карта рельефа
+    FString MasksTex;    // карта масок (AO/шероховатость/металл)
+    FString OccTex;      // карта затенения швов
+};
+
 /**
  * Вьюпорт-клиент встроенного 3D окна редактора баз.
  * Своя сцена (FPreviewScene) + рендер через FSceneView + FreeCam-камера.
@@ -35,22 +48,8 @@ public:
 
     FPreviewScene* GetPreviewScene() { return PreviewScene.Get(); }
 
-    FVector  CameraLocation = FVector(-600.f, 0.f, 400.f);
-    FRotator CameraRotation = FRotator(-25.f, 0.f, 0.f);
-    float    CameraFOV = 80.f;
-
-    // --- грид-сетка режима постройки (стиль NMS) ---
-    bool   bShowGrid      = true;     // тоггл по клавише G
-    float  GridCellSize   = 100.f;    // размер ячейки, юниты (100 ≈ 1 м, базовый строит. юнит)
-    int32  GridHalfCount  = 400;      // линий в каждую сторону (было 40) — площадь ×10
-    int32  GridMajorEvery = 10;       // каждая N-я линия — основная (толще/ярче)
-    float  GridFadeStart  = 2500.f;   // ярко только вблизи (~25 м)
-    float  GridFadeEnd    = 14000.f;  // плавно гаснет к ~140 м
-    // Режим яркости сетки: 0 = выкл, 1 = обычная (как в игре), 2 = максимально чёткая.
-    // Управляется ползунком в UI (GridMode).
-    int32  GridMode       = 1;
-    FLinearColor GridMinorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.22f); // белёсые тонкие линии (как в игре)
-    FLinearColor GridMajorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.50f); // белые основные
+    // Сбросить камеру в стартовый ракурс (кнопка «КАМЕРА» в тулбаре).
+    void ResetCamera();
 
     // Назначить выбранную деталь извне (из UI при клике по детали).
     void SetSelectedActor(AActor* InActor);
@@ -69,7 +68,8 @@ public:
     // Завершить предыдущее: снять выделение со всех деталей.
     void ClearSelection();
     // Режим прокладки кабеля/трубы: клик А, клик Б -> кабель между ними.
-    bool bWiringMode = false;
+    void ToggleWiringMode() { CancelPlacing(); bWiringMode = !bWiringMode; } // с отменой установки
+    bool IsWiringMode() const { return bWiringMode; }
     void SpawnCable(const FVector& A, const FVector& B);
     // Зеркалирование выделения по оси (0=X, 1=Y).
     void MirrorSelection(int32 Axis);
@@ -80,25 +80,18 @@ public:
     // а клавиатурный фокус остаётся на другом виджете.
     TFunction<void()> OnRequestFocus;
     // Непрерывная установка: после постановки сразу новый призрак (Esc — выход).
-    bool bContinuousPlace = true;
     TFunction<void()> OnPlaceContinue;
     TFunction<void()> OnUndo;
     TFunction<void()> OnRedo;
-    // Родной цвет материала детали (задаёт UI перед StartPlacing) — применяется при постановке.
-    FLinearColor PendingPartColor = FLinearColor(0.78f, 0.78f, 0.74f);
-    FLinearColor PendingPartColor2 = FLinearColor::White; // вторичный (металл/канты)
-    // Игровые текстуры детали (пути к ассетам); пустые = плоский цвет, как раньше.
-    FString PendingBaseTex;
-    FString PendingPaintMask;
-    FString PendingNormalTex; // карта рельефа
-    FString PendingMasksTex;  // карта масок (AO/шероховатость/металл)
-    FString PendingOccTex;    // карта затенения швов (occlusion из игры)
+    // Материал детали для следующей постановки (задаёт UI перед StartPlacing).
+    void SetPendingMaterial(const FNMSPendingMaterial& M)
+    {
+        PendingPartColor = M.Color; PendingPartColor2 = M.Color2;
+        PendingBaseTex = M.BaseTex; PendingPaintMask = M.PaintMask;
+        PendingNormalTex = M.NormalTex; PendingMasksTex = M.MasksTex; PendingOccTex = M.OccTex;
+    }
     // Режим «без света»: детали ставятся с безсветовым материалом (ровный вид).
     static bool bUnlitParts;
-
-    // Солнце следует за камерой (выкл — даёт тёмный низ; используем равномерный свет).
-    bool bSunFollowsCamera = false;
-    TWeakObjectPtr<class UDirectionalLightComponent> SunComp;
 
     // Сменить фон сцены: PNG с диска -> текстура -> материал неба (M_SkyBG).
     void SetBackgroundImage(const FString& PngPath);
@@ -107,23 +100,12 @@ public:
     // Точка на плоскости Z=0 прямо перед камерой (куда смотрит вид) — место постановки.
     FVector GetGroundFocusPoint() const;
 
-    // --- навигация камеры: зум / орбита / пан ---
-    FVector FocusPoint = FVector::ZeroVector; // точка, вокруг которой орбита
-    float   ZoomStep   = 250.f;               // шаг доли на «щелчок» колеса
-    float   PanSpeed   = 2.0f;                 // скорость пана (юнит / пиксель)
+    // --- манипуляция мышью (тулбар задаёт через команды) ---
+    void SetTransformMode(ENMSTransformMode M) { TransformMode = M; }
+    ENMSTransformMode GetTransformMode() const { return TransformMode; }
+    void  SetMoveSnap(float Snap) { MoveSnap = Snap; }
+    float GetMoveSnap() const { return MoveSnap; }
 
-    // --- выбранная деталь и шаги трансформации ---
-    float RotStepDeg = 15.f;   // шаг поворота, градусы ([ ] , . ; ')
-    float ScaleStep  = 0.10f;  // шаг масштаба (= / -)
-
-    // --- манипуляция мышью (как в приложении) ---
-    ENMSTransformMode TransformMode = ENMSTransformMode::Move; // 1=двигать 2=крутить 3=масштаб
-    float MoveSnap = 50.f;
-
-    // --- снап к деталям «как в игре» (точки стыковки из snapping_info) ---
-    bool  bSnapToParts = true;   // тоггл по клавише V: прилипать к соседним деталям
-    float SnapRadius   = 350.f;  // макс. дистанция курсора до точки стыковки, см (~3.5 м)
-    bool  bShowSnapPoints = false; // отладка: рисовать кадры точек стыковки (клавиша B)
     bool bCurveMode = false;            // режим рисования кривой
     ENMSCurveType CurveType = ENMSCurveType::Catmull; // тип кривой
     float CurveOverlap = 0.5f;          // нахлёст 0..0.9 (плотность)
@@ -133,10 +115,45 @@ public:
     float CurveRadius = 0.f;            // радиус круга (0 = по клику)
     TFunction<void()> OnCurveApply;     // колбэк постройки (UI выставляет)
     TFunction<void()> OnCurveChanged;   // колбэк: точки/режим изменились (для меш-предпросмотра)
-    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)     // привязка перемещения, юниты
-    float RotDragSpeed = 1.0f; // скорость поворота при перетаскивании
+    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)
 
 private:
+    // --- внутренние настройки/состояние (UI к ним напрямую не обращается) ---
+    float    CameraFOV = 80.f;
+    // грид-сетка режима постройки (стиль NMS); тогглится клавишами в InputKey
+    bool   bShowGrid      = true;
+    float  GridCellSize   = 100.f;    // размер ячейки, юниты (100 ≈ 1 м)
+    int32  GridHalfCount  = 400;      // линий в каждую сторону
+    int32  GridMajorEvery = 10;       // каждая N-я линия — основная
+    float  GridFadeStart  = 2500.f;   // ярко только вблизи (~25 м)
+    float  GridFadeEnd    = 14000.f;  // плавно гаснет к ~140 м
+    int32  GridMode       = 1;        // 0 выкл, 1 обычная, 2 чёткая
+    FLinearColor GridMinorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.22f);
+    FLinearColor GridMajorColor = FLinearColor(1.00f, 1.00f, 1.00f, 0.50f);
+    bool bContinuousPlace = true;     // после постановки сразу новый призрак
+    bool bSunFollowsCamera = false;   // солнце вдоль взгляда (равномерный свет)
+    TWeakObjectPtr<class UDirectionalLightComponent> SunComp;
+    float ZoomStep = 250.f;           // шаг доли на «щелчок» колеса
+    float PanSpeed = 2.0f;            // скорость пана (юнит / пиксель)
+    float RotStepDeg = 15.f;          // шаг поворота, градусы
+    float ScaleStep  = 0.10f;         // шаг масштаба
+    bool  bSnapToParts = true;        // тоггл V: прилипать к соседним деталям
+    float SnapRadius   = 350.f;       // макс. дистанция до точки стыковки, см
+    bool  bShowSnapPoints = false;    // отладка точек стыковки (клавиша B)
+    float RotDragSpeed = 1.0f;        // скорость поворота при перетаскивании
+    // управляется публичными командами выше (Set*/Toggle*):
+    ENMSTransformMode TransformMode = ENMSTransformMode::Move; // 1=двигать 2=крутить 3=масштаб
+    float MoveSnap = 50.f;            // шаг привязки перемещения, юниты
+    bool  bWiringMode = false;        // режим прокладки кабеля
+    // камера/фокус: UI меняет через ResetCamera(); фокус по клавише F
+    FVector  CameraLocation = FVector(-600.f, 0.f, 400.f);
+    FRotator CameraRotation = FRotator(-25.f, 0.f, 0.f);
+    FVector  FocusPoint = FVector::ZeroVector;
+    // материал следующей постановки (задаётся через SetPendingMaterial)
+    FLinearColor PendingPartColor = FLinearColor(0.78f, 0.78f, 0.74f);
+    FLinearColor PendingPartColor2 = FLinearColor::White;
+    FString PendingBaseTex, PendingPaintMask, PendingNormalTex, PendingMasksTex, PendingOccTex;
+
     TUniquePtr<FPreviewScene> PreviewScene;
     FLinearColor SkyColor = FLinearColor(0.32f, 0.55f, 0.82f, 1.f);
     TWeakObjectPtr<class UStaticMeshComponent> SkySphereComp; // купол неба (для смены фона)

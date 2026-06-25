@@ -91,8 +91,8 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildToolbar()
     };
     auto NoOp = []() {};
     auto Never = []() { return false; };
-    auto ModeIs = [this](ENMSTransformMode M) { return ViewportClient.IsValid() && ViewportClient->TransformMode == M; };
-    auto SetMode = [this](ENMSTransformMode M) { if (ViewportClient.IsValid()) ViewportClient->TransformMode = M; };
+    auto ModeIs = [this](ENMSTransformMode M) { return ViewportClient.IsValid() && ViewportClient->GetTransformMode() == M; };
+    auto SetMode = [this](ENMSTransformMode M) { if (ViewportClient.IsValid()) ViewportClient->SetTransformMode(M); };
 
     TSharedRef<SHorizontalBox> Bar = SNew(SHorizontalBox);
 
@@ -231,17 +231,16 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildToolbar()
 
     // --- группа 2: режимы/камера/проводка ---
     Bar->AddSlot().AutoWidth()[ GameBtn(TEXT("buildmenu__snapping"), TEXT("MODE_FREE"), TEXT("СВОБОДНОЕ РАЗМЕЩЕНИЕ"),
-        [this]() { if (ViewportClient.IsValid()) ViewportClient->MoveSnap = (ViewportClient->MoveSnap > 1.f) ? 1.f : 50.f; },
-        [this]() { return ViewportClient.IsValid() && ViewportClient->MoveSnap <= 1.f; }) ];
+        [this]() { if (ViewportClient.IsValid()) ViewportClient->SetMoveSnap((ViewportClient->GetMoveSnap() > 1.f) ? 1.f : 50.f); },
+        [this]() { return ViewportClient.IsValid() && ViewportClient->GetMoveSnap() <= 1.f; }) ];
     Bar->AddSlot().AutoWidth()[ GameBtn(TEXT("buildmenu__move"), TEXT("MODE_EDIT"), TEXT("РЕДАКТИРОВАНИЕ"),
         [SetMode]() { SetMode(ENMSTransformMode::Move); }, [ModeIs]() { return ModeIs(ENMSTransformMode::Move); }) ];
     Bar->AddSlot().AutoWidth()[ GameBtn(TEXT("buildmenu__cam"), TEXT("HDR_CAMERA"), TEXT("КАМЕРА"),
-        [this]() { if (ViewportClient.IsValid()) { ViewportClient->CameraLocation = FVector(-600.f, 0.f, 400.f);
-                   ViewportClient->CameraRotation = FRotator(-25.f, 0.f, 0.f); ViewportClient->FocusPoint = FVector::ZeroVector; } },
+        [this]() { if (ViewportClient.IsValid()) ViewportClient->ResetCamera(); },
         Never) ];
     Bar->AddSlot().AutoWidth()[ GameBtn(TEXT("buildmenu__wiring"), TEXT("MODE_WIRING"), TEXT("ПРОВОДКА"),
-        [this]() { if (ViewportClient.IsValid()) { ViewportClient->CancelPlacing(); ViewportClient->bWiringMode = !ViewportClient->bWiringMode; } },
-        [this]() { return ViewportClient.IsValid() && ViewportClient->bWiringMode; }) ];
+        [this]() { if (ViewportClient.IsValid()) ViewportClient->ToggleWiringMode(); },
+        [this]() { return ViewportClient.IsValid() && ViewportClient->IsWiringMode(); }) ];
 
     // --- группа: отменить / повторить / зеркало ---
     Bar->AddSlot().AutoWidth()[ GameBtn(TEXT("buildmenu__undo"), TEXT("BTN_UNDO"), TEXT("ОТМЕНИТЬ"),
