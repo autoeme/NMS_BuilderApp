@@ -28,7 +28,7 @@ struct FNMSSaveSlot
     double  LastModified = 0.0;   // для автовыбора последнего активного
 };
 
-class FNMSSaveFile
+class NMS_BUILDERCORE_API FNMSSaveFile
 {
 public:
     // Путь к .hg

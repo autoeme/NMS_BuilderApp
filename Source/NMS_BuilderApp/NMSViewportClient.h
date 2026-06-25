@@ -58,6 +58,10 @@ public:
     AActor* GetSelectedActor() const;
     const TArray<TWeakObjectPtr<AActor>>& GetSelectedActorsList() const { return SelectedActors; }
 
+    // Применить настоящий (текстурный/цветной) материал к детали из Pending*-полей.
+    void ApplyPartMaterial(AActor* Actor);
+    // Выбрать только что заспавненную деталь для правки (гизмо + сетка + снап).
+    void SelectSpawnedActor(AActor* Actor);
     // Режим размещения «как в игре»: зелёная голограмма следует за курсором, ЛКМ ставит.
     void StartPlacing(AActor* GhostActor);
     // Отменить текущую установку (убрать незавершённый призрак).
@@ -71,6 +75,10 @@ public:
     void MirrorSelection(int32 Axis);
     // Колбэки в UI: правка сцены (для Undo), запросы Undo/Redo (Ctrl+Z/Y).
     TFunction<void()> OnEdited;
+    // Запрос фокуса клавиатуры на вьюпорт (UI ставит фокус на SViewport).
+    // Без него WASD-полёт не работает при зажатой ПКМ: мышь захвачена вьюпортом,
+    // а клавиатурный фокус остаётся на другом виджете.
+    TFunction<void()> OnRequestFocus;
     // Непрерывная установка: после постановки сразу новый призрак (Esc — выход).
     bool bContinuousPlace = true;
     TFunction<void()> OnPlaceContinue;
@@ -111,6 +119,11 @@ public:
     // --- манипуляция мышью (как в приложении) ---
     ENMSTransformMode TransformMode = ENMSTransformMode::Move; // 1=двигать 2=крутить 3=масштаб
     float MoveSnap = 50.f;
+
+    // --- снап к деталям «как в игре» (точки стыковки из snapping_info) ---
+    bool  bSnapToParts = true;   // тоггл по клавише V: прилипать к соседним деталям
+    float SnapRadius   = 350.f;  // макс. дистанция курсора до точки стыковки, см (~3.5 м)
+    bool  bShowSnapPoints = false; // отладка: рисовать кадры точек стыковки (клавиша B)
     bool bCurveMode = false;            // режим рисования кривой
     ENMSCurveType CurveType = ENMSCurveType::Catmull; // тип кривой
     float CurveOverlap = 0.5f;          // нахлёст 0..0.9 (плотность)
@@ -189,6 +202,13 @@ private:
     bool DeprojectMouseToGround(FViewport* Viewport, FVector& OutGround) const; // курсор -> точка на Z=0
     void TransformSelected(const FRotator& DRot, const FVector& DMove, float ScaleMul);
     void GatherSelection(TArray<AActor*>& Out) const;
+
+    // --- снап к деталям ---
+    // Пытается прилепить призрак к ближайшей совместимой точке стыковки соседней детали.
+    // Cursor — точка на земле под курсором. true — призрак установлен (трансформ задан).
+    bool TrySnapGhost(const FVector& Cursor);
+    // Отладочная отрисовка кадров точек стыковки соседних деталей и призрака.
+    void DrawSnapDebug();
     void MoveSelectionTo(AActor* Lead, const FVector& NewLoc);
     void RotateSelection(const FQuat& Q, const FVector& Pivot);
 };

@@ -1,4 +1,5 @@
 #include "NMSViewportClient.h"
+#include "NMSSnapData.h"
 #include "Engine/Engine.h"
 #include "Engine/Font.h"
 #include "CanvasTypes.h"
@@ -296,6 +297,7 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
     // Гизмо перемещения (цветные оси) поверх — добавляется к тем же линиям.
     DrawGizmo();
     DrawCurvePreview();
+    DrawSnapDebug();   // кадры точек стыковки (после Flush в DrawGrid)
 
     GetRendererModule().BeginRenderingViewFamily(Canvas, &ViewFamily);
 
@@ -303,6 +305,19 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
     DrawSelection(Canvas, View);
     DrawCompass(Canvas, Size);
     DrawMarquee(Canvas, Size);
+
+    // Индикатор режима снапа при наличии выбранной детали.
+    if (SelectedActor.IsValid())
+    {
+        if (UFont* Font = GEngine ? GEngine->GetMediumFont() : nullptr)
+        {
+            const FString Txt = bSnapToParts ? TEXT("СНАП: ВКЛ  (V)") : TEXT("СНАП: ВЫКЛ  (V)");
+            const FLinearColor Col = bSnapToParts ? FLinearColor(0.35f, 1.f, 0.45f) : FLinearColor(1.f, 0.6f, 0.3f);
+            FCanvasTextItem T(FVector2D(16.f, 16.f), FText::FromString(Txt), Font, Col);
+            T.EnableShadow(FLinearColor::Black);
+            Canvas->DrawItem(T);
+        }
+    }
 
     // НЕ вызываем InvalidateDisplay здесь — это рекурсия (Draw->invalidate->Draw)
     // и stack overflow. Непрерывный тик вьюпорта сделаем правильно через
@@ -573,6 +588,63 @@ AActor* FNMSViewportClient::GetSelectedActor() const
     return SelectedActor.Get();
 }
 
+void FNMSViewportClient::ApplyPartMaterial(AActor* Actor)
+{
+    if (!Actor) return;
+    UStaticMeshComponent* C = Actor->FindComponentByClass<UStaticMeshComponent>();
+    if (!C) return;
+
+    // Текстурный материал (вид как в игре), если UI передал атлас; иначе плоский цвет.
+    UMaterialInterface* BaseM = nullptr;
+    UTexture2D* Tex = nullptr;
+    if (!PendingBaseTex.IsEmpty())
+    {
+        Tex = LoadObject<UTexture2D>(nullptr, *PendingBaseTex);
+        if (Tex) BaseM = LoadObject<UMaterialInterface>(nullptr, bUnlitParts
+            ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit")
+            : TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
+    }
+    if (!BaseM) BaseM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_BasePart.M_BasePart"));
+    if (!BaseM) return;
+
+    UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(BaseM, C);
+    if (Tex)
+    {
+        MID->SetTextureParameterValue(TEXT("BaseTex"), Tex);
+        if (UTexture2D* Mask = LoadObject<UTexture2D>(nullptr, *PendingPaintMask))
+            MID->SetTextureParameterValue(TEXT("PaintMask"), Mask);
+        if (UTexture2D* Norm = LoadObject<UTexture2D>(nullptr, *PendingNormalTex))
+            MID->SetTextureParameterValue(TEXT("NormalTex"), Norm);
+        if (UTexture2D* Mk = LoadObject<UTexture2D>(nullptr, *PendingMasksTex))
+        {
+            MID->SetTextureParameterValue(TEXT("MasksTex"), Mk);
+            MID->SetScalarParameterValue(TEXT("UseMasks"), 1.f);
+        }
+        if (UTexture2D* Oc = LoadObject<UTexture2D>(nullptr, *PendingOccTex))
+            MID->SetTextureParameterValue(TEXT("OcclusionTex"), Oc);
+        MID->SetVectorParameterValue(TEXT("Color"), PendingPartColor);
+        MID->SetVectorParameterValue(TEXT("Color2"), PendingPartColor2);
+    }
+    else
+    {
+        MID->SetVectorParameterValue(TEXT("Color"), PendingPartColor);
+    }
+    const int32 N = C->GetNumMaterials();
+    for (int32 i = 0; i < N; ++i) C->SetMaterial(i, MID);
+}
+
+void FNMSViewportClient::SelectSpawnedActor(AActor* Actor)
+{
+    if (!Actor) return;
+    ClearSelection();                 // снять прошлый выбор (восстановит материалы)
+    SetSelectedActor(Actor);          // показать гизмо, фокус орбиты на детали
+    SelectedActors.Reset();
+    SelectedActors.Add(Actor);
+    ApplyHighlight();                 // подсветка выбранной (как при обычном выборе)
+    TransformMode = ENMSTransformMode::Move; // сразу режим перемещения (гизмо/сетка/снап)
+}
+
 void FNMSViewportClient::StartPlacing(AActor* GhostActor)
 {
     SetSelectedActor(GhostActor);
@@ -600,18 +672,169 @@ void FNMSViewportClient::CancelPlacing()
 void FNMSViewportClient::MouseMove(FViewport* Viewport, int32 X, int32 Y)
 {
     if (bMarquee && Viewport) { MarqCur = FVector2D((float)X, (float)Y); Viewport->Invalidate(); return; }
-    // Голограмма следует за курсором по сетке (как в игре)
+    // Деталь следует за курсором (снап к деталям / сетка), как при постройке.
     if (bPlacingGhost && SelectedActor.IsValid())
     {
         FVector G;
         if (DeprojectMouseToGround(Viewport, G))
         {
-            G.X = FMath::GridSnap(G.X, MoveSnap);
-            G.Y = FMath::GridSnap(G.Y, MoveSnap);
-            G.Z = 0.f;
-            SelectedActor->SetActorLocation(G);
+            const bool bSnapped = bSnapToParts && TrySnapGhost(G);
+            if (!bSnapped)
+            {
+                G.X = FMath::GridSnap(G.X, MoveSnap);
+                G.Y = FMath::GridSnap(G.Y, MoveSnap);
+                G.Z = 0.f;
+                SelectedActor->SetActorLocation(G);
+            }
             if (Viewport) Viewport->Invalidate();
         }
+    }
+}
+
+// ID детали (ObjectID) из тега актёра. Пусто — не наша деталь.
+static FString NMS_ActorPartId(const AActor* A)
+{
+    if (!A) return FString();
+    for (const FName& Tg : A->Tags)
+    {
+        FString S = Tg.ToString();
+        if (S.StartsWith(TEXT("UD:"))) continue;        // тег цвета/материала
+        if (S == TEXT("IMPORT") || S == TEXT("NMS_CABLE")) return FString();
+        S.RemoveFromStart(TEXT("^"));
+        return S;
+    }
+    return FString();
+}
+
+// Пытается прилепить призрак к ближайшей совместимой точке стыковки соседней детали.
+bool FNMSViewportClient::TrySnapGhost(const FVector& Cursor)
+{
+    AActor* Ghost = SelectedActor.Get();
+    if (!Ghost) return false;
+
+    FNMSSnapData& SD = FNMSSnapData::Get();
+    SD.EnsureLoaded();
+
+    const FString GhostId = NMS_ActorPartId(Ghost);
+    const FString* GhostGroupName = SD.GroupForPart(GhostId);
+    if (!GhostGroupName) return false;
+    const FNMSSnapGroup* GhostGroup = SD.GetGroup(*GhostGroupName);
+    if (!GhostGroup) return false;
+
+    UWorld* World = GetRenderWorld();
+    if (!World) return false;
+
+    const FMatrix Flip = FRotationMatrix(FRotator(0.f, 180.f, 0.f)); // разворот «лицом к лицу» вокруг Z
+
+    float   BestDist = SnapRadius;
+    bool    bFound   = false;
+    FMatrix BestGhost = FMatrix::Identity;
+
+    for (TActorIterator<AActor> It(World); It; ++It)
+    {
+        AActor* Other = *It;
+        if (!Other || Other == Ghost) continue;
+        if (!Other->GetActorNameOrLabel().StartsWith(TEXT("NMS_"))) continue;
+
+        const FString OtherId = NMS_ActorPartId(Other);
+        const FString* OtherGroupName = SD.GroupForPart(OtherId);
+        if (!OtherGroupName) continue;
+        const FNMSSnapGroup* OtherGroup = SD.GetGroup(*OtherGroupName);
+        if (!OtherGroup) continue;
+
+        TArray<FString> OldNames, NewNames;
+        if (!SD.GetPair(*OtherGroupName, *GhostGroupName, OldNames, NewNames)) continue;
+        if (NewNames.Num() == 0) continue;
+
+        const FMatrix Told = Other->GetActorTransform().ToMatrixWithScale();
+
+        for (const FString& OldName : OldNames)
+        {
+            const FNMSSnapPoint* OldSp = OtherGroup->FindPoint(OldName);
+            if (!OldSp) continue;
+
+            // мир точки стыковки старой детали: локаль * актёр (row-vector)
+            const FMatrix OldLocal = OldSp->LocalXform.ToMatrixWithScale();
+            const FMatrix WOld = OldLocal * Told;
+            const FVector WPos = WOld.GetOrigin();
+
+            // Дистанция по плоскости земли: курсор спроецирован на Z=0, поэтому 3D-метрика
+            // ложно тянула бы к нижним точкам. По XY выбор края детали стабилен.
+            const float D = FVector::Dist2D(WPos, Cursor);
+            if (D >= BestDist) continue;
+
+            // ответная точка на призраке: сначала по имени opposite, иначе первая валидная
+            const FNMSSnapPoint* NewSp = nullptr;
+            if (!OldSp->Opposite.IsEmpty() && NewNames.Contains(OldSp->Opposite))
+                NewSp = GhostGroup->FindPoint(OldSp->Opposite);
+            if (!NewSp)
+            {
+                for (const FString& NewName : NewNames)
+                    if ((NewSp = GhostGroup->FindPoint(NewName)) != nullptr) break;
+            }
+            if (!NewSp) continue;
+
+            // Хотим: NewLocal * Tghost = Flip * WOld
+            //  => Tghost = NewLocal^-1 * Flip * WOld
+            const FMatrix NewLocal = NewSp->LocalXform.ToMatrixWithScale();
+            const FMatrix Tghost = NewLocal.Inverse() * Flip * WOld;
+
+            BestDist  = D;
+            BestGhost = Tghost;
+            bFound    = true;
+        }
+    }
+
+    if (bFound)
+    {
+        FTransform GT;
+        GT.SetFromMatrix(BestGhost);
+        GT.SetScale3D(Ghost->GetActorScale3D()); // сохранить масштаб детали
+        Ghost->SetActorTransform(GT);
+        return true;
+    }
+    return false;
+}
+
+// Рисует кадры точек стыковки (RGB-оси) у ближайших деталей и у призрака.
+// Помогает на глаз проверить корректность матриц снапа.
+void FNMSViewportClient::DrawSnapDebug()
+{
+    if (!bShowSnapPoints || !PreviewScene.IsValid()) return;
+    UWorld* World = PreviewScene->GetWorld();
+    if (!World) return;
+    ULineBatchComponent* LB = World->GetLineBatcher(UWorld::ELineBatcherType::WorldPersistent);
+    if (!LB) return;
+
+    FNMSSnapData& SD = FNMSSnapData::Get();
+    SD.EnsureLoaded();
+
+    const float Ax = 25.f; // длина оси, см
+    auto DrawFrame = [&](const FMatrix& W)
+    {
+        const FVector O = W.GetOrigin();
+        LB->DrawLine(O, O + W.GetScaledAxis(EAxis::X) * Ax, FLinearColor::Red,   SDPG_Foreground, 2.f, 0.f);
+        LB->DrawLine(O, O + W.GetScaledAxis(EAxis::Y) * Ax, FLinearColor::Green, SDPG_Foreground, 2.f, 0.f);
+        LB->DrawLine(O, O + W.GetScaledAxis(EAxis::Z) * Ax, FLinearColor::Blue,  SDPG_Foreground, 2.f, 0.f);
+    };
+
+    const FVector Around = SelectedActor.IsValid() ? SelectedActor->GetActorLocation() : CameraLocation;
+
+    for (TActorIterator<AActor> It(World); It; ++It)
+    {
+        AActor* A = *It;
+        if (!A || !A->GetActorNameOrLabel().StartsWith(TEXT("NMS_"))) continue;
+        if (FVector::Dist(A->GetActorLocation(), Around) > 2000.f) continue;
+
+        const FString Id = NMS_ActorPartId(A);
+        const FString* GName = SD.GroupForPart(Id);
+        if (!GName) continue;
+        const FNMSSnapGroup* Grp = SD.GetGroup(*GName);
+        if (!Grp) continue;
+
+        const FMatrix T = A->GetActorTransform().ToMatrixWithScale();
+        for (const FNMSSnapPoint& P : Grp->Points)
+            DrawFrame(P.LocalXform.ToMatrixWithScale() * T);
     }
 }
 
@@ -885,6 +1108,12 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     const bool bPressed = (EventArgs.Event == IE_Pressed);
     const bool bReleased = (EventArgs.Event == IE_Released);
 
+    // Любой клик мышью по сцене -> забрать клавиатурный фокус на вьюпорт,
+    // иначе WASD/QE-полёт не доходит до InputKey (как в Unreal: кликнул в
+    // окно -> можно летать). Особенно важно для ПКМ-полёта.
+    if (bPressed && (Key == EKeys::LeftMouseButton || Key == EKeys::RightMouseButton || Key == EKeys::MiddleMouseButton))
+        if (OnRequestFocus) OnRequestFocus();
+
     // ПКМ -> режим полёта + захват мыши
     if (Key == EKeys::RightMouseButton)
     {
@@ -893,26 +1122,16 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
         return true;
     }
 
-    // Esc -> выйти из режима проводки
-    if (Key == EKeys::Escape && bPressed && bWiringMode)
+    // Esc -> УНИВЕРСАЛЬНАЯ ОТМЕНА: одно нажатие отменяет ВСЁ текущее —
+    // выходит из любого режима (проводка/кривая), убирает призрак установки,
+    // снимает рамку выделения и тягу гизмо, сбрасывает выделение деталей.
+    if (Key == EKeys::Escape && bPressed)
     {
-        bWiringMode = false; bHaveWireA = false;
-        if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
-        return true;
-    }
-    // Esc -> отменить режим установки детали (убрать призрак)
-    if (Key == EKeys::Escape && bPressed && bPlacingGhost)
-    {
-        bPlacingGhost = false;
-        if (SelectedActor.IsValid()) { SelectedActor->Destroy(); SelectedActor = nullptr; }
-        if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
-        return true;
-    }
-    // Esc -> выйти из режима кривой / очистить точки
-    if (Key == EKeys::Escape && bPressed && bCurveMode)
-    {
-        CurvePoints.Reset(); bCurveMode = false;
-        if (OnCurveChanged) OnCurveChanged();
+        if (bWiringMode)   { bWiringMode = false; bHaveWireA = false; }
+        if (bPlacingGhost) { CancelPlacing(); }                 // убрать голограмму
+        if (bCurveMode)    { CurvePoints.Reset(); bCurveMode = false; if (OnCurveChanged) OnCurveChanged(); }
+        bMarquee = false;                                       // отменить рамку выбора
+        ClearSelection();                                       // снять выделение + подсветку, сбросить тягу/ось
         if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
         return true;
     }
@@ -926,6 +1145,22 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     if (Key == EKeys::G && bPressed)
     {
         bShowGrid = !bShowGrid;
+        if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+        return true;
+    }
+
+    // V -> вкл/выкл снап к деталям (как кнопка снапа в игре)
+    if (Key == EKeys::V && bPressed)
+    {
+        bSnapToParts = !bSnapToParts;
+        UE_LOG(LogTemp, Log, TEXT("NMS Snap: снап к деталям %s"), bSnapToParts ? TEXT("ВКЛ") : TEXT("ВЫКЛ"));
+        if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+        return true;
+    }
+    // B -> показать/скрыть точки стыковки (отладка)
+    if (Key == EKeys::B && bPressed)
+    {
+        bShowSnapPoints = !bShowSnapPoints;
         if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
         return true;
     }
@@ -994,56 +1229,12 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
             if (DeprojectMouseToGround(EventArgs.Viewport, G)) { G.Z = 0.f; CurvePoints.Add(G); if (OnCurveChanged) OnCurveChanged(); if (EventArgs.Viewport) EventArgs.Viewport->Invalidate(); }
             return true;
         }
-        // Подтверждение размещения голограммы: ЛКМ ставит деталь (как в игре)
+        // Постановка детали, следующей за курсором: ЛКМ фиксирует и ставит следующую.
         if (bPlacingGhost && SelectedActor.IsValid())
         {
-            bPlacingGhost = false;
-            if (UStaticMeshComponent* C = SelectedActor->FindComponentByClass<UStaticMeshComponent>())
-            {
-                // Текстурный материал (вид как в игре), если UI передал атлас;
-                // иначе плоский цвет, как раньше.
-                UMaterialInterface* BaseM = nullptr;
-                UTexture2D* Tex = nullptr;
-                if (!PendingBaseTex.IsEmpty())
-                {
-                    Tex = LoadObject<UTexture2D>(nullptr, *PendingBaseTex);
-                    if (Tex) BaseM = LoadObject<UMaterialInterface>(nullptr, bUnlitParts
-                        ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit")
-                        : TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
-                }
-                if (!BaseM) BaseM = LoadObject<UMaterialInterface>(nullptr,
-                    TEXT("/Game/NMSBaseBuilder/Materials/M_BasePart.M_BasePart"));
-                if (BaseM)
-                {
-                    UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(BaseM, C);
-                    if (Tex)
-                    {
-                        MID->SetTextureParameterValue(TEXT("BaseTex"), Tex);
-                        if (UTexture2D* Mask = LoadObject<UTexture2D>(nullptr, *PendingPaintMask))
-                            MID->SetTextureParameterValue(TEXT("PaintMask"), Mask);
-                        if (UTexture2D* Norm = LoadObject<UTexture2D>(nullptr, *PendingNormalTex))
-                            MID->SetTextureParameterValue(TEXT("NormalTex"), Norm);
-                        if (UTexture2D* Mk = LoadObject<UTexture2D>(nullptr, *PendingMasksTex))
-                        {
-                            MID->SetTextureParameterValue(TEXT("MasksTex"), Mk);
-                            MID->SetScalarParameterValue(TEXT("UseMasks"), 1.f);
-                        }
-                        if (UTexture2D* Oc = LoadObject<UTexture2D>(nullptr, *PendingOccTex))
-                            MID->SetTextureParameterValue(TEXT("OcclusionTex"), Oc);
-                        // дефолтные цвета покраски (как в игре): основной + вторичный
-                        MID->SetVectorParameterValue(TEXT("Color"), PendingPartColor);
-                        MID->SetVectorParameterValue(TEXT("Color2"), PendingPartColor2);
-                    }
-                    else
-                    {
-                        MID->SetVectorParameterValue(TEXT("Color"), PendingPartColor);
-                    }
-                    const int32 N = C->GetNumMaterials();
-                    for (int32 i = 0; i < N; ++i) C->SetMaterial(i, MID);
-                }
-            }
+            bPlacingGhost = false;            // материал уже настоящий (применён при спавне)
             if (OnEdited) OnEdited();
-            if (bContinuousPlace && OnPlaceContinue) OnPlaceContinue(); // ставим следующую
+            if (bContinuousPlace && OnPlaceContinue) OnPlaceContinue(); // следующая деталь
             if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
             return true;
         }
@@ -1236,10 +1427,20 @@ bool FNMSViewportClient::InputAxis(const FInputKeyEventArgs& EventArgs)
             FVector G;
             if (DeprojectMouseToGround(EventArgs.Viewport, G))
             {
-                const float NX = FMath::GridSnap(G.X + DragOffset.X, MoveSnap);
-                const float NY = FMath::GridSnap(G.Y + DragOffset.Y, MoveSnap);
-                const FVector L = Sel->GetActorLocation();
-                MoveSelectionTo(Sel, FVector(NX, NY, L.Z));
+                // снап к соседней детали работает и для уже поставленной (одиночный выбор)
+                const bool bSingle = (SelectedActors.Num() <= 1);
+                const FVector Target(G.X + DragOffset.X, G.Y + DragOffset.Y, 0.f);
+                if (bSnapToParts && bSingle && TrySnapGhost(Target))
+                {
+                    // TrySnapGhost задал полный трансформ выбранной детали
+                }
+                else
+                {
+                    const float NX = FMath::GridSnap(G.X + DragOffset.X, MoveSnap);
+                    const float NY = FMath::GridSnap(G.Y + DragOffset.Y, MoveSnap);
+                    const FVector L = Sel->GetActorLocation();
+                    MoveSelectionTo(Sel, FVector(NX, NY, L.Z));
+                }
             }
             return true;
         }

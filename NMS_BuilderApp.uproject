@@ -5,6 +5,11 @@
 	"Description": "",
 	"Modules": [
 		{
+			"Name": "NMS_BuilderCore",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
 			"Name": "NMS_BuilderApp",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"

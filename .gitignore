@@ -10,9 +10,13 @@ Saved/
 # Backups / auto-generated
 Backup/
 _pre_restore_*/
+_archive/
 *.bak
 *.bak_*
 *.bak2_*
+*.before_*
+*.broken_*
+*.rot180hack
 UpgradeLog.htm
 
 # Visual Studio / Rider project files

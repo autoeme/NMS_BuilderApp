@@ -1,0 +1,77 @@
+// Общий приватный заголовок включений для всех TU класса SNMSBuilderUI.
+// Содержит блок #include исходного SNMSBuilderUI.cpp + 4 вынесенных заголовка
+// (NMSStyle / NMSLocalization / NMSPartVisuals / NMSUIHelpers), чтобы не
+// дублировать список инклудов в каждом .cpp класса.
+//
+// ВАЖНО: LOCTEXT_NAMESPACE сюда НЕ кладём — #define/#undef повторяется в каждом
+// .cpp отдельно (требование UE).
+#pragma once
+
+#include "SNMSBuilderUI.h"
+#include "NMSStyle.h"
+#include "NMSLocalization.h"
+#include "NMSPartVisuals.h"
+#include "NMSUIHelpers.h"
+#include "NMSBaseDocument.h"
+#include "NMSDocumentAdapter.h"
+#include "NMSSceneAdapter.h"
+#include "NMSSaveFile.h"
+#include "Framework/MultiBox/MultiBoxBuilder.h"
+#include "Widgets/Input/SEditableTextBox.h"
+#include "Widgets/SWindow.h"
+
+#include "Widgets/Layout/SSplitter.h"
+#include "Widgets/Layout/SBorder.h"
+#include "Widgets/Layout/SBox.h"
+#include "Widgets/Layout/SScrollBox.h"
+#include "Widgets/Layout/SWrapBox.h"
+#include "Widgets/Layout/SUniformGridPanel.h"
+#include "Widgets/Layout/SSeparator.h"
+#include "Widgets/Text/STextBlock.h"
+#include "Widgets/Input/SButton.h"
+#include "Widgets/Input/SSearchBox.h"
+#include "Widgets/Input/SSlider.h"
+#include "Widgets/Input/STextComboBox.h"
+#include "Widgets/Input/SMenuAnchor.h"
+#include "NMSBaseManager.h"
+#include "Editor.h"
+#include "Engine/StaticMeshActor.h"
+#include "Engine/StaticMesh.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/InstancedStaticMeshComponent.h"
+#include "Materials/MaterialInterface.h"
+#include "Materials/MaterialInstanceDynamic.h"
+#include "Engine/Texture2D.h"
+#include "Widgets/Images/SImage.h"
+#include "Widgets/Views/SListView.h"
+#include "Widgets/Input/SNumericEntryBox.h"
+#include "Widgets/SOverlay.h"
+#include "Widgets/Input/SComboButton.h"
+#include "Brushes/SlateDynamicImageBrush.h"
+#include "UObject/ConstructorHelpers.h"
+#include "DesktopPlatformModule.h"
+#include "IDesktopPlatform.h"
+#include "NMSModelImporter.h"
+#include "Framework/Application/SlateApplication.h"
+#include "EngineUtils.h"
+#include "GameFramework/Actor.h"
+#include "Widgets/SBoxPanel.h"
+#include "Widgets/SViewport.h"
+#include "Slate/SceneViewport.h"
+#include "NMSViewportClient.h"
+#include "Widgets/Views/STileView.h"
+#include "Widgets/Views/STableRow.h"
+#include "Styling/CoreStyle.h"
+#include "Styling/SlateTypes.h"
+#include "Styling/SlateBrush.h"
+#include "Brushes/SlateColorBrush.h"
+
+#include "Engine/DataTable.h"
+#include "Misc/FileHelper.h"
+#include "Misc/Paths.h"
+#include "HAL/FileManager.h"   // список PNG-фонов (кнопка ФОН)
+#include "HAL/IConsoleManager.h" // отключение Slate-троттлинга (плавная камера)
+#include "HAL/PlatformApplicationMisc.h" // буфер обмена (импорт/экспорт базы)
+#include "Serialization/JsonReader.h"
+#include "Serialization/JsonSerializer.h"
+#include "Dom/JsonObject.h"

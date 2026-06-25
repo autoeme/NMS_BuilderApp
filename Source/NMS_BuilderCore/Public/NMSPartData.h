@@ -10,7 +10,7 @@
  * Поля совпадают с ключами JSON (RowName = поле Name).
  */
 USTRUCT(BlueprintType)
-struct FNMSPartData : public FTableRowBase
+struct NMS_BUILDERCORE_API FNMSPartData : public FTableRowBase
 {
     GENERATED_BODY()
 

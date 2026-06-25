@@ -10,7 +10,8 @@ public class NMS_BuilderApp : ModuleRules
 
 		PublicDependencyModuleNames.AddRange(new string[] {
 			"Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput",
-			"Json", "JsonUtilities"
+			"Json", "JsonUtilities",
+			"NMS_BuilderCore"   // доменное/парсинг-ядро (модель, цвета, .hg/.blend, JSON)
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {
@@ -33,12 +34,6 @@ public class NMS_BuilderApp : ModuleRules
 		// editor, и при необходимости в standalone (через target settings).
 		PrivateDependencyModuleNames.Add("DesktopPlatform");
 
-		// zstd (только распаковка, исходники v1.4.9 в ThirdParty/zstdlib) —
-		// чтение .blend напрямую, без установленного Blender.
-		PrivateIncludePaths.Add(System.IO.Path.Combine(ModuleDirectory, "ThirdParty/zstdlib"));
-		PrivateIncludePaths.Add(System.IO.Path.Combine(ModuleDirectory, "ThirdParty/zstdlib/common"));
-		PrivateIncludePaths.Add(System.IO.Path.Combine(ModuleDirectory, "ThirdParty/zstdlib/decompress"));
-		PrivateDefinitions.Add("XXH_NAMESPACE=NMSZ_"); // не конфликтуем с xxhash движка
-		PrivateDefinitions.Add("ZSTD_DISABLE_ASM=1");  // без .S-файла (MSVC он и не нужен)
+		// zstd и чтение .hg/.blend переехали в модуль NMS_BuilderCore.
 	}
 }

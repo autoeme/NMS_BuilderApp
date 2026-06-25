@@ -20,5 +20,5 @@ namespace NMSBlend
      * Поддержка: Blender 2.8x–5.x (старый 12-байтовый и новый 17-байтовый заголовок).
      * Детали = объекты со свойством ObjectID (как ставит NMS-плагин).
      */
-    bool ReadParts(const FString& FilePath, TArray<FNMSBlendPart>& Out, FString& OutError);
+    NMS_BUILDERCORE_API bool ReadParts(const FString& FilePath, TArray<FNMSBlendPart>& Out, FString& OutError);
 }

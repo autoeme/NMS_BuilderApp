@@ -24,7 +24,7 @@ struct FNMSPlacedObject
 };
 
 UCLASS(BlueprintType)
-class NMS_BUILDERAPP_API UNMSBaseManager : public UObject
+class NMS_BUILDERCORE_API UNMSBaseManager : public UObject
 {
     GENERATED_BODY()
 
