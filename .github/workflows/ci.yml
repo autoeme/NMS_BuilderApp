@@ -1,0 +1,82 @@
+name: CI
+
+# Запускается на пуш в master и на Pull Request.
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+  workflow_dispatch:   # можно запустить вручную из вкладки Actions
+
+jobs:
+  # ── Лёгкие проверки: работают на БЕСПЛАТНЫХ раннерах (движок не нужен) ──
+  # Форсят правила проекта из CLAUDE.md: нет хардкод-путей и backup-мусора.
+  hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Нет хардкод-путей пользователя (правило CLAUDE.md #4)
+        run: |
+          if grep -rn 'TEXT("C:/Users' Source/; then
+            echo "::error::Найден жёстко прописанный путь C:/Users в Source/"
+            exit 1
+          fi
+          echo "OK: хардкод-путей C:/Users нет"
+
+      - name: Нет backup/broken-файлов в Source
+        run: |
+          junk=$(find Source -type f \( -name '*.bak' -o -name '*.bak_*' \
+                   -o -name '*.before_*' -o -name '*.broken_*' -o -name '*.rot180hack' \) || true)
+          if [ -n "$junk" ]; then
+            echo "::error::В Source/ есть backup/broken-файлы:"; echo "$junk"
+            exit 1
+          fi
+          echo "OK: backup/broken-файлов в Source/ нет"
+
+  # ── Полная сборка + 12 автотестов. Требует SELF-HOSTED раннера с UE 5.8. ──
+  # По умолчанию ПРОПУСКАЕТСЯ (skipped), чтобы не висеть в очереди без раннера.
+  # Включить: в настройках репозитория задать переменную HAS_UE_RUNNER=true
+  # и зарегистрировать self-hosted раннер с метками [self-hosted, windows, ue5].
+  build-and-test:
+    if: ${{ vars.HAS_UE_RUNNER == 'true' }}
+    runs-on: [self-hosted, windows, ue5]
+    env:
+      # Путь к движку на раннере. Переопределяется переменной репозитория UE_ROOT.
+      UE_ROOT: ${{ vars.UE_ROOT || 'C:\Program Files\Epic Games\UE_5.8' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true   # подтянуть бинарные ассеты (Content/* через Git LFS)
+
+      - name: Собрать редакторную цель
+        shell: pwsh
+        run: |
+          $build = Join-Path $env:UE_ROOT 'Engine\Build\BatchFiles\Build.bat'
+          $proj  = Join-Path $env:GITHUB_WORKSPACE 'NMS_BuilderApp.uproject'
+          & $build NMS_BuilderAppEditor Win64 Development -Project="$proj" -WaitMutex
+          if ($LASTEXITCODE -ne 0) { throw "Сборка упала (exit $LASTEXITCODE)" }
+
+      - name: Прогнать автотесты (NMS.*)
+        shell: pwsh
+        run: |
+          $ed   = Join-Path $env:UE_ROOT 'Engine\Binaries\Win64\UnrealEditor-Cmd.exe'
+          $proj = Join-Path $env:GITHUB_WORKSPACE 'NMS_BuilderApp.uproject'
+          $rep  = Join-Path $env:GITHUB_WORKSPACE 'TestReport'
+          & $ed $proj -ExecCmds="Automation RunTests NMS;Quit" `
+                -unattended -nopause -nullrhi -nosplash -NoSound -ReportExportPath="$rep"
+          $idx = Join-Path $rep 'index.json'
+          if (-not (Test-Path $idx)) { throw "Отчёт тестов не создан — прогон не состоялся" }
+          $d = Get-Content $idx -Raw | ConvertFrom-Json
+          Write-Host ("succeeded={0} failed={1} total={2}" -f $d.succeeded, $d.failed, $d.tests.Count)
+          if ($d.failed -gt 0) {
+            foreach ($t in $d.tests) { if ($t.state -ne 'Success') { Write-Host "FAILED: $($t.fullTestPath)" } }
+            throw "Есть упавшие тесты: $($d.failed)"
+          }
+
+      - name: Сохранить отчёт тестов
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: TestReport/
+          if-no-files-found: ignore
