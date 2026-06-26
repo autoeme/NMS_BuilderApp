@@ -11309,14 +11309,6 @@
    "norm": "typeb_interiortrim1_base_normal",
    "cmask": "typeb_interiortrim1_base_colourisemask",
    "type": "lit"
-  },
-  {
-   "mat": "holoscroll_mat2",
-   "tex": "typeb_holograms",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "unlit"
   }
  ],
  "FOS_BIRD": [
@@ -25385,6 +25377,1294 @@
    "norm": null,
    "cmask": null,
    "type": "unlit"
+  }
+ ],
+ "FOS_BIRD_DIS": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimopaquemat3",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_BI_DIS": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_BODY_DISP": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_BODY_MNT": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_GRUN_DIS": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_LIMBS_DISP": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_LIMBS_MNT": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_SKULL_DISP": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_SKULL_MNT": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_TAIL_DISP": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "FOS_TAIL_MNT": [
+  {
+   "mat": "interiortrimopaquemat1",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortrimmat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiorlights_mat",
+   "tex": "buildablebuildings_interiorfreighterlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pomsheet_mat2",
+   "tex": "typeb_interiortrim1_base",
+   "masks": "typeb_interiortrim1_base_masks",
+   "norm": "typeb_interiortrim1_base_normal",
+   "cmask": "typeb_interiortrim1_base_colourisemask",
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_R1": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_red",
+   "masks": "decoration_swarmflag_red_masks",
+   "norm": "decoration_swarmflag_red_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_G1": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_green",
+   "masks": "decoration_swarmflag_green_masks",
+   "norm": "decoration_swarmflag_green_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_B1": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_blue",
+   "masks": "decoration_swarmflag_blue_masks",
+   "norm": "decoration_swarmflag_blue_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_R3": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_red",
+   "masks": "decoration_swarmflag_red_masks",
+   "norm": "decoration_swarmflag_red_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_G3": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_green",
+   "masks": "decoration_swarmflag_green_masks",
+   "norm": "decoration_swarmflag_green_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_B3": [
+  {
+   "mat": "stonetrimmat19",
+   "tex": "basicparts_crossmaterialtrim",
+   "masks": "basicparts_crossmaterialtrim_masks",
+   "norm": "basicparts_crossmaterialtrim_normal",
+   "cmask": "basicparts_crossmaterialtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmflagmat",
+   "tex": "decoration_swarmflag_blue",
+   "masks": "decoration_swarmflag_blue_masks",
+   "norm": "decoration_swarmflag_blue_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "SWARM_FLAG_R2": [
+  {
+   "mat": "tilingtexture_mat1",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmwalldrapemat",
+   "tex": "decoration_swarmwalldrape_red",
+   "masks": "decoration_swarmwalldrape_red_masks",
+   "norm": "decoration_swarmwalldrape_red_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "lights1_mat1",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  }
+ ],
+ "SWARM_FLAG_G2": [
+  {
+   "mat": "tilingtexture_mat1",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmwalldrapemat",
+   "tex": "decoration_swarmwalldrape_green",
+   "masks": "decoration_swarmwalldrape_green_masks",
+   "norm": "decoration_swarmwalldrape_green_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "lights1_mat1",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  }
+ ],
+ "SWARM_FLAG_B2": [
+  {
+   "mat": "tilingtexture_mat1",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "swarmwalldrapemat",
+   "tex": "decoration_swarmwalldrape_blue",
+   "masks": "decoration_swarmwalldrape_blue_masks",
+   "norm": "decoration_swarmwalldrape_blue_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "lights1_mat1",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  }
+ ],
+ "C_WALL_WINDOW": [
+  {
+   "mat": "warintmetaldetail_mat",
+   "tex": "warrior_warriorintdetail_baseint",
+   "masks": "warrior_warriorintdetail_baseint_masks",
+   "norm": "warrior_warriorintdetail_baseint_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "warriorlights_mat",
+   "tex": "warrior_warriorlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "lambert1",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "metaltiling_mat",
+   "tex": "materials_metaltiling_base",
+   "masks": "materials_metaltiling_base_masks",
+   "norm": "materials_metaltiling_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "concrete_mat",
+   "tex": "materials_concretetiling_base",
+   "masks": "materials_concretetiling_base_masks",
+   "norm": "materials_concretetiling_base_normal",
+   "cmask": "materials_concretetiling_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glass_mat",
+   "tex": "buildablebuildings_incubatorfield_base_1",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "F_WALL_WIN": [
+  {
+   "mat": "fiberglasstrimmat",
+   "tex": "basicparts_fiberglasstrim",
+   "masks": "basicparts_fiberglasstrim_masks",
+   "norm": "basicparts_fiberglasstrim_normal",
+   "cmask": "basicparts_fiberglasstrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "M_WALL_WINDOW": [
+  {
+   "mat": "warintmetaldetail_mat",
+   "tex": "warrior_warriorintdetail_baseint",
+   "masks": "warrior_warriorintdetail_baseint_masks",
+   "norm": "warrior_warriorintdetail_baseint_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "warriorlights_mat",
+   "tex": "warrior_warriorlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "boltshadow_mat",
+   "tex": "basicparts_boltshadow",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "basic_wall4_tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "metaltiling_mat1",
+   "tex": "materials_metaltiling_base",
+   "masks": "materials_metaltiling_base_masks",
+   "norm": "materials_metaltiling_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "W_WALL_WINDOW": [
+  {
+   "mat": "boltshadow_mat",
+   "tex": "basicparts_boltshadow",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "warriorlights_mat",
+   "tex": "warrior_warriorlights",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "wood_mat2",
+   "tex": "materials_woodtiling_base",
+   "masks": "materials_woodtiling_base_masks",
+   "norm": "materials_woodtiling_base_normal",
+   "cmask": "materials_woodtiling_base_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "lambert2",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "warintmetaldetail_mat",
+   "tex": "warrior_warriorintdetail_baseint",
+   "masks": "warrior_warriorintdetail_baseint_masks",
+   "norm": "warrior_warriorintdetail_baseint_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "metaltiling_mat7",
+   "tex": "materials_metaltiling_base",
+   "masks": "materials_metaltiling_base_masks",
+   "norm": "materials_metaltiling_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "BIOROOM_DOOR": [
+  {
+   "mat": "lightglowmat",
+   "tex": "explorer_light",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "CORRIDOR_JOIN": [
+  {
+   "mat": "interiortiling_mat",
+   "tex": "buildablebuildings_interiortilingtexture",
+   "masks": "buildablebuildings_interiortilingtexture_masks",
+   "norm": "buildablebuildings_interiortilingtexture_normal",
+   "cmask": "buildablebuildings_interiortilingtexture_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glass_mat",
+   "tex": "buildablebuildings_incubatorfield_base_1",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "corridorlight_mat",
+   "tex": "buildablebuildings_lights_long_1",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "pulse_mat",
+   "tex": "beam_beamcorered_pulse",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "waterproxymat",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "waterproxyinternalmat",
+   "tex": null,
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  }
+ ],
+ "CORRIDOR_SIDEWINDOW": [
+  {
+   "mat": "tilingtexture_mat5",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortiling_mat",
+   "tex": "buildablebuildings_interiortilingtexture",
+   "masks": "buildablebuildings_interiortilingtexture_masks",
+   "norm": "buildablebuildings_interiortilingtexture_normal",
+   "cmask": "buildablebuildings_interiortilingtexture_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "CORRIDOR_TOPWINDOW": [
+  {
+   "mat": "corridor_sidewindow_tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "corridor_sidewindow_interiortiling_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "GFLOOR": [
+  {
+   "mat": "fiberglasstrimmat1",
+   "tex": "basicparts_fiberglasstrim",
+   "masks": "basicparts_fiberglasstrim_masks",
+   "norm": "basicparts_fiberglasstrim_normal",
+   "cmask": "basicparts_fiberglasstrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "kitbashmetaltrimmat",
+   "tex": "basicparts_woodtrim",
+   "masks": "basicparts_woodtrim_masks",
+   "norm": "basicparts_woodtrim_normal",
+   "cmask": "basicparts_woodtrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "kitbashfiberglass2_glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "MAINROOMCUBE_PANELWINDOW": [
+  {
+   "mat": "tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "interiortiling_mat",
+   "tex": "buildablebuildings_interiortilingtexture",
+   "masks": "buildablebuildings_interiortilingtexture_masks",
+   "norm": "buildablebuildings_interiortilingtexture_normal",
+   "cmask": "buildablebuildings_interiortilingtexture_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "tilingtexture_mat1",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "MAINROOM_ROOF": [
+  {
+   "mat": "interiortiling_mat",
+   "tex": "buildablebuildings_interiortilingtexture",
+   "masks": "buildablebuildings_interiortilingtexture_masks",
+   "norm": "buildablebuildings_interiortilingtexture_normal",
+   "cmask": "buildablebuildings_interiortilingtexture_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "tilingtexture_mat",
+   "tex": "basebuilding_basebuildingexterior",
+   "masks": "basebuilding_basebuildingexterior_masks",
+   "norm": "basebuilding_basebuildingexterior_normal",
+   "cmask": "basebuilding_basebuildingexterior_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glass_mat",
+   "tex": "buildablebuildings_incubatorfield_base_1",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "logo2decal1",
+   "tex": "buildablebuildings_logodecal_5",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "logo3decal1",
+   "tex": "decals_shopsign_baseshop_1",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLE": [
+  {
+   "mat": "bubblepipesmat",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "trimsheetmetal_mat",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLE3CORNER": [
+  {
+   "mat": "bubblepipesmat",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "trimsheetmetal_mat",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLE4CORNER": [
+  {
+   "mat": "trimsheetmetal_mat1",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat1",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "bubblepipesmat1",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLEL": [
+  {
+   "mat": "bubblepipesmat",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "trimsheetmetal_mat",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLESTAR": [
+  {
+   "mat": "trimsheetmetal_mat",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "bubblepipesmat",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLESTARHALF": [
+  {
+   "mat": "trimsheetmetal_mat",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "bubblepipesmat",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLET": [
+  {
+   "mat": "orangeglowfade_mat1",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "bubblepipesmat1",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "trimsheetmetal_mat1",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "PIPEBUBBLEX": [
+  {
+   "mat": "trimsheetmetal_mat1",
+   "tex": "nexus_alphatrimsheet",
+   "masks": "nexus_alphatrimsheet_masks",
+   "norm": "nexus_alphatrimsheet_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat1",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "bubblepipesmat1",
+   "tex": "buildablebuildings_cookerbubbles",
+   "masks": "buildablebuildings_cookerbubbles_masks",
+   "norm": "buildablebuildings_cookerbubbles_normal",
+   "cmask": null,
+   "type": "lit"
+  },
+  {
+   "mat": "orangeglowfade_mat1",
+   "tex": "nexus_orangeglowfade",
+   "masks": null,
+   "norm": null,
+   "cmask": null,
+   "type": "lit"
+  }
+ ],
+ "ROOF_M_WIN": [
+  {
+   "mat": "kitbashbuilders_builderstrimmat",
+   "tex": "basicparts_builderstrim",
+   "masks": "basicparts_builderstrim_masks",
+   "norm": "basicparts_builderstrim_normal",
+   "cmask": "basicparts_builderstrim_colourisemask",
+   "type": "lit"
+  },
+  {
+   "mat": "glassrefractionmat",
+   "tex": "buildablebuildings_glass_base",
+   "masks": "buildablebuildings_glass_base_masks",
+   "norm": "buildablebuildings_glass_base_normal",
+   "cmask": null,
+   "type": "lit"
   }
  ]
 }

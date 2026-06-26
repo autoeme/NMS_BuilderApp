@@ -89,6 +89,10 @@ private:
     void OnMenuImportClipboard();   // Import from Clipboard
     void OnMenuExportClipboard();   // Export to Clipboard
     void SpawnFromManager(class UNMSBaseManager* Mgr);   // построить базу в сцене
+    // Применить материалы детали к компоненту ПО СЛОТАМ (стекло/листва/unlit + цвет),
+    // как при загрузке базы. Единая логика для ручной постановки и загрузки.
+    void ApplyPartMaterialsToComponent(class UStaticMeshComponent* Comp,
+                                       const struct FNMSPartData& PartData, int64 UserData);
     void CollectSceneToManager(class UNMSBaseManager* Mgr); // сцена -> PlacedObjects
     // --- Undo/Redo (снимки сцены доменным документом FNMSBaseDocument) ---
     TArray<FNMSBaseDocument> UndoStack;

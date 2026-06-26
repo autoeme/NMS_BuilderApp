@@ -179,6 +179,110 @@ void SNMSBuilderUI::ClearSceneParts()
 // Построить базу из менеджера в сцене: настоящие модели деталей + родные цвета.
 // Цвет детали из базы: UserData -> индекс палитры -> RGBA (primary+secondary).
 // Таблица из Content/NMSData/userdata_palette.json (сгенерирована из игрового DT_Palettes).
+// Единое применение материалов к компоненту детали (per-slot: стекло/листва/unlit
+// + покраска), как в SpawnFromManager. Зовётся и при ручной постановке (OnPartSelected),
+// чтобы стекло/мультислот выглядели одинаково с загрузкой базы.
+void SNMSBuilderUI::ApplyPartMaterialsToComponent(UStaticMeshComponent* Comp,
+                                                  const FNMSPartData& PD, int64 UserData)
+{
+    if (!Comp) return;
+    const FString Cat = PD.Category;
+    const bool bFoliage = NMS_IsFoliagePart(PD);
+    UMaterialInterface* BaseM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_BasePart.M_BasePart"));
+    UMaterialInterface* LitM = LoadObject<UMaterialInterface>(nullptr,
+        FNMSViewportClient::bUnlitParts
+            ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit")
+            : TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
+    UMaterialInterface* UnlitM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit"));
+    UMaterialInterface* FoliageM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_PartFoliage.M_PartFoliage"));
+    UMaterialInterface* GlassM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_PartGlass.M_PartGlass"));
+
+    FNMSPlacedPart Obj; Obj.ObjectID = PD.ObjectID; Obj.UserData = UserData;
+    const FNMSPartRenderInfo RI = NMS_ResolvePartRender(Obj, Cat);
+    const FLinearColor Col1 = RI.Color1, Col2 = RI.Color2,
+        ZA = RI.ZoneA, ZB = RI.ZoneB, ZC = RI.ZoneC, ZD = RI.ZoneD;
+
+    auto TexPathOf = [](const FString& N) -> FString {
+        return N.IsEmpty() ? FString()
+            : FString::Printf(TEXT("/Game/NMSBaseBuilder/PartTex2/T_%s.T_%s"), *N, *N);
+    };
+    auto BuildMID = [&](const FNMSTexSet& S) -> UMaterialInstanceDynamic* {
+        UTexture2D* Tex = S.Tex.IsEmpty() ? nullptr : LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Tex));
+        UMaterialInterface* Surf = (S.bGlass && GlassM) ? GlassM
+                                 : (S.bUnlit && UnlitM) ? UnlitM
+                                 : ((bFoliage && FoliageM) ? FoliageM : LitM);
+        UMaterialInterface* M = (Tex && Surf) ? Surf : BaseM;
+        if (!M) return nullptr;
+        UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);
+        if (Tex && Surf)
+        {
+            MID->SetTextureParameterValue(TEXT("BaseTex"), Tex);
+            if (!S.bUnlit)
+            {
+                if (UTexture2D* Mk = LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Mask)))
+                    MID->SetTextureParameterValue(TEXT("PaintMask"), Mk);
+                if (UTexture2D* Nm = LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Norm)))
+                    MID->SetTextureParameterValue(TEXT("NormalTex"), Nm);
+                if (UTexture2D* Ms = LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Masks)))
+                { MID->SetTextureParameterValue(TEXT("MasksTex"), Ms); MID->SetScalarParameterValue(TEXT("UseMasks"), 1.f); }
+                MID->SetVectorParameterValue(TEXT("Color"), Col1);
+                MID->SetVectorParameterValue(TEXT("Color2"), Col2);
+            }
+        }
+        else MID->SetVectorParameterValue(TEXT("Color"), Col1);
+        MID->SetVectorParameterValue(TEXT("ZoneCol0"), ZA);
+        MID->SetVectorParameterValue(TEXT("ZoneCol1"), ZB);
+        MID->SetVectorParameterValue(TEXT("ZoneCol2"), ZC);
+        MID->SetVectorParameterValue(TEXT("ZoneCol3"), ZD);
+        return MID;
+    };
+
+    const int32 N = Comp->GetNumMaterials();
+    const TArray<FNMSTexSet>* Slots = NMS_PartSlots(PD.ObjectID);
+    const bool bFullCover = (Slots && N > 1 && Slots->Num() >= N);
+    if (bFullCover)
+    {
+        for (int32 i = 0; i < N; ++i)
+        {
+            const FNMSTexSet& S = (*Slots)[FMath::Min(i, Slots->Num() - 1)];
+            if (UMaterialInstanceDynamic* MID = BuildMID(S)) Comp->SetMaterial(i, MID);
+        }
+    }
+    else
+    {
+        FString TexPath, MaskPath, NormPath, MasksPath, OccPath;
+        NMS_PartTexture(Cat, PD.ObjectID, TexPath, MaskPath, NormPath, MasksPath, OccPath);
+        UTexture2D* Tex = TexPath.IsEmpty() ? nullptr : LoadObject<UTexture2D>(nullptr, *TexPath);
+        const bool bGlass1 = Slots && Slots->Num() > 0 && (*Slots)[0].bGlass;
+        UMaterialInterface* Surf1 = (bGlass1 && GlassM) ? GlassM : ((bFoliage && FoliageM) ? FoliageM : LitM);
+        UMaterialInterface* M = (Tex && Surf1) ? Surf1 : BaseM;
+        if (M)
+        {
+            UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);
+            if (Tex && Surf1)
+            {
+                MID->SetTextureParameterValue(TEXT("BaseTex"), Tex);
+                if (UTexture2D* Mk = LoadObject<UTexture2D>(nullptr, *MaskPath)) MID->SetTextureParameterValue(TEXT("PaintMask"), Mk);
+                if (UTexture2D* Nm = LoadObject<UTexture2D>(nullptr, *NormPath)) MID->SetTextureParameterValue(TEXT("NormalTex"), Nm);
+                if (UTexture2D* Ms = LoadObject<UTexture2D>(nullptr, *MasksPath)) { MID->SetTextureParameterValue(TEXT("MasksTex"), Ms); MID->SetScalarParameterValue(TEXT("UseMasks"), 1.f); }
+                if (UTexture2D* Oc = LoadObject<UTexture2D>(nullptr, *OccPath)) MID->SetTextureParameterValue(TEXT("OcclusionTex"), Oc);
+                MID->SetVectorParameterValue(TEXT("Color"), Col1);
+                MID->SetVectorParameterValue(TEXT("Color2"), Col2);
+            }
+            else MID->SetVectorParameterValue(TEXT("Color"), Col1);
+            MID->SetVectorParameterValue(TEXT("ZoneCol0"), ZA);
+            MID->SetVectorParameterValue(TEXT("ZoneCol1"), ZB);
+            MID->SetVectorParameterValue(TEXT("ZoneCol2"), ZC);
+            MID->SetVectorParameterValue(TEXT("ZoneCol3"), ZD);
+            for (int32 i = 0; i < N; ++i) Comp->SetMaterial(i, MID);
+        }
+    }
+}
+
 void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
 {
 #if WITH_EDITOR
@@ -202,6 +306,12 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
     // неосвещаемый материал для эмиссив-слотов (лампы/экраны, флаг _F07_UNLIT в игре)
     UMaterialInterface* UnlitM = LoadObject<UMaterialInterface>(nullptr,
         TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit"));
+    // листва: masked + двусторонний (альфа диффуза вырезает форму листа)
+    UMaterialInterface* FoliageM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_PartFoliage.M_PartFoliage"));
+    // стекло: translucent (игровой флаг _F30_REFRACTION) — иначе стекла не видно
+    UMaterialInterface* GlassM = LoadObject<UMaterialInterface>(nullptr,
+        TEXT("/Game/NMSBaseBuilder/Materials/M_PartGlass.M_PartGlass"));
 
     int32 Spawned = 0;
     for (const FNMSPlacedPart& Obj : Doc.Parts)
@@ -220,6 +330,12 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
         AStaticMeshActor* A = World->SpawnActor<AStaticMeshActor>(
             AStaticMeshActor::StaticClass(), Obj.Transform, Params);
         if (!A) continue;
+        // Пандусы/лестницы авторски развёрнуты на 180° вокруг локальной вертикали
+        // относительно ориентации игры (см. NMS_IsRampPart). Доворачиваем ПОСЛЕ
+        // Up/At-трансформа, в локальном пространстве детали, чтобы база из игры
+        // вставала так же, как в игре.
+        if (Part && (*Part).IsValid() && NMS_IsRampPart(**Part))
+            A->AddActorLocalRotation(FRotator(0.f, 180.f, 0.f));
         A->SetActorLabel(FString::Printf(TEXT("NMS_%s"), *Obj.ObjectID));
         A->Tags.Add(FName(*Obj.ObjectID)); // надёжное хранение ID (метки редактор меняет)
         A->Tags.Add(FName(*FString::Printf(TEXT("UD:%lld"), (long long)Obj.UserData))); // цвет/материал детали
@@ -237,6 +353,7 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
                 Comp->SetCollisionResponseToAllChannels(ECR_Ignore);
                 Comp->SetCollisionResponseToChannel(ECC_Visibility, ECR_Block);
                 const FString Cat = Part && (*Part).IsValid() ? (*Part)->Category : FString();
+                const bool bFoliage = Part && (*Part).IsValid() && NMS_IsFoliagePart(**Part);
                 // Резолв цвета/зон детали — через чистый SceneAdapter (шаг 4.2/4.3):
                 // дефолтные цвета по категории + переопределение палитрой из UserData.
                 const FNMSPartRenderInfo RI = NMS_ResolvePartRender(Obj, Cat);
@@ -254,7 +371,9 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
                     UTexture2D* Tex = S.Tex.IsEmpty() ? nullptr
                         : LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Tex));
                     // эмиссив-слот (лампы/экраны) -> неосвещаемый материал, как в игре
-                    UMaterialInterface* Surf = (S.bUnlit && UnlitM) ? UnlitM : LitM;
+                    UMaterialInterface* Surf = (S.bGlass && GlassM) ? GlassM
+                                             : (S.bUnlit && UnlitM) ? UnlitM
+                                             : ((bFoliage && FoliageM) ? FoliageM : LitM);
                     UMaterialInterface* M = (Tex && Surf) ? Surf : BaseM;
                     if (!M) return nullptr;
                     UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);
@@ -314,11 +433,13 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
                     FString TexPath, MaskPath, NormPath, MasksPath, OccPath;
                     NMS_PartTexture(Cat, Obj.ObjectID, TexPath, MaskPath, NormPath, MasksPath, OccPath);
                     UTexture2D* Tex = TexPath.IsEmpty() ? nullptr : LoadObject<UTexture2D>(nullptr, *TexPath);
-                    UMaterialInterface* M = (Tex && LitM) ? LitM : BaseM;
+                    const bool bGlass1 = Slots && Slots->Num() > 0 && (*Slots)[0].bGlass;
+                    UMaterialInterface* Surf1 = (bGlass1 && GlassM) ? GlassM : ((bFoliage && FoliageM) ? FoliageM : LitM);
+                    UMaterialInterface* M = (Tex && Surf1) ? Surf1 : BaseM;
                     if (M)
                     {
                         UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);
-                        if (Tex && LitM)
+                        if (Tex && Surf1)
                         {
                             MID->SetTextureParameterValue(TEXT("BaseTex"), Tex);
                             if (UTexture2D* Mask = LoadObject<UTexture2D>(nullptr, *MaskPath))

@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 
 // Набор текстур одного материал-слота детали.
-struct FNMSTexSet { FString Tex, Mask, Norm, Masks, Occ; bool bUnlit = false; };
+struct FNMSTexSet { FString Tex, Mask, Norm, Masks, Occ, Mat; bool bUnlit = false; bool bGlass = false; };
 
 // Точные дефолтные пары цветов из таблицы игры (part_colors.json, 1101 деталь).
 NMS_BUILDERCORE_API bool NMS_GamePartColors(const FString& ObjectID, FLinearColor& P, FLinearColor& S);

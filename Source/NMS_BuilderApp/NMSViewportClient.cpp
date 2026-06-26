@@ -600,9 +600,17 @@ void FNMSViewportClient::ApplyPartMaterial(AActor* Actor)
     if (!PendingBaseTex.IsEmpty())
     {
         Tex = LoadObject<UTexture2D>(nullptr, *PendingBaseTex);
-        if (Tex) BaseM = LoadObject<UMaterialInterface>(nullptr, bUnlitParts
-            ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit")
-            : TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
+        if (Tex)
+        {
+            const TCHAR* MatPath = bUnlitParts
+                ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartUnlit.M_PartUnlit")
+                : (PendingMasked ? TEXT("/Game/NMSBaseBuilder/Materials/M_PartFoliage.M_PartFoliage")
+                                 : TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
+            BaseM = LoadObject<UMaterialInterface>(nullptr, MatPath);
+            if (!BaseM)  // материала листвы ещё нет -> откат на обычный lit
+                BaseM = LoadObject<UMaterialInterface>(nullptr,
+                    TEXT("/Game/NMSBaseBuilder/Materials/M_PartLit.M_PartLit"));
+        }
     }
     if (!BaseM) BaseM = LoadObject<UMaterialInterface>(nullptr,
         TEXT("/Game/NMSBaseBuilder/Materials/M_BasePart.M_BasePart"));

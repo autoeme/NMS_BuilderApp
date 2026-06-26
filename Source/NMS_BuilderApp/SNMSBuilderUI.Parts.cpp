@@ -577,8 +577,13 @@ void SNMSBuilderUI::OnPartSelected(TSharedPtr<FNMSPartData> Item, ESelectInfo::T
     FActorSpawnParameters Params;
     Params.ObjectFlags = RF_Transient;
     // при постройке деталь ставим боком (поворот 90° вокруг вертикали), а не ребром
+    float SpawnYaw = 90.f;
+    // Пандусы/лестницы авторски развёрнуты на 180° (см. NMS_IsRampPart) —
+    // компенсируем, чтобы при постановке смотрели так же, как в игре/при загрузке.
+    if (NMS_IsRampPart(*Item))
+        SpawnYaw += 180.f;
     AStaticMeshActor* Actor = World->SpawnActor<AStaticMeshActor>(
-        AStaticMeshActor::StaticClass(), FTransform(FRotator(0.f, 90.f, 0.f), SpawnLoc), Params);
+        AStaticMeshActor::StaticClass(), FTransform(FRotator(0.f, SpawnYaw, 0.f), SpawnLoc), Params);
     if (!Actor) return;
 #if WITH_EDITOR
     Actor->SetActorLabel(FString::Printf(TEXT("NMS_%s"), *Item->ObjectID));
@@ -598,13 +603,10 @@ void SNMSBuilderUI::OnPartSelected(TSharedPtr<FNMSPartData> Item, ESelectInfo::T
 
     // 3) Деталь следует за курсором (снап/сетка), ЛКМ ставит — но выглядит как
     //    обычная деталь (настоящий материал + гизмо), без зелёной голограммы.
-    FNMSPendingMaterial Mat;
-    Mat.Color  = NMS_DefaultPartColor(Item->Category, Item->ObjectID);
-    Mat.Color2 = NMS_DefaultPartColor2(Item->Category, Item->ObjectID);
-    NMS_PartTexture(Item->Category, Item->ObjectID,
-        Mat.BaseTex, Mat.PaintMask, Mat.NormalTex, Mat.MasksTex, Mat.OccTex);
-    ViewportClient->SetPendingMaterial(Mat);
-    ViewportClient->ApplyPartMaterial(Actor);
+    // Материалы как при загрузке базы: ПО СЛОТАМ (стекло/листва/unlit + покраска),
+    // чтобы вручную поставленная деталь выглядела 1-в-1 с загруженной (стекло видно).
+    if (UStaticMeshComponent* PartComp = Actor->GetStaticMeshComponent())
+        ApplyPartMaterialsToComponent(PartComp, *Item, 0);
     ViewportClient->StartPlacing(Actor);
 }
 

@@ -133,6 +133,30 @@ void NMS_PartTexture(const FString& Category, const FString& ObjectID,
     }
 }
 
+// Стеклянный ли материал-узел: имена из игры с флагом _F30_REFRACTION
+// (Content/NMSData/glass_materials.json). Такие секции рендерим translucent.
+bool NMS_IsGlassMaterial(const FString& MatName)
+{
+    static TSet<FString> Glass;
+    static bool bLoaded = false;
+    if (!bLoaded)
+    {
+        bLoaded = true;
+        FString Raw;
+        const FString Path = FPaths::ProjectContentDir() / TEXT("NMSData/glass_materials.json");
+        if (FFileHelper::LoadFileToString(Raw, *Path))
+        {
+            TArray<TSharedPtr<FJsonValue>> Arr;
+            const TSharedRef<TJsonReader<>> R = TJsonReaderFactory<>::Create(Raw);
+            if (FJsonSerializer::Deserialize(R, Arr))
+                for (const TSharedPtr<FJsonValue>& V : Arr)
+                    Glass.Add(V->AsString().ToLower());
+        }
+        UE_LOG(LogTemp, Log, TEXT("NMS: стеклянных материалов: %d"), Glass.Num());
+    }
+    return !MatName.IsEmpty() && Glass.Contains(MatName.ToLower());
+}
+
 // Текстуры ПО СЛОТАМ (пункт 4): каждый материал-узел детали -> своя текстура.
 // Убирает «кашу» (раньше один атлас натягивался на весь меш). part_slots.json:
 // ID -> [ {tex,masks,norm,cmask}, ... ] в порядке материал-слотов меша.
@@ -165,9 +189,11 @@ const TArray<FNMSTexSet>* NMS_PartSlots(const FString& ObjectID)
                         (*O)->TryGetStringField(TEXT("cmask"), S.Mask);   // покрасочная маска
                         (*O)->TryGetStringField(TEXT("norm"),  S.Norm);
                         (*O)->TryGetStringField(TEXT("masks"), S.Masks);
+                        (*O)->TryGetStringField(TEXT("mat"),   S.Mat);
                         FString Type;
                         (*O)->TryGetStringField(TEXT("type"), Type);
                         S.bUnlit = (Type == TEXT("unlit"));   // эмиссив/лампы из игры (_F07_UNLIT)
+                        S.bGlass = NMS_IsGlassMaterial(S.Mat); // стекло (_F30_REFRACTION) -> translucent
                         Slots.Add(S);
                     }
                     if (Slots.Num() > 0) Map.Add(FString(KV.Key), Slots);

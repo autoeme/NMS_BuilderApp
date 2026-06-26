@@ -25,6 +25,7 @@ struct FNMSPendingMaterial
     FString NormalTex;   // карта рельефа
     FString MasksTex;    // карта масок (AO/шероховатость/металл)
     FString OccTex;      // карта затенения швов
+    bool bMasked = false; // листва: masked + двусторонний материал (альфа-вырез)
 };
 
 /**
@@ -89,6 +90,7 @@ public:
         PendingPartColor = M.Color; PendingPartColor2 = M.Color2;
         PendingBaseTex = M.BaseTex; PendingPaintMask = M.PaintMask;
         PendingNormalTex = M.NormalTex; PendingMasksTex = M.MasksTex; PendingOccTex = M.OccTex;
+        PendingMasked = M.bMasked;
     }
     // Режим «без света»: детали ставятся с безсветовым материалом (ровный вид).
     static bool bUnlitParts;
@@ -161,6 +163,7 @@ private:
     FLinearColor PendingPartColor = FLinearColor(0.78f, 0.78f, 0.74f);
     FLinearColor PendingPartColor2 = FLinearColor::White;
     FString PendingBaseTex, PendingPaintMask, PendingNormalTex, PendingMasksTex, PendingOccTex;
+    bool PendingMasked = false; // следующая деталь — листва (masked-материал)
     // инструмент «кривая» (управляется командами Start/Exit/Set* выше)
     bool bCurveMode = false;
     ENMSCurveType CurveType = ENMSCurveType::Catmull;

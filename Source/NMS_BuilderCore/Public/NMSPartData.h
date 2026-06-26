@@ -64,3 +64,28 @@ struct NMS_BUILDERCORE_API FNMSPartData : public FTableRowBase
     {
     }
 };
+
+/**
+ * Деталь — пандус/лестница (семья RAMP / RAMP_H / RAMP_Q_TOP во всех стилях).
+ * Меш такой детали авторски развёрнут на 180° вокруг локальной вертикали
+ * относительно ориентации игры — это компенсируется доворотом при спавне
+ * (и при ручной постановке, и при загрузке базы). RACE_RAMP сюда НЕ входит.
+ * У *_RAMP_Q_TOP socket пустой/LEGACYFLOOR, поэтому ловим ещё и по ObjectID.
+ */
+inline bool NMS_IsRampPart(const FNMSPartData& Part)
+{
+    return Part.SocketClassIDs.Contains(TEXT("RAMP"))
+        || Part.ObjectID.Contains(TEXT("RAMP_Q_TOP"));
+}
+
+/**
+ * Деталь — листва/растение (карточки листьев). Её диффуз RGBA с альфой-вырезом,
+ * поэтому нужен masked + двусторонний материал (иначе листья = прямоугольники).
+ * Растения биомов: Category «Exotic Decorations» / SubCategory «Decorative Plants»
+ * либо явная категория Foliage.
+ */
+inline bool NMS_IsFoliagePart(const FNMSPartData& Part)
+{
+    return Part.SubCategory.Contains(TEXT("Decorative Plants"))
+        || Part.Category.Equals(TEXT("Foliage"), ESearchCase::IgnoreCase);
+}

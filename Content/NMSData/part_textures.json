@@ -6475,5 +6475,209 @@
   "masks": "materials_concretetiling_base_masks",
   "norm": "materials_concretetiling_base_normal",
   "mask": "materials_concretetiling_base_colourisemask"
+ },
+ "BASE_DUST01": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST02": {
+  "tex": "foliage_desolatecacti",
+  "masks": "foliage_desolatecacti_masks",
+  "norm": "foliage_desolatecacti_normal",
+  "mask": "foliage_desolatecacti_colourisemask"
+ },
+ "BASE_DUST03": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST04": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST05": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST06": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST07": {
+  "tex": "foliage_desolatecacti",
+  "masks": "foliage_desolatecacti_masks",
+  "norm": "foliage_desolatecacti_normal",
+  "mask": "foliage_desolatecacti_colourisemask"
+ },
+ "BASE_DUST08": {
+  "tex": "foliage_desolaterock",
+  "masks": "foliage_desolaterock_masks",
+  "norm": "foliage_desolaterock_normal",
+  "mask": "foliage_desolaterock_colourisemask"
+ },
+ "BASE_DUST09": {
+  "tex": "foliage_desolaterock",
+  "masks": "foliage_desolaterock_masks",
+  "norm": "foliage_desolaterock_normal",
+  "mask": "foliage_desolaterock_colourisemask"
+ },
+ "BASE_DUST10": {
+  "tex": "foliage_desolaterock",
+  "masks": "foliage_desolaterock_masks",
+  "norm": "foliage_desolaterock_normal",
+  "mask": "foliage_desolaterock_colourisemask"
+ },
+ "BASE_DUST12": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "BASE_DUST13": {
+  "tex": "foliage_desolatecacti",
+  "masks": "foliage_desolatecacti_masks",
+  "norm": "foliage_desolatecacti_normal",
+  "mask": "foliage_desolatecacti_colourisemask"
+ },
+ "BASE_HOTPLANT04": {
+  "tex": "foliage_burntmcloud",
+  "masks": "foliage_burntmcloud_masks",
+  "norm": "foliage_burntmcloud_normal"
+ },
+ "BASE_HOTPLANT05": {
+  "tex": "foliage_burntrock",
+  "masks": "foliage_burntrock_masks",
+  "norm": "foliage_burntrock_normal"
+ },
+ "BASE_HOTPLANT06": {
+  "tex": "foliage_burntglass",
+  "masks": "foliage_burntglass_masks",
+  "norm": "foliage_burntglass_normal"
+ },
+ "BASE_HOTPLANT07": {
+  "tex": "foliage_burntweedleaves",
+  "masks": "foliage_burntweedleaves_masks",
+  "norm": "foliage_burntweedleaves_normal",
+  "mask": "foliage_burntweedleaves_colourisemask"
+ },
+ "BASE_HOTPLANT08": {
+  "tex": "foliage_flametreeleaf",
+  "masks": "foliage_flametreeleaf_masks",
+  "norm": "foliage_flametreeleaf_normal",
+  "mask": "foliage_flametreeleaf_colourisemask"
+ },
+ "BASE_JUNGLE04": {
+  "tex": "foliage_flowerplant",
+  "masks": "foliage_flowerplant_masks",
+  "norm": "foliage_flowerplant_normal",
+  "mask": "foliage_flowerplant_colourisemask"
+ },
+ "BASE_RADPLANT04": {
+  "tex": "foliage_irradiatedrock",
+  "masks": "foliage_irradiatedrock_masks",
+  "norm": "foliage_irradiatedrock_normal",
+  "mask": "foliage_irradiatedrock_colourisemask"
+ },
+ "BASE_SUBZPLANT9": {
+  "tex": "foliage_icetree",
+  "masks": "foliage_icetree_masks",
+  "norm": "foliage_icetree_normal",
+  "mask": "foliage_icetree_colourisemask"
+ },
+ "BASE_TOXPLANT04": {
+  "tex": "foliage_noxplant",
+  "masks": "foliage_noxplant_masks",
+  "norm": "foliage_noxplant_normal",
+  "mask": "foliage_noxplant_colourisemask"
+ },
+ "BASE_WPLANT7": {
+  "tex": "foliage_pagodaflap",
+  "masks": "foliage_pagodaflap_masks",
+  "norm": "foliage_pagodaflap_normal",
+  "mask": "foliage_pagodaflap_colourisemask"
+ },
+ "BASE_WPLANT8": {
+  "tex": "foliage_globplant",
+  "masks": "foliage_globplant_masks",
+  "norm": "foliage_globplant_normal",
+  "mask": "foliage_globplant_colourisemask"
+ },
+ "BASE_DUST11": {
+  "tex": "foliage_desolatepalms",
+  "masks": "foliage_desolatepalms_masks",
+  "norm": "foliage_desolatepalms_normal",
+  "mask": "foliage_desolatepalms_colourisemask"
+ },
+ "SPEC_FIREWORK07": {
+  "tex": "buildablebuildings_fireworkbase",
+  "masks": "buildablebuildings_fireworkbase_masks",
+  "norm": "buildablebuildings_fireworkbase_normal",
+  "mask": "buildablebuildings_fireworkbase_colourisemask"
+ },
+ "SPEC_FIREWORK08": {
+  "tex": "buildablebuildings_fireworkbase",
+  "masks": "buildablebuildings_fireworkbase_masks",
+  "norm": "buildablebuildings_fireworkbase_normal",
+  "mask": "buildablebuildings_fireworkbase_colourisemask"
+ },
+ "SPEC_FIREWORK09": {
+  "tex": "buildablebuildings_fireworkbase",
+  "masks": "buildablebuildings_fireworkbase_masks",
+  "norm": "buildablebuildings_fireworkbase_normal",
+  "mask": "buildablebuildings_fireworkbase_colourisemask"
+ },
+ "SWARM_FLAG_R1": {
+  "tex": "decoration_swarmflag_red",
+  "masks": "decoration_swarmflag_red_masks",
+  "norm": "decoration_swarmflag_red_normal"
+ },
+ "SWARM_FLAG_R3": {
+  "tex": "decoration_swarmflag_red",
+  "masks": "decoration_swarmflag_red_masks",
+  "norm": "decoration_swarmflag_red_normal"
+ },
+ "SWARM_FLAG_G1": {
+  "tex": "decoration_swarmflag_green",
+  "masks": "decoration_swarmflag_green_masks",
+  "norm": "decoration_swarmflag_green_normal"
+ },
+ "SWARM_FLAG_G3": {
+  "tex": "decoration_swarmflag_green",
+  "masks": "decoration_swarmflag_green_masks",
+  "norm": "decoration_swarmflag_green_normal"
+ },
+ "SWARM_FLAG_B1": {
+  "tex": "decoration_swarmflag_blue",
+  "masks": "decoration_swarmflag_blue_masks",
+  "norm": "decoration_swarmflag_blue_normal"
+ },
+ "SWARM_FLAG_B3": {
+  "tex": "decoration_swarmflag_blue",
+  "masks": "decoration_swarmflag_blue_masks",
+  "norm": "decoration_swarmflag_blue_normal"
+ },
+ "SWARM_FLAG_R2": {
+  "tex": "decoration_swarmwalldrape_red",
+  "masks": "decoration_swarmwalldrape_red_masks",
+  "norm": "decoration_swarmwalldrape_red_normal"
+ },
+ "SWARM_FLAG_G2": {
+  "tex": "decoration_swarmwalldrape_green",
+  "masks": "decoration_swarmwalldrape_green_masks",
+  "norm": "decoration_swarmwalldrape_green_normal"
+ },
+ "SWARM_FLAG_B2": {
+  "tex": "decoration_swarmwalldrape_blue",
+  "masks": "decoration_swarmwalldrape_blue_masks",
+  "norm": "decoration_swarmwalldrape_blue_normal"
  }
 }
