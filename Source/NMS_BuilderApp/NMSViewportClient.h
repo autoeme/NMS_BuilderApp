@@ -102,6 +102,8 @@ public:
     // Сменить фон сцены: PNG с диска -> текстура -> материал неба (M_SkyBG).
     void SetBackgroundImage(const FString& PngPath);
     virtual void MouseMove(FViewport* Viewport, int32 X, int32 Y) override;
+    // Курсор: в режиме кривой — «рука» над узлом, «кулак» при тяге, иначе крестик.
+    virtual EMouseCursor::Type GetCursor(FViewport* Viewport, int32 X, int32 Y) override;
     // Потеря фокуса окна — сбросить «зажатости» полёта (чтобы камера не летела сама).
     virtual void LostFocus(FViewport* Viewport) override;
 
@@ -115,9 +117,9 @@ public:
     float GetMoveSnap() const { return MoveSnap; }
 
     // --- инструмент «кривая» (панель тулбара задаёт через команды) ---
-    void StartCurve(ENMSCurveType Type) { CurveType = Type; bCurveMode = true; CurvePoints.Reset(); }
-    void ExitCurve() { bCurveMode = false; CurvePoints.Reset(); }
-    void ClearCurvePoints() { CurvePoints.Reset(); }
+    void StartCurve(ENMSCurveType Type) { CurveType = Type; bCurveMode = true; CurvePoints.Reset(); ResetCurveEditState(); }
+    void ExitCurve() { bCurveMode = false; CurvePoints.Reset(); ResetCurveEditState(); }
+    void ClearCurvePoints() { CurvePoints.Reset(); ResetCurveEditState(); }
     bool IsCurveMode() const { return bCurveMode; }
     ENMSCurveType GetCurveType() const { return CurveType; }
     const TArray<FVector>& GetCurvePoints() const { return CurvePoints; }
@@ -178,7 +180,16 @@ private:
     float CurveTilt = 0.f;              // наклон (pitch, градусы)
     float CurveRoll = 0.f;              // крен (roll, градусы)
     float CurveRadius = 0.f;            // радиус круга (0 = по клику)
-    TArray<FVector> CurvePoints;        // узлы кривой на гриде (Z=0)
+    TArray<FVector> CurvePoints;        // узлы кривой (3D, помнят высоту)
+    // --- редактирование узлов: мини-гизмо на каждом узле ---
+    int32   CurveDragNode = -1;         // тащим узел (-1 нет)
+    int32   CurveDragAxis = -1;         // ось узла: 0=X 1=Y 2=Z, -2=центр (свободно в плоскости камеры)
+    FVector CurveDragBaseLoc = FVector::ZeroVector; // позиция узла на момент захвата
+    float   CurveDragStartT = 0.f;      // параметр вдоль оси на момент захвата
+    FVector CurveDragOffset = FVector::ZeroVector;  // смещение точки захвата (центр-кружок)
+    int32   CurveHoverNode = -1;        // узел под курсором (курсор-рука/подсветка)
+    int32   CurveHoverAxis = -1;        // ось под курсором
+    void ResetCurveEditState() { CurveDragNode = CurveDragAxis = CurveHoverNode = CurveHoverAxis = -1; }
 
     TUniquePtr<FPreviewScene> PreviewScene;
     FLinearColor SkyColor = FLinearColor(0.32f, 0.55f, 0.82f, 1.f);
@@ -227,6 +238,9 @@ private:
 	bool bMarquee = false; FVector2D MarqStart = FVector2D::ZeroVector, MarqCur = FVector2D::ZeroVector;
 	void  DrawCurvePreview();           // превью кривой (узлы + Catmull-сплайн) // оси X/Y/Z в углу (как nav-гизмо Blender)                                  // рисует оси у выбранной детали
     int32 PickGizmoAxis(FViewport* Viewport) const;     // какая ось под курсором (или -1)
+    // Мини-гизмо узлов кривой: какая ось какого узла под курсором.
+    // Возврат: 0/1/2=ось, -2=центр-кружок, -1=мимо. OutNode — индекс узла (или -1).
+    int32 PickCurveNodeAxis(FViewport* Viewport, int32& OutNode) const;
     bool  DeprojectMouseRay(FViewport* Viewport, FVector& O, FVector& D) const;
     bool  WorldToPixel(const FVector& P, FVector2D& Out) const; // мир->экран через CachedViewProj
 

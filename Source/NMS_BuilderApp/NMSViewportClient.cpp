@@ -887,7 +887,7 @@ void FNMSViewportClient::CancelAll()
 {
     if (bWiringMode)   { bWiringMode = false; bHaveWireA = false; }
     if (bPlacingGhost) { CancelPlacing(); }
-    if (bCurveMode)    { CurvePoints.Reset(); bCurveMode = false; if (OnCurveChanged) OnCurveChanged(); }
+    if (bCurveMode)    { CurvePoints.Reset(); ResetCurveEditState(); bCurveMode = false; if (OnCurveChanged) OnCurveChanged(); }
     bMarquee = false;
     ClearSelection();
 }
@@ -911,6 +911,18 @@ void FNMSViewportClient::MouseMove(FViewport* Viewport, int32 X, int32 Y)
             }
             if (Viewport) Viewport->Invalidate();
         }
+    }
+
+    // Режим кривой: узел под курсором (для курсора-руки и подсветки оси).
+    if (bCurveMode)
+    {
+        if (CurveDragNode < 0)
+        {
+            const int32 PrevN = CurveHoverNode, PrevA = CurveHoverAxis;
+            CurveHoverAxis = PickCurveNodeAxis(Viewport, CurveHoverNode);
+            if ((PrevN != CurveHoverNode || PrevA != CurveHoverAxis) && Viewport) Viewport->Invalidate();
+        }
+        return;
     }
 
     // Hover-обводка: подсветить деталь под курсором (когда не ставим/не тащим/не летаем/не рамка).
@@ -1314,6 +1326,46 @@ int32 FNMSViewportClient::PickGizmoAxis(FViewport* Viewport) const
     return Best;
 }
 
+// Какой узел кривой и какая его ось под курсором (мини-гизмо). Центр-кружок имеет приоритет.
+int32 FNMSViewportClient::PickCurveNodeAxis(FViewport* Viewport, int32& OutNode) const
+{
+    OutNode = -1;
+    if (!bCurveMode || !bViewCached || !Viewport) return -1;
+    const FVector2D Mouse((float)Viewport->GetMouseX(), (float)Viewport->GetMouseY());
+    int32 BestNode = -1, BestAxis = -1; float Best = 13.f; // порог в пикселях
+    for (int32 ni = 0; ni < CurvePoints.Num(); ++ni)
+    {
+        const FVector P = CurvePoints[ni];
+        FVector2D OScreen;
+        if (!WorldToPixel(P, OScreen)) continue;
+        const float GL = FMath::Max(FVector::Dist(CameraLocation, P) * 0.07f, 26.f);
+        // центр-кружок: приоритет (узкий радиус), чтобы свободное перемещение хваталось у самого узла
+        const float dC = FVector2D::Distance(Mouse, OScreen);
+        if (dC < 10.f && dC < Best) { Best = dC; BestNode = ni; BestAxis = -2; }
+        for (int32 a = 0; a < 3; ++a)
+        {
+            FVector2D Tip;
+            if (!WorldToPixel(P + NMS_AxisDir(a) * GL, Tip)) continue;
+            const float Dist = FMath::PointDistToSegment(
+                FVector(Mouse, 0.f), FVector(OScreen, 0.f), FVector(Tip, 0.f));
+            if (Dist < Best) { Best = Dist; BestNode = ni; BestAxis = a; }
+        }
+    }
+    OutNode = BestNode;
+    return BestAxis;
+}
+
+EMouseCursor::Type FNMSViewportClient::GetCursor(FViewport* /*Viewport*/, int32 /*X*/, int32 /*Y*/)
+{
+    if (bCurveMode)
+    {
+        if (CurveDragNode >= 0)  return EMouseCursor::GrabHandClosed; // тянем узел — «кулак»
+        if (CurveHoverNode >= 0) return EMouseCursor::GrabHand;       // навели на узел — «рука»
+        return EMouseCursor::Crosshairs;                             // иначе — ставим точки
+    }
+    return EMouseCursor::Default;
+}
+
 void FNMSViewportClient::GatherSelection(TArray<AActor*>& Out) const
 {
     Out.Reset();
@@ -1542,8 +1594,42 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
         }
         if (bCurveMode)
         {
-            FVector G;
-            if (DeprojectMouseToGround(EventArgs.Viewport, G)) { G.Z = 0.f; CurvePoints.Add(G); if (OnCurveChanged) OnCurveChanged(); if (EventArgs.Viewport) EventArgs.Viewport->Invalidate(); }
+            // 1) Не схватили ли узел за его мини-гизмо — тогда тянем узел, а не ставим точку.
+            int32 Node = -1; const int32 NAxis = PickCurveNodeAxis(EventArgs.Viewport, Node);
+            if (Node >= 0)
+            {
+                CurveDragNode = Node; CurveDragAxis = NAxis;
+                CurveDragBaseLoc = CurvePoints[Node];
+                FVector RO, RD;
+                if (DeprojectMouseRay(EventArgs.Viewport, RO, RD))
+                {
+                    if (NAxis >= 0)
+                        CurveDragStartT = NMS_ClosestAxisT(CurveDragBaseLoc, NMS_AxisDir(NAxis), RO, RD);
+                    else
+                    {
+                        // центр-кружок: тянем в плоскости камеры (нормаль = взгляд)
+                        const FVector N = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::X);
+                        const float den = FVector::DotProduct(RD, N);
+                        CurveDragOffset = (FMath::Abs(den) > 1e-4f)
+                            ? CurveDragBaseLoc - (RO + RD * (FVector::DotProduct(CurveDragBaseLoc - RO, N) / den))
+                            : FVector::ZeroVector;
+                    }
+                }
+                if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+                return true;
+            }
+            // 2) «Умная» глубина: есть геометрия под курсором — точка ложится на неё (3D),
+            // иначе — на землю Z=0. Высоту узла потом правит гизмо.
+            FVector G; bool bGot = false;
+            FVector RO, RD;
+            if (bViewCached && DeprojectMouseRay(EventArgs.Viewport, RO, RD))
+            {
+                FHitResult Hit; FCollisionQueryParams QP(FName(TEXT("CurvePick")), true);
+                if (GetRenderWorld() && GetRenderWorld()->LineTraceSingleByChannel(Hit, RO, RO + RD * 1.0e6f, ECC_Visibility, QP))
+                { G = Hit.Location; bGot = true; }
+            }
+            if (!bGot && DeprojectMouseToGround(EventArgs.Viewport, G)) bGot = true;
+            if (bGot) { CurvePoints.Add(G); if (OnCurveChanged) OnCurveChanged(); if (EventArgs.Viewport) EventArgs.Viewport->Invalidate(); }
             return true;
         }
         // Постановка детали, следующей за курсором: ЛКМ фиксирует и ставит следующую.
@@ -1659,6 +1745,14 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     }
     if (Key == EKeys::LeftMouseButton && bReleased)
     {
+        // Завершить перетаскивание узла кривой.
+        if (bCurveMode && CurveDragNode >= 0)
+        {
+            CurveDragNode = -1; CurveDragAxis = -1;
+            if (OnCurveChanged) OnCurveChanged();
+            if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+            return true;
+        }
         // ITF-гизмо: завершить тягу гизмо, если оно захватывало мышь.
         if (ToolsContext.IsValid() && ToolsContext->InputRouter)
         {
@@ -1741,6 +1835,37 @@ bool FNMSViewportClient::InputAxis(const FInputKeyEventArgs& EventArgs)
     {
         MarqCur = FVector2D((float)EventArgs.Viewport->GetMouseX(), (float)EventArgs.Viewport->GetMouseY());
         EventArgs.Viewport->Invalidate();
+        return true;
+    }
+
+    // Перетаскивание узла кривой (ЛКМ зажата на мини-гизмо узла)
+    if (bCurveMode && CurveDragNode >= 0 && CurvePoints.IsValidIndex(CurveDragNode)
+        && (AxisKey == EKeys::MouseX || AxisKey == EKeys::MouseY))
+    {
+        FVector RO, RD;
+        if (DeprojectMouseRay(EventArgs.Viewport, RO, RD))
+        {
+            FVector NewLoc = CurveDragBaseLoc;
+            if (CurveDragAxis >= 0)
+            {
+                const FVector A = NMS_AxisDir(CurveDragAxis);
+                const float t = NMS_ClosestAxisT(CurveDragBaseLoc, A, RO, RD);
+                NewLoc = CurveDragBaseLoc + A * (t - CurveDragStartT);
+                if (CurveDragAxis == 0)      NewLoc.X = FMath::GridSnap(NewLoc.X, MoveSnap);
+                else if (CurveDragAxis == 1) NewLoc.Y = FMath::GridSnap(NewLoc.Y, MoveSnap);
+                else                         NewLoc.Z = FMath::GridSnap(NewLoc.Z, MoveSnap);
+            }
+            else // центр-кружок: свободно в плоскости камеры
+            {
+                const FVector N = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::X);
+                const float den = FVector::DotProduct(RD, N);
+                if (FMath::Abs(den) > 1e-4f)
+                    NewLoc = RO + RD * (FVector::DotProduct(CurveDragBaseLoc - RO, N) / den) + CurveDragOffset;
+            }
+            CurvePoints[CurveDragNode] = NewLoc;
+            if (OnCurveChanged) OnCurveChanged();
+            if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+        }
         return true;
     }
 
@@ -1910,10 +2035,55 @@ void FNMSViewportClient::DrawCurvePreview()
     UWorld* World = PreviewScene->GetWorld(); if (!World) return;
     ULineBatchComponent* LB = World->GetLineBatcher(UWorld::ELineBatcherType::WorldPersistent);
     if (!LB) return;
-    const FLinearColor PtCol(1.f,0.85f,0.1f,1.f), LnCol(0.2f,0.9f,1.f,1.f);
+    const FLinearColor LnCol(0.2f,0.9f,1.f,1.f);
     auto L2 = [&](const FVector& A, const FVector& B, const FLinearColor& C, float W){ LB->DrawLine(A, B, C, SDPG_Foreground, W, 0.f); };
-    for (const FVector& P : CurvePoints)
-    { L2(P-FVector(22,0,0),P+FVector(22,0,0),PtCol,3.f); L2(P-FVector(0,22,0),P+FVector(0,22,0),PtCol,3.f); L2(P,P+FVector(0,0,70),PtCol,2.f); }
+
+    // Мини-гизмо на каждом узле: цветные оси (X крас / Y зел / Z син) + кружок-центр.
+    // Жёлтым подсвечивается ось/кружок под курсором или тянемая сейчас.
+    const FLinearColor AxC[3] = {
+        FLinearColor(1.5f, 0.02f, 0.02f, 1.f),
+        FLinearColor(0.05f, 1.4f, 0.05f, 1.f),
+        FLinearColor(0.04f, 0.30f, 1.7f, 1.f) };
+    const FLinearColor HiC(1.7f, 1.4f, 0.05f, 1.f);
+    const FVector CamR = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Y);
+    const FVector CamU = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Z);
+    for (int32 ni = 0; ni < CurvePoints.Num(); ++ni)
+    {
+        const FVector P = CurvePoints[ni];
+        const float GL = FMath::Max(FVector::Dist(CameraLocation, P) * 0.07f, 26.f);
+        const bool bDragThis = (CurveDragNode == ni);
+        for (int32 a = 0; a < 3; ++a)
+        {
+            const bool bHot = (bDragThis && CurveDragAxis == a)
+                           || (CurveDragNode < 0 && CurveHoverNode == ni && CurveHoverAxis == a);
+            const FLinearColor C = bHot ? HiC : AxC[a];
+            const FVector D = NMS_AxisDir(a);
+            const FVector Tip = P + D * GL;
+            const float HL = GL * 0.28f, HR = GL * 0.10f;
+            const FVector Base = Tip - D * HL;
+            L2(P, Base, C, 4.f);
+            FVector U, V; NMS_RingBasis(a, U, V);
+            const int32 NS = 12;
+            FVector Prev = Base + U * HR;
+            for (int32 s = 1; s <= NS; ++s)
+            {
+                const float Tt = 2.f * PI * (float)s / (float)NS;
+                const FVector Q = Base + (U * FMath::Cos(Tt) + V * FMath::Sin(Tt)) * HR;
+                L2(Q, Tip, C, 2.f); L2(Prev, Q, C, 1.6f); Prev = Q;
+            }
+        }
+        const bool bHotC = (bDragThis && CurveDragAxis == -2)
+                        || (CurveDragNode < 0 && CurveHoverNode == ni && CurveHoverAxis == -2);
+        const FLinearColor CC = bHotC ? HiC : FLinearColor(0.95f, 0.95f, 0.95f, 1.f);
+        const float Rc = GL * 0.16f; const int32 NC = 16;
+        FVector Pr = P + CamR * Rc;
+        for (int32 s = 1; s <= NC; ++s)
+        {
+            const float T = 2.f * PI * (float)s / (float)NC;
+            const FVector Q = P + (CamR * FMath::Cos(T) + CamU * FMath::Sin(T)) * Rc;
+            L2(Pr, Q, CC, 3.f); Pr = Q;
+        }
+    }
 
     // плотная линия по типу кривой
     TArray<FVector> D;
@@ -1921,7 +2091,7 @@ void FNMSViewportClient::DrawCurvePreview()
     if (CurveType == ENMSCurveType::Polyline) { D = CurvePoints; }
     else if (CurveType == ENMSCurveType::Rect)
     {
-        if (CurvePoints.Num() >= 2){ const FVector A=CurvePoints[0],C=CurvePoints[1]; D = { A, FVector(C.X,A.Y,0.f), C, FVector(A.X,C.Y,0.f), A }; }
+        if (CurvePoints.Num() >= 2){ const FVector A=CurvePoints[0],C=CurvePoints[1]; D = { A, FVector(C.X,A.Y,A.Z), C, FVector(A.X,C.Y,A.Z), A }; }
     }
     else if (CurveType == ENMSCurveType::Circle)
     {
@@ -1929,7 +2099,7 @@ void FNMSViewportClient::DrawCurvePreview()
     }
     else
     {
-        if (CurvePoints.Num() >= 2){ TArray<FVector> P; P.Reserve(CurvePoints.Num()+2); P.Add(CurvePoints[0]); P.Append(CurvePoints); P.Add(CurvePoints.Last()); const int32 Seg=18; for(int32 i=1;i+2<P.Num();++i)for(int32 s=0;s<Seg;++s){const float t=(float)s/Seg; D.Add(FVector(CM(P[i-1].X,P[i].X,P[i+1].X,P[i+2].X,t),CM(P[i-1].Y,P[i].Y,P[i+1].Y,P[i+2].Y,t),0.f));} D.Add(CurvePoints.Last()); }
+        if (CurvePoints.Num() >= 2){ TArray<FVector> P; P.Reserve(CurvePoints.Num()+2); P.Add(CurvePoints[0]); P.Append(CurvePoints); P.Add(CurvePoints.Last()); const int32 Seg=18; for(int32 i=1;i+2<P.Num();++i)for(int32 s=0;s<Seg;++s){const float t=(float)s/Seg; D.Add(FVector(CM(P[i-1].X,P[i].X,P[i+1].X,P[i+2].X,t),CM(P[i-1].Y,P[i].Y,P[i+1].Y,P[i+2].Y,t),CM(P[i-1].Z,P[i].Z,P[i+1].Z,P[i+2].Z,t)));} D.Add(CurvePoints.Last()); }
     }
     if (D.Num() < 2) return;
     for (int32 i=0;i+1<D.Num();++i) L2(D[i],D[i+1],LnCol,2.5f);

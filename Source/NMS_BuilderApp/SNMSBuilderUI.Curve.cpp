@@ -62,7 +62,7 @@ void SNMSBuilderUI::UpdateCurvePreview()
     float PartLen = FMath::Max(FMath::Max(Sz.X, Sz.Y), 1.f);
     const float Step = FMath::Max(PartLen * (1.f - ViewportClient->GetCurveOverlap()), 1.f);
     TArray<float> Seg; float Total=0.f;
-    for (int32 i=0;i+1<Curve.Num();++i){ const float dd=FVector::Dist2D(Curve[i],Curve[i+1]); Seg.Add(dd); Total+=dd; }
+    for (int32 i=0;i+1<Curve.Num();++i){ const float dd=FVector::Dist(Curve[i],Curve[i+1]); Seg.Add(dd); Total+=dd; }
     const int32 NSteps = FMath::Min(FMath::Max(1, FMath::RoundToInt(Total / Step)), 5000);
     const float AStep = Total / NSteps;
     for (int32 ki=0; ki<=NSteps; ++ki)
@@ -74,7 +74,7 @@ void SNMSBuilderUI::UpdateCurvePreview()
         const FVector Pos = FMath::Lerp(Curve[si], Curve[ni], f);
         FVector T = Curve[ni]-Curve[si]; T.Z=0.f; if (T.IsNearlyZero()) T=FVector(1,0,0); T.Normalize();
         const float Yaw = FMath::RadiansToDegrees(FMath::Atan2(T.Y, T.X));
-        CurvePreviewISM->AddInstance(FTransform(FRotator(ViewportClient->GetCurveTilt(), Yaw, ViewportClient->GetCurveRoll()), FVector(Pos.X, Pos.Y, 0.f)), true);
+        CurvePreviewISM->AddInstance(FTransform(FRotator(ViewportClient->GetCurveTilt(), Yaw, ViewportClient->GetCurveRoll()), Pos), true);
     }
 }
 
@@ -91,7 +91,7 @@ TArray<FVector> SNMSBuilderUI::TessellateCurve()
     else if (Type == ENMSCurveType::Rect)
     {
         const FVector A = Pts[0], C = Pts[1];
-        Curve = { A, FVector(C.X,A.Y,0.f), C, FVector(A.X,C.Y,0.f), A };
+        Curve = { A, FVector(C.X,A.Y,A.Z), C, FVector(A.X,C.Y,A.Z), A };
     }
     else if (Type == ENMSCurveType::Circle)
     {
@@ -102,7 +102,7 @@ TArray<FVector> SNMSBuilderUI::TessellateCurve()
     {
         TArray<FVector> P; P.Reserve(Pts.Num()+2); P.Add(Pts[0]); P.Append(Pts); P.Add(Pts.Last());
         const int32 Seg=20;
-        for (int32 i=1;i+2<P.Num();++i) for (int32 s=0;s<Seg;++s){ const float t=(float)s/Seg; Curve.Add(FVector(CM(P[i-1].X,P[i].X,P[i+1].X,P[i+2].X,t),CM(P[i-1].Y,P[i].Y,P[i+1].Y,P[i+2].Y,t),0.f)); }
+        for (int32 i=1;i+2<P.Num();++i) for (int32 s=0;s<Seg;++s){ const float t=(float)s/Seg; Curve.Add(FVector(CM(P[i-1].X,P[i].X,P[i+1].X,P[i+2].X,t),CM(P[i-1].Y,P[i].Y,P[i+1].Y,P[i+2].Y,t),CM(P[i-1].Z,P[i].Z,P[i+1].Z,P[i+2].Z,t))); }
         Curve.Add(Pts.Last());
     }
     return Curve;
@@ -150,7 +150,7 @@ void SNMSBuilderUI::BuildAlongCurve()
     const FLinearColor Col2 = NMS_DefaultPartColor2(CurveBuildPart->Category, CurveBuildPart->ObjectID);
 
     TArray<float> Seg; float Total=0.f;
-    for (int32 i=0;i+1<Curve.Num();++i){ const float dd=FVector::Dist2D(Curve[i],Curve[i+1]); Seg.Add(dd); Total+=dd; }
+    for (int32 i=0;i+1<Curve.Num();++i){ const float dd=FVector::Dist(Curve[i],Curve[i+1]); Seg.Add(dd); Total+=dd; }
     int32 Count=0;
     const int32 NSteps = FMath::Max(1, FMath::RoundToInt(Total / Step));
     const float AStep = Total / NSteps;
@@ -168,7 +168,7 @@ void SNMSBuilderUI::BuildAlongCurve()
 
         FActorSpawnParameters SP; SP.ObjectFlags = RF_Transient;
         AStaticMeshActor* A = World->SpawnActor<AStaticMeshActor>(AStaticMeshActor::StaticClass(),
-            FTransform(FRotator(ViewportClient->GetCurveTilt(), Yaw, ViewportClient->GetCurveRoll()), FVector(Pos.X, Pos.Y, 0.f)), SP);
+            FTransform(FRotator(ViewportClient->GetCurveTilt(), Yaw, ViewportClient->GetCurveRoll()), Pos), SP);
         if (A)
         {
 #if WITH_EDITOR
@@ -209,8 +209,10 @@ void SNMSBuilderUI::BuildAlongCurve()
             ++Count;
         }
     }
-    UE_LOG(LogTemp, Log, TEXT("NMS: curve built %d parts (%s)"), Count, *CurveBuildPart->ObjectID);
-    ViewportClient->ExitCurve();
+    UE_LOG(LogNMSBuilderScene, Log, TEXT("NMS: curve built %d parts (%s)"), Count, *CurveBuildPart->ObjectID);
+    // Не выходим из инструмента — очищаем точки, чтобы можно было продолжать класть кривые подряд.
+    ViewportClient->ClearCurvePoints();
+    if (ViewportClient->OnCurveChanged) ViewportClient->OnCurveChanged();
     UpdateCurvePreview();
 }
 
