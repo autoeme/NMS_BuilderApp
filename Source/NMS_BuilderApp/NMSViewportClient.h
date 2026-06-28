@@ -193,6 +193,7 @@ private:
     FVector DragOffset = FVector::ZeroVector; // смещение точки захвата от центра детали
     bool bFwd=false, bBack=false, bLeft=false, bRight=false, bUp=false, bDown=false;
     float CameraSpeed = 1200.f;            // см/с (FreeCam)
+    FVector CamVelocity = FVector::ZeroVector; // текущая скорость камеры (инерция/сглаживание)
     float MouseSensitivity = 0.2f;
     double LastDrawTime = 0.0;
 

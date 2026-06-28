@@ -1285,33 +1285,38 @@ void FNMSViewportClient::LostFocus(FViewport* /*Viewport*/)
     // Окно потеряло фокус — снимаем все «зажатости», иначе камера может лететь сама.
     bRMBDown = false; bMMBDown = false;
     bFwd = bBack = bLeft = bRight = bUp = bDown = false;
+    CamVelocity = FVector::ZeroVector; // жёсткий стоп инерции при потере фокуса
 }
 
 void FNMSViewportClient::UpdateCamera(float Dt)
 {
     if (Dt <= 0.f) return;
-    // Полёт только при зажатой ПКМ. Защита от «залипшей» клавиши: отпустил ПКМ
-    // (или ушёл фокус) — камера сразу останавливается, сама не летит.
-    if (!bRMBDown) return;
 
-    // направления из текущего поворота
-    const FVector Fwd   = CameraRotation.Vector();
-    const FVector Right = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Y);
-    const FVector Up    = FVector::UpVector;
-
-    FVector Move = FVector::ZeroVector;
-    if (bFwd)   Move += Fwd;
-    if (bBack)  Move -= Fwd;
-    if (bRight) Move += Right;
-    if (bLeft)  Move -= Right;
-    if (bUp)    Move += Up;
-    if (bDown)  Move -= Up;
-
-    if (!Move.IsNearlyZero())
+    // Целевая скорость — только при зажатой ПКМ. Защита от «залипшей» клавиши:
+    // нет ПКМ -> цель 0 -> камера плавно тормозит и стоит (сама не летит).
+    FVector Target = FVector::ZeroVector;
+    if (bRMBDown)
     {
-        Move.Normalize();
-        CameraLocation += Move * CameraSpeed * Dt;
+        const FVector Fwd   = CameraRotation.Vector();
+        const FVector Right = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Y);
+        const FVector Up    = FVector::UpVector;
+        FVector Move = FVector::ZeroVector;
+        if (bFwd)   Move += Fwd;
+        if (bBack)  Move -= Fwd;
+        if (bRight) Move += Right;
+        if (bLeft)  Move -= Right;
+        if (bUp)    Move += Up;
+        if (bDown)  Move -= Up;
+        if (!Move.IsNearlyZero()) { Move.Normalize(); Target = Move * CameraSpeed; }
     }
+
+    // Инерция: плавный разгон/торможение — скорость стремится к целевой (lerp).
+    const float Rate = Target.IsNearlyZero() ? 11.f : 9.f; // торможение чуть резче разгона
+    const float A = FMath::Clamp(Rate * Dt, 0.f, 1.f);
+    CamVelocity = FMath::Lerp(CamVelocity, Target, A);
+    if (CamVelocity.SizeSquared() < 1.f) CamVelocity = FVector::ZeroVector; // гасим микро-дрейф
+    if (!CamVelocity.IsNearlyZero())
+        CameraLocation += CamVelocity * Dt;
 }
 
 bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
