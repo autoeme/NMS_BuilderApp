@@ -100,6 +100,8 @@ public:
     // Сменить фон сцены: PNG с диска -> текстура -> материал неба (M_SkyBG).
     void SetBackgroundImage(const FString& PngPath);
     virtual void MouseMove(FViewport* Viewport, int32 X, int32 Y) override;
+    // Потеря фокуса окна — сбросить «зажатости» полёта (чтобы камера не летела сама).
+    virtual void LostFocus(FViewport* Viewport) override;
 
     // Точка на плоскости Z=0 прямо перед камерой (куда смотрит вид) — место постановки.
     FVector GetGroundFocusPoint() const;
@@ -231,6 +233,9 @@ private:
     void DrawGrid();
     // Рамка вокруг выбранной детали (overlay).
     void DrawSelection(FCanvas* Canvas, const FSceneView* View);
+    // Родная обводка движка: пометить выбранные детали для прохода SelectionOutline.
+    void UpdateOutlineSelection();
+    TArray<TWeakObjectPtr<class UStaticMeshComponent>> OutlineMarked; // кому сейчас включена обводка
 
     // навигация
     void DollyZoom(float Dir);                 // колесо: +1 приблизить, -1 отдалить

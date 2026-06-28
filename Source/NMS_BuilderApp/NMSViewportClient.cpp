@@ -16,6 +16,7 @@
 #include "EngineUtils.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/PrimitiveComponent.h"
+#include "PrimitiveSceneProxy.h"  // SetSelection_GameThread — родная обводка выделения
 #include "Materials/MaterialInterface.h"
 #include "Materials/MaterialInstanceDynamic.h"
 #include "ImageUtils.h"          // ImportFileAsTexture2D (смена фона)
@@ -285,6 +286,8 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
         SF.SetBloom(false);                    // убрать свечение/ореол от солнца
         SF.SetLensFlares(false);               // убрать блики объектива
         SF.SetEyeAdaptation(false);            // без авто-экспозиции (не пересвечивает)
+        SF.SetSelection(true);                 // система выбора (нужна для прохода обводки)
+        SF.SetSelectionOutline(true);          // РОДНОЙ контур движка вокруг выбранной детали
     }
 
     // screen percentage (обязательно в новых версиях UE)
@@ -299,10 +302,12 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
     DrawCurvePreview();
     DrawSnapDebug();   // кадры точек стыковки (после Flush в DrawGrid)
 
+    UpdateOutlineSelection();   // пометить выбранные детали для прохода обводки движка
     GetRendererModule().BeginRenderingViewFamily(Canvas, &ViewFamily);
 
-    // Рамка выбранной детали — overlay поверх сцены (так и должно быть).
-    DrawSelection(Canvas, View);
+    // Контур выбора теперь рисует РОДНОЙ проход движка (SelectionOutline).
+    // Старый канвас-контур по рёбрам отключён:
+    // DrawSelection(Canvas, View);
     DrawCompass(Canvas, Size);
     DrawMarquee(Canvas, Size);
 
@@ -326,16 +331,21 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
         UFont* Font = GEngine ? GEngine->GetLargeFont() : nullptr;
         if (!Font) return;
         const float Sc = 1.6f;
-        const float TW = Font->GetStringSize(*Txt) * Sc;
-        const float TH = Font->GetMaxCharHeight() * Sc;
         const FVector2D P((float)Viewport->GetMouseX() + 22.f, (float)Viewport->GetMouseY() + 10.f);
-        FCanvasTileItem BG(P - FVector2D(10.f, 6.f), FVector2D(TW + 20.f, TH + 12.f), FLinearColor(0.05f, 0.05f, 0.05f, 0.78f));
-        BG.BlendMode = SE_BLEND_Translucent;
-        Canvas->DrawItem(BG);
-        FCanvasTextItem T(P, FText::FromString(Txt), Font, Col);
-        T.Scale = FVector2D(Sc, Sc);
-        T.EnableShadow(FLinearColor::Black);
-        Canvas->DrawItem(T);
+        auto DrawAt = [&](const FVector2D& Pos, const FLinearColor& C)
+        {
+            FCanvasTextItem T(Pos, FText::FromString(Txt), Font, C);
+            T.Scale = FVector2D(Sc, Sc);
+            Canvas->DrawItem(T);
+        };
+        // тень для читаемости на любом фоне
+        DrawAt(P + FVector2D(2.f, 2.f), FLinearColor(0.f, 0.f, 0.f, 1.f));
+        // плотный ярко-белый: несколько проходов со сдвигом = жирно и без серости
+        const FLinearColor W(1.f, 1.f, 1.f, 1.f);
+        DrawAt(P, W);
+        DrawAt(P + FVector2D(1.3f, 0.f), W);
+        DrawAt(P + FVector2D(0.f, 1.3f), W);
+        DrawAt(P + FVector2D(1.3f, 1.3f), W);
     };
 
     // Угол поворота у курсора — АБСОЛЮТНЫЙ (как в панели справа), а не с нуля.
@@ -345,7 +355,7 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
         {
             const FRotator R = S->GetActorRotation();
             const float Val = (GizmoAxis == 0) ? R.Roll : (GizmoAxis == 1) ? R.Pitch : R.Yaw;
-            DrawReadout(FString::Printf(TEXT("%.1f°"), Val), FLinearColor(1.f, 0.9f, 0.2f));
+            DrawReadout(FString::Printf(TEXT("%.1f°"), Val), FLinearColor(2.6f, 2.6f, 2.6f, 1.f));
         }
     }
 
@@ -353,7 +363,7 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
     if (bDragging && TransformMode == ENMSTransformMode::Scale && GizmoAxis >= 0)
     {
         if (AActor* S = SelectedActor.Get())
-            DrawReadout(FString::Printf(TEXT("%.2f x"), S->GetActorScale3D().X), FLinearColor(0.4f, 0.9f, 1.f));
+            DrawReadout(FString::Printf(TEXT("%.2f x"), S->GetActorScale3D().X), FLinearColor(2.6f, 2.6f, 2.6f, 1.f));
     }
 
     // НЕ вызываем InvalidateDisplay здесь — это рекурсия (Draw->invalidate->Draw)
@@ -542,6 +552,38 @@ void FNMSViewportClient::ApplyHighlight()
         UStaticMeshComponent* C = It->Key.Get();
         if (C) { const TArray<UMaterialInterface*>& Orig = It->Value; for (int32 i = 0; i < Orig.Num(); ++i) C->SetMaterial(i, Orig[i]); }
         It.RemoveCurrent();
+    }
+}
+
+// Родная обводка движка (силуэт, как в редакторе): помечаем scene-proxy выбранных
+// деталей «выбранными» — проход SelectionOutline сам рисует контур. Вызывается каждый кадр.
+void FNMSViewportClient::UpdateOutlineSelection()
+{
+    TArray<UStaticMeshComponent*> Cur;
+    auto AddActor = [&](AActor* Act)
+    {
+        if (!Act) return;
+        TArray<UStaticMeshComponent*> Comps;
+        Act->GetComponents(Comps);
+        Cur.Append(Comps);
+    };
+    for (const TWeakObjectPtr<AActor>& A : SelectedActors) AddActor(A.Get());
+    AddActor(SelectedActor.Get());
+
+    // снять обводку с тех, кто больше не выбран
+    for (const TWeakObjectPtr<UStaticMeshComponent>& P : OutlineMarked)
+    {
+        UStaticMeshComponent* C = P.Get();
+        if (C && !Cur.Contains(C) && C->SceneProxy)
+            C->SceneProxy->SetSelection_GameThread(false, false);
+    }
+    // включить обводку текущим выбранным
+    OutlineMarked.Reset();
+    for (UStaticMeshComponent* C : Cur)
+    {
+        if (!C) continue;
+        if (C->SceneProxy) C->SceneProxy->SetSelection_GameThread(true, true);
+        OutlineMarked.Add(C);
     }
 }
 
@@ -977,32 +1019,50 @@ void FNMSViewportClient::DrawGizmo()
     const FVector O = Sel->GetActorLocation();
     const float L = FMath::Max(FVector::Dist(CameraLocation, O) * 0.18f, 30.f);
     const FLinearColor Cols[3] = {
-        FLinearColor(1.f, 0.12f, 0.12f, 1.f),   // X красный
-        FLinearColor(0.12f, 1.f, 0.12f, 1.f),   // Y зелёный
-        FLinearColor(0.2f, 0.45f, 1.f, 1.f) };  // Z синий
+        FLinearColor(1.5f, 0.02f, 0.02f, 1.f),  // X красный (насыщенный, с лёгким свечением)
+        FLinearColor(0.05f, 1.4f, 0.05f, 1.f),  // Y зелёный
+        FLinearColor(0.04f, 0.30f, 1.7f, 1.f) };// Z синий
 
     if (TransformMode == ENMSTransformMode::Move)
     {
         for (int32 a = 0; a < 3; ++a)
         {
-            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.f, 1.f, 0.2f, 1.f) : Cols[a];
+            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.7f, 1.4f, 0.05f, 1.f) : Cols[a];
             const FVector D   = NMS_AxisDir(a);
             const FVector Tip = O + D * L;
-            LB->DrawLine(O, Tip, C, SDPG_Foreground, 4.f, 0.f);   // стержень
-            // наконечник-конус (как стрелка перемещения в Unity/Unreal)
-            FVector U, V; NMS_RingBasis(a, U, V);
-            const float HL = L * 0.24f;   // длина наконечника
-            const float HR = L * 0.09f;   // радиус основания
+            const float HL = L * 0.26f;   // длина наконечника
+            const float HR = L * 0.10f;   // радиус основания
             const FVector Base = Tip - D * HL;
-            const int32 NS = 10;
+            LB->DrawLine(O, Base, C, SDPG_Foreground, 7.f, 0.f);   // толстый стержень до основания конуса
+            // сплошной конус: плотные линии обод->остриё + заливка основания веером
+            FVector U, V; NMS_RingBasis(a, U, V);
+            const int32 NS = 24;
             FVector Prev = Base + U * HR;
             for (int32 s = 1; s <= NS; ++s)
             {
                 const float Tt = 2.f * PI * (float)s / (float)NS;
                 const FVector P = Base + (U * FMath::Cos(Tt) + V * FMath::Sin(Tt)) * HR;
-                LB->DrawLine(P, Tip,  C, SDPG_Foreground, 3.f, 0.f);   // боковина конуса
-                LB->DrawLine(Prev, P, C, SDPG_Foreground, 2.5f, 0.f);  // основание
+                LB->DrawLine(P, Tip,  C, SDPG_Foreground, 4.f, 0.f);   // боковина конуса
+                LB->DrawLine(Prev, P, C, SDPG_Foreground, 3.f, 0.f);   // обод основания
+                LB->DrawLine(Base, P, C, SDPG_Foreground, 2.5f, 0.f);  // заливка основания
                 Prev = P;
+            }
+        }
+        // центр-кружок — свободное перемещение в любую сторону (плоскость камеры)
+        {
+            const FVector CamR = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Y);
+            const FVector CamU = FRotationMatrix(CameraRotation).GetScaledAxis(EAxis::Z);
+            const float Rc = L * 0.16f;
+            const int32 NC = 28;
+            const FLinearColor CC = (GizmoAxis == -1 && bDragging) ? FLinearColor(1.7f, 1.4f, 0.05f, 1.f)
+                                                                   : FLinearColor(0.95f, 0.95f, 0.95f, 1.f);
+            FVector Pr = O + CamR * Rc;
+            for (int32 s = 1; s <= NC; ++s)
+            {
+                const float T = 2.f * PI * (float)s / (float)NC;
+                const FVector P = O + (CamR * FMath::Cos(T) + CamU * FMath::Sin(T)) * Rc;
+                LB->DrawLine(Pr, P, CC, SDPG_Foreground, 4.f, 0.f);
+                Pr = P;
             }
         }
     }
@@ -1012,7 +1072,7 @@ void FNMSViewportClient::DrawGizmo()
         const int32 N = 48;
         for (int32 a = 0; a < 3; ++a)
         {
-            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.f, 1.f, 0.2f, 1.f) : Cols[a];
+            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.7f, 1.4f, 0.05f, 1.f) : Cols[a];
             FVector U, V; NMS_RingBasis(a, U, V);
             U = Q.RotateVector(U); V = Q.RotateVector(V);
             FVector Prev = O + U * L;
@@ -1020,7 +1080,7 @@ void FNMSViewportClient::DrawGizmo()
             {
                 const float T = 2.f * PI * (float)s / (float)N;
                 const FVector P = O + (U * FMath::Cos(T) + V * FMath::Sin(T)) * L;
-                LB->DrawLine(Prev, P, C, SDPG_Foreground, 2.5f, 0.f);
+                LB->DrawLine(Prev, P, C, SDPG_Foreground, 8.f, 0.f);
                 Prev = P;
             }
         }
@@ -1044,14 +1104,24 @@ void FNMSViewportClient::DrawGizmo()
             }
             const int32 e[12][2] = { {0,1},{1,3},{3,2},{2,0},{4,5},{5,7},{7,6},{6,4},{0,4},{1,5},{2,6},{3,7} };
             for (int32 k = 0; k < 12; ++k)
-                LB->DrawLine(c[e[k][0]], c[e[k][1]], C, SDPG_Foreground, 3.f, 0.f);
+                LB->DrawLine(c[e[k][0]], c[e[k][1]], C, SDPG_Foreground, 4.f, 0.f);
+            // заливка граней параллельными линиями — кубик выглядит сплошным
+            const int32 fc[6][4] = { {0,1,3,2},{4,5,7,6},{0,1,5,4},{2,3,7,6},{0,2,6,4},{1,3,7,5} };
+            const int32 NF = 5;
+            for (int32 f = 0; f < 6; ++f)
+                for (int32 j = 0; j <= NF; ++j)
+                {
+                    const float t = (float)j / (float)NF;
+                    LB->DrawLine(FMath::Lerp(c[fc[f][0]], c[fc[f][3]], t),
+                                 FMath::Lerp(c[fc[f][1]], c[fc[f][2]], t), C, SDPG_Foreground, 3.f, 0.f);
+                }
         };
         const FVector LocAxis[3] = { AX, AY, AZ };
         for (int32 a = 0; a < 3; ++a)
         {
-            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.f, 1.f, 0.2f, 1.f) : Cols[a];
+            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.7f, 1.4f, 0.05f, 1.f) : Cols[a];
             const FVector Tip = O + LocAxis[a] * L;
-            LB->DrawLine(O, Tip, C, SDPG_Foreground, 4.f, 0.f);
+            LB->DrawLine(O, Tip, C, SDPG_Foreground, 7.f, 0.f);
             DrawCube(Tip, C);
         }
         DrawCube(O, FLinearColor(0.85f, 0.85f, 0.85f, 1.f)); // центр — равномерный масштаб
@@ -1071,6 +1141,9 @@ int32 FNMSViewportClient::PickGizmoAxis(FViewport* Viewport) const
 
     if (TransformMode == ENMSTransformMode::Move || TransformMode == ENMSTransformMode::Scale)
     {
+        // центр-кружок (только перемещение) — свободное движение в любую сторону
+        if (TransformMode == ENMSTransformMode::Move && FVector2D::Distance(Mouse, OScreen) < 16.f)
+            return -2;
         const FQuat Q = Sel->GetActorQuat();
         for (int32 a = 0; a < 3; ++a)
         {
@@ -1171,9 +1244,19 @@ void FNMSViewportClient::ResetCamera()
     FocusPoint = FVector::ZeroVector;
 }
 
+void FNMSViewportClient::LostFocus(FViewport* /*Viewport*/)
+{
+    // Окно потеряло фокус — снимаем все «зажатости», иначе камера может лететь сама.
+    bRMBDown = false; bMMBDown = false;
+    bFwd = bBack = bLeft = bRight = bUp = bDown = false;
+}
+
 void FNMSViewportClient::UpdateCamera(float Dt)
 {
     if (Dt <= 0.f) return;
+    // Полёт только при зажатой ПКМ. Защита от «залипшей» клавиши: отпустил ПКМ
+    // (или ушёл фокус) — камера сразу останавливается, сама не летит.
+    if (!bRMBDown) return;
 
     // направления из текущего поворота
     const FVector Fwd   = CameraRotation.Vector();
@@ -1211,7 +1294,7 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     if (Key == EKeys::RightMouseButton)
     {
         if (bPressed)  { bRMBDown = true;  bMarquee = false;  if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(true); }
-        if (bReleased) { bRMBDown = false; if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(false); }
+        if (bReleased) { bRMBDown = false; bFwd = bBack = bLeft = bRight = bUp = bDown = false; if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(false); }
         return true;
     }
 
@@ -1372,6 +1455,18 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
                     if (TransformMode == ENMSTransformMode::Scale)
                         GizmoBaseScale = SelectedActor->GetActorScale3D();
                 }
+                bDragging = true;
+                if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+                return true;
+            }
+            else if (Axis == -2 && TransformMode == ENMSTransformMode::Move)
+            {
+                // центр-кружок: свободное перемещение по земле (деталь следует за курсором)
+                FVector G;
+                if (DeprojectMouseToGround(EventArgs.Viewport, G))
+                    DragOffset = FVector(SelectedActor->GetActorLocation().X - G.X,
+                                         SelectedActor->GetActorLocation().Y - G.Y, 0.f);
+                GizmoAxis = -1;
                 bDragging = true;
                 if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
                 return true;
