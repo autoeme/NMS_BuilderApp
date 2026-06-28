@@ -50,6 +50,10 @@ public:
     virtual void Tick(const FGeometry& AllottedGeometry,
         const double InCurrentTime, const float InDeltaTime) override;
 
+    // Глобальный перехват клавиш окна: Esc отменяет ВСЁ, на каком бы виджете
+    // (список деталей/кнопки/вьюпорт) ни был фокус (событие всплывает к окну).
+    virtual FReply OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent) override;
+
 private:
     UDataTable* PartsTable = nullptr;
 

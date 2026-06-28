@@ -482,6 +482,18 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildCenterArea()
         ];
 }
 
+// Глобальный Esc: ловим на уровне окна — отмена срабатывает независимо от того,
+// какой виджет сейчас в фокусе (событие клавиши всплывает от фокуса к окну).
+FReply SNMSBuilderUI::OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent)
+{
+    if (InKeyEvent.GetKey() == EKeys::Escape && ViewportClient.IsValid())
+    {
+        ViewportClient->CancelAll();
+        return FReply::Handled();
+    }
+    return FReply::Unhandled();
+}
+
 // ===========================================================================
 //  Панель деталей: слева категории, справа поиск + сетка карточек
 // ===========================================================================

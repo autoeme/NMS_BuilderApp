@@ -68,6 +68,8 @@ public:
     void CancelPlacing();
     // Завершить предыдущее: снять выделение со всех деталей.
     void ClearSelection();
+    // Универсальная отмена (Esc): выйти из режимов, убрать призрак/рамку, снять выделение.
+    void CancelAll();
     // Режим прокладки кабеля/трубы: клик А, клик Б -> кабель между ними.
     void ToggleWiringMode() { CancelPlacing(); bWiringMode = !bWiringMode; } // с отменой установки
     bool IsWiringMode() const { return bWiringMode; }
@@ -206,7 +208,9 @@ private:
     int32   GizmoAxis = -1;                 // активная ось при тяге: 0=X 1=Y 2=Z, -1 нет
     FVector GizmoBaseLoc = FVector::ZeroVector;
     float   GizmoStartT = 0.f;
+    FVector GizmoBaseScale = FVector::OneVector;    // масштаб детали на момент захвата (режим Scale)
     float   GizmoPrevAngle = 0.f;           // угол курсора вокруг центра (кольца вращения)
+    float   GizmoRotAccumDeg = 0.f;         // накопленный угол поворота за текущую тягу (для readout)
     FVector GizmoAxisWorld = FVector::ZAxisVector; // мировая ось вращения, зафиксированная при захвате
     void  DrawGizmo();
 	void  DrawCompass(class FCanvas* Canvas, const FIntPoint& Size);

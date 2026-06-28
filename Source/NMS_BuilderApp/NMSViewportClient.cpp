@@ -319,6 +319,43 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
         }
     }
 
+    // Крупная плашка-показание у курсора (как в UE: число на тёмном фоне).
+    auto DrawReadout = [&](const FString& Txt, const FLinearColor& Col)
+    {
+        if (!Viewport) return;
+        UFont* Font = GEngine ? GEngine->GetLargeFont() : nullptr;
+        if (!Font) return;
+        const float Sc = 1.6f;
+        const float TW = Font->GetStringSize(*Txt) * Sc;
+        const float TH = Font->GetMaxCharHeight() * Sc;
+        const FVector2D P((float)Viewport->GetMouseX() + 22.f, (float)Viewport->GetMouseY() + 10.f);
+        FCanvasTileItem BG(P - FVector2D(10.f, 6.f), FVector2D(TW + 20.f, TH + 12.f), FLinearColor(0.05f, 0.05f, 0.05f, 0.78f));
+        BG.BlendMode = SE_BLEND_Translucent;
+        Canvas->DrawItem(BG);
+        FCanvasTextItem T(P, FText::FromString(Txt), Font, Col);
+        T.Scale = FVector2D(Sc, Sc);
+        T.EnableShadow(FLinearColor::Black);
+        Canvas->DrawItem(T);
+    };
+
+    // Угол поворота у курсора — АБСОЛЮТНЫЙ (как в панели справа), а не с нуля.
+    if (bDragging && TransformMode == ENMSTransformMode::Rotate && GizmoAxis >= 0)
+    {
+        if (AActor* S = SelectedActor.Get())
+        {
+            const FRotator R = S->GetActorRotation();
+            const float Val = (GizmoAxis == 0) ? R.Roll : (GizmoAxis == 1) ? R.Pitch : R.Yaw;
+            DrawReadout(FString::Printf(TEXT("%.1f°"), Val), FLinearColor(1.f, 0.9f, 0.2f));
+        }
+    }
+
+    // Значение масштаба у курсора при масштабировании гизмо (равномерный, |Up|).
+    if (bDragging && TransformMode == ENMSTransformMode::Scale && GizmoAxis >= 0)
+    {
+        if (AActor* S = SelectedActor.Get())
+            DrawReadout(FString::Printf(TEXT("%.2f x"), S->GetActorScale3D().X), FLinearColor(0.4f, 0.9f, 1.f));
+    }
+
     // НЕ вызываем InvalidateDisplay здесь — это рекурсия (Draw->invalidate->Draw)
     // и stack overflow. Непрерывный тик вьюпорта сделаем правильно через
     // SNMSBuilderUI::Tick (на уровне виджета), а не из Draw.
@@ -677,6 +714,16 @@ void FNMSViewportClient::CancelPlacing()
     }
 }
 
+// Универсальная отмена (Esc): выйти из любых режимов, убрать призрак/рамку, снять выделение.
+void FNMSViewportClient::CancelAll()
+{
+    if (bWiringMode)   { bWiringMode = false; bHaveWireA = false; }
+    if (bPlacingGhost) { CancelPlacing(); }
+    if (bCurveMode)    { CurvePoints.Reset(); bCurveMode = false; if (OnCurveChanged) OnCurveChanged(); }
+    bMarquee = false;
+    ClearSelection();
+}
+
 void FNMSViewportClient::MouseMove(FViewport* Viewport, int32 X, int32 Y)
 {
     if (bMarquee && Viewport) { MarqCur = FVector2D((float)X, (float)Y); Viewport->Invalidate(); return; }
@@ -922,7 +969,6 @@ void FNMSViewportClient::DrawGizmo()
 {
     AActor* Sel = SelectedActor.Get();
     if (!Sel || !PreviewScene.IsValid()) return;
-    if (TransformMode != ENMSTransformMode::Move && TransformMode != ENMSTransformMode::Rotate) return;
     UWorld* World = PreviewScene->GetWorld();
     if (!World) return;
     ULineBatchComponent* LB = World->GetLineBatcher(UWorld::ELineBatcherType::WorldPersistent);
@@ -960,7 +1006,7 @@ void FNMSViewportClient::DrawGizmo()
             }
         }
     }
-    else // Rotate: три кольца по ЛОКАЛЬНЫМ осям детали (наклоняются вместе с ней)
+    else if (TransformMode == ENMSTransformMode::Rotate) // три кольца по ЛОКАЛЬНЫМ осям детали
     {
         const FQuat Q = Sel->GetActorQuat();
         const int32 N = 48;
@@ -979,13 +1025,43 @@ void FNMSViewportClient::DrawGizmo()
             }
         }
     }
+    else // Scale: оси с кубиками по ЛОКАЛЬНЫМ осям детали + центральный кубик
+    {
+        const FQuat Q = Sel->GetActorQuat();
+        const FVector AX = Q.RotateVector(FVector(1, 0, 0));
+        const FVector AY = Q.RotateVector(FVector(0, 1, 0));
+        const FVector AZ = Q.RotateVector(FVector(0, 0, 1));
+        const float h = L * 0.07f;
+        auto DrawCube = [&](const FVector& Ctr, const FLinearColor& C)
+        {
+            FVector c[8];
+            for (int32 i = 0; i < 8; ++i)
+            {
+                const float sx = (i & 1) ? 1.f : -1.f;
+                const float sy = (i & 2) ? 1.f : -1.f;
+                const float sz = (i & 4) ? 1.f : -1.f;
+                c[i] = Ctr + (AX * sx + AY * sy + AZ * sz) * h;
+            }
+            const int32 e[12][2] = { {0,1},{1,3},{3,2},{2,0},{4,5},{5,7},{7,6},{6,4},{0,4},{1,5},{2,6},{3,7} };
+            for (int32 k = 0; k < 12; ++k)
+                LB->DrawLine(c[e[k][0]], c[e[k][1]], C, SDPG_Foreground, 3.f, 0.f);
+        };
+        const FVector LocAxis[3] = { AX, AY, AZ };
+        for (int32 a = 0; a < 3; ++a)
+        {
+            const FLinearColor C = (GizmoAxis == a) ? FLinearColor(1.f, 1.f, 0.2f, 1.f) : Cols[a];
+            const FVector Tip = O + LocAxis[a] * L;
+            LB->DrawLine(O, Tip, C, SDPG_Foreground, 4.f, 0.f);
+            DrawCube(Tip, C);
+        }
+        DrawCube(O, FLinearColor(0.85f, 0.85f, 0.85f, 1.f)); // центр — равномерный масштаб
+    }
 }
 
 int32 FNMSViewportClient::PickGizmoAxis(FViewport* Viewport) const
 {
     AActor* Sel = SelectedActor.Get();
     if (!Sel || !bViewCached || !Viewport) return -1;
-    if (TransformMode != ENMSTransformMode::Move && TransformMode != ENMSTransformMode::Rotate) return -1;
     const FVector O = Sel->GetActorLocation();
     const float L = FMath::Max(FVector::Dist(CameraLocation, O) * 0.18f, 30.f);
     FVector2D OScreen;
@@ -993,12 +1069,14 @@ int32 FNMSViewportClient::PickGizmoAxis(FViewport* Viewport) const
     const FVector2D Mouse((float)Viewport->GetMouseX(), (float)Viewport->GetMouseY());
     int32 Best = -1; float BestD = 14.f; // порог, пиксели
 
-    if (TransformMode == ENMSTransformMode::Move)
+    if (TransformMode == ENMSTransformMode::Move || TransformMode == ENMSTransformMode::Scale)
     {
+        const FQuat Q = Sel->GetActorQuat();
         for (int32 a = 0; a < 3; ++a)
         {
+            const FVector Dir = (TransformMode == ENMSTransformMode::Scale) ? Q.RotateVector(NMS_AxisDir(a)) : NMS_AxisDir(a);
             FVector2D Tip;
-            if (!WorldToPixel(O + NMS_AxisDir(a) * L, Tip)) continue;
+            if (!WorldToPixel(O + Dir * L, Tip)) continue;
             const float Dist = FMath::PointDistToSegment(
                 FVector(Mouse, 0.f), FVector(OScreen, 0.f), FVector(Tip, 0.f));
             if (Dist < BestD) { BestD = Dist; Best = a; }
@@ -1142,11 +1220,7 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     // снимает рамку выделения и тягу гизмо, сбрасывает выделение деталей.
     if (Key == EKeys::Escape && bPressed)
     {
-        if (bWiringMode)   { bWiringMode = false; bHaveWireA = false; }
-        if (bPlacingGhost) { CancelPlacing(); }                 // убрать голограмму
-        if (bCurveMode)    { CurvePoints.Reset(); bCurveMode = false; if (OnCurveChanged) OnCurveChanged(); }
-        bMarquee = false;                                       // отменить рамку выбора
-        ClearSelection();                                       // снять выделение + подсветку, сбросить тягу/ось
+        CancelAll();
         if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
         return true;
     }
@@ -1204,9 +1278,18 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
         return true;
     }
 
-    // Колесо -> зум (доли камеры)
-    if (Key == EKeys::MouseScrollUp && bPressed)   { DollyZoom(+1.f); return true; }
-    if (Key == EKeys::MouseScrollDown && bPressed) { DollyZoom(-1.f); return true; }
+    // Колесо мыши -> регулировка скорости полёта камеры (зум убран, чтобы не
+    // накладывался на скорость). Скорость меняется и в полёте, и без него.
+    if (Key == EKeys::MouseScrollUp && bPressed)
+    {
+        CameraSpeed = FMath::Clamp(CameraSpeed * 1.2f, 50.f, 50000.f);
+        return true;
+    }
+    if (Key == EKeys::MouseScrollDown && bPressed)
+    {
+        CameraSpeed = FMath::Clamp(CameraSpeed / 1.2f, 50.f, 50000.f);
+        return true;
+    }
 
     // Переключение режима манипуляции (как кнопки тулбара): 1 двигать, 2 крутить, 3 масштаб
     if (bPressed && Key == EKeys::One)   { TransformMode = ENMSTransformMode::Move;   return true; }
@@ -1266,6 +1349,7 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
                 GizmoBaseLoc = SelectedActor->GetActorLocation();
                 if (TransformMode == ENMSTransformMode::Rotate)
                 {
+                    GizmoRotAccumDeg = 0.f; // начинаем отсчёт угла для readout
                     // ось вращения = ЛОКАЛЬНАЯ ось детали, зафиксированная на момент захвата
                     GizmoAxisWorld = SelectedActor->GetActorQuat().RotateVector(NMS_AxisDir(Axis));
                     // стартовый угол курсора вокруг центра детали на экране
@@ -1279,9 +1363,14 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
                 }
                 else
                 {
+                    const FVector AxisDir = (TransformMode == ENMSTransformMode::Scale)
+                        ? SelectedActor->GetActorQuat().RotateVector(NMS_AxisDir(Axis))
+                        : NMS_AxisDir(Axis);
                     FVector RO, RD;
                     if (DeprojectMouseRay(EventArgs.Viewport, RO, RD))
-                        GizmoStartT = NMS_ClosestAxisT(GizmoBaseLoc, NMS_AxisDir(Axis), RO, RD);
+                        GizmoStartT = NMS_ClosestAxisT(GizmoBaseLoc, AxisDir, RO, RD);
+                    if (TransformMode == ENMSTransformMode::Scale)
+                        GizmoBaseScale = SelectedActor->GetActorScale3D();
                 }
                 bDragging = true;
                 if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
@@ -1420,6 +1509,22 @@ bool FNMSViewportClient::InputAxis(const FInputKeyEventArgs& EventArgs)
                     const float Sign = (FVector::DotProduct(A,
                         (CameraLocation - Sel->GetActorLocation()).GetSafeNormal()) >= 0.f) ? 1.f : -1.f;
                     RotateSelection(FQuat(A, Delta * Sign), GizmoBaseLoc);
+                    GizmoRotAccumDeg += FMath::RadiansToDegrees(Delta * Sign); // для readout градусов
+                }
+                return true;
+            }
+            if (TransformMode == ENMSTransformMode::Scale)
+            {
+                FVector RO, RD;
+                if (DeprojectMouseRay(EventArgs.Viewport, RO, RD))
+                {
+                    const FVector AxisL = Sel->GetActorQuat().RotateVector(NMS_AxisDir(GizmoAxis));
+                    const float t = NMS_ClosestAxisT(GizmoBaseLoc, AxisL, RO, RD);
+                    const float L = FMath::Max(FVector::Dist(CameraLocation, GizmoBaseLoc) * 0.18f, 30.f);
+                    const float Factor = FMath::Clamp(1.f + (t - GizmoStartT) / FMath::Max(L, 1.f), 0.1f, 10.f);
+                    // NMS хранит масштаб одним значением (|Up|) — масштабируем РАВНОМЕРНО,
+                    // за какую бы ось ни тянули (не в разные стороны, как в игре).
+                    Sel->SetActorScale3D(GizmoBaseScale * Factor);
                 }
                 return true;
             }
@@ -1464,12 +1569,8 @@ bool FNMSViewportClient::InputAxis(const FInputKeyEventArgs& EventArgs)
             Sel->AddActorWorldRotation(FRotator(0.f, AxisDelta * RotDragSpeed, 0.f));
             return true;
         }
-        if (TransformMode == ENMSTransformMode::Scale && AxisKey == EKeys::MouseY)
-        {
-            const float F = FMath::Clamp(1.f + AxisDelta * 0.01f, 0.5f, 2.f);
-            Sel->SetActorScale3D(Sel->GetActorScale3D() * F);
-            return true;
-        }
+        // Масштаб только через гизмо (захват кубика). Перетаскивание мышью по
+        // телу детали масштаб НЕ меняет — по просьбе: только через гизмо.
     }
 
     if (!bRMBDown) return false; // вращаем только с зажатой ПКМ
