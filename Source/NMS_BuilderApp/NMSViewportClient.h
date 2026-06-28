@@ -236,6 +236,8 @@ private:
     // Родная обводка движка: пометить выбранные детали для прохода SelectionOutline.
     void UpdateOutlineSelection();
     TArray<TWeakObjectPtr<class UStaticMeshComponent>> OutlineMarked; // кому сейчас включена обводка
+    TWeakObjectPtr<AActor> HoveredActor;                              // деталь под курсором (hover-обводка)
+    AActor* TracePartUnderCursor(FViewport* Viewport) const;          // что под курсором (без выбора)
 
     // навигация
     void DollyZoom(float Dir);                 // колесо: +1 приблизить, -1 отдалить

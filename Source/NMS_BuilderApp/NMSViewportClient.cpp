@@ -559,29 +559,42 @@ void FNMSViewportClient::ApplyHighlight()
 // деталей «выбранными» — проход SelectionOutline сам рисует контур. Вызывается каждый кадр.
 void FNMSViewportClient::UpdateOutlineSelection()
 {
-    TArray<UStaticMeshComponent*> Cur;
-    auto AddActor = [&](AActor* Act)
+    auto Collect = [](AActor* Act, TArray<UStaticMeshComponent*>& Out)
     {
         if (!Act) return;
-        TArray<UStaticMeshComponent*> Comps;
-        Act->GetComponents(Comps);
-        Cur.Append(Comps);
+        TArray<UStaticMeshComponent*> C; Act->GetComponents(C); Out.Append(C);
     };
-    for (const TWeakObjectPtr<AActor>& A : SelectedActors) AddActor(A.Get());
-    AddActor(SelectedActor.Get());
+    TArray<UStaticMeshComponent*> SelComps, HovComps;
+    for (const TWeakObjectPtr<AActor>& A : SelectedActors) Collect(A.Get(), SelComps);
+    Collect(SelectedActor.Get(), SelComps);
 
-    // снять обводку с тех, кто больше не выбран
+    AActor* Hov = HoveredActor.Get();
+    const bool bHovSelected = Hov && (Hov == SelectedActor.Get()
+        || SelectedActors.ContainsByPredicate([Hov](const TWeakObjectPtr<AActor>& W){ return W.Get() == Hov; }));
+    if (Hov && !bHovSelected) Collect(Hov, HovComps);
+
+    // снять обводку с тех, кого больше нет ни в выборе, ни в наведении
     for (const TWeakObjectPtr<UStaticMeshComponent>& P : OutlineMarked)
     {
         UStaticMeshComponent* C = P.Get();
-        if (C && !Cur.Contains(C) && C->SceneProxy)
+        if (C && !SelComps.Contains(C) && !HovComps.Contains(C) && C->SceneProxy)
             C->SceneProxy->SetSelection_GameThread(false, false);
     }
-    // включить обводку текущим выбранным
+
     OutlineMarked.Reset();
-    for (UStaticMeshComponent* C : Cur)
+    // выбранные — яркий контур (цвет 0)
+    for (UStaticMeshComponent* C : SelComps)
     {
         if (!C) continue;
+        C->SetSelectionOutlineColorIndex(0);
+        if (C->SceneProxy) C->SceneProxy->SetSelection_GameThread(true, true);
+        OutlineMarked.Add(C);
+    }
+    // наведённая — приглушённый контур (цвет 1, subdued)
+    for (UStaticMeshComponent* C : HovComps)
+    {
+        if (!C) continue;
+        C->SetSelectionOutlineColorIndex(1);
         if (C->SceneProxy) C->SceneProxy->SetSelection_GameThread(true, true);
         OutlineMarked.Add(C);
     }
@@ -654,6 +667,25 @@ bool FNMSViewportClient::PickPartUnderCursor(FViewport* Viewport)
     }
     SelectedActor = nullptr; // клик мимо -> снять выделение
     return false;
+}
+
+// Что за деталь под курсором — БЕЗ изменения выделения (для hover-обводки).
+AActor* FNMSViewportClient::TracePartUnderCursor(FViewport* Viewport) const
+{
+    if (!Viewport || !bViewCached) return nullptr;
+    UWorld* World = GetRenderWorld();
+    if (!World) return nullptr;
+    const FVector2D Mouse((float)Viewport->GetMouseX(), (float)Viewport->GetMouseY());
+    FVector RayOrigin, RayDir;
+    FSceneView::DeprojectScreenToWorld(Mouse, CachedViewRect, CachedInvView, CachedInvProj, RayOrigin, RayDir);
+    FHitResult Hit;
+    FCollisionQueryParams Params(FName(TEXT("NMSHover")), /*bTraceComplex=*/true);
+    if (World->LineTraceSingleByChannel(Hit, RayOrigin, RayOrigin + RayDir * 1.0e6f, ECC_Visibility, Params))
+    {
+        AActor* A = Hit.GetActor();
+        if (A && A->GetActorNameOrLabel().StartsWith(TEXT("NMS_"))) return A;
+    }
+    return nullptr;
 }
 
 void FNMSViewportClient::SetSelectedActor(AActor* InActor)
@@ -786,6 +818,10 @@ void FNMSViewportClient::MouseMove(FViewport* Viewport, int32 X, int32 Y)
             if (Viewport) Viewport->Invalidate();
         }
     }
+
+    // Hover-обводка: подсветить деталь под курсором (когда не ставим/не тащим/не летаем/не рамка).
+    HoveredActor = (!bPlacingGhost && !bDragging && !bMarquee && !bRMBDown && !bMMBDown)
+        ? TracePartUnderCursor(Viewport) : nullptr;
 }
 
 // ID детали (ObjectID) из тега актёра. Пусто — не наша деталь.
