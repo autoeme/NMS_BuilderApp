@@ -4,11 +4,13 @@
 #include "UnrealClient.h"
 #include "InputCoreTypes.h"
 #include "PreviewScene.h"
+#include "UObject/StrongObjectPtr.h"
 
 class AActor;
 class FSceneView;
 class FViewport;
 class FCanvas;
+struct FInputDeviceState;   // ITF: состояние ввода для проброса в гизмо
 
 // Режим манипуляции выбранной деталью мышью (как тулбар в приложении).
 enum class ENMSTransformMode : uint8 { Move, Rotate, Scale };
@@ -237,6 +239,18 @@ private:
     // Родная обводка движка: пометить выбранные детали для прохода SelectionOutline.
     void UpdateOutlineSelection();
     TArray<TWeakObjectPtr<class UStaticMeshComponent>> OutlineMarked; // кому сейчас включена обводка
+
+    // --- ITF: движковое гизмо UCombinedTransformGizmo ---
+    TStrongObjectPtr<class UInteractiveToolsContext> ToolsContext;
+    TStrongObjectPtr<class UGizmoViewContext>        GizmoViewContext;
+    TStrongObjectPtr<class UCombinedTransformGizmo>  ITFGizmo;
+    TStrongObjectPtr<class UTransformProxy>          ITFProxy;
+    TUniquePtr<class FNMSToolsContextQueries>        ITFQueries;
+    TUniquePtr<class FNMSToolsContextTransactions>   ITFTransactions;
+    TWeakObjectPtr<AActor> ITFGizmoTarget;           // на какой детали сейчас гизмо
+    void EnsureITFContext();
+    void UpdateITFGizmo(const class FSceneView* View, FViewport* Viewport, float Dt);
+    FInputDeviceState MakeMouseState(FViewport* Viewport) const; // мышь -> состояние для InputRouter
     TWeakObjectPtr<AActor> HoveredActor;                              // деталь под курсором (hover-обводка)
     AActor* TracePartUnderCursor(FViewport* Viewport) const;          // что под курсором (без выбора)
 

@@ -17,6 +17,17 @@
 #include "Components/StaticMeshComponent.h"
 #include "Components/PrimitiveComponent.h"
 #include "PrimitiveSceneProxy.h"  // SetSelection_GameThread — родная обводка выделения
+// --- ITF: движковое гизмо ---
+#include "NMSGizmoContext.h"
+#include "InteractiveToolsContext.h"
+#include "InteractiveGizmoManager.h"
+#include "ContextObjectStore.h"
+#include "BaseGizmos/TransformGizmoUtil.h"
+#include "BaseGizmos/CombinedTransformGizmo.h"
+#include "BaseGizmos/TransformProxy.h"
+#include "BaseGizmos/GizmoViewContext.h"
+#include "InputState.h"     // FInputDeviceState (проброс мыши в гизмо)
+#include "InputRouter.h"    // UInputRouter::PostInputEvent / HasActiveMouseCapture
 #include "Materials/MaterialInterface.h"
 #include "Materials/MaterialInstanceDynamic.h"
 #include "ImageUtils.h"          // ImportFileAsTexture2D (смена фона)
@@ -297,12 +308,15 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
 
     // Грид-сетка как 3D-линии в сцене (с глубиной) — рисуем ДО рендера сцены.
     DrawGrid();
-    // Гизмо перемещения (цветные оси) поверх — добавляется к тем же линиям.
+    // Гизмо перемещения/вращения/масштаба (цветные оси) — своё, по режимам W/E/R.
     DrawGizmo();
     DrawCurvePreview();
     DrawSnapDebug();   // кадры точек стыковки (после Flush в DrawGrid)
 
     UpdateOutlineSelection();   // пометить выбранные детали для прохода обводки движка
+    // ITF-гизмо отключено (откат на своё). Контекст ITF не создаётся, весь ITF-роутинг
+    // ниже становится неактивным (ToolsContext невалиден). Код оставлен на будущее.
+    // UpdateITFGizmo(View, Viewport, Dt);
     GetRendererModule().BeginRenderingViewFamily(Canvas, &ViewFamily);
 
     // Контур выбора теперь рисует РОДНОЙ проход движка (SelectionOutline).
@@ -598,6 +612,86 @@ void FNMSViewportClient::UpdateOutlineSelection()
         if (C->SceneProxy) C->SceneProxy->SetSelection_GameThread(true, true);
         OutlineMarked.Add(C);
     }
+}
+
+// Поднять контекст ITF один раз (менеджер гизмо + view-context).
+void FNMSViewportClient::EnsureITFContext()
+{
+    if (ToolsContext.IsValid()) return;
+    UWorld* W = GetRenderWorld();
+    if (!W) return;
+    ITFQueries = MakeUnique<FNMSToolsContextQueries>(W, nullptr);
+    ITFTransactions = MakeUnique<FNMSToolsContextTransactions>();
+    UInteractiveToolsContext* Ctx = NewObject<UInteractiveToolsContext>();
+    Ctx->Initialize(ITFQueries.Get(), ITFTransactions.Get());
+    ITFQueries->Context = Ctx;   // теперь GetCurrentSelectionState отдаст ToolManager/GizmoManager
+    ToolsContext.Reset(Ctx);
+    UE::TransformGizmoUtil::RegisterTransformGizmoContextObject(Ctx);
+    UGizmoViewContext* VC = NewObject<UGizmoViewContext>();
+    Ctx->ContextObjectStore->AddContextObject(VC);
+    GizmoViewContext.Reset(VC);
+}
+
+// Каждый кадр: камера -> гизмо, view-context из вида, пересоздание под выбор, тик.
+void FNMSViewportClient::UpdateITFGizmo(const FSceneView* View, FViewport* Viewport, float Dt)
+{
+    EnsureITFContext();
+    if (!ToolsContext.IsValid() || !View) return;
+
+    if (ITFQueries)
+    {
+        FViewCameraState& C = ITFQueries->CamState;
+        C.Position = CameraLocation;
+        C.Orientation = CameraRotation.Quaternion();
+        C.HorizontalFOVDegrees = CameraFOV;
+        C.bIsOrthographic = false;
+        ITFQueries->Viewport = Viewport;
+    }
+    if (GizmoViewContext) GizmoViewContext->ResetFromSceneView(*View);
+
+    // целевой актёр = выбранная деталь
+    AActor* Sel = SelectedActor.Get();
+    if (Sel != ITFGizmoTarget.Get())
+    {
+        if (ToolsContext->GizmoManager) ToolsContext->GizmoManager->DestroyAllGizmosByOwner(this);
+        ITFGizmo.Reset();
+        ITFProxy.Reset();
+        ITFGizmoTarget = Sel;
+        if (Sel)
+        {
+            UTransformProxy* Proxy = NewObject<UTransformProxy>();
+            if (USceneComponent* Root = Sel->GetRootComponent())
+                Proxy->AddComponent(Root);
+            UCombinedTransformGizmo* G = UE::TransformGizmoUtil::CreateCustomTransformGizmo(
+                ToolsContext->GizmoManager, ETransformGizmoSubElements::FullTranslateRotateScale, this);
+            if (G)
+            {
+                G->SetActiveTarget(Proxy);
+                ITFGizmo.Reset(G);
+                ITFProxy.Reset(Proxy);
+            }
+        }
+    }
+
+    if (ToolsContext->GizmoManager) ToolsContext->GizmoManager->Tick(Dt);
+}
+
+// Собрать состояние мыши для InputRouter (луч мира + позиция + модификаторы).
+FInputDeviceState FNMSViewportClient::MakeMouseState(FViewport* Viewport) const
+{
+    FInputDeviceState S;
+    S.InputDevice = EInputDevices::Mouse;
+    S.SetModifierKeyStates(false, bAltDown, bCtrlDown, false);
+    FVector RO(ForceInitToZero), RD(0.f, 0.f, 1.f);
+    if (Viewport && bViewCached) DeprojectMouseRay(Viewport, RO, RD);
+    const FVector2D Pos = Viewport
+        ? FVector2D((float)Viewport->GetMouseX(), (float)Viewport->GetMouseY())
+        : FVector2D::ZeroVector;
+    S.Mouse.Position2D = Pos;
+    S.Mouse.WorldRay = FRay(RO, RD, true);
+    S.Mouse.UnboundedPosition2D = Pos;
+    S.Mouse.UnboundedWorldRay = FRay(RO, RD, true);
+    return S;
 }
 
 // ===========================================================================
@@ -1069,7 +1163,7 @@ void FNMSViewportClient::DrawGizmo()
             const float HL = L * 0.26f;   // длина наконечника
             const float HR = L * 0.10f;   // радиус основания
             const FVector Base = Tip - D * HL;
-            LB->DrawLine(O, Base, C, SDPG_Foreground, 7.f, 0.f);   // толстый стержень до основания конуса
+            LB->DrawLine(O, Base, C, SDPG_Foreground, 5.f, 0.f);   // стержень стрелки (−30% толщины)
             // сплошной конус: плотные линии обод->остриё + заливка основания веером
             FVector U, V; NMS_RingBasis(a, U, V);
             const int32 NS = 24;
@@ -1078,9 +1172,9 @@ void FNMSViewportClient::DrawGizmo()
             {
                 const float Tt = 2.f * PI * (float)s / (float)NS;
                 const FVector P = Base + (U * FMath::Cos(Tt) + V * FMath::Sin(Tt)) * HR;
-                LB->DrawLine(P, Tip,  C, SDPG_Foreground, 4.f, 0.f);   // боковина конуса
-                LB->DrawLine(Prev, P, C, SDPG_Foreground, 3.f, 0.f);   // обод основания
-                LB->DrawLine(Base, P, C, SDPG_Foreground, 2.5f, 0.f);  // заливка основания
+                LB->DrawLine(P, Tip,  C, SDPG_Foreground, 2.8f, 0.f);  // боковина конуса (−30%)
+                LB->DrawLine(Prev, P, C, SDPG_Foreground, 2.1f, 0.f);  // обод основания
+                LB->DrawLine(Base, P, C, SDPG_Foreground, 1.8f, 0.f);  // заливка основания
                 Prev = P;
             }
         }
@@ -1168,6 +1262,7 @@ int32 FNMSViewportClient::PickGizmoAxis(FViewport* Viewport) const
 {
     AActor* Sel = SelectedActor.Get();
     if (!Sel || !bViewCached || !Viewport) return -1;
+    if (ToolsContext.IsValid()) return -1; // активно ITF-гизмо — своё не перехватывает оси
     const FVector O = Sel->GetActorLocation();
     const float L = FMath::Max(FVector::Dist(CameraLocation, O) * 0.18f, 30.f);
     FVector2D OScreen;
@@ -1461,6 +1556,18 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
             return true;
         }
 
+        // ITF-гизмо: отдать нажатие движковому гизмо; если оно захватило ось — готово.
+        if (ToolsContext.IsValid() && ToolsContext->InputRouter)
+        {
+            FInputDeviceState S = MakeMouseState(EventArgs.Viewport);
+            S.Mouse.Left.SetStates(true, true, false);
+            if (ToolsContext->InputRouter->PostInputEvent(S))
+            {
+                if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+                return true;
+            }
+        }
+
         bDragging = false;
         GizmoAxis = -1;
         // если уже есть выбранная деталь и кликнули по её оси — тянем по оси
@@ -1552,6 +1659,15 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     }
     if (Key == EKeys::LeftMouseButton && bReleased)
     {
+        // ITF-гизмо: завершить тягу гизмо, если оно захватывало мышь.
+        if (ToolsContext.IsValid() && ToolsContext->InputRouter)
+        {
+            const bool bWasCapturing = ToolsContext->InputRouter->HasActiveMouseCapture();
+            FInputDeviceState S = MakeMouseState(EventArgs.Viewport);
+            S.Mouse.Left.SetStates(false, false, true);
+            ToolsContext->InputRouter->PostInputEvent(S);
+            if (bWasCapturing) { if (OnEdited) OnEdited(); if (EventArgs.Viewport) EventArgs.Viewport->Invalidate(); return true; }
+        }
         if (bMarquee) { SelectMarquee(EventArgs.Viewport); bMarquee = false; if (EventArgs.Viewport) EventArgs.Viewport->Invalidate(); }
         const bool bWasEdit = (bDragging || GizmoAxis >= 0) && !bMarquee;
         bDragging = false; GizmoAxis = -1;
@@ -1603,6 +1719,22 @@ bool FNMSViewportClient::InputAxis(const FInputKeyEventArgs& EventArgs)
 {
     const FKey AxisKey = EventArgs.Key;
     const float AxisDelta = EventArgs.AmountDepressed; // величина движения оси
+
+    // ITF-гизмо: если гизмо тянется — отдаём движение ему (consume); иначе hover-подсветка осей.
+    if ((AxisKey == EKeys::MouseX || AxisKey == EKeys::MouseY)
+        && !bRMBDown && !bMMBDown && ToolsContext.IsValid() && ToolsContext->InputRouter)
+    {
+        if (ToolsContext->InputRouter->HasActiveMouseCapture())
+        {
+            FInputDeviceState S = MakeMouseState(EventArgs.Viewport);
+            S.Mouse.Left.SetStates(false, true, false);
+            ToolsContext->InputRouter->PostInputEvent(S);
+            if (EventArgs.Viewport) EventArgs.Viewport->Invalidate();
+            return true;
+        }
+        FInputDeviceState S = MakeMouseState(EventArgs.Viewport);
+        ToolsContext->InputRouter->PostHoverInputEvent(S);
+    }
 
     // рамка выделения тянется ЛКМ (движение приходит как ось мыши)
     if (bMarquee && !bRMBDown && !bMMBDown && EventArgs.Viewport && (AxisKey == EKeys::MouseX || AxisKey == EKeys::MouseY))

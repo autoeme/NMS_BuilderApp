@@ -19,7 +19,9 @@ public class NMS_BuilderApp : ModuleRules
 			// для встроенного 3D-вьюпорта (свой FViewportClient + FSceneViewport)
 			"RenderCore", "RHI", "Renderer",
 			// рантайм-сборка UStaticMesh из OBJ/STL (FMeshDescription + StaticMeshAttributes)
-			"MeshDescription", "StaticMeshDescription"
+			"MeshDescription", "StaticMeshDescription",
+			// движковое гизмо move/rotate/scale (UCombinedTransformGizmo, ITF) — работает и в standalone
+			"InteractiveToolsFramework"
 		});
 
 		// Редакторная зависимость — ТОЛЬКО для editor-сборки.
