@@ -8,6 +8,7 @@
 #pragma once
 
 #include "SNMSBuilderUI.h"
+#include "NMSBuilderLog.h"
 #include "NMSStyle.h"
 #include "NMSLocalization.h"
 #include "NMSPartVisuals.h"

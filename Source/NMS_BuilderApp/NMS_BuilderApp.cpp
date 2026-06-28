@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "NMS_BuilderApp.h"
+#include "NMSBuilderLog.h"
 #include "SNMSBuilderUI.h"
 
 #include "Framework/Application/SlateApplication.h"
@@ -8,6 +9,11 @@
 #include "Widgets/Docking/SDockTab.h"
 #include "Textures/SlateIcon.h"
 #include "Misc/App.h"
+
+DEFINE_LOG_CATEGORY(LogNMSBuilderEditor);
+DEFINE_LOG_CATEGORY(LogNMSBuilderScene);
+DEFINE_LOG_CATEGORY(LogNMSBuilderSave);
+DEFINE_LOG_CATEGORY(LogNMSBuilderImport);
 
 const FName FNMS_BuilderAppModule::TabId(TEXT("NMSBuilderAppWindow"));
 
