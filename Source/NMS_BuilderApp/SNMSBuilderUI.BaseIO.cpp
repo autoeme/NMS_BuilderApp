@@ -558,6 +558,17 @@ void SNMSBuilderUI::CollectSceneToManager(UNMSBaseManager* Mgr)
         // ID из тега (точный); метка — запасной путь
         P.ObjectID = (A->Tags.Num() > 0) ? A->Tags[0].ToString() : Label;
         P.Transform = A->GetActorTransform();
+        // 1:1: убрать ДИСПЛЕЙНУЮ поправку ориентации (ramp +180 и orientation_fix),
+        // которую добавили на спавне, чтобы в базу ушёл игровой Up/At. Ручной доворот
+        // пользователя сохраняется (вычитаем только фиксированную поправку детали).
+        {
+            FString Id = P.ObjectID; Id.RemoveFromStart(TEXT("^"));
+            float Off = NMS_OrientationFixYaw(P.ObjectID);
+            if (const TSharedPtr<FNMSPartData>* Part = PartById.Find(Id))
+                if ((*Part).IsValid() && NMS_IsRampPart(**Part)) Off += 180.f;
+            if (Off != 0.f)
+                P.Transform.SetRotation(P.Transform.GetRotation() * FRotator(0.f, -Off, 0.f).Quaternion());
+        }
         P.Timestamp = (float)FDateTime::UtcNow().ToUnixTimestamp();
         // цвет/материал: читаем сохранённый при спавне UserData (тег "UD:<число>")
         for (const FName& Tg : A->Tags)
