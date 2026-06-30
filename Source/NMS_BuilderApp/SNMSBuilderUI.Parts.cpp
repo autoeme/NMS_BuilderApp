@@ -582,6 +582,8 @@ void SNMSBuilderUI::OnPartSelected(TSharedPtr<FNMSPartData> Item, ESelectInfo::T
     // компенсируем, чтобы при постановке смотрели так же, как в игре/при загрузке.
     if (NMS_IsRampPart(*Item))
         SpawnYaw += 180.f;
+    // Точечная поправка ориентации (детали с авторски развёрнутым мешем) — orientation_fix.json
+    SpawnYaw += NMS_OrientationFixYaw(Item->ObjectID);
     AStaticMeshActor* Actor = World->SpawnActor<AStaticMeshActor>(
         AStaticMeshActor::StaticClass(), FTransform(FRotator(0.f, SpawnYaw, 0.f), SpawnLoc), Params);
     if (!Actor) return;

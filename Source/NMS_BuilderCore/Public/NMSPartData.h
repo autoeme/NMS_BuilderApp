@@ -79,6 +79,14 @@ inline bool NMS_IsRampPart(const FNMSPartData& Part)
 }
 
 /**
+ * Точечная поправка ориентации (yaw, градусы) для деталей с авторски развёрнутым
+ * мешем (как рампы, но адресно по ObjectID). Данные: Content/NMSData/orientation_fix.json
+ * ({ "OBJECTID": yaw, ... }, ID без префикса ^). 0 — поправки нет.
+ * Применяется доворотом вокруг локальной вертикали на спавне (загрузка + ручная постановка).
+ */
+NMS_BUILDERCORE_API float NMS_OrientationFixYaw(const FString& ObjectID);
+
+/**
  * Деталь — листва/растение (карточки листьев). Её диффуз RGBA с альфой-вырезом,
  * поэтому нужен masked + двусторонний материал (иначе листья = прямоугольники).
  * Растения биомов: Category «Exotic Decorations» / SubCategory «Decorative Plants»

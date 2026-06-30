@@ -1,4 +1,5 @@
 #include "NMSPartVisuals.h"
+#include "NMSPartData.h"   // объявление NMS_OrientationFixYaw (с NMS_BUILDERCORE_API для экспорта)
 
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
@@ -243,4 +244,33 @@ bool NMS_ColourFromIndex(int32 Index, FLinearColor& OutP, FLinearColor& OutS)
     }
     if (const TPair<FLinearColor, FLinearColor>* Fnd = Tbl.Find(Index)) { OutP = Fnd->Key; OutS = Fnd->Value; return true; }
     return false;
+}
+
+// Поправка ориентации (yaw, градусы) деталей с авторски развёрнутым мешем.
+// Content/NMSData/orientation_fix.json: { "OBJECTID": yaw, ... } (ID без ^). 0 — нет поправки.
+float NMS_OrientationFixYaw(const FString& ObjectID)
+{
+    static TMap<FString, float> Fix;
+    static bool bLoaded = false;
+    if (!bLoaded)
+    {
+        bLoaded = true;
+        FString Raw;
+        const FString Path = FPaths::ProjectContentDir() / TEXT("NMSData/orientation_fix.json");
+        if (FFileHelper::LoadFileToString(Raw, *Path))
+        {
+            TSharedPtr<FJsonObject> Root;
+            const TSharedRef<TJsonReader<>> R = TJsonReaderFactory<>::Create(Raw);
+            if (FJsonSerializer::Deserialize(R, Root) && Root.IsValid())
+                for (const auto& KV : Root->Values)
+                {
+                    double Y = 0.0;
+                    if (KV.Value->TryGetNumber(Y)) Fix.Add(FString(KV.Key).ToUpper(), (float)Y);
+                }
+        }
+        UE_LOG(LogTemp, Log, TEXT("NMS: поправок ориентации: %d"), Fix.Num());
+    }
+    FString Id = ObjectID; Id.RemoveFromStart(TEXT("^"));
+    const float* P = Fix.Find(Id.ToUpper());
+    return P ? *P : 0.f;
 }

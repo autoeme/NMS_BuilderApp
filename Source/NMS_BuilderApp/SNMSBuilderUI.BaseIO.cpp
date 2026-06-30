@@ -336,6 +336,9 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
         // вставала так же, как в игре.
         if (Part && (*Part).IsValid() && NMS_IsRampPart(**Part))
             A->AddActorLocalRotation(FRotator(0.f, 180.f, 0.f));
+        // Точечная поправка ориентации (детали с авторски развёрнутым мешем) — orientation_fix.json
+        if (const float OFix = NMS_OrientationFixYaw(Obj.ObjectID))
+            A->AddActorLocalRotation(FRotator(0.f, OFix, 0.f));
         A->SetActorLabel(FString::Printf(TEXT("NMS_%s"), *Obj.ObjectID));
         A->Tags.Add(FName(*Obj.ObjectID)); // надёжное хранение ID (метки редактор меняет)
         A->Tags.Add(FName(*FString::Printf(TEXT("UD:%lld"), (long long)Obj.UserData))); // цвет/материал детали
