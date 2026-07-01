@@ -2,6 +2,7 @@
 
 #include "NMSSaveFile.h"
 #include "CoreMinimal.h"
+#include "Containers/Ticker.h"  // FTSTicker: покадровый драйвер полёта камеры
 #include "Widgets/SCompoundWidget.h"
 #include "Engine/DataTable.h"
 #include "NMSPartData.h"
@@ -45,6 +46,7 @@ public:
     SLATE_END_ARGS()
 
     void Construct(const FArguments& InArgs);
+    virtual ~SNMSBuilderUI();
 
     // непрерывная перерисовка вьюпорта (для анимации камеры)
     virtual void Tick(const FGeometry& AllottedGeometry,
@@ -53,6 +55,8 @@ public:
     // Глобальный перехват клавиш окна: Esc отменяет ВСЁ, на каком бы виджете
     // (список деталей/кнопки/вьюпорт) ни был фокус (событие всплывает к окну).
     virtual FReply OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent) override;
+    // Esc ловим в preview-фазе (сверху вниз) — ДО того, как его съест поле поиска/список.
+    virtual FReply OnPreviewKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent) override;
 
 private:
     UDataTable* PartsTable = nullptr;
@@ -167,6 +171,10 @@ private:
     TSharedPtr<class FNMSViewportClient> ViewportClient;
     TSharedPtr<class FSceneViewport> SceneViewport;
     TSharedPtr<class SViewport> ViewportWidget;
+    // Покадровый драйвер полёта камеры: тикает КАЖДЫЙ кадр движка, в отличие от
+    // Slate-таймера/Tick, которые придушиваются при захвате мыши (зажата ПКМ).
+    FTSTicker::FDelegateHandle CameraTickHandle;
+    bool CameraTick(float DeltaSeconds);
     TSharedRef<SWidget> BuildPartListPanel();
     TSharedRef<SWidget> BuildCategoryColumn();
     TSharedRef<SWidget> BuildRightPanel();

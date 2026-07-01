@@ -41,3 +41,6 @@ Thumbs.db
 Desktop.ini
 
 # Keep source asset folders? (tracked by default)
+
+# staging PNG дл€ импорта текстур (источник = NMS_EXTRACT/MBINCompiler, регенерируетс€)
+Content/NMSData/PartTex2/

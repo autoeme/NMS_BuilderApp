@@ -195,6 +195,7 @@ const TArray<FNMSTexSet>* NMS_PartSlots(const FString& ObjectID)
                         (*O)->TryGetStringField(TEXT("type"), Type);
                         S.bUnlit = (Type == TEXT("unlit"));   // эмиссив/лампы из игры (_F07_UNLIT)
                         S.bGlass = NMS_IsGlassMaterial(S.Mat); // стекло (_F30_REFRACTION) -> translucent
+                        S.bMasked = (Type == TEXT("masked")); // декали: вырез по альфе диффуза (цифры контейнеров)
                         Slots.Add(S);
                     }
                     if (Slots.Num() > 0) Map.Add(FString(KV.Key), Slots);

@@ -46,6 +46,7 @@
 #include "Engine/HitResult.h"
 #include "CollisionQueryParams.h"
 #include "GameFramework/Actor.h"
+#include "Application/ThrottleManager.h" // отключение троттлинга Slate во время полёта (ПКМ)
 
 bool FNMSViewportClient::bUnlitParts = false; // СВЕТ ВКЛ по умолчанию: насыщенные цвета, бронза, контраст (lit M_PartLit). Переключатель в меню ВИД остаётся.
 
@@ -158,6 +159,7 @@ FNMSViewportClient::FNMSViewportClient()
 
 FNMSViewportClient::~FNMSViewportClient()
 {
+    SetFlyThrottleDisabled(false); // вернуть троттлинг, если закрылись с зажатой ПКМ
     PreviewScene.Reset();
 }
 
@@ -201,12 +203,9 @@ void FNMSViewportClient::Draw(FViewport* Viewport, FCanvas* Canvas)
     const FIntPoint Size = Viewport->GetSizeXY();
     if (Size.X < 1 || Size.Y < 1) { Canvas->Clear(SkyColor); return; }
 
-    // dt по реальному времени (у FViewportClient нет своего тика)
-    const double Now = FPlatformTime::Seconds();
-    float Dt = (LastDrawTime > 0.0) ? (float)(Now - LastDrawTime) : 0.016f;
-    LastDrawTime = Now;
-    Dt = FMath::Clamp(Dt, 0.0f, 0.1f);
-    UpdateCamera(Dt);
+    // Движение камеры (WASD-полёт) НЕ интегрируем здесь: Draw зовётся только при
+    // перерисовке, а её троттлит Slate, когда ПКМ зажата, но мышь неподвижна ->
+    // полёт рывками. Шаг камеры теперь в TickCamera() из активного таймера виджета.
 
     // ФОН-ГРАДИЕНТ по референсу: светлый верх -> синий низ (без атмосферы).
     {
@@ -1433,6 +1432,34 @@ void FNMSViewportClient::LostFocus(FViewport* /*Viewport*/)
     bRMBDown = false; bMMBDown = false;
     bFwd = bBack = bLeft = bRight = bUp = bDown = false;
     CamVelocity = FVector::ZeroVector; // жёсткий стоп инерции при потере фокуса
+    SetFlyThrottleDisabled(false);     // вернуть троттлинг (баланс счётчика)
+}
+
+// Отключить/вернуть троттлинг Slate на время полёта (ПКМ). Троттлинг в редакторе
+// урезает частоту кадров во время «взаимодействия» (зажата кнопка мыши), из-за
+// чего Draw/Tick/активный таймер вызываются редко и полёт замирает. CVar
+// Slate.bAllowThrottling здесь не помогает: редактор возвращает его из настроек
+// производительности. DisableThrottle — независимый счётчик, его не перебивают.
+// Флаг bFlyThrottleOff балансирует счётчик (не уводим его в минус/плюс дважды).
+void FNMSViewportClient::SetFlyThrottleDisabled(bool bDisable)
+{
+    if (bDisable == bFlyThrottleOff) return;
+    bFlyThrottleOff = bDisable;
+    FSlateThrottleManager::Get().DisableThrottle(bDisable);
+}
+
+// Сверка с реальным состоянием кнопок мыши: «расклиниваем» потерянное отпускание.
+void FNMSViewportClient::SyncFlyMouse(bool bRealRMBDown, bool bRealMMBDown)
+{
+    if (!bRealRMBDown && bRMBDown)
+    {
+        bRMBDown = false;
+        bFwd = bBack = bLeft = bRight = bUp = bDown = false;
+        CamVelocity = FVector::ZeroVector;
+        SetFlyThrottleDisabled(false); // вернуть троттлинг, иначе редактор тормозит
+    }
+    if (!bRealMMBDown && bMMBDown)
+        bMMBDown = false; // залипшая СКМ -> лишний непрерывный рендер
 }
 
 void FNMSViewportClient::UpdateCamera(float Dt)
@@ -1481,8 +1508,8 @@ bool FNMSViewportClient::InputKey(const FInputKeyEventArgs& EventArgs)
     // ПКМ -> режим полёта + захват мыши
     if (Key == EKeys::RightMouseButton)
     {
-        if (bPressed)  { bRMBDown = true;  bMarquee = false;  if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(true); }
-        if (bReleased) { bRMBDown = false; bFwd = bBack = bLeft = bRight = bUp = bDown = false; if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(false); }
+        if (bPressed)  { bRMBDown = true;  bMarquee = false;  SetFlyThrottleDisabled(true);  if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(true); }
+        if (bReleased) { bRMBDown = false; bFwd = bBack = bLeft = bRight = bUp = bDown = false; SetFlyThrottleDisabled(false); if (EventArgs.Viewport) EventArgs.Viewport->LockMouseToViewport(false); }
         return true;
     }
 

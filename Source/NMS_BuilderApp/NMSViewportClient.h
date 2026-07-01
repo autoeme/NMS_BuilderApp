@@ -54,6 +54,19 @@ public:
     // Сбросить камеру в стартовый ракурс (кнопка «КАМЕРА» в тулбаре).
     void ResetCamera();
 
+    // Проинтегрировать движение камеры (WASD/QE-полёт) за DeltaSeconds.
+    // ВАЖНО: зовётся из активного таймера виджета (гарантированный кадр), а НЕ
+    // из Draw. Draw «придушивается» троттлингом Slate при зажатой ПКМ без
+    // движения мыши -> полёт шёл рывками с паузами. Теперь шаг камеры не зависит
+    // от перерисовки.
+    void TickCamera(float DeltaSeconds) { UpdateCamera(DeltaSeconds); }
+
+    // Сверка с РЕАЛЬНЫМ состоянием кнопок мыши каждый кадр. Если событие
+    // отпускания потерялось (alt-tab/потеря захвата) — «расклиниваем»: иначе при
+    // залипшей ПКМ отключён троттлинг (тормозит весь редактор) и перехват WASD
+    // (буквы не печатаются). bRealRMBDown/bRealMMBDown — из FSlateApplication.
+    void SyncFlyMouse(bool bRealRMBDown, bool bRealMMBDown);
+
     // Назначить выбранную деталь извне (из UI при клике по детали).
     void SetSelectedActor(AActor* InActor);
     // Текущая выбранная деталь (для покраски из UI).
@@ -72,6 +85,13 @@ public:
     void ClearSelection();
     // Универсальная отмена (Esc): выйти из режимов, убрать призрак/рамку, снять выделение.
     void CancelAll();
+    // Есть ли что отменять по Esc (проводка/установка/кривая/рамка/тяга/выделение).
+    // Нужно, чтобы перехватывать Esc до полей ввода ТОЛЬКО когда есть смысл.
+    bool HasActiveOperation() const
+    {
+        return bWiringMode || bPlacingGhost || bCurveMode || bMarquee || bDragging
+            || SelectedActor.IsValid() || SelectedActors.Num() > 0;
+    }
     // Режим прокладки кабеля/трубы: клик А, клик Б -> кабель между ними.
     void ToggleWiringMode() { CancelPlacing(); bWiringMode = !bWiringMode; } // с отменой установки
     bool IsWiringMode() const { return bWiringMode; }
@@ -198,6 +218,10 @@ private:
     // состояние управления
     bool bRMBDown = false;                 // ПКМ зажата -> режим полёта
     bool bMMBDown = false;                 // СКМ зажата -> орбита/пан
+    bool bFlyThrottleOff = false;          // троттлинг Slate отключён на время полёта (баланс счётчика)
+    // Вкл/выкл отключение троттлинга Slate. Без него Draw/Tick/активный таймер
+    // «придушиваются» при зажатой ПКМ без движения мыши -> полёт замирает.
+    void SetFlyThrottleDisabled(bool bDisable);
     bool bAltDown = false;
     bool bCtrlDown = false;
     FVector WireA = FVector::ZeroVector; bool bHaveWireA = false;                 // Alt -> пан вместо орбиты

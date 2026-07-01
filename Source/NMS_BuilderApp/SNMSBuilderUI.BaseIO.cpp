@@ -214,7 +214,7 @@ void SNMSBuilderUI::ApplyPartMaterialsToComponent(UStaticMeshComponent* Comp,
         UTexture2D* Tex = S.Tex.IsEmpty() ? nullptr : LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Tex));
         UMaterialInterface* Surf = (S.bGlass && GlassM) ? GlassM
                                  : (S.bUnlit && UnlitM) ? UnlitM
-                                 : ((bFoliage && FoliageM) ? FoliageM : LitM);
+                                 : (((S.bMasked || bFoliage) && FoliageM) ? FoliageM : LitM);
         UMaterialInterface* M = (Tex && Surf) ? Surf : BaseM;
         if (!M) return nullptr;
         UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);
@@ -373,10 +373,11 @@ void SNMSBuilderUI::SpawnFromManager(UNMSBaseManager* Mgr)
                 {
                     UTexture2D* Tex = S.Tex.IsEmpty() ? nullptr
                         : LoadObject<UTexture2D>(nullptr, *TexPathOf(S.Tex));
-                    // эмиссив-слот (лампы/экраны) -> неосвещаемый материал, как в игре
+                    // эмиссив-слот (лампы/экраны) -> неосвещаемый материал, как в игре;
+                    // masked-декали (цифры контейнеров) -> вырез по альфе диффуза
                     UMaterialInterface* Surf = (S.bGlass && GlassM) ? GlassM
                                              : (S.bUnlit && UnlitM) ? UnlitM
-                                             : ((bFoliage && FoliageM) ? FoliageM : LitM);
+                                             : (((S.bMasked || bFoliage) && FoliageM) ? FoliageM : LitM);
                     UMaterialInterface* M = (Tex && Surf) ? Surf : BaseM;
                     if (!M) return nullptr;
                     UMaterialInstanceDynamic* MID = UMaterialInstanceDynamic::Create(M, Comp);

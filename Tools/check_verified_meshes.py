@@ -35,7 +35,7 @@ def staged_hash(path):
         blob = run(["git", "show", ":" + path])
     except Exception:
         return None
-    if blob[:22] == b"version https://git-l":
+    if blob.startswith(b"version https://git-lfs"):
         m = re.search(rb"oid sha256:([0-9a-f]{64})", blob)
         return m.group(1).decode() if m else None
     return hashlib.sha256(blob).hexdigest()

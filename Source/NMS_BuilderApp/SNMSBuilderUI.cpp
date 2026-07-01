@@ -105,14 +105,57 @@ void SNMSBuilderUI::Construct(const FArguments& InArgs)
     if (IConsoleVariable* CVarThrottle = IConsoleManager::Get().FindConsoleVariable(TEXT("Slate.bAllowThrottling")))
         CVarThrottle->Set(0);
 
-    // 2) Непрерывный активный таймер держит виджет «бодрым» и заставляет
-    //    вьюпорт перерисовываться каждый кадр -> Draw идёт стабильно, dt ровный.
+    // 2) Активный таймер держит виджет «бодрым» и постоянно просит перерисовку —
+    //    чтобы экран сразу отражал ЛЮБОЕ изменение сцены (установка/отмена/удаление/
+    //    Undo), а не «застывал» до следующего нажатия. Так было изначально.
     RegisterActiveTimer(0.f, FWidgetActiveTimerDelegate::CreateLambda(
         [this](double, float) -> EActiveTimerReturnType
         {
             if (SceneViewport.IsValid()) SceneViewport->Invalidate();
             return EActiveTimerReturnType::Continue;
         }));
+
+    // 3) ГЛАВНЫЙ драйвер полёта камеры (WASD/QE) — движковый тикер. Он вызывается
+    //    КАЖДЫЙ кадр движка, независимо от Slate: активный таймер и Tick виджета
+    //    «придушиваются», когда зажата ПКМ и мышь захвачена вьюпортом, из-за чего
+    //    полёт замирал. FTSTicker от этого не зависит. Здесь же форсим перерисовку,
+    //    чтобы движение было видно (вместе с отключением троттлинга на время ПКМ).
+    CameraTickHandle = FTSTicker::GetCoreTicker().AddTicker(
+        FTickerDelegate::CreateSP(this, &SNMSBuilderUI::CameraTick), 0.f);
+}
+
+SNMSBuilderUI::~SNMSBuilderUI()
+{
+    if (CameraTickHandle.IsValid())
+    {
+        FTSTicker::GetCoreTicker().RemoveTicker(CameraTickHandle);
+        CameraTickHandle.Reset();
+    }
+}
+
+// Движковый тикер полёта камеры: каждый кадр интегрируем движение (WASD/QE) с
+// реальным dt. Работает даже при захвате мыши ПКМ, когда Slate-таймеры простаивают.
+bool SNMSBuilderUI::CameraTick(float DeltaSeconds)
+{
+    if (ViewportClient.IsValid())
+    {
+        // Сверка с реальным состоянием кнопок мыши — «расклиниваем» потерянное
+        // отпускание, иначе залипает троттлинг (тормозит редактор) и перехват WASD.
+        bool bRealRMB = false, bRealMMB = false;
+        if (FSlateApplication::IsInitialized())
+        {
+            const TSet<FKey>& Pressed = FSlateApplication::Get().GetPressedMouseButtons();
+            bRealRMB = Pressed.Contains(EKeys::RightMouseButton);
+            bRealMMB = Pressed.Contains(EKeys::MiddleMouseButton);
+        }
+        ViewportClient->SyncFlyMouse(bRealRMB, bRealMMB);
+
+        ViewportClient->TickCamera(FMath::Clamp(DeltaSeconds, 0.f, 0.1f));
+
+        if (SceneViewport.IsValid())
+            SceneViewport->Invalidate();
+    }
+    return true;
 }
 
 // Tick виджета вызывается Slate каждый кадр — отсюда БЕЗОПАСНО просим
@@ -482,8 +525,21 @@ TSharedRef<SWidget> SNMSBuilderUI::BuildCenterArea()
         ];
 }
 
-// Глобальный Esc: ловим на уровне окна — отмена срабатывает независимо от того,
-// какой виджет сейчас в фокусе (событие клавиши всплывает от фокуса к окну).
+// Esc в preview-фазе: событие идёт СВЕРХУ ВНИЗ (от вкладки к сфокусированному
+// виджету), поэтому вкладка видит Esc РАНЬШЕ, чем его съест поле поиска/список.
+// Перехватываем только когда реально есть что отменять; иначе Esc уходит виджету.
+FReply SNMSBuilderUI::OnPreviewKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent)
+{
+    if (InKeyEvent.GetKey() == EKeys::Escape && ViewportClient.IsValid()
+        && ViewportClient->HasActiveOperation())
+    {
+        ViewportClient->CancelAll();
+        return FReply::Handled();
+    }
+    return FReply::Unhandled();
+}
+
+// Fallback для Esc, если preview-фаза его не перехватила (нечего было отменять).
 FReply SNMSBuilderUI::OnKeyDown(const FGeometry& MyGeometry, const FKeyEvent& InKeyEvent)
 {
     if (InKeyEvent.GetKey() == EKeys::Escape && ViewportClient.IsValid())
