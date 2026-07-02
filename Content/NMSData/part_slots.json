@@ -609,96 +609,77 @@
    "tex": "buildablebuildings_interiorfreighterbase",
    "masks": "buildablebuildings_interiorfreighterbase_masks",
    "norm": "buildablebuildings_interiorfreighterbase_normal",
-   "cmask": "buildablebuildings_interiorfreighterbase_colourisemask",
-   "type": "lit"
+   "cmask": "buildablebuildings_interiorfreighterbase_colourisemask"
   },
   {
    "mat": "interiorfreightertrim_mat",
    "tex": "buildablebuildings_interiorfreightertrims",
    "masks": "buildablebuildings_interiorfreightertrims_masks",
    "norm": "buildablebuildings_interiorfreightertrims_normal",
-   "cmask": "buildablebuildings_interiorfreightertrims_colourisemask",
-   "type": "lit"
+   "cmask": "buildablebuildings_interiorfreightertrims_colourisemask"
   },
   {
    "mat": "interiorlights_mat1",
    "tex": "buildablebuildings_interiorfreighterlights",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "traillight_mat1",
    "tex": "buildablebuildings_traillight_light_1",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "sandmat",
    "tex": "updateprops_aquariumpebblesand",
    "masks": "updateprops_aquariumpebblesand_masks",
-   "norm": "updateprops_aquariumpebblesand_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "updateprops_aquariumpebblesand_normal"
   },
   {
    "mat": "hqmedrock_3",
    "tex": "medium_mediumrock_3_base_1",
    "masks": "medium_mediumrock_3_base_1_masks",
-   "norm": "medium_mediumrock_3_base_1_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "medium_mediumrock_3_base_1_normal"
   },
   {
    "mat": "crystal_mat",
    "tex": "foliage_stormcrystal_base",
    "masks": "foliage_stormcrystal_base_masks",
    "norm": "foliage_stormcrystal_base_normal",
-   "cmask": "foliage_stormcrystal_base_colourisemask",
-   "type": "lit"
+   "cmask": "foliage_stormcrystal_base_colourisemask"
   },
   {
    "mat": "wavykelp",
    "tex": "updateprops_leavestexture_1",
    "masks": "updateprops_leavestexture_1_masks",
-   "norm": "updateprops_crystal_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "updateprops_crystal_normal"
   },
   {
    "mat": "seabushmat1",
    "tex": "updateprops_sealeavesrehash_base_1",
    "masks": "updateprops_sealeavesrehash_base_1_masks",
-   "norm": "updateprops_sealeavesrehash_base_1_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "updateprops_sealeavesrehash_base_1_normal"
   },
   {
    "mat": "aquariumdashfishmat1",
    "tex": "updateprops_dashfish",
-   "masks": "updateprops_dashfish_masks",
-   "norm": null,
-   "cmask": null,
-   "type": "lit"
+   "masks": "updateprops_dashfish_masks"
   },
   {
    "mat": "watermat",
    "tex": "updateprops_water",
    "masks": "updateprops_water_masks",
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "glowgradient_skinnedmat",
    "tex": "spacestation_entrancebeam",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
+  },
+  {
+   "mat": "fish1_mat",
+   "tex": "fish_fish_1_base",
+   "masks": "fish_fish_1_base_masks",
+   "norm": "fish_fish_1_base_normal"
   }
  ],
  "BASE_BARNACLE": [
@@ -5557,28 +5538,42 @@
  ],
  "BYTEBEAT": [
   {
-   "mat": "tilingtexture_mat",
-   "tex": "basebuilding_basebuildingexterior",
-   "masks": "basebuilding_basebuildingexterior_masks",
-   "norm": "basebuilding_basebuildingexterior_normal",
-   "cmask": "basebuilding_basebuildingexterior_colourisemask",
-   "type": "lit"
+   "mat": "gekdecalmat",
+   "tex": "decals_gekdj"
   },
   {
-   "mat": "interiorfreighterbase_mat",
+   "mat": "settlementdecmat",
+   "tex": "basicparts_stonetrim",
+   "masks": "basicparts_stonetrim_masks",
+   "norm": "basicparts_stonetrim_normal",
+   "cmask": "basicparts_stonetrim_colourisemask"
+  },
+  {
+   "mat": "bouncingspeakermat",
    "tex": "buildablebuildings_interiorfreighterbase",
    "masks": "buildablebuildings_interiorfreighterbase_masks",
    "norm": "buildablebuildings_interiorfreighterbase_normal",
-   "cmask": "buildablebuildings_interiorfreighterbase_colourisemask",
-   "type": "lit"
+   "cmask": "buildablebuildings_interiorfreighterbase_colourisemask"
   },
   {
-   "mat": "interiorfreightertrim_mat",
-   "tex": "buildablebuildings_interiorfreightertrims",
-   "masks": "buildablebuildings_interiorfreightertrims_masks",
-   "norm": "buildablebuildings_interiorfreightertrims_normal",
-   "cmask": "buildablebuildings_interiorfreightertrims_colourisemask",
-   "type": "lit"
+   "mat": "bytebeatlightscroll_mat",
+   "tex": "nexus_effectfade"
+  },
+  {
+   "mat": "bytebeatlightscrollhoriz_mat",
+   "tex": "nexus_effectfade"
+  },
+  {
+   "mat": "soundwavemat",
+   "tex": "buildablebuildings_conduit_primary"
+  },
+  {
+   "mat": "vistalights2mat",
+   "tex": "common_scrollinggradients"
+  },
+  {
+   "mat": "bytebeatdisplayamat",
+   "tex": "nexus_effectfade"
   }
  ],
  "BYTEBEATSWITCH": [
@@ -6470,10 +6465,6 @@
  "B_ROBOTARM": [
   {
    "mat": "voidmat",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
@@ -6481,15 +6472,11 @@
    "tex": "basicparts_builderstrim",
    "masks": "basicparts_builderstrim_masks",
    "norm": "basicparts_builderstrim_normal",
-   "cmask": "basicparts_builderstrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_builderstrim_colourisemask"
   },
   {
    "mat": "interiorlights_mat",
    "tex": "buildablebuildings_interiorfreighterlights",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   }
  ],
@@ -16985,32 +16972,78 @@
    "tex": "interiorprops_colmaskinteriorprops_base",
    "masks": "interiorprops_colmaskinteriorprops_base_masks",
    "norm": "interiorprops_colmaskinteriorprops_base_normal",
-   "cmask": "interiorprops_colmaskinteriorprops_base_colourisemask",
-   "type": "lit"
+   "cmask": "interiorprops_colmaskinteriorprops_base_colourisemask"
   },
   {
-   "mat": "lambert1",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "lit"
+   "mat": "lambert1"
+  },
+  {
+   "mat": "npcprops_mat1",
+   "tex": "buildablebuildings_npc_farming_basep_1",
+   "masks": "buildablebuildings_npc_farming_basep_1_masks",
+   "norm": "buildablebuildings_npc_farming_basep_1_normal"
+  },
+  {
+   "mat": "phong108",
+   "type": "unlit"
+  },
+  {
+   "mat": "dronetrailinvestmat",
+   "tex": "robots_dronetrail_invest",
+   "type": "unlit"
+  },
+  {
+   "mat": "phong107",
+   "type": "unlit"
+  },
+  {
+   "mat": "npcprops_mat",
+   "tex": "buildablebuildings_npc_farming_basep_1",
+   "masks": "buildablebuildings_npc_farming_basep_1_masks",
+   "norm": "buildablebuildings_npc_farming_basep_1_normal"
+  },
+  {
+   "mat": "lights1_mat",
+   "type": "unlit"
+  },
+  {
+   "mat": "scanplane_mat",
+   "tex": "beam_beamcore",
+   "type": "unlit"
   },
   {
    "mat": "screentransparent_mat",
    "tex": "interiorprops_screenparts_1",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "scanline_mat",
    "tex": "interiorprops_screenparts_2",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
+  },
+  {
+   "mat": "projectormat",
+   "tex": "settlements_consolehologlow"
+  },
+  {
+   "mat": "projector2mat",
+   "tex": "settlements_consolehologlow"
+  },
+  {
+   "mat": "flaremat1",
+   "tex": "effects_flare"
+  },
+  {
+   "mat": "quicksilverstaticmat",
+   "tex": "settlements_consolehologlow"
+  },
+  {
+   "mat": "quicksilverpanningmat",
+   "tex": "settlements_consolehologlow"
+  },
+  {
+   "mat": "quicksilvershimmermat",
+   "tex": "settlements_consolehologlow"
   }
  ],
  "SET_F_MONU": [
@@ -17029,18 +17062,14 @@
    "tex": "basicparts_fabrictrim",
    "masks": "basicparts_fabrictrim_masks",
    "norm": "basicparts_fabrictrim_normal",
-   "cmask": "basicparts_fabrictrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_fabrictrim_colourisemask"
   }
  ],
  "SET_GROUNDDECAL": [
   {
    "mat": "grounddecal_mat",
    "tex": "settlements_grounddecal",
-   "masks": "settlements_grounddecal_masks",
-   "norm": null,
-   "cmask": null,
-   "type": "lit"
+   "masks": "settlements_grounddecal_masks"
   }
  ],
  "SET_INT_SHIPSAL": [
@@ -17049,15 +17078,11 @@
    "tex": "typeb_interiortrim1_base",
    "masks": "typeb_interiortrim1_base_masks",
    "norm": "typeb_interiortrim1_base_normal",
-   "cmask": "typeb_interiortrim1_base_colourisemask",
-   "type": "lit"
+   "cmask": "typeb_interiortrim1_base_colourisemask"
   },
   {
    "mat": "interiorlights_mat",
    "tex": "buildablebuildings_interiorfreighterlights",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
@@ -17065,23 +17090,19 @@
    "tex": "typeb_interiortrim1_base",
    "masks": "typeb_interiortrim1_base_masks",
    "norm": "typeb_interiortrim1_base_normal",
-   "cmask": "typeb_interiortrim1_base_colourisemask",
-   "type": "lit"
+   "cmask": "typeb_interiortrim1_base_colourisemask"
   },
   {
    "mat": "ssrsheet_mat",
    "tex": "typeb_interiortrim1_base",
    "masks": "typeb_interiortrim1_base_masks",
    "norm": "typeb_interiortrim1_base_normal",
-   "cmask": "typeb_interiortrim1_base_colourisemask",
-   "type": "lit"
+   "cmask": "typeb_interiortrim1_base_colourisemask"
   },
   {
    "mat": "glowprimary_mat",
    "tex": "interior_procglow",
    "masks": "interior_procglow_masks",
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
@@ -17089,8 +17110,17 @@
    "tex": "typeb_interiortrim1_base",
    "masks": "typeb_interiortrim1_base_masks",
    "norm": "typeb_interiortrim1_base_normal",
-   "cmask": "typeb_interiortrim1_base_colourisemask",
-   "type": "lit"
+   "cmask": "typeb_interiortrim1_base_colourisemask"
+  },
+  {
+   "mat": "holoscroll_mat",
+   "tex": "typeb_holograms",
+   "type": "unlit"
+  },
+  {
+   "mat": "holostatic_mat",
+   "tex": "typeb_holograms",
+   "type": "unlit"
   }
  ],
  "SET_INT_SUMMARY": [
@@ -17099,249 +17129,159 @@
    "tex": "basicparts_crossmaterialtrim",
    "masks": "basicparts_crossmaterialtrim_masks",
    "norm": "basicparts_crossmaterialtrim_normal",
-   "cmask": "basicparts_crossmaterialtrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_crossmaterialtrim_colourisemask"
   },
   {
    "mat": "interiorlights_mat",
    "tex": "buildablebuildings_interiorfreighterlights",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "holoscroll_mat",
    "tex": "typeb_holograms",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "holostatic_mat",
    "tex": "typeb_holograms",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "projectormat1",
    "tex": "settlements_consolehologlow",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "projector2mat1",
    "tex": "settlements_consolehologlow",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "flaremat2",
    "tex": "effects_flare",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "quicksilverstaticmat1",
    "tex": "settlements_consolehologlow",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "quicksilverpanningmat1",
    "tex": "settlements_consolehologlow",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "quicksilvershimmermat1",
    "tex": "settlements_consolehologlow",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   }
  ],
  "SET_MAYORTERM": [
   {
-   "mat": "panningstreak_mat3",
-   "tex": "multitool_bolteffect_3",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "unlit"
+   "mat": "lambert1"
   },
   {
    "mat": "greenglowfade_mat3",
    "tex": "nexus_greenglowfade",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "panningstreak_mat",
    "tex": "multitool_bolteffect_3",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "effectlines_mat",
    "tex": "nexus_effectlines",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "orbglow_mat",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "scrollingeffectgreen_mat",
    "tex": "nexus_scrollingeffectgreen",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "greenglowfade_mat",
    "tex": "nexus_greenglowfade",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "trimsheetmetal_mat",
    "tex": "nexus_alphatrimsheet",
    "masks": "nexus_alphatrimsheet_masks",
-   "norm": "nexus_alphatrimsheet_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_alphatrimsheet_normal"
   },
   {
-   "mat": "dark_mat",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "lit"
+   "mat": "dark_mat"
   },
   {
    "mat": "goldmetal_mat",
    "tex": "nexus_goldmetal",
    "masks": "nexus_goldmetal_masks",
-   "norm": "nexus_goldmetal_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_goldmetal_normal"
   },
   {
    "mat": "floor1_mat1",
    "tex": "nexus_floor_1",
    "masks": "nexus_floor_1_masks",
-   "norm": "nexus_floor_1_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_floor_1_normal"
   },
   {
    "mat": "greenlight_mat",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "pipe1_mat",
    "tex": "nexus_mattepipe",
    "masks": "nexus_mattepipe_masks",
-   "norm": "nexus_mattepipe_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_mattepipe_normal"
   },
   {
-   "mat": "phong167",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "lit"
+   "mat": "phong167"
   },
   {
    "mat": "floor1_mat",
    "tex": "nexus_floor_1",
    "masks": "nexus_floor_1_masks",
-   "norm": "nexus_floor_1_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_floor_1_normal"
   },
   {
    "mat": "redlightglow_mat",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "bridgescreenmodscroll_mat",
    "tex": "nexus_bridgescreenmodular",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "bridgescreenmod_mat",
    "tex": "nexus_bridgescreenmodular",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "paddedpipe_mat",
    "tex": "nexus_paddedpiping",
    "masks": "nexus_paddedpiping_masks",
-   "norm": "nexus_paddedpiping_normal",
-   "cmask": null,
-   "type": "lit"
+   "norm": "nexus_paddedpiping_normal"
   },
   {
    "mat": "continents_mat1",
    "tex": "settlements_continents",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "orbglow_mat3",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
+   "type": "unlit"
+  },
+  {
+   "mat": "panningstreak_mat3",
+   "tex": "multitool_bolteffect_3",
    "type": "unlit"
   }
  ],
@@ -17387,36 +17327,20 @@
  ],
  "SET_WEAPONBOX": [
   {
-   "mat": "tradertiled_mat22",
+   "mat": "interiorprops_mat",
+   "tex": "interiorprops_interiorprops_base",
+   "masks": "interiorprops_interiorprops_base_masks",
+   "norm": "interiorprops_interiorprops_normal"
+  },
+  {
+   "mat": "phong15",
+   "type": "unlit"
+  },
+  {
+   "mat": "commontiled_mat3",
    "tex": "common_commontilled",
    "masks": "common_commontilled_masks",
-   "norm": "common_commontilled_normal",
-   "cmask": null,
-   "type": "lit"
-  },
-  {
-   "mat": "trim_mat",
-   "tex": "largestructures_trimsheet",
-   "masks": "largestructures_trimsheet_masks",
-   "norm": "largestructures_trimsheet_normal",
-   "cmask": null,
-   "type": "lit"
-  },
-  {
-   "mat": "greenglow_mat4",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "unlit"
-  },
-  {
-   "mat": "glow_mat1",
-   "tex": null,
-   "masks": null,
-   "norm": null,
-   "cmask": null,
-   "type": "unlit"
+   "norm": "common_commontilled_normal"
   }
  ],
  "SHELFPANEL": [
@@ -20897,8 +20821,7 @@
    "tex": "basicparts_stonetrim",
    "masks": "basicparts_stonetrim_masks",
    "norm": "basicparts_stonetrim_normal",
-   "cmask": "basicparts_stonetrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_stonetrim_colourisemask"
   }
  ],
  "S_TOWER_B": [
@@ -20907,39 +20830,28 @@
    "tex": "basicparts_stonetrim",
    "masks": "basicparts_stonetrim_masks",
    "norm": "basicparts_stonetrim_normal",
-   "cmask": "basicparts_stonetrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_stonetrim_colourisemask"
   },
   {
    "mat": "stonetrimmat20",
    "tex": "basicparts_crossmaterialtrim",
    "masks": "basicparts_crossmaterialtrim_masks",
    "norm": "basicparts_crossmaterialtrim_normal",
-   "cmask": "basicparts_crossmaterialtrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_crossmaterialtrim_colourisemask"
   },
   {
    "mat": "interiorlights_mat",
    "tex": "buildablebuildings_interiorfreighterlights",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "holoscroll_mat",
    "tex": "typeb_holograms",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   },
   {
    "mat": "holostatic_mat",
    "tex": "typeb_holograms",
-   "masks": null,
-   "norm": null,
-   "cmask": null,
    "type": "unlit"
   }
  ],
@@ -20949,8 +20861,7 @@
    "tex": "basicparts_fabrictrim",
    "masks": "basicparts_fabrictrim_masks",
    "norm": "basicparts_fabrictrim_normal",
-   "cmask": "basicparts_fabrictrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_fabrictrim_colourisemask"
   }
  ],
  "S_TOWER_C": [
@@ -20959,16 +20870,14 @@
    "tex": "basicparts_stonetrim",
    "masks": "basicparts_stonetrim_masks",
    "norm": "basicparts_stonetrim_normal",
-   "cmask": "basicparts_stonetrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_stonetrim_colourisemask"
   },
   {
    "mat": "stonetrimmat3",
    "tex": "basicparts_stonetrim",
    "masks": "basicparts_stonetrim_masks",
    "norm": "basicparts_stonetrim_normal",
-   "cmask": "basicparts_stonetrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_stonetrim_colourisemask"
   }
  ],
  "S_TOWER_FA": [
@@ -20977,8 +20886,7 @@
    "tex": "basicparts_fabrictrim",
    "masks": "basicparts_fabrictrim_masks",
    "norm": "basicparts_fabrictrim_normal",
-   "cmask": "basicparts_fabrictrim_colourisemask",
-   "type": "lit"
+   "cmask": "basicparts_fabrictrim_colourisemask"
   }
  ],
  "S_TRAY0": [
@@ -36880,25 +36788,42 @@
  ],
  "SET_BYTEBEAT": [
   {
-   "mat": "tilingtexture_mat",
-   "tex": "basebuilding_basebuildingexterior",
-   "masks": "basebuilding_basebuildingexterior_masks",
-   "norm": "basebuilding_basebuildingexterior_normal",
-   "cmask": "basebuilding_basebuildingexterior_colourisemask"
+   "mat": "gekdecalmat",
+   "tex": "decals_gekdj"
   },
   {
-   "mat": "interiorfreighterbase_mat",
+   "mat": "settlementdecmat",
+   "tex": "basicparts_stonetrim",
+   "masks": "basicparts_stonetrim_masks",
+   "norm": "basicparts_stonetrim_normal",
+   "cmask": "basicparts_stonetrim_colourisemask"
+  },
+  {
+   "mat": "bouncingspeakermat",
    "tex": "buildablebuildings_interiorfreighterbase",
    "masks": "buildablebuildings_interiorfreighterbase_masks",
    "norm": "buildablebuildings_interiorfreighterbase_normal",
    "cmask": "buildablebuildings_interiorfreighterbase_colourisemask"
   },
   {
-   "mat": "interiorfreightertrim_mat",
-   "tex": "buildablebuildings_interiorfreightertrims",
-   "masks": "buildablebuildings_interiorfreightertrims_masks",
-   "norm": "buildablebuildings_interiorfreightertrims_normal",
-   "cmask": "buildablebuildings_interiorfreightertrims_colourisemask"
+   "mat": "bytebeatlightscroll_mat",
+   "tex": "nexus_effectfade"
+  },
+  {
+   "mat": "bytebeatlightscrollhoriz_mat",
+   "tex": "nexus_effectfade"
+  },
+  {
+   "mat": "soundwavemat",
+   "tex": "buildablebuildings_conduit_primary"
+  },
+  {
+   "mat": "vistalights2mat",
+   "tex": "common_scrollinggradients"
+  },
+  {
+   "mat": "bytebeatdisplayamat",
+   "tex": "nexus_effectfade"
   }
  ],
  "BASE_ROOT": [
@@ -37265,17 +37190,32 @@
  ],
  "SET_CLASS_S": [
   {
-   "mat": "material_0"
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
   }
  ],
  "SET_CLASS_A": [
   {
-   "mat": "material_0"
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
   }
  ],
  "SET_CLASS_B": [
   {
-   "mat": "material_0"
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
   }
  ],
  "SET_FISHPOND": [
@@ -41921,6 +41861,36 @@
    "mat": "interiorlights_mat",
    "tex": "buildablebuildings_interiorfreighterlights",
    "type": "unlit"
+  }
+ ],
+ "CLASSMARKER_S": [
+  {
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  }
+ ],
+ "CLASSMARKER_A": [
+  {
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  }
+ ],
+ "CLASSMARKER_B": [
+  {
+   "mat": "buildingclassholo_mat",
+   "tex": "hologram_buildinghologramaclass"
+  },
+  {
+   "mat": "buildingclassletterholo_mat",
+   "tex": "hologram_buildinghologramaclass"
   }
  ]
 }
